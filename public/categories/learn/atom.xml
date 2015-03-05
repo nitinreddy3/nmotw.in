@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: learn | NMOTW]]></title>
+  <link href="http://nmotw.in//github/public/categories/learn/atom.xml" rel="self"/>
+  <link href="http://nmotw.in//github/"/>
+  <updated>2015-03-05T13:43:56+00:00</updated>
+  <id>http://nmotw.in//github/</id>
+  <author>
+    <name><![CDATA[Hemanth.HM]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[css-explain]]></title>
+    <link href="http://nmotw.in//github/css-explain/"/>
+    <updated>2015-01-01T13:23:53+00:00</updated>
+    <id>http://nmotw.in//github/css-explain</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/css-explain">css-explain</a></h1>
+
+<blockquote><p>Think of it like SQL EXPLAIN, but for CSS selectors.</p></blockquote>
+
+<p><code>css-explain</code> is one of such rare modules that helps us to learn or explain CSS selectors with ease.</p>
+
+<p><strong>Get it:</strong> <code>npm install css-explain</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```javascript</p>
+
+<blockquote><p>var cssExplain = require('css-explain').cssExplain</p>
+
+<p>cssExplain("div .info")
+{ selector: 'div .info',
+  parts: [ 'div', '.info' ],
+  category: 'class',
+  key: 'info',
+  specificity: [ 0, 1, 1 ],
+  score: 6,
+  messages: [ 'Uses a descendant selector with a rightmost class selector' ] }</p>
+
+<p>cssExplain("div#info")
+{ selector: 'div#info',
+  parts: [ 'div#info' ],
+  category: 'id',
+  key: 'info',
+  specificity: [ 1, 0, 1 ],
+  score: 2,
+  messages: [ 'ID is overly qualified by a tag name' ] }</p>
+
+<p>cssExplain("div > p#info")
+{ selector: 'div > p#info',
+  parts: [ 'div', '>', 'p#info' ],
+  category: 'id',
+  key: 'info',
+  specificity: [ 1, 0, 2 ],
+  score: 3,
+  messages:
+   [ 'ID is overly qualified by a tag name',</p>
+
+<pre><code> 'ID is overly qualified by a child selector' ] }
+</code></pre></blockquote>
+
+<p>```</p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/css-explain/css-explain.gif" alt="css-explain" /></p>
+
+<p>Thanks to <a href="https://twitter.com/joshpeek">Joshua Peek</a> for css-explain, do <a href="http://josh.github.io/css-explain/">checkout</a> the webbased app of the same.</p>
+]]></content>
+  </entry>
+  
+</feed>

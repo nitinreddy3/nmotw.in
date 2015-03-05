@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: performance | NMOTW]]></title>
+  <link href="http://nmotw.in//github/public/categories/performance/atom.xml" rel="self"/>
+  <link href="http://nmotw.in//github/"/>
+  <updated>2015-03-05T13:43:56+00:00</updated>
+  <id>http://nmotw.in//github/</id>
+  <author>
+    <name><![CDATA[Hemanth.HM]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[PSI]]></title>
+    <link href="http://nmotw.in//github/psi/"/>
+    <updated>2014-06-19T13:52:39+00:00</updated>
+    <id>http://nmotw.in//github/psi</id>
+    <content type="html"><![CDATA[<p>If you are into web development at one point or the other you would have used Google's pagespeed <a href="http://developers.google.com/speed/pagespeed/insights/">insights</a> to improve the performance of your site.</p>
+
+<p>Now it's even easier to get those insights on your CLI with <a href="https://www.npmjs.org/package/psi">psi</a> thanks to the <a href="http://addyosmani.com/blog/">Addy Osmani</a> for such a wonderful module.</p>
+
+<p>Formal defination of the module:</p>
+
+<blockquote><p>PageSpeed Insights With Reporting</p></blockquote>
+
+<p>Run mobile and desktop performance tests for your deployed site using <a href="https://developers.google.com/speed/docs/insights/v1/getting_started">Google PageSpeed Insights</a> with tidy reporting for your build process. A sample <a href="https://github.com/addyosmani/psi-gulp-sample">Gulpfile</a> demonstrating use is also available.</p>
+
+<p>Uses <a href="https://github.com/zrrrzzt/gpagespeed/">gpagespeed</a> and the reporter in <a href="https://github.com/jrcryer/grunt-pagespeed">grunt-pagespeed</a>.</p>
+
+<p>Install it -> <code>$ npm install psi</code></p>
+
+<p><strong>Example usage:</strong></p>
+
+<p>P.S: Registering for an API key from the <a href="https://developers.google.com/speed/docs/insights/v1/getting_started#auth">Google Developer Console</a> is recommended.</p>
+
+<p><strong>In code:</strong></p>
+
+<p>```js
+var psi = require('psi');</p>
+
+<p>psi({</p>
+
+<pre><code>// key: '...', optional
+url: 'http://nmotw.in',
+paths: '',           // optional
+locale: 'en_US',     // optional
+strategy: 'mobile',  // optional
+threshold: 80        // optional
+</code></pre>
+
+<p>});
+```</p>
+
+<p><strong>On CLI:</strong></p>
+
+<p>```sh
+$ psi http://nmotw.in --strategy desktop
+Running Pagespeed Insights
+Pagespeed Insights: Processing results</p>
+
+<hr />
+
+<p>URL:      http://nmotw.in/
+Strategy: desktop
+Score:    90</p>
+
+<hr />
+
+<p>Number Resources                                 | 16
+Number Hosts                                     | 7
+Total Request Bytes                              | 1538
+Number Static Resources                          | 8
+Html Response Bytes                              | 7019
+Css Response Bytes                               | 17484
+Image Response Bytes                             | 384
+Javascript Response Bytes                        | 228348
+Other Response Bytes                             | 221982
+Number Js Resources                              | 5
+Number Css Resources                             | 3</p>
+
+<hr />
+
+<p>Avoid Landing Page Redirects                     | 0
+Enable Gzip Compression                          | 0
+Leverage Browser Caching                         | 1.5
+Main Resource Server Response Time               | 0
+Minify Css                                       | 0
+Minify HTML                                      | 0
+Minify Java Script                               | 0.16
+Minimize Render Blocking Resources               | 8
+Optimize Images                                  | 0
+Prioritize Visible Content                       | 0</p>
+
+<hr />
+
+<p>```</p>
+
+<p>If you have bunch of sites to analyse you could something like:
+<code>sh
+cat links | xargs -L1 psi &gt; analysis.report
+</code></p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/psi/psi.gif" alt="psi" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[time-require]]></title>
+    <link href="http://nmotw.in//github/time-require/"/>
+    <updated>2014-05-22T16:56:56+00:00</updated>
+    <id>http://nmotw.in//github/time-require</id>
+    <content type="html"><![CDATA[<p>Were you looking for the stats of how long the require statements took in your scripts?</p>
+
+<p>It's time to use (time-require)[https://www.npmjs.org/package/time-require] a node module that displays the execution time for Node.js modules loading by hooking and tracing all require() calls.</p>
+
+<p><strong>Example Usage:</strong></p>
+
+<p>```sh
+$ cat > time-require
+require("time-require");
+^C</p>
+
+<p>$ node time-require</p>
+
+<p>Start time: (2014-05-22 16:56:02 UTC) [treshold=1%]</p>
+
+<h1>module                          time  %</h1>
+
+<p>1  text-table (.....ble/index.js)  40ms  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 51%
+2  date-time (../...ime/index.js)   5ms  ▇▇ 6%
+3  parse-ms (../n...-ms/index.js)  10ms  ▇▇▇▇ 13%
+4  pretty-ms (../...-ms/index.js)  12ms  ▇▇▇▇▇ 15%
+5  ansi-styles (....si-styles.js)  10ms  ▇▇▇▇ 13%
+6  strip-ansi (.....nsi/index.js)   5ms  ▇▇ 6%
+7  has-color (../...lor/index.js)   1ms  ▇ 1%
+8  chalk (../node...alk/index.js)  20ms  ▇▇▇▇▇▇▇▇ 26%
+Total require(): 8
+Total time: 78ms
+```</p>
+
+<p>This module makes use of a require (hook)[https://github.com/jaguard/time-require/blob/master/src/requireHook.js#L71] which is loaded as the first module so all the other requires gets counted, unhooks and then prints out a neat table with the <code>totalTime = Date.now() - startTime.getTime();</code> and the number of modules that were required.</p>
+
+<p>Thanks to the module author <a href="http://jaguard.com">Ciprian Popa</a></p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/time-require/time-require.gif" alt="time-require" /></p>
+]]></content>
+  </entry>
+  
+</feed>

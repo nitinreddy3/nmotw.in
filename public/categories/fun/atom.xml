@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: fun | NMOTW]]></title>
+  <link href="http://nmotw.in//github/public/categories/fun/atom.xml" rel="self"/>
+  <link href="http://nmotw.in//github/"/>
+  <updated>2015-03-05T13:43:56+00:00</updated>
+  <id>http://nmotw.in//github/</id>
+  <author>
+    <name><![CDATA[Hemanth.HM]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[sentencer]]></title>
+    <link href="http://nmotw.in//github/sentencer/"/>
+    <updated>2015-02-19T13:45:03+00:00</updated>
+    <id>http://nmotw.in//github/sentencer</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/sentencer">sentencer</a></h1>
+
+<blockquote><p>Templating engine for madlibs-style sentence generating.</p></blockquote>
+
+<p>Create crazy sentences with <code>nouns</code>, <code>adjectives</code> and your own randomness!</p>
+
+<p><code>Sentencer</code> was written for and powers <a href="http://metaphorpsum.com">Metaphorpsum</a>. The noun and adjective lists for form -> <a href="http://www.ashley-bovan.co.uk/words/partsofspeech.html">Word Lists for Writers</a>.</p>
+
+<p><strong>Install it:</strong> <code>npm install sentencer --save</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```js</p>
+
+<p>const Sentencer = require('sentencer');</p>
+
+<p>let str = " A  jumped over ";</p>
+
+<p>Sentencer.make(str); //' A agreement jumped over a sprightful'</p>
+
+<p>Sentencer.make(str); // ' A shrine jumped over a wordless'</p>
+
+<p>str = "  jumped over ";</p>
+
+<p>Sentencer.make(str); // ' an instruction jumped over a scabrous'
+Sentencer.make(str); // ' a thistle jumped over a shapely'</p>
+
+<p>```</p>
+
+<p><strong>Define custom actions:</strong></p>
+
+<p>```js
+Sentencer.configure({
+  actions: {</p>
+
+<pre><code>rand: function() {
+  return Math.floor( Math.random()  * 10 );
+}
+</code></pre>
+
+<p>  }
+});</p>
+
+<p>Sentencer.make("I like "); // 'I like 7'
+```</p>
+
+<p><strong>GIF FTW:</strong></p>
+
+<p><img src="/images/sentencer/sentencer.gif" alt="sentencer" /></p>
+
+<p>Thanks to <a href="https://twitter.com/kylestetz">@kylestetz</a> for this fun module! (:</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[http-teapot]]></title>
+    <link href="http://nmotw.in//github/http-teapot/"/>
+    <updated>2014-10-16T13:23:28+00:00</updated>
+    <id>http://nmotw.in//github/http-teapot</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.org/package/http-teapot">http-teapot</a></h1>
+
+<p>Add support for <a href="https://www.ietf.org/rfc/rfc2324.txt">RFC 2324</a> to any HTTP server.</p>
+
+<p>P.S:  Hyper Text Coffee Pot Control Protocol (HTCPCP/1.0) was a April fools RFC ;) HTTP status code <code>418</code>.</p>
+
+<p>BTW if you are wondering why this made in to this list, <code>http-teapot</code> module is the 100,000th module to npm today!</p>
+
+<blockquote class="twitter-tweet" lang="en"><p>congrats to <a href="https://twitter.com/wa7son">@wa7son</a> who published the 100,000th module to npm today, a http 418 teapot protocol implementation <a href="http://t.co/ckKrSizu9Q">pic.twitter.com/ckKrSizu9Q</a></p>&mdash; maxwell ogden (@maxogden) <a href="https://twitter.com/maxogden/status/522413667782914048">October 15, 2014</a></blockquote>
+
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<h2>Installation</h2>
+
+<p><code>sh
+npm install http-teapot
+</code></p>
+
+<h2>Usage</h2>
+
+<p>Just add http-teapot as a routing function.</p>
+
+<p>Express example:</p>
+
+<p>```javascript
+var teapot = require('http-teapot');
+var express = require('express');
+var app = express();</p>
+
+<p>app.get('/teapot', teapot);</p>
+
+<p>app.listen(3000);
+```</p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/http-teapot/http-teapot.gif" alt="http-teapot" /></p>
+
+<p>Thanks to <a href="https://github.com/watson">Thomas Watson Steen</a> for implementing this RFC and giving us a teapot image ;)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[rhyme]]></title>
+    <link href="http://nmotw.in//github/rhyme/"/>
+    <updated>2014-05-01T08:04:59+00:00</updated>
+    <id>http://nmotw.in//github/rhyme</id>
+    <content type="html"><![CDATA[<p>Out of all the awesome module that <a href="https://www.npmjs.org/~substack">James Halliday</a> A.K.A <a href="http://substack.net/">substack</a> has authored a module named <a href="https://github.com/substack/node-rhyme">rhyme</a> a rhyming dictionary! This made it to the nmotw list ;)</p>
+
+<p>The module makes use of CMU dictionary's <a href="https://cmusphinx.svn.sourceforge.net/svnroot/cmusphinx/trunk/cmudict/cmudict.0.7a">data</a> and picks up pronounce, syllables and plays around lazily to generate rhyming words for a given word.</p>
+
+<p><strong>Example Usage:</strong></p>
+
+<p>```javascript
+var rhyme = require('rhyme');</p>
+
+<p>rhyme(function(r) {
+  console.log(r.rhyme('rhyme').join(' '));
+});
+```</p>
+
+<p><code>sh
+$ node why.js
+BEIM CHIME CLIMB CRIME DIME GRIME HAIM HEIM HIME I'M KIME LIME LYME MIME PRIME SEIM SIME SLIME SYME THYME TIME
+</code></p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/rhyme/rhyme.gif" alt="rhyme" /></p>
+
+<p><strong>Real coders use <code>cat</code> ;)?</strong></p>
+
+<p>Keep rhyming till next week!</p>
+]]></content>
+  </entry>
+  
+</feed>

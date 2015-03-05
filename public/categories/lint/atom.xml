@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: lint | NMOTW]]></title>
+  <link href="http://nmotw.in//github/public/categories/lint/atom.xml" rel="self"/>
+  <link href="http://nmotw.in//github/"/>
+  <updated>2015-03-05T13:43:56+00:00</updated>
+  <id>http://nmotw.in//github/</id>
+  <author>
+    <name><![CDATA[Hemanth.HM]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[nsp]]></title>
+    <link href="http://nmotw.in//github/nsp/"/>
+    <updated>2015-01-22T13:33:18+00:00</updated>
+    <id>http://nmotw.in//github/nsp</id>
+    <content type="html"><![CDATA[<h1><a href="http://npm.im/nsp/">nsp</a> aka: <a href="http://nodesecurity.io">Node Security Project</a></h1>
+
+<blockquote><p>Check if your Node.js projects are using packages with known and public vulnerable dependencies, using NSP DB.</p></blockquote>
+
+<p><strong>Install it:</strong> <code>npm install -g nsp</code></p>
+
+<p><strong>Usage:</strong></p>
+
+<p>```sh
+nmotw.in> nsp</p>
+
+<p>Usage: [command] --arg=value --arg2</p>
+
+<p>Help:
+  help              Show help menu
+  [cmd] help        Show command help menu</p>
+
+<p>Options:
+  version           shows the current version of nsp
+  shrinkwrap        alias to audit-shrinkwrap
+  audit-shrinkwrap  audits your <code>npm shrinkwrap</code> against NSP db
+  package           alias to audit-package
+  audit-package     audits your package.json against NSP db
+```</p>
+
+<p>```sh
+nmotw.in> cat package.json
+{
+  "name": "test",
+  "version": "0.0.1",
+  "author": "Node Security Project",
+  "dependencies": {</p>
+
+<pre><code>"node-print": "0.0.4",
+"request": "^2.40.0",
+"qs": "^0.5"
+</code></pre>
+
+<p>  }
+}</p>
+
+<p>nmotw.in> nsp package
+Name  Installed  Patched  Vulnerable Dependency
+qs      0.5.6     >= 1.x  test@0.0.1 > qs@0.5.6
+```</p>
+
+<p>The same can be used for auditing <a href="https://docs.npmjs.com/cli/shrinkwrap">shrinkwrap</a>.</p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/nsp/nsp.gif" alt="nsp" /></p>
+
+<p>Thanks to the <a href="https://twitter.com/nodesecurity">nodesecurity</a> for making security easy!</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: es6 | NMOTW]]></title>
+  <link href="http://nmotw.in//github/public/categories/es6/atom.xml" rel="self"/>
+  <link href="http://nmotw.in//github/"/>
+  <updated>2015-03-05T13:43:56+00:00</updated>
+  <id>http://nmotw.in//github/</id>
+  <author>
+    <name><![CDATA[Hemanth.HM]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[objectmap]]></title>
+    <link href="http://nmotw.in//github/objectmap/"/>
+    <updated>2015-02-05T14:03:17+00:00</updated>
+    <id>http://nmotw.in//github/objectmap</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/mapobject">mapobject</a></h1>
+
+<blockquote><p>Use a ES6 map, like an object.</p></blockquote>
+
+<p>This module is one of those rare hidden gems in npm, it's already a year old, it makes uses of ES6 reflect API with proxy to make give us a convience method so that maps can be used like an Object.</p>
+
+<p>What other advantages apart from syntax sugar?</p>
+
+<ul>
+<li><p>Iterate it like a regular object with <code>(for in)</code> without worrying about <code>hasOwnProperty</code> checks.</p></li>
+<li><p>Iterate it <code>(for of)</code> you will get arrays of length 2 of both keys and values.</p></li>
+</ul>
+
+
+<p><strong>Install it:</strong> <code>npm install --save objectmap</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```js</p>
+
+<p>var oMap = require('objectmap');</p>
+
+<p>var map = oMap();</p>
+
+<p>map.answer = 42; // Same as <code>map.set('answer',42);</code></p>
+
+<p>map.answer; // Same as <code>map.get('abc');</code></p>
+
+<p>delete map.abc; // Same as <code>map.delete('abc');</code></p>
+
+<p>```</p>
+
+<p>Caveat: <code>map[3]</code> implies <code>map.set('3')</code> not <code>map.set(3)</code></p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/objectmap/objectmap.gif" alt="" /></p>
+
+<p>Thanks to <a href="http://calvinmetcalf.com">Calvin</a> for this useful util :)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[degenerator]]></title>
+    <link href="http://nmotw.in//github/degenerator/"/>
+    <updated>2014-05-29T14:52:17+00:00</updated>
+    <id>http://nmotw.in//github/degenerator</id>
+    <content type="html"><![CDATA[<p>Turns sync functions into ES6's async generator functions with <a href="http://n8.io/">Nathan Rajlich's</a> (A.K.A TooTallNate) <a href="https://www.npmjs.org/package/degenerator">degenerator</a></p>
+
+<p>Get it: <code>$ npm install degenerator</code></p>
+
+<p><strong>Example Usage:</strong></p>
+
+<p>Say we have few sync function like:</p>
+
+<p>```javascript
+function foo () {
+  return baz();
+}</p>
+
+<p>function bar () {
+  return foo(baz);
+}</p>
+
+<p>function baz () {
+  return bar();
+}
+```</p>
+
+<p>Some degenerator magic!</p>
+
+<p><code>javascript
+var degenerator = require('degenerator')
+var js = fs.readFileSync(sourceName, 'utf8');
+var compiled = (js, ['foo','bar','baz']);
+</code></p>
+
+<p>The complied source would be:</p>
+
+<p>```javascript
+function* foo() {</p>
+
+<pre><code>return yield baz();
+</code></pre>
+
+<p>}
+function* bar() {</p>
+
+<pre><code>return yield foo(baz);
+</code></pre>
+
+<p>}
+function* baz() {</p>
+
+<pre><code>return yield bar();
+</code></pre>
+
+<p>}
+```</p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/degenerator/degenerator.gif" alt="degnerator" /></p>
+]]></content>
+  </entry>
+  
+</feed>

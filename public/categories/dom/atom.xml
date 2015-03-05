@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: dom | NMOTW]]></title>
+  <link href="http://nmotw.in//github/public/categories/dom/atom.xml" rel="self"/>
+  <link href="http://nmotw.in//github/"/>
+  <updated>2015-03-05T13:43:56+00:00</updated>
+  <id>http://nmotw.in//github/</id>
+  <author>
+    <name><![CDATA[Hemanth.HM]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[dompurify]]></title>
+    <link href="http://nmotw.in//github/dompurify/"/>
+    <updated>2015-03-05T13:17:23+00:00</updated>
+    <id>http://nmotw.in//github/dompurify</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/dompurify">dompurify</a></h1>
+
+<blockquote><p>Super-fast, uber-tolerant XSS sanitizer for HTML, MathML and SVG!</p></blockquote>
+
+<p>DOMPurify sanitizes HTML and prevents XSS attacks.</p>
+
+<p>|dirty HTML |  => |DOMPurify.sanitize |  => | Clean and safe HTML |</p>
+
+<p>The faster your browser, the faster DOMPurify will be ;)</p>
+
+<p><strong>Install it:</strong>  <code>npm install --save dompurify</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```js</p>
+
+<p>var DOMpurify = require('dompurify);</p>
+
+<p>DOMPurify.sanitize('<img src=x onerror=alert(1)//>'); // becomes <img src="x"></p>
+
+<p>DOMPurify.sanitize('<svg>&lt;g/onload=alert(2)//<p>'); // becomes <svg><g></g></svg></p>
+
+<p>```</p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/dompurify/dompurify.gif" alt="dompurify" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[dom-event]]></title>
+    <link href="http://nmotw.in//github/dom-event/"/>
+    <updated>2015-02-26T12:48:25+00:00</updated>
+    <id>http://nmotw.in//github/dom-event</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/dom-event">dom-event</a></h1>
+
+<blockquote><p>Add/remove DOM events</p></blockquote>
+
+<p>Sweet and simple module that helps you to attach and remove events to a DOM element with ease and cross browser compliance all in just 15 lines of code ;)</p>
+
+<p><strong>Add event:</strong></p>
+
+<p><code>js
+function on (element, event, callback, capture) {
+  !element.addEventListener &amp;&amp; (event = 'on' + event);
+  (element.addEventListener || element.attachEvent)(event, callback, capture);
+  return callback;
+}
+</code>
+<strong>Remove event:</strong></p>
+
+<p><code>js
+function off (element, event, callback, capture) {
+  !element.removeEventListener &amp;&amp; (event = 'on' + event);
+  (element.removeEventListener || element.detachEvent)(event, callback, capture);
+  return callback;
+}
+</code></p>
+
+<p><strong>Install it:</strong> <code>npm install dom-event</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```js
+var on = require('dom-event');
+var off = on.off; // :)</p>
+
+<p>on(document.body, "click", hello);</p>
+
+<p>function hello() {alert("hello");}</p>
+
+<p>off(document.body, "click", hello); // No alerts :)
+```</p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/dom-event/dom-event.gif" alt="dom-event" /></p>
+
+<p>P.S: All Web realted modules would need help from <a href="http://browserify.org/">browserify</a> or related tools to run on the web.</p>
+]]></content>
+  </entry>
+  
+</feed>

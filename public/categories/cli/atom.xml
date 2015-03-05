@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: cli | NMOTW]]></title>
+  <link href="http://nmotw.in//github/public/categories/cli/atom.xml" rel="self"/>
+  <link href="http://nmotw.in//github/"/>
+  <updated>2015-03-05T13:43:56+00:00</updated>
+  <id>http://nmotw.in//github/</id>
+  <author>
+    <name><![CDATA[Hemanth.HM]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[nsp]]></title>
+    <link href="http://nmotw.in//github/nsp/"/>
+    <updated>2015-01-22T13:33:18+00:00</updated>
+    <id>http://nmotw.in//github/nsp</id>
+    <content type="html"><![CDATA[<h1><a href="http://npm.im/nsp/">nsp</a> aka: <a href="http://nodesecurity.io">Node Security Project</a></h1>
+
+<blockquote><p>Check if your Node.js projects are using packages with known and public vulnerable dependencies, using NSP DB.</p></blockquote>
+
+<p><strong>Install it:</strong> <code>npm install -g nsp</code></p>
+
+<p><strong>Usage:</strong></p>
+
+<p>```sh
+nmotw.in> nsp</p>
+
+<p>Usage: [command] --arg=value --arg2</p>
+
+<p>Help:
+  help              Show help menu
+  [cmd] help        Show command help menu</p>
+
+<p>Options:
+  version           shows the current version of nsp
+  shrinkwrap        alias to audit-shrinkwrap
+  audit-shrinkwrap  audits your <code>npm shrinkwrap</code> against NSP db
+  package           alias to audit-package
+  audit-package     audits your package.json against NSP db
+```</p>
+
+<p>```sh
+nmotw.in> cat package.json
+{
+  "name": "test",
+  "version": "0.0.1",
+  "author": "Node Security Project",
+  "dependencies": {</p>
+
+<pre><code>"node-print": "0.0.4",
+"request": "^2.40.0",
+"qs": "^0.5"
+</code></pre>
+
+<p>  }
+}</p>
+
+<p>nmotw.in> nsp package
+Name  Installed  Patched  Vulnerable Dependency
+qs      0.5.6     >= 1.x  test@0.0.1 > qs@0.5.6
+```</p>
+
+<p>The same can be used for auditing <a href="https://docs.npmjs.com/cli/shrinkwrap">shrinkwrap</a>.</p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/nsp/nsp.gif" alt="nsp" /></p>
+
+<p>Thanks to the <a href="https://twitter.com/nodesecurity">nodesecurity</a> for making security easy!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[tldr]]></title>
+    <link href="http://nmotw.in//github/tldr/"/>
+    <updated>2014-12-04T12:29:16+00:00</updated>
+    <id>http://nmotw.in//github/tldr</id>
+    <content type="html"><![CDATA[<h1><a href="https://github.com/tldr-pages/tldr">tldr</a></h1>
+
+<p>If you are new to CLI or not able to recall the flags of your CLI tool, you would consult <code>man pages</code>.</p>
+
+<p><code>tldr</code> is "Too Long Didn't Read" version of man pages ;) i.e it shows us the common usages of a given command.</p>
+
+<p><code>tldr</code> covers:</p>
+
+<ul>
+<li><p>Common commands.</p></li>
+<li><p>GNU/Linux.</p></li>
+<li><p>OSX.</p></li>
+<li><p>SunOS.</p></li>
+</ul>
+
+
+<p><strong>Install it as a CLI app:</strong> <code>$ npm install -g tldr</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```sh</p>
+
+<p>$ tldr sudo</p>
+
+<p>  execute a command as another user</p>
+
+<ul>
+<li>Listing of an unreadable directory:</li>
+</ul>
+
+
+<p>  sudo ls /usr/local/scrt</p>
+
+<ul>
+<li>To edit a file as user www:</li>
+</ul>
+
+
+<p>  sudo -u www vi /var/www/index.html</p>
+
+<ul>
+<li>To shutdown the machine:</li>
+</ul>
+
+
+<p>  sudo shutdown -r +10 "Cya soon!"</p>
+
+<ul>
+<li>To repeat the last command as sudo</li>
+</ul>
+
+
+<p>  sudo !!</p>
+
+<p>```</p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/tldr/tldr.gif" alt="tldr" /></p>
+
+<p>All TLDR pages are in <code>markdown</code> format, checkout <a href="https://github.com/tldr-pages/tldr/blob/master/pages/common/sudo.md">sudo</a> page for an example, this is a community dirven effort, so please feel free to <a href="https://github.com/tldr-pages/tldr/blob/master/CONTRIBUTING.md">contribute</a> :)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[npm-check-updates]]></title>
+    <link href="http://nmotw.in//github/npm-check-updates/"/>
+    <updated>2014-11-20T14:52:16+00:00</updated>
+    <id>http://nmotw.in//github/npm-check-updates</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.org/package/npm-check-updates">npm-check-updates</a></h1>
+
+<p>Finding all updates to dependencies and updating them is very easy with <code>npm-check-updates</code>.</p>
+
+<p><strong>Install it globally:</strong> <code>npm install -g npm-check-updates</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```sh
+$ npm-check-updates
+npm http GET http://registry.npmjs.org/read-chunk
+npm http GET http://registry.npmjs.org/mocha
+npm http GET http://registry.npmjs.org/browserify
+npm http 304 http://registry.npmjs.org/browserify
+npm http 304 http://registry.npmjs.org/read-chunk
+npm http 304 http://registry.npmjs.org/mocha</p>
+
+<p>"browserify" can be updated from ^3.0.0 to ^6.3.2 (Installed: 3.44.2, Latest: 6.3.2)
+"read-chunk" can be updated from ^0.1.0 to ^1.0.0 (Installed: 0.1.0, Latest: 1.0.0)
+<code>
+</code>sh
+$ npm-check-updates -u</p>
+
+<p>"browserify" can be updated from ^3.0.0 to ^6.3.2 (Installed: 3.44.2, Latest: 6.3.2)
+"read-chunk" can be updated from ^0.1.0 to ^1.0.0 (Installed: 0.1.0, Latest: 1.0.0)</p>
+
+<p>package.json upgraded</p>
+
+<p>$ npm-check-updates</p>
+
+<p>All dependencies match the latest package versions :)</p>
+
+<p>```</p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/npm-check-updates/npm-check-updates.gif" alt="" /></p>
+
+<p>Thanks to Tomas Junnonen for this cute little util.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[npm-clone]]></title>
+    <link href="http://nmotw.in//github/npm-clone/"/>
+    <updated>2014-10-30T12:59:03+00:00</updated>
+    <id>http://nmotw.in//github/npm-clone</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.org/package/npm-clone">npm-clone</a></h1>
+
+<p>This is a CLI util that will help you to:</p>
+
+<ul>
+<li><p>Clone a node module from it's name.</p></li>
+<li><p>Install all the dependencies.</p></li>
+<li><p>Run its tests!</p></li>
+</ul>
+
+
+<p><strong>Get it:</strong> <code>npm install -g npm-clone</code></p>
+
+<p><strong>Usage example:</strong></p>
+
+<p>```sh</p>
+
+<h1>clone a node module</h1>
+
+<p>npm-clone is-mp3</p>
+
+<h1>clone using its private url</h1>
+
+<p>npm-clone --ssh is-mp3
+npm-clone --https is-mp3</p>
+
+<h1>clone and install dependencies</h1>
+
+<p>npm-clone install is-mp3</p>
+
+<h1>clone, install dependencies and run its tests</h1>
+
+<p>npm-clone install test is-mp3</p>
+
+<h1>with a short form</h1>
+
+<p>npm-clone all is-mp3</p>
+
+<h1>flags still apply</h1>
+
+<p>npm-clone --ssh all is-mp3</p>
+
+<p>```</p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/npm-clone/npm-clone.gif" alt="npm-clone" /></p>
+
+<p>Thanks to <a href="http://juliangruber.com/">Julian Gruber</a> for this helper! :)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[progress]]></title>
+    <link href="http://nmotw.in//github/progress/"/>
+    <updated>2014-10-02T14:29:44+00:00</updated>
+    <id>http://nmotw.in//github/progress</id>
+    <content type="html"><![CDATA[<h1>progress</h1>
+
+<blockquote><p>Flexible ascii progress bar.</p></blockquote>
+
+<p><strong>Install it:</strong> <code>npm install progress</code></p>
+
+<p><strong>Example usage:</strong></p>
+
+<ul>
+<li>Create a ProgressBar.</li>
+<li>Give it a format string.</li>
+<li>Give the total, telling the progress bar when to stop!</li>
+<li>Finally do tick() appropriately.</li>
+</ul>
+
+
+<p>```javascript
+var ProgressBar = require('progress');</p>
+
+<p>var bar = new ProgressBar(':bar', { total: 10 });
+var timer = setInterval(function () {
+  bar.tick();
+  if (bar.complete) {</p>
+
+<pre><code>console.log('\ncomplete\n');
+clearInterval(timer);
+</code></pre>
+
+<p>  }
+}, 100);
+```</p>
+
+<h3>Options</h3>
+
+<p>These are keys in the options object you can pass to the progress bar along with
+<code>total</code> as seen in the example above.</p>
+
+<ul>
+<li><code>total</code> total number of ticks to complete</li>
+<li><code>width</code> the displayed width of the progress bar defaulting to total</li>
+<li><code>stream</code> the output stream defaulting to stderr</li>
+<li><code>complete</code> completion character defaulting to "="</li>
+<li><code>incomplete</code> incomplete character defaulting to "-"</li>
+<li><code>clear</code> option to clear the bar on completion defaulting to false</li>
+<li><code>callback</code> optional function to call when the progress bar completes</li>
+</ul>
+
+
+<h3>Tokens</h3>
+
+<p>These are tokens you can use in the format of your progress bar.</p>
+
+<ul>
+<li><code>:bar</code> the progress bar itself</li>
+<li><code>:current</code> current tick number</li>
+<li><code>:total</code> total ticks</li>
+<li><code>:elapsed</code> time elapsed in seconds</li>
+<li><code>:percent</code> completion percentage</li>
+<li><code>:eta</code> estimated completion time in seconds</li>
+</ul>
+
+
+<p>Do checkout their <a href="https://github.com/visionmedia/node-progress/tree/master/examples">examples</a> folder.</p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/progress/progress.gif" alt="" /></p>
+
+<p>Thanks to <a href="http://tjholowaychuk.com/">TJ</a> and rest of the maintainers for <a href="https://github.com/visionmedia/node-progress">node-progress</a>!</p>
+]]></content>
+  </entry>
+  
+</feed>
