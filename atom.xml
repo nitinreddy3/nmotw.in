@@ -4,7 +4,7 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-03-05T13:55:41+00:00</updated>
+  <updated>2015-03-05T14:05:24+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -41,6 +41,29 @@
 </span><span class='line'><span class="s1">DOMPurify.sanitize(&#39;</span><span class="o">&lt;</span><span class="nx">img</span> <span class="nx">src</span><span class="o">=</span><span class="nx">x</span> <span class="nx">onerror</span><span class="o">=</span><span class="nx">alert</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="c1">//&gt;&#39;); // becomes &lt;img src=&quot;x&quot;&gt; </span>
 </span><span class='line'>
 </span><span class='line'><span class="nx">DOMPurify</span><span class="p">.</span><span class="nx">sanitize</span><span class="p">(</span><span class="s1">&#39;&lt;svg&gt;&lt;g/onload=alert(2)//&lt;p&gt;&#39;</span><span class="p">);</span> <span class="c1">// becomes &lt;svg&gt;&lt;g&gt;&lt;/g&gt;&lt;/svg&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>It&#8217;s configurable: <code>var config = { ALLOWED_TAGS: ['p', '#text'], KEEP_CONTENT: false };</code> and <code>DOMPurify.sanitize(str, config)</code></p>
+
+<p>We can also use <code>hooks</code>:</p>
+
+<ul>
+<li><p>beforeSantitizeElements</p></li>
+<li><p>afterSantitizeElements</p></li>
+<li><p>beforeSantitizeAttributes</p></li>
+<li><p>afterSantitizeAttributes</p></li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">DOMPurify</span><span class="p">.</span><span class="nx">addHook</span><span class="p">(</span><span class="s1">&#39;beforeSantitizeElements&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">currentNode</span><span class="p">,</span> <span class="nx">config</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="c1">// Play with currentNode.</span>
+</span><span class='line'>    <span class="k">return</span> <span class="nx">currentNode</span><span class="p">;</span>
+</span><span class='line'><span class="p">});</span>
 </span></code></pre></td></tr></table></div></figure>
 
 

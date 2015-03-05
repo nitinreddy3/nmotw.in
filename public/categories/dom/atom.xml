@@ -4,7 +4,7 @@
   <title><![CDATA[Category: dom | NMOTW]]></title>
   <link href="http://nmotw.in//github/public/categories/dom/atom.xml" rel="self"/>
   <link href="http://nmotw.in//github/"/>
-  <updated>2015-03-05T13:55:41+00:00</updated>
+  <updated>2015-03-05T14:05:24+00:00</updated>
   <id>http://nmotw.in//github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -41,6 +41,28 @@
 <p>DOMPurify.sanitize('<svg>&lt;g/onload=alert(2)//<p>'); // becomes <svg><g></g></svg></p>
 
 <p>```</p>
+
+<p>It's configurable: <code>var config = { ALLOWED_TAGS: ['p', '#text'], KEEP_CONTENT: false };</code> and <code>DOMPurify.sanitize(str, config)</code></p>
+
+<p>We can also use <code>hooks</code>:</p>
+
+<ul>
+<li><p>beforeSantitizeElements</p></li>
+<li><p>afterSantitizeElements</p></li>
+<li><p>beforeSantitizeAttributes</p></li>
+<li><p>afterSantitizeAttributes</p></li>
+</ul>
+
+
+<p>```js
+DOMPurify.addHook('beforeSantitizeElements', function(currentNode, config) {</p>
+
+<pre><code>// Play with currentNode.
+return currentNode;
+</code></pre>
+
+<p>});
+```</p>
 
 <p><strong>GIF FTW!</strong></p>
 
