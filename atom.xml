@@ -4,7 +4,7 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-03-12T15:56:33+00:00</updated>
+  <updated>2015-03-12T16:01:55+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -17,7 +17,7 @@
     <link href="http://nmotw.in/confirm-simple/"/>
     <updated>2015-03-12T15:24:10+00:00</updated>
     <id>http://nmotw.in/confirm-simple</id>
-    <content type="html"><![CDATA[<h1><a href="http://nmp.im/confirm-simple">confirm-simple</a></h1>
+    <content type="html"><![CDATA[<h1><a href="http://npm.im/confirm-simple">confirm-simple</a></h1>
 
 <blockquote><p>A simple command-line tool to confirm.</p></blockquote>
 
@@ -53,6 +53,8 @@
 <p><strong>GIF FTW!</strong></p>
 
 <p><img src="http://nmotw.in/images/confirm-simple/confirm-simple.gif" alt="" /></p>
+
+<p>Thanks to YouBao Nong for <code>confirm-simple</code>.</p>
 ]]></content>
   </entry>
   
