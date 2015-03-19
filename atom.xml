@@ -4,7 +4,7 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-03-19T12:33:30+00:00</updated>
+  <updated>2015-03-19T12:37:47+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -71,6 +71,8 @@
 <p><strong>GIF FTW!</strong></p>
 
 <p><img src="http://nmotw.in/images/did-you-mean/did-you-mean.gif" alt="did-you-mean" /></p>
+
+<p>Thanks to Boris Okunskiy for bringing <code>did-you-mean</code> to web and CLI.</p>
 ]]></content>
   </entry>
   
