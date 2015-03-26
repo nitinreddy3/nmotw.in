@@ -4,7 +4,7 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-03-26T13:48:48+00:00</updated>
+  <updated>2015-03-26T13:53:58+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -101,6 +101,8 @@
 </span><span class='line'>       <span class="nx">__ends</span><span class="o">:</span> <span class="mi">19</span> <span class="p">}</span> <span class="p">]</span> <span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
 
+
+<p>Thanks to <a href="http://n12v.com/">Nikita Vasilyev</a> for this early implementation of <code>cssom</code> (:</p>
 
 <p><strong>GIF FTW!</strong></p>
 
