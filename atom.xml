@@ -4,13 +4,109 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-03-19T12:37:47+00:00</updated>
+  <updated>2015-03-26T13:48:48+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[cssom]]></title>
+    <link href="http://nmotw.in/cssom/"/>
+    <updated>2015-03-26T13:35:30+00:00</updated>
+    <id>http://nmotw.in/cssom</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/cssom">cssom</a></h1>
+
+<blockquote><p>CSS Object Model implementation and CSS parser.</p></blockquote>
+
+<p><code>cssom</code> is parser written in pure javascript, it also has partially implemented of <a href="http://dev.w3.org/csswg/cssom/">CSS Object Model</a>, works across node/io.js and modren browsers.</p>
+
+<p><strong>Install it:</strong> <code>npm install cssom --save</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="o">&gt;</span> <span class="nx">cssom</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;cssom&#39;</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span> <span class="nx">CSSStyleDeclaration</span><span class="o">:</span> <span class="p">[</span><span class="nb">Function</span><span class="o">:</span> <span class="nx">CSSStyleDeclaration</span><span class="p">],</span>
+</span><span class='line'>  <span class="nx">CSSRule</span><span class="o">:</span>
+</span><span class='line'>   <span class="p">{</span> <span class="p">[</span><span class="nb">Function</span><span class="o">:</span> <span class="nx">CSSRule</span><span class="p">]</span>
+</span><span class='line'>     <span class="nx">STYLE_RULE</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+</span><span class='line'>     <span class="nx">IMPORT_RULE</span><span class="o">:</span> <span class="mi">3</span><span class="p">,</span>
+</span><span class='line'>     <span class="nx">MEDIA_RULE</span><span class="o">:</span> <span class="mi">4</span><span class="p">,</span>
+</span><span class='line'>     <span class="nx">FONT_FACE_RULE</span><span class="o">:</span> <span class="mi">5</span><span class="p">,</span>
+</span><span class='line'>     <span class="nx">PAGE_RULE</span><span class="o">:</span> <span class="mi">6</span><span class="p">,</span>
+</span><span class='line'>     <span class="nx">WEBKIT_KEYFRAMES_RULE</span><span class="o">:</span> <span class="mi">8</span><span class="p">,</span>
+</span><span class='line'>     <span class="nx">WEBKIT_KEYFRAME_RULE</span><span class="o">:</span> <span class="mi">9</span> <span class="p">},</span>
+</span><span class='line'>  <span class="nx">CSSStyleRule</span><span class="o">:</span> <span class="p">{</span> <span class="p">[</span><span class="nb">Function</span><span class="o">:</span> <span class="nx">CSSStyleRule</span><span class="p">]</span> <span class="nx">parse</span><span class="o">:</span> <span class="p">[</span><span class="nb">Function</span><span class="p">]</span> <span class="p">},</span>
+</span><span class='line'>  <span class="nx">MediaList</span><span class="o">:</span> <span class="p">[</span><span class="nb">Function</span><span class="o">:</span> <span class="nx">MediaList</span><span class="p">],</span>
+</span><span class='line'>  <span class="nx">CSSMediaRule</span><span class="o">:</span> <span class="p">[</span><span class="nb">Function</span><span class="o">:</span> <span class="nx">CSSMediaRule</span><span class="p">],</span>
+</span><span class='line'>  <span class="nx">CSSImportRule</span><span class="o">:</span> <span class="p">[</span><span class="nb">Function</span><span class="o">:</span> <span class="nx">CSSImportRule</span><span class="p">],</span>
+</span><span class='line'>  <span class="nx">CSSFontFaceRule</span><span class="o">:</span> <span class="p">[</span><span class="nb">Function</span><span class="o">:</span> <span class="nx">CSSFontFaceRule</span><span class="p">],</span>
+</span><span class='line'>  <span class="nx">StyleSheet</span><span class="o">:</span> <span class="p">[</span><span class="nb">Function</span><span class="o">:</span> <span class="nx">StyleSheet</span><span class="p">],</span>
+</span><span class='line'>  <span class="nx">CSSStyleSheet</span><span class="o">:</span> <span class="p">[</span><span class="nb">Function</span><span class="o">:</span> <span class="nx">CSSStyleSheet</span><span class="p">],</span>
+</span><span class='line'>  <span class="nx">CSSKeyframesRule</span><span class="o">:</span> <span class="p">[</span><span class="nb">Function</span><span class="o">:</span> <span class="nx">CSSKeyframesRule</span><span class="p">],</span>
+</span><span class='line'>  <span class="nx">CSSKeyframeRule</span><span class="o">:</span> <span class="p">[</span><span class="nb">Function</span><span class="o">:</span> <span class="nx">CSSKeyframeRule</span><span class="p">],</span>
+</span><span class='line'>  <span class="nx">MatcherList</span><span class="o">:</span> <span class="p">[</span><span class="nb">Function</span><span class="o">:</span> <span class="nx">MatcherList</span><span class="p">],</span>
+</span><span class='line'>  <span class="nx">CSSDocumentRule</span><span class="o">:</span> <span class="p">[</span><span class="nb">Function</span><span class="o">:</span> <span class="nx">CSSDocumentRule</span><span class="p">],</span>
+</span><span class='line'>  <span class="nx">CSSValue</span><span class="o">:</span> <span class="p">[</span><span class="nb">Function</span><span class="o">:</span> <span class="nx">CSSValue</span><span class="p">],</span>
+</span><span class='line'>  <span class="nx">CSSValueExpression</span><span class="o">:</span> <span class="p">[</span><span class="nb">Function</span><span class="o">:</span> <span class="nx">CSSValueExpression</span><span class="p">],</span>
+</span><span class='line'>  <span class="nx">parse</span><span class="o">:</span> <span class="p">[</span><span class="nb">Function</span><span class="o">:</span> <span class="nx">parse</span><span class="p">],</span>
+</span><span class='line'>  <span class="nx">clone</span><span class="o">:</span> <span class="p">[</span><span class="nb">Function</span><span class="o">:</span> <span class="nx">clone</span><span class="p">]</span> <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&gt;</span> <span class="nx">cssom</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="s1">&#39;.main{display:flex}&#39;</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span> <span class="nx">parentStyleSheet</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
+</span><span class='line'>  <span class="nx">cssRules</span><span class="o">:</span>
+</span><span class='line'>   <span class="p">[</span> <span class="p">{</span> <span class="nx">parentRule</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
+</span><span class='line'>       <span class="nx">parentStyleSheet</span><span class="o">:</span> <span class="p">[</span><span class="nx">Circular</span><span class="p">],</span>
+</span><span class='line'>       <span class="nx">selectorText</span><span class="o">:</span> <span class="s1">&#39;.main&#39;</span><span class="p">,</span>
+</span><span class='line'>       <span class="nx">style</span><span class="o">:</span> <span class="p">[</span><span class="nb">Object</span><span class="p">],</span>
+</span><span class='line'>       <span class="nx">__starts</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+</span><span class='line'>       <span class="nx">__ends</span><span class="o">:</span> <span class="mi">19</span> <span class="p">}</span> <span class="p">]</span> <span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/images/cssom/cssom.gif" alt="cssom" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[did-you-mean]]></title>
@@ -1545,73 +1641,6 @@
 <p><img src="http://nmotw.in/images/npm-me/npm-me.gif" alt="" /></p>
 
 <p>Thanks to <a href="http://twitter.com/hughskennedy">Hugh Kennedy</a> for this cheeky util!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[npm-clone]]></title>
-    <link href="http://nmotw.in/npm-clone/"/>
-    <updated>2014-10-30T12:59:03+00:00</updated>
-    <id>http://nmotw.in/npm-clone</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.org/package/npm-clone">npm-clone</a></h1>
-
-<p>This is a CLI util that will help you to:</p>
-
-<ul>
-<li><p>Clone a node module from it&#8217;s name.</p></li>
-<li><p>Install all the dependencies.</p></li>
-<li><p>Run its tests!</p></li>
-</ul>
-
-
-<p><strong>Get it:</strong> <code>npm install -g npm-clone</code></p>
-
-<p><strong>Usage example:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="c"># clone a node module</span>
-</span><span class='line'>npm-clone is-mp3
-</span><span class='line'>
-</span><span class='line'><span class="c"># clone using its private url</span>
-</span><span class='line'>npm-clone --ssh is-mp3
-</span><span class='line'>npm-clone --https is-mp3
-</span><span class='line'>
-</span><span class='line'><span class="c"># clone and install dependencies</span>
-</span><span class='line'>npm-clone install is-mp3
-</span><span class='line'>
-</span><span class='line'><span class="c"># clone, install dependencies and run its tests</span>
-</span><span class='line'>npm-clone install <span class="nb">test </span>is-mp3
-</span><span class='line'>
-</span><span class='line'><span class="c"># with a short form</span>
-</span><span class='line'>npm-clone all is-mp3
-</span><span class='line'>
-</span><span class='line'><span class="c"># flags still apply</span>
-</span><span class='line'>npm-clone --ssh all is-mp3
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/npm-clone/npm-clone.gif" alt="npm-clone" /></p>
-
-<p>Thanks to <a href="http://juliangruber.com/">Julian Gruber</a> for this helper! :)</p>
 ]]></content>
   </entry>
   
