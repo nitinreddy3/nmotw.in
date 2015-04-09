@@ -4,13 +4,73 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-04-02T12:00:12+00:00</updated>
+  <updated>2015-04-09T14:57:55+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[require-times]]></title>
+    <link href="http://nmotw.in/require-times/"/>
+    <updated>2015-04-09T14:40:22+00:00</updated>
+    <id>http://nmotw.in/require-times</id>
+    <content type="html"><![CDATA[<h1><a href="http://npm.im/require-times">require-times</a></h1>
+
+<blockquote><p>Find out how long require calls take in your program.</p></blockquote>
+
+<p>This is cheeky module from <a href="http://maxogden.com/">Max Ogden</a> tap into <code>require.extensions['.js']</code> and lets you know the time consumed by
+the require calls in your code.</p>
+
+<p><strong>Install it:</strong> <code>npm install require-times</code></p>
+
+<p><strong>Usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">rt</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;require-times&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="nx">rt</span><span class="p">.</span><span class="nx">start</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">// hundreds on require statments ;)</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">rt</span><span class="p">.</span><span class="nx">end</span><span class="p">();</span> <span class="c1">// Will spit the time consumed to stdout.</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>Example:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">rt</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;require-times&#39;</span><span class="p">)();</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">rt</span><span class="p">.</span><span class="nx">start</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;require-times&#39;</span><span class="p">);</span> <span class="c1">// Dog fooding ;)</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">rt</span><span class="p">.</span><span class="nx">end</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">// Output =&gt; total: 9647ms</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/images/require-times/require-times.gif" alt="require-times" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[line-numbers]]></title>
@@ -1483,73 +1543,6 @@
 <p><img src="http://nmotw.in/images/fake-identity/fake-identity.gif" alt="fake-identity" /></p>
 
 <p>This is pretty modular and sweet util, that needs some more configurability, thanks to <a href="http://travishorn.com/">Travis Horn</a> for fake-identity.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[npm-check-updates]]></title>
-    <link href="http://nmotw.in/npm-check-updates/"/>
-    <updated>2014-11-20T14:52:16+00:00</updated>
-    <id>http://nmotw.in/npm-check-updates</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.org/package/npm-check-updates">npm-check-updates</a></h1>
-
-<p>Finding all updates to dependencies and updating them is very easy with <code>npm-check-updates</code>.</p>
-
-<p><strong>Install it globally:</strong> <code>npm install -g npm-check-updates</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>npm-check-updates
-</span><span class='line'>npm http GET http://registry.npmjs.org/read-chunk
-</span><span class='line'>npm http GET http://registry.npmjs.org/mocha
-</span><span class='line'>npm http GET http://registry.npmjs.org/browserify
-</span><span class='line'>npm http 304 http://registry.npmjs.org/browserify
-</span><span class='line'>npm http 304 http://registry.npmjs.org/read-chunk
-</span><span class='line'>npm http 304 http://registry.npmjs.org/mocha
-</span><span class='line'>
-</span><span class='line'><span class="s2">&quot;browserify&quot;</span> can be updated from ^3.0.0 to ^6.3.2 <span class="o">(</span>Installed: 3.44.2, Latest: 6.3.2<span class="o">)</span>
-</span><span class='line'><span class="s2">&quot;read-chunk&quot;</span> can be updated from ^0.1.0 to ^1.0.0 <span class="o">(</span>Installed: 0.1.0, Latest: 1.0.0<span class="o">)</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>npm-check-updates -u
-</span><span class='line'>
-</span><span class='line'><span class="s2">&quot;browserify&quot;</span> can be updated from ^3.0.0 to ^6.3.2 <span class="o">(</span>Installed: 3.44.2, Latest: 6.3.2<span class="o">)</span>
-</span><span class='line'><span class="s2">&quot;read-chunk&quot;</span> can be updated from ^0.1.0 to ^1.0.0 <span class="o">(</span>Installed: 0.1.0, Latest: 1.0.0<span class="o">)</span>
-</span><span class='line'>
-</span><span class='line'>package.json upgraded
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>npm-check-updates
-</span><span class='line'>
-</span><span class='line'>All dependencies match the latest package versions :<span class="o">)</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/npm-check-updates/npm-check-updates.gif" alt="" /></p>
-
-<p>Thanks to Tomas Junnonen for this cute little util.</p>
 ]]></content>
   </entry>
   
