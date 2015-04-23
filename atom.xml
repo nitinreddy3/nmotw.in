@@ -4,13 +4,53 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-04-16T12:51:48+00:00</updated>
+  <updated>2015-04-23T15:57:18+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[exenv]]></title>
+    <link href="http://nmotw.in/exenv/"/>
+    <updated>2015-04-23T15:44:08+00:00</updated>
+    <id>http://nmotw.in/exenv</id>
+    <content type="html"><![CDATA[<p><a href="http://npm.im/exenv">exenv</a></p>
+
+<blockquote><p>React&#8217;s ExecutionEnvironment module extracted.</p></blockquote>
+
+<p>Many modules and components out there in the wild, uses React&#8217;s private <code>ExecutionEnvironment</code> lib for feature detection, like:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">canUseDOM</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;react/lib/ExecutionEnvironment&#39;</span><span class="p">).</span><span class="nx">canUseDOM</span><span class="p">;</span> <span class="c1">// BAD</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Which is not a good practice as private libs are prone to modification or deletion, so <a href="http://www.thinkmill.com.au">Jed Watson</a> has created
+<code>exenv</code> for us.</p>
+
+<p>P.S: <code>isInWorker</code> has been left out as it&#8217;s very specific to react.</p>
+
+<p><strong>Install it:</strong> <code>npm install --save exenv</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">exenv</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;exenv&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">exenv</span><span class="p">);</span>
+</span><span class='line'><span class="c1">//Object {canUseDOM: true, canUseWorkers: true, canUseEventListeners: true, canUseViewport: true}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/images/exenv/exenv.gif" alt="exenv" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[logdown]]></title>
@@ -1380,80 +1420,6 @@ the require calls in your code.</p>
 <p><img src="http://nmotw.in/images/treeify/treeify.gif" alt="treeify" /></p>
 
 <p>Thanks to <a href="http://lukep.org/">Luke Plaster</a> for making our life a bit more easier on the CLI.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[tldr]]></title>
-    <link href="http://nmotw.in/tldr/"/>
-    <updated>2014-12-04T12:29:16+00:00</updated>
-    <id>http://nmotw.in/tldr</id>
-    <content type="html"><![CDATA[<h1><a href="https://github.com/tldr-pages/tldr">tldr</a></h1>
-
-<p>If you are new to CLI or not able to recall the flags of your CLI tool, you would consult <code>man pages</code>.</p>
-
-<p><code>tldr</code> is &#8220;Too Long Didn&#8217;t Read&#8221; version of man pages ;) i.e it shows us the common usages of a given command.</p>
-
-<p><code>tldr</code> covers:</p>
-
-<ul>
-<li><p>Common commands.</p></li>
-<li><p>GNU/Linux.</p></li>
-<li><p>OSX.</p></li>
-<li><p>SunOS.</p></li>
-</ul>
-
-
-<p><strong>Install it as a CLI app:</strong> <code>$ npm install -g tldr</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>tldr sudo
-</span><span class='line'>
-</span><span class='line'>  execute a <span class="nb">command </span>as another user
-</span><span class='line'>
-</span><span class='line'>  - Listing of an unreadable directory:
-</span><span class='line'>
-</span><span class='line'>  sudo ls /usr/local/scrt
-</span><span class='line'>
-</span><span class='line'>  - To edit a file as user www:
-</span><span class='line'>
-</span><span class='line'>  sudo -u www vi /var/www/index.html
-</span><span class='line'>
-</span><span class='line'>  - To shutdown the machine:
-</span><span class='line'>
-</span><span class='line'>  sudo shutdown -r +10 <span class="s2">&quot;Cya soon!&quot;</span>
-</span><span class='line'>
-</span><span class='line'>  - To repeat the last <span class="nb">command </span>as sudo
-</span><span class='line'>
-</span><span class='line'>  sudo !!
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/tldr/tldr.gif" alt="tldr" /></p>
-
-<p>All TLDR pages are in <code>markdown</code> format, checkout <a href="https://github.com/tldr-pages/tldr/blob/master/pages/common/sudo.md">sudo</a> page for an example, this is a community dirven effort, so please feel free to <a href="https://github.com/tldr-pages/tldr/blob/master/CONTRIBUTING.md">contribute</a> :)</p>
 ]]></content>
   </entry>
   
