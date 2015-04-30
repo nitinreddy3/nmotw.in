@@ -4,13 +4,76 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-04-23T15:57:18+00:00</updated>
+  <updated>2015-04-30T13:45:16+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[color-string]]></title>
+    <link href="http://nmotw.in/color-string/"/>
+    <updated>2015-04-30T13:33:09+00:00</updated>
+    <id>http://nmotw.in/color-string</id>
+    <content type="html"><![CDATA[<p><a href="https://www.npmjs.com/package/color-string">color-string</a></p>
+
+<blockquote><p>Parser and generator for CSS color strings!</p></blockquote>
+
+<p>A module by <a href="Heather%20Arthur">https://github.com/harthur</a> helps us to generator and parser CSS color strings.</p>
+
+<p>The API names are pretty self explainatory, the module has the below methods:</p>
+
+<p><strong>Methods for parsing:</strong></p>
+
+<ul>
+<li><p>getRgba</p></li>
+<li><p>getHsla</p></li>
+<li><p>getRgb</p></li>
+<li><p>getHsl</p></li>
+<li><p>getHwb</p></li>
+<li><p>getAlpha</p></li>
+</ul>
+
+
+<p><strong>Methods for generating:</strong></p>
+
+<ul>
+<li><p>hexString</p></li>
+<li><p>rgbString</p></li>
+<li><p>rgbaString</p></li>
+<li><p>percentString</p></li>
+<li><p>percentaString</p></li>
+<li><p>hslString</p></li>
+<li><p>hslaString</p></li>
+<li><p>hwbString</p></li>
+<li><p>keyword</p></li>
+</ul>
+
+
+<p><strong>Install it:</strong> <code>npm install --save color-string</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">colorString</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;color-string&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">colorString</span><span class="p">.</span><span class="nx">getRgb</span><span class="p">(</span><span class="s2">&quot;#FFF&quot;</span><span class="p">)</span>  <span class="c1">// [255, 255, 255] </span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">colorString</span><span class="p">.</span><span class="nx">keyword</span><span class="p">([</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>       <span class="c1">// &quot;yellow&quot; </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/images/color-string/color-string.gif" alt="color-string" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[exenv]]></title>
@@ -1339,87 +1402,6 @@ the require calls in your code.</p>
 <p><img src="http://nmotw.in/images/malarkey/malarkey.gif" alt="malarkey" /></p>
 
 <p>P.S: All Web realted modules would need help from <a href="http://browserify.org/">browserify</a> or related tools to run on the web.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[treeify]]></title>
-    <link href="http://nmotw.in/treeify/"/>
-    <updated>2014-12-11T13:06:10+00:00</updated>
-    <id>http://nmotw.in/treeify</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/treeify">treeify</a></h1>
-
-<blockquote><p>converts a JS object into a nice and readable tree structure for the console</p></blockquote>
-
-<p>Say, you an object that has the dependencies of a node module and you want to represent it as a tree structure or may you have a filesystem hierarchy to display on CLI, it&#8217;s kina tough right? Well&#8230;here is <code>treeify</code> for you!</p>
-
-<p><strong>Get it:</strong> <code>npm install treeify</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">treeify</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;treeify&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="kd">var</span> <span class="nx">deps</span> <span class="o">=</span> <span class="p">{</span>
-</span><span class='line'>    <span class="s2">&quot;npm@2.1.12&quot;</span><span class="o">:</span> <span class="p">{</span>
-</span><span class='line'>        <span class="s2">&quot;archy@1.0.0&quot;</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
-</span><span class='line'>        <span class="s2">&quot;abbrev@1.0.5&quot;</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
-</span><span class='line'>        <span class="s2">&quot;char-spinner@1.0.1&quot;</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
-</span><span class='line'>        <span class="s2">&quot;block-stream@0.0.7&quot;</span><span class="o">:</span> <span class="s2">&quot;inherits@2.0.1&quot;</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'><span class="p">};</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span>
-</span><span class='line'>   <span class="nx">treeify</span><span class="p">.</span><span class="nx">asTree</span><span class="p">(</span><span class="nx">deps</span><span class="p">,</span> <span class="kc">true</span><span class="p">)</span>
-</span><span class='line'><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">//or</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">treeify</span><span class="p">.</span><span class="nx">asLines</span><span class="p">(</span><span class="nx">deps</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">line</span><span class="p">){</span>
-</span><span class='line'>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">line</span><span class="p">);</span>
-</span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Both would output:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="err">└─</span> <span class="nx">npm</span><span class="err">@</span><span class="mf">2.1</span><span class="p">.</span><span class="mi">12</span>
-</span><span class='line'>   <span class="err">├─</span> <span class="nx">archy</span><span class="err">@</span><span class="mf">1.0</span><span class="p">.</span><span class="mi">0</span>
-</span><span class='line'>   <span class="err">├─</span> <span class="nx">abbrev</span><span class="err">@</span><span class="mf">1.0</span><span class="p">.</span><span class="mi">5</span>
-</span><span class='line'>   <span class="err">├─</span> <span class="kr">char</span><span class="o">-</span><span class="nx">spinner</span><span class="err">@</span><span class="mf">1.0</span><span class="p">.</span><span class="mi">1</span>
-</span><span class='line'>   <span class="err">└─</span> <span class="nx">block</span><span class="o">-</span><span class="nx">stream</span><span class="err">@</span><span class="mf">0.0</span><span class="p">.</span><span class="mi">7</span><span class="o">:</span> <span class="nx">inherits</span><span class="err">@</span><span class="mf">2.0</span><span class="p">.</span><span class="mi">1</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW:</strong></p>
-
-<p><img src="http://nmotw.in/images/treeify/treeify.gif" alt="treeify" /></p>
-
-<p>Thanks to <a href="http://lukep.org/">Luke Plaster</a> for making our life a bit more easier on the CLI.</p>
 ]]></content>
   </entry>
   
