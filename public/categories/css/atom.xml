@@ -4,7 +4,7 @@
   <title><![CDATA[Category: css | NMOTW]]></title>
   <link href="http://nmotw.in//github/public/categories/css/atom.xml" rel="self"/>
   <link href="http://nmotw.in//github/"/>
-  <updated>2015-04-30T13:47:00+00:00</updated>
+  <updated>2015-04-30T13:48:45+00:00</updated>
   <id>http://nmotw.in//github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -22,7 +22,7 @@
 
 <blockquote><p>Parser and generator for CSS color strings!</p></blockquote>
 
-<p>A module by <a href="Heather%20Arthur">https://github.com/harthur</a> helps us to generator and parser CSS color strings.</p>
+<p>A module by <a href="https://github.com/harthur">Heather Arthur</a> helps us to generator and parser CSS color strings.</p>
 
 <p>The API names are pretty self explainatory, the module has the below methods:</p>
 
