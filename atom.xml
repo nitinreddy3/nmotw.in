@@ -4,13 +4,86 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-04-30T13:48:45+00:00</updated>
+  <updated>2015-05-07T18:29:34+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[console.json]]></title>
+    <link href="http://nmotw.in/console.json/"/>
+    <updated>2015-05-07T18:14:21+00:00</updated>
+    <id>http://nmotw.in/console.json</id>
+    <content type="html"><![CDATA[<h1><a href="">console.json</a></h1>
+
+<blockquote><p>Adds <code>console.json</code> method that stringifies passed in objects and logs them.</p></blockquote>
+
+<p>This is a sweet little util function by <a href="http://glebbahmutov.com/">Gleb Bahmutov</a> that makes a life bit easier while debugging huge <code>json</code> data in the console.
+P.S: There is <code>console.dir</code> but <code>console.json</code> is kina appleaing expect for the color highlighting part of it.</p>
+
+<p><strong>Install it:</strong> <code>npm install --save console.json</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="c1">// Just require it once and you shall have `console.json` method for convenience.</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;console.log&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{</span>
+</span><span class='line'>    <span class="s2">&quot;$schema&quot;</span><span class="o">:</span> <span class="s2">&quot;http://json-schema.org/draft-04/schema#&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="s2">&quot;title&quot;</span><span class="o">:</span> <span class="s2">&quot;Product&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="s2">&quot;description&quot;</span><span class="o">:</span> <span class="s2">&quot;A product from Acme&#39;s catalog&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="s2">&quot;type&quot;</span><span class="o">:</span> <span class="s2">&quot;object&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="s2">&quot;properties&quot;</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>        <span class="s2">&quot;id&quot;</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>            <span class="s2">&quot;description&quot;</span><span class="o">:</span> <span class="s2">&quot;The unique identifier for a product&quot;</span><span class="p">,</span>
+</span><span class='line'>            <span class="s2">&quot;type&quot;</span><span class="o">:</span> <span class="s2">&quot;integer&quot;</span>
+</span><span class='line'>        <span class="p">},</span>
+</span><span class='line'>        <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>            <span class="s2">&quot;description&quot;</span><span class="o">:</span> <span class="s2">&quot;Name of the product&quot;</span><span class="p">,</span>
+</span><span class='line'>            <span class="s2">&quot;type&quot;</span><span class="o">:</span> <span class="s2">&quot;string&quot;</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>    <span class="p">},</span>
+</span><span class='line'>    <span class="s2">&quot;required&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="p">]</span>
+</span><span class='line'><span class="p">};</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">json</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW!:</strong></p>
+
+<p><img src="http://nmotw.in/images/console.json/console.json.gif" alt="console.json" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[color-string]]></title>
@@ -1335,73 +1408,6 @@ the require calls in your code.</p>
 <p>Thanks to <a href="http://www.adaltas.com">Worms David</a> for <code>printf</code>!</p>
 
 <p><code>printf('******************%s**************',"Merry Xmas!")</code></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[malarkey]]></title>
-    <link href="http://nmotw.in/malarkey/"/>
-    <updated>2014-12-18T12:37:40+00:00</updated>
-    <id>http://nmotw.in/malarkey</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/malarkey">malarkey</a></h1>
-
-<blockquote><p>Simulate a typewriter/ticker effect on a DOM element.</p></blockquote>
-
-<p>Even though <code>malarkey</code> means &#8216;meaningless talk; nonsense&#8217;, this is a sweet module that helps us to simulate typewriter effect on DOM elements.</p>
-
-<p><strong>Install it:</strong> <code>npm install --save malarkey</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">elem</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;.malarkey&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">opts</span> <span class="o">=</span> <span class="p">{</span>
-</span><span class='line'>  <span class="nx">typeSpeed</span><span class="o">:</span> <span class="mi">50</span><span class="p">,</span>
-</span><span class='line'>  <span class="nx">deleteSpeed</span><span class="o">:</span> <span class="mi">50</span><span class="p">,</span>
-</span><span class='line'>  <span class="nx">pauseDelay</span><span class="o">:</span> <span class="mi">2000</span><span class="p">,</span>
-</span><span class='line'>  <span class="nx">loop</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
-</span><span class='line'>  <span class="nx">postfix</span><span class="o">:</span> <span class="s1">&#39;&#39;</span>
-</span><span class='line'><span class="p">};</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">malarkey</span><span class="p">(</span><span class="nx">elem</span><span class="p">,</span> <span class="nx">opts</span><span class="p">)</span>
-</span><span class='line'><span class="p">.</span><span class="nx">type</span><span class="p">(</span><span class="s1">&#39;Say hello&#39;</span><span class="p">).</span><span class="nx">pause</span><span class="p">().</span><span class="k">delete</span><span class="p">()</span>
-</span><span class='line'><span class="p">.</span><span class="nx">type</span><span class="p">(</span><span class="s1">&#39;Wave goodbye&#39;</span><span class="p">).</span><span class="nx">pause</span><span class="p">().</span><span class="k">delete</span><span class="p">();</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>API from 1000 feet:</strong></p>
-
-<ul>
-<li><p>malarkey.type</p></li>
-<li><p>malarkey.clear</p></li>
-<li><p>malarkey.pause</p></li>
-<li><p>malarkey.delete</p></li>
-</ul>
-
-
-<p>Read more about them in the <a href="https://github.com/yuanqing/malarkey#api">docs</a></p>
-
-<p><strong>DEMO:</strong></p>
-
-<iframe width="100%" height="300" src="http://jsfiddle.net/gnumanth/efu58rbk/embedded/result,js,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-
-
-<p><strong>GIF FTW:</strong></p>
-
-<p><img src="http://nmotw.in/images/malarkey/malarkey.gif" alt="malarkey" /></p>
-
-<p>P.S: All Web realted modules would need help from <a href="http://browserify.org/">browserify</a> or related tools to run on the web.</p>
 ]]></content>
   </entry>
   
