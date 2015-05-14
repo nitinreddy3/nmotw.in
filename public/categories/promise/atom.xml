@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: promise | NMOTW]]></title>
-  <link href="http://nmotw.in//github/public/categories/promise/atom.xml" rel="self"/>
-  <link href="http://nmotw.in//github/"/>
-  <updated>2015-05-14T13:14:14+00:00</updated>
-  <id>http://nmotw.in//github/</id>
+  <link href="http://nmotw.in/github/public/categories/promise/atom.xml" rel="self"/>
+  <link href="http://nmotw.in/github/"/>
+  <updated>2015-05-14T14:38:30+00:00</updated>
+  <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[git-promise]]></title>
-    <link href="http://nmotw.in//github/git-promise/"/>
+    <link href="http://nmotw.in/github/git-promise/"/>
     <updated>2014-08-14T12:21:17+00:00</updated>
-    <id>http://nmotw.in//github/git-promise</id>
+    <id>http://nmotw.in/github/git-promise</id>
     <content type="html"><![CDATA[<h2>git-promise</h2>
 
 <blockquote><p>Simple wrapper that allows you to run any <code>git</code> command using a more intuitive syntax.</p></blockquote>
@@ -83,9 +83,9 @@ git("blame me", {</p>
   
   <entry>
     <title type="html"><![CDATA[lie-denodify]]></title>
-    <link href="http://nmotw.in//github/lie-denodify/"/>
+    <link href="http://nmotw.in/github/lie-denodify/"/>
     <updated>2014-04-10T12:08:55+00:00</updated>
-    <id>http://nmotw.in//github/lie-denodify</id>
+    <id>http://nmotw.in/github/lie-denodify</id>
     <content type="html"><![CDATA[<p>Even though <a href="http://nmotw.in/rsvp/">RSVP</a> provides a <code>denodeify</code> API, <a href="https://www.npmjs.org/package/lie-denodify">lie-denodify's</a> main focus is to turn a node style callback into a promise based one.</p>
 
 <p><a href="https://www.npmjs.org/package/lie-denodify">lie-denofiy</a> internally uses <a href="https://github.com/calvinmetcalf/lie">lie</a> which is a basic but performanent promise implementation.</p>
@@ -183,9 +183,9 @@ Would log something like:
   
   <entry>
     <title type="html"><![CDATA[RSVP]]></title>
-    <link href="http://nmotw.in//github/rsvp/"/>
+    <link href="http://nmotw.in/github/rsvp/"/>
     <updated>2014-03-04T00:53:51+00:00</updated>
-    <id>http://nmotw.in//github/rsvp</id>
+    <id>http://nmotw.in/github/rsvp</id>
     <content type="html"><![CDATA[<p><a href="https://www.npmjs.org/package/rsvp">RSVP</a> : A lightweight library that provides tools for organizing asynchronous code.</p>
 
 <p>This module gives a tiny implementation of <a href="http://promises-aplus.github.com/promises-spec/">Promises/A+</a>.</p>

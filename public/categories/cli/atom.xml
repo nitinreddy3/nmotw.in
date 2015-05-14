@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: cli | NMOTW]]></title>
-  <link href="http://nmotw.in//github/public/categories/cli/atom.xml" rel="self"/>
-  <link href="http://nmotw.in//github/"/>
-  <updated>2015-05-14T13:14:14+00:00</updated>
-  <id>http://nmotw.in//github/</id>
+  <link href="http://nmotw.in/github/public/categories/cli/atom.xml" rel="self"/>
+  <link href="http://nmotw.in/github/"/>
+  <updated>2015-05-14T14:38:30+00:00</updated>
+  <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[nsp]]></title>
-    <link href="http://nmotw.in//github/nsp/"/>
+    <link href="http://nmotw.in/github/nsp/"/>
     <updated>2015-01-22T13:33:18+00:00</updated>
-    <id>http://nmotw.in//github/nsp</id>
+    <id>http://nmotw.in/github/nsp</id>
     <content type="html"><![CDATA[<h1><a href="http://npm.im/nsp/">nsp</a> aka: <a href="http://nodesecurity.io">Node Security Project</a></h1>
 
 <blockquote><p>Check if your Node.js projects are using packages with known and public vulnerable dependencies, using NSP DB.</p></blockquote>
@@ -76,9 +76,9 @@ qs      0.5.6     >= 1.x  test@0.0.1 > qs@0.5.6
   
   <entry>
     <title type="html"><![CDATA[tldr]]></title>
-    <link href="http://nmotw.in//github/tldr/"/>
+    <link href="http://nmotw.in/github/tldr/"/>
     <updated>2014-12-04T12:29:16+00:00</updated>
-    <id>http://nmotw.in//github/tldr</id>
+    <id>http://nmotw.in/github/tldr</id>
     <content type="html"><![CDATA[<h1><a href="https://github.com/tldr-pages/tldr">tldr</a></h1>
 
 <p>If you are new to CLI or not able to recall the flags of your CLI tool, you would consult <code>man pages</code>.</p>
@@ -145,9 +145,9 @@ qs      0.5.6     >= 1.x  test@0.0.1 > qs@0.5.6
   
   <entry>
     <title type="html"><![CDATA[npm-check-updates]]></title>
-    <link href="http://nmotw.in//github/npm-check-updates/"/>
+    <link href="http://nmotw.in/github/npm-check-updates/"/>
     <updated>2014-11-20T14:52:16+00:00</updated>
-    <id>http://nmotw.in//github/npm-check-updates</id>
+    <id>http://nmotw.in/github/npm-check-updates</id>
     <content type="html"><![CDATA[<h1><a href="https://www.npmjs.org/package/npm-check-updates">npm-check-updates</a></h1>
 
 <p>Finding all updates to dependencies and updating them is very easy with <code>npm-check-updates</code>.</p>
@@ -192,9 +192,9 @@ $ npm-check-updates -u</p>
   
   <entry>
     <title type="html"><![CDATA[npm-clone]]></title>
-    <link href="http://nmotw.in//github/npm-clone/"/>
+    <link href="http://nmotw.in/github/npm-clone/"/>
     <updated>2014-10-30T12:59:03+00:00</updated>
-    <id>http://nmotw.in//github/npm-clone</id>
+    <id>http://nmotw.in/github/npm-clone</id>
     <content type="html"><![CDATA[<h1><a href="https://www.npmjs.org/package/npm-clone">npm-clone</a></h1>
 
 <p>This is a CLI util that will help you to:</p>
@@ -249,9 +249,9 @@ npm-clone --https is-mp3</p>
   
   <entry>
     <title type="html"><![CDATA[progress]]></title>
-    <link href="http://nmotw.in//github/progress/"/>
+    <link href="http://nmotw.in/github/progress/"/>
     <updated>2014-10-02T14:29:44+00:00</updated>
-    <id>http://nmotw.in//github/progress</id>
+    <id>http://nmotw.in/github/progress</id>
     <content type="html"><![CDATA[<h1>progress</h1>
 
 <blockquote><p>Flexible ascii progress bar.</p></blockquote>

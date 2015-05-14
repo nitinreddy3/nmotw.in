@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: REST | NMOTW]]></title>
-  <link href="http://nmotw.in//github/public/categories/rest/atom.xml" rel="self"/>
-  <link href="http://nmotw.in//github/"/>
-  <updated>2015-05-14T13:14:14+00:00</updated>
-  <id>http://nmotw.in//github/</id>
+  <link href="http://nmotw.in/github/public/categories/rest/atom.xml" rel="self"/>
+  <link href="http://nmotw.in/github/"/>
+  <updated>2015-05-14T14:38:30+00:00</updated>
+  <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[json-server]]></title>
-    <link href="http://nmotw.in//github/json-server/"/>
+    <link href="http://nmotw.in/github/json-server/"/>
     <updated>2015-05-14T12:53:06+00:00</updated>
-    <id>http://nmotw.in//github/json-server</id>
+    <id>http://nmotw.in/github/json-server</id>
     <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/json-server">json-server</a></h1>
 
 <blockquote><p>REST API with zero coding in less than 30 seconds.</p></blockquote>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: learn | NMOTW]]></title>
-  <link href="http://nmotw.in//github/public/categories/learn/atom.xml" rel="self"/>
-  <link href="http://nmotw.in//github/"/>
-  <updated>2015-05-14T13:14:14+00:00</updated>
-  <id>http://nmotw.in//github/</id>
+  <link href="http://nmotw.in/github/public/categories/learn/atom.xml" rel="self"/>
+  <link href="http://nmotw.in/github/"/>
+  <updated>2015-05-14T14:38:30+00:00</updated>
+  <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[css-explain]]></title>
-    <link href="http://nmotw.in//github/css-explain/"/>
+    <link href="http://nmotw.in/github/css-explain/"/>
     <updated>2015-01-01T13:23:53+00:00</updated>
-    <id>http://nmotw.in//github/css-explain</id>
+    <id>http://nmotw.in/github/css-explain</id>
     <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/css-explain">css-explain</a></h1>
 
 <blockquote><p>Think of it like SQL EXPLAIN, but for CSS selectors.</p></blockquote>

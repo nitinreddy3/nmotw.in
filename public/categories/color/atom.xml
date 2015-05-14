@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: color | NMOTW]]></title>
-  <link href="http://nmotw.in//github/public/categories/color/atom.xml" rel="self"/>
-  <link href="http://nmotw.in//github/"/>
-  <updated>2015-05-14T13:14:14+00:00</updated>
-  <id>http://nmotw.in//github/</id>
+  <link href="http://nmotw.in/github/public/categories/color/atom.xml" rel="self"/>
+  <link href="http://nmotw.in/github/"/>
+  <updated>2015-05-14T14:38:30+00:00</updated>
+  <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[color-string]]></title>
-    <link href="http://nmotw.in//github/color-string/"/>
+    <link href="http://nmotw.in/github/color-string/"/>
     <updated>2015-04-30T13:33:09+00:00</updated>
-    <id>http://nmotw.in//github/color-string</id>
+    <id>http://nmotw.in/github/color-string</id>
     <content type="html"><![CDATA[<p><a href="https://www.npmjs.com/package/color-string">color-string</a></p>
 
 <blockquote><p>Parser and generator for CSS color strings!</p></blockquote>

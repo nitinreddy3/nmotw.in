@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: db | NMOTW]]></title>
-  <link href="http://nmotw.in//github/public/categories/db/atom.xml" rel="self"/>
-  <link href="http://nmotw.in//github/"/>
-  <updated>2015-05-14T13:14:14+00:00</updated>
-  <id>http://nmotw.in//github/</id>
+  <link href="http://nmotw.in/github/public/categories/db/atom.xml" rel="self"/>
+  <link href="http://nmotw.in/github/"/>
+  <updated>2015-05-14T14:38:30+00:00</updated>
+  <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[lowdb]]></title>
-    <link href="http://nmotw.in//github/lowdb/"/>
+    <link href="http://nmotw.in/github/lowdb/"/>
     <updated>2014-09-18T12:51:06+00:00</updated>
-    <id>http://nmotw.in//github/lowdb</id>
+    <id>http://nmotw.in/github/lowdb</id>
     <content type="html"><![CDATA[<blockquote><p>Flat JSON file database for Node</p></blockquote>
 
 <ul>
@@ -232,9 +232,9 @@ db('modules')
   
   <entry>
     <title type="html"><![CDATA[mongoskin]]></title>
-    <link href="http://nmotw.in//github/mongoskin/"/>
+    <link href="http://nmotw.in/github/mongoskin/"/>
     <updated>2014-07-10T14:39:46+00:00</updated>
-    <id>http://nmotw.in//github/mongoskin</id>
+    <id>http://nmotw.in/github/mongoskin</id>
     <content type="html"><![CDATA[<h1>mongoskin</h1>
 
 <blockquote><p>The future layer above node-mongodb-native.</p></blockquote>

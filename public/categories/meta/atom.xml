@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: meta | NMOTW]]></title>
-  <link href="http://nmotw.in//github/public/categories/meta/atom.xml" rel="self"/>
-  <link href="http://nmotw.in//github/"/>
-  <updated>2015-05-14T13:14:14+00:00</updated>
-  <id>http://nmotw.in//github/</id>
+  <link href="http://nmotw.in/github/public/categories/meta/atom.xml" rel="self"/>
+  <link href="http://nmotw.in/github/"/>
+  <updated>2015-05-14T14:38:30+00:00</updated>
+  <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[music meta data]]></title>
-    <link href="http://nmotw.in//github/music-meta-data/"/>
+    <link href="http://nmotw.in/github/music-meta-data/"/>
     <updated>2014-06-05T12:38:35+00:00</updated>
-    <id>http://nmotw.in//github/music-meta-data</id>
+    <id>http://nmotw.in/github/music-meta-data</id>
     <content type="html"><![CDATA[<p><a href="https://github.com/leetreveil/musicmetadata">musicmetadata</a> is a streaming music metadata parser for node and the browser, but out focus is more on node side here.</p>
 
 <p>It's worth noting that this module is influnced by <a href="https://github.com/aadsm/node-id3">node-id3</a></p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: dom | NMOTW]]></title>
-  <link href="http://nmotw.in//github/public/categories/dom/atom.xml" rel="self"/>
-  <link href="http://nmotw.in//github/"/>
-  <updated>2015-05-14T13:14:14+00:00</updated>
-  <id>http://nmotw.in//github/</id>
+  <link href="http://nmotw.in/github/public/categories/dom/atom.xml" rel="self"/>
+  <link href="http://nmotw.in/github/"/>
+  <updated>2015-05-14T14:38:30+00:00</updated>
+  <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[dompurify]]></title>
-    <link href="http://nmotw.in//github/dompurify/"/>
+    <link href="http://nmotw.in/github/dompurify/"/>
     <updated>2015-03-05T13:17:23+00:00</updated>
-    <id>http://nmotw.in//github/dompurify</id>
+    <id>http://nmotw.in/github/dompurify</id>
     <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/dompurify">dompurify</a></h1>
 
 <blockquote><p>Super-fast, uber-tolerant XSS sanitizer for HTML, MathML and SVG!</p></blockquote>
@@ -72,9 +72,9 @@ return currentNode;
   
   <entry>
     <title type="html"><![CDATA[dom-event]]></title>
-    <link href="http://nmotw.in//github/dom-event/"/>
+    <link href="http://nmotw.in/github/dom-event/"/>
     <updated>2015-02-26T12:48:25+00:00</updated>
-    <id>http://nmotw.in//github/dom-event</id>
+    <id>http://nmotw.in/github/dom-event</id>
     <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/dom-event">dom-event</a></h1>
 
 <blockquote><p>Add/remove DOM events</p></blockquote>

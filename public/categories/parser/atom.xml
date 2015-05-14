@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: parser | NMOTW]]></title>
-  <link href="http://nmotw.in//github/public/categories/parser/atom.xml" rel="self"/>
-  <link href="http://nmotw.in//github/"/>
-  <updated>2015-05-14T13:14:14+00:00</updated>
-  <id>http://nmotw.in//github/</id>
+  <link href="http://nmotw.in/github/public/categories/parser/atom.xml" rel="self"/>
+  <link href="http://nmotw.in/github/"/>
+  <updated>2015-05-14T14:38:30+00:00</updated>
+  <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[cssom]]></title>
-    <link href="http://nmotw.in//github/cssom/"/>
+    <link href="http://nmotw.in/github/cssom/"/>
     <updated>2015-03-26T13:35:30+00:00</updated>
-    <id>http://nmotw.in//github/cssom</id>
+    <id>http://nmotw.in/github/cssom</id>
     <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/cssom">cssom</a></h1>
 
 <blockquote><p>CSS Object Model implementation and CSS parser.</p></blockquote>

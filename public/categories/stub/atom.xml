@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: stub | NMOTW]]></title>
-  <link href="http://nmotw.in//github/public/categories/stub/atom.xml" rel="self"/>
-  <link href="http://nmotw.in//github/"/>
-  <updated>2015-05-14T13:14:14+00:00</updated>
-  <id>http://nmotw.in//github/</id>
+  <link href="http://nmotw.in/github/public/categories/stub/atom.xml" rel="self"/>
+  <link href="http://nmotw.in/github/"/>
+  <updated>2015-05-14T14:38:30+00:00</updated>
+  <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[proxyquire]]></title>
-    <link href="http://nmotw.in//github/proxyquire/"/>
+    <link href="http://nmotw.in/github/proxyquire/"/>
     <updated>2014-06-12T09:21:00+00:00</updated>
-    <id>http://nmotw.in//github/proxyquire</id>
+    <id>http://nmotw.in/github/proxyquire</id>
     <content type="html"><![CDATA[<p>Test cases always involves mocks and stub, sometimes there will be a need to mock <code>require</code> itself, that where proxyquire comes for our rescue.</p>
 
 <p><a href="http://npmjs.org/package/proxyquire">Proxyquire</a>: Proxies nodejs require in order to allow overriding dependencies during testing.</p>

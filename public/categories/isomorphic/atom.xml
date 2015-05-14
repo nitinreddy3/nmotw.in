@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: isomorphic | NMOTW]]></title>
-  <link href="http://nmotw.in//github/public/categories/isomorphic/atom.xml" rel="self"/>
-  <link href="http://nmotw.in//github/"/>
-  <updated>2015-05-14T13:14:14+00:00</updated>
-  <id>http://nmotw.in//github/</id>
+  <link href="http://nmotw.in/github/public/categories/isomorphic/atom.xml" rel="self"/>
+  <link href="http://nmotw.in/github/"/>
+  <updated>2015-05-14T14:38:30+00:00</updated>
+  <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[logdown]]></title>
-    <link href="http://nmotw.in//github/logdown/"/>
+    <link href="http://nmotw.in/github/logdown/"/>
     <updated>2015-04-16T12:37:03+00:00</updated>
-    <id>http://nmotw.in//github/logdown</id>
+    <id>http://nmotw.in/github/logdown</id>
     <content type="html"><![CDATA[<p><a href="http://npm.im/logdown">logdown</a></p>
 
 <blockquote><p>Debug utility with markdown support that runs on browser and server.</p></blockquote>

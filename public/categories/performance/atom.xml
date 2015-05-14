@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: performance | NMOTW]]></title>
-  <link href="http://nmotw.in//github/public/categories/performance/atom.xml" rel="self"/>
-  <link href="http://nmotw.in//github/"/>
-  <updated>2015-05-14T13:14:14+00:00</updated>
-  <id>http://nmotw.in//github/</id>
+  <link href="http://nmotw.in/github/public/categories/performance/atom.xml" rel="self"/>
+  <link href="http://nmotw.in/github/"/>
+  <updated>2015-05-14T14:38:30+00:00</updated>
+  <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[PSI]]></title>
-    <link href="http://nmotw.in//github/psi/"/>
+    <link href="http://nmotw.in/github/psi/"/>
     <updated>2014-06-19T13:52:39+00:00</updated>
-    <id>http://nmotw.in//github/psi</id>
+    <id>http://nmotw.in/github/psi</id>
     <content type="html"><![CDATA[<p>If you are into web development at one point or the other you would have used Google's pagespeed <a href="http://developers.google.com/speed/pagespeed/insights/">insights</a> to improve the performance of your site.</p>
 
 <p>Now it's even easier to get those insights on your CLI with <a href="https://www.npmjs.org/package/psi">psi</a> thanks to the <a href="http://addyosmani.com/blog/">Addy Osmani</a> for such a wonderful module.</p>
@@ -111,9 +111,9 @@ cat links | xargs -L1 psi &gt; analysis.report
   
   <entry>
     <title type="html"><![CDATA[time-require]]></title>
-    <link href="http://nmotw.in//github/time-require/"/>
+    <link href="http://nmotw.in/github/time-require/"/>
     <updated>2014-05-22T16:56:56+00:00</updated>
-    <id>http://nmotw.in//github/time-require</id>
+    <id>http://nmotw.in/github/time-require</id>
     <content type="html"><![CDATA[<p>Were you looking for the stats of how long the require statements took in your scripts?</p>
 
 <p>It's time to use (time-require)[https://www.npmjs.org/package/time-require] a node module that displays the execution time for Node.js modules loading by hooking and tracing all require() calls.</p>

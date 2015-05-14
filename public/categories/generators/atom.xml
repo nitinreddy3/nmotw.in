@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: generators | NMOTW]]></title>
-  <link href="http://nmotw.in//github/public/categories/generators/atom.xml" rel="self"/>
-  <link href="http://nmotw.in//github/"/>
-  <updated>2015-05-14T13:14:14+00:00</updated>
-  <id>http://nmotw.in//github/</id>
+  <link href="http://nmotw.in/github/public/categories/generators/atom.xml" rel="self"/>
+  <link href="http://nmotw.in/github/"/>
+  <updated>2015-05-14T14:38:30+00:00</updated>
+  <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[degenerator]]></title>
-    <link href="http://nmotw.in//github/degenerator/"/>
+    <link href="http://nmotw.in/github/degenerator/"/>
     <updated>2014-05-29T14:52:17+00:00</updated>
-    <id>http://nmotw.in//github/degenerator</id>
+    <id>http://nmotw.in/github/degenerator</id>
     <content type="html"><![CDATA[<p>Turns sync functions into ES6's async generator functions with <a href="http://n8.io/">Nathan Rajlich's</a> (A.K.A TooTallNate) <a href="https://www.npmjs.org/package/degenerator">degenerator</a></p>
 
 <p>Get it: <code>$ npm install degenerator</code></p>

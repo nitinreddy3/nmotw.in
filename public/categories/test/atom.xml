@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: test, | NMOTW]]></title>
-  <link href="http://nmotw.in//github/public/categories/test/atom.xml" rel="self"/>
-  <link href="http://nmotw.in//github/"/>
-  <updated>2015-05-14T13:14:14+00:00</updated>
-  <id>http://nmotw.in//github/</id>
+  <link href="http://nmotw.in/github/public/categories/test/atom.xml" rel="self"/>
+  <link href="http://nmotw.in/github/"/>
+  <updated>2015-05-14T14:38:30+00:00</updated>
+  <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[propagate]]></title>
-    <link href="http://nmotw.in//github/propagate/"/>
+    <link href="http://nmotw.in/github/propagate/"/>
     <updated>2014-10-23T12:38:23+00:00</updated>
-    <id>http://nmotw.in//github/propagate</id>
+    <id>http://nmotw.in/github/propagate</id>
     <content type="html"><![CDATA[<h1><a href="https://www.npmjs.org/package/propagate">propagate</a></h1>
 
 <blockquote><p>Propagate events from one event emitter into another.</p></blockquote>

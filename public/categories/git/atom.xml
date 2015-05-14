@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: git | NMOTW]]></title>
-  <link href="http://nmotw.in//github/public/categories/git/atom.xml" rel="self"/>
-  <link href="http://nmotw.in//github/"/>
-  <updated>2015-05-14T13:14:14+00:00</updated>
-  <id>http://nmotw.in//github/</id>
+  <link href="http://nmotw.in/github/public/categories/git/atom.xml" rel="self"/>
+  <link href="http://nmotw.in/github/"/>
+  <updated>2015-05-14T14:38:30+00:00</updated>
+  <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[git-promise]]></title>
-    <link href="http://nmotw.in//github/git-promise/"/>
+    <link href="http://nmotw.in/github/git-promise/"/>
     <updated>2014-08-14T12:21:17+00:00</updated>
-    <id>http://nmotw.in//github/git-promise</id>
+    <id>http://nmotw.in/github/git-promise</id>
     <content type="html"><![CDATA[<h2>git-promise</h2>
 
 <blockquote><p>Simple wrapper that allows you to run any <code>git</code> command using a more intuitive syntax.</p></blockquote>
