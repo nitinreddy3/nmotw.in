@@ -4,7 +4,7 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-05-21T14:11:38+00:00</updated>
+  <updated>2015-05-21T14:18:41+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -17,7 +17,7 @@
     <link href="http://nmotw.in/function-plot/"/>
     <updated>2015-05-21T13:51:06+00:00</updated>
     <id>http://nmotw.in/function-plot</id>
-    <content type="html"><![CDATA[<h1><a href="">function-plot</a></h1>
+    <content type="html"><![CDATA[<h1><a href="http://npm.im/function-plot/">function-plot</a></h1>
 
 <blockquote><p>A simple 2d function plotter powered by d3</p></blockquote>
 
