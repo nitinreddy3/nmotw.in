@@ -4,7 +4,7 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-05-28T16:29:02+00:00</updated>
+  <updated>2015-05-28T16:32:30+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -17,7 +17,7 @@
     <link href="http://nmotw.in/enable/"/>
     <updated>2015-05-28T16:05:04+00:00</updated>
     <id>http://nmotw.in/enable</id>
-    <content type="html"><![CDATA[<h1><a href="enable">https://www.npmjs.com/package/enable</a></h1>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/enable">enable</a></h1>
 
 <blockquote><p>ES6 and ES7 feature detection.</p></blockquote>
 
@@ -52,9 +52,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/enable/enable.gif" alt="enable" /></p>
+<p>_</p>
 ]]></content>
   </entry>
   
