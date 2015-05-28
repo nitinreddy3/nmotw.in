@@ -4,13 +4,57 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-05-21T14:18:41+00:00</updated>
+  <updated>2015-05-28T16:20:09+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[enable]]></title>
+    <link href="http://nmotw.in/enable/"/>
+    <updated>2015-05-28T16:05:04+00:00</updated>
+    <id>http://nmotw.in/enable</id>
+    <content type="html"><![CDATA[<h1><a href="enable">https://www.npmjs.com/package/enable</a></h1>
+
+<blockquote><p>ES6 and ES7 feature detection.</p></blockquote>
+
+<p>A simple util that would help you to check if the a required ES6 or ES7 is enabled, both in the browser and in CLI.</p>
+
+<p><strong>Get it</strong>: <code>npm install --save enable</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">enable</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;enable&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">if</span> <span class="p">(</span><span class="nx">enable</span><span class="p">.</span><span class="o">&lt;</span><span class="nx">feature</span><span class="o">&gt;</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">feature</span><span class="o">&gt;</span> <span class="nx">is</span> <span class="nx">supported</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="cm">/* Example:</span>
+</span><span class='line'><span class="cm">if (enable.generator) {</span>
+</span><span class='line'><span class="cm">  console.log(&#39;supports generator: `function* a() {}`&#39;);</span>
+</span><span class='line'><span class="cm">}</span>
+</span><span class='line'><span class="cm">*/</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>_</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[function-plot]]></title>
@@ -1377,63 +1421,6 @@ the require calls in your code.</p>
 <p><img src="http://nmotw.in/images/isomorphic-fetch/isomorphic-fetch.gif" alt="isomorphic-fetch" /></p>
 
 <p>Thanks to <a href="https://mattandre.ws/">Matt Andrews</a> for <code>isomorphic-fetch</code> (:</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[safe-json-parse]]></title>
-    <link href="http://nmotw.in/safe-json-parse/"/>
-    <updated>2015-01-08T16:56:50+00:00</updated>
-    <id>http://nmotw.in/safe-json-parse</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/safe-json-parse">safe-json-parse</a></h1>
-
-<blockquote><p>Parse JSON safely without throwing.</p></blockquote>
-
-<p>Sweet, simple and effictive module for parsing JSON safely :)</p>
-
-<p><strong>Get it:</strong> <code>npm install safe-json-parse --save</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<p>With callback:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="o">&gt;</span> <span class="kd">var</span> <span class="nx">sf</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;safe-json-parse&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&gt;</span> <span class="nx">sf</span><span class="p">(</span><span class="s2">&quot;{}&quot;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">json</span><span class="p">)</span> <span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">json</span><span class="p">);});</span>
-</span><span class='line'><span class="kc">null</span> <span class="p">{}</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&gt;</span> <span class="nx">sf</span><span class="p">(</span><span class="s2">&quot;meow&quot;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">json</span><span class="p">)</span> <span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">json</span><span class="p">);});</span>
-</span><span class='line'><span class="p">[</span><span class="nx">SyntaxError</span><span class="o">:</span> <span class="nx">Unexpected</span> <span class="nx">token</span> <span class="nx">m</span><span class="p">]</span> <span class="kc">undefined</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>As Tuples:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="o">&gt;</span> <span class="kd">var</span> <span class="nx">sf</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;safe-json-parse/tuple&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="o">&gt;</span> <span class="nx">sf</span><span class="p">({})</span>
-</span><span class='line'><span class="p">[</span> <span class="p">[</span><span class="nx">SyntaxError</span><span class="o">:</span> <span class="nx">Unexpected</span> <span class="nx">token</span> <span class="nx">o</span><span class="p">],</span> <span class="kc">undefined</span> <span class="p">]</span>
-</span><span class='line'><span class="o">&gt;</span> <span class="nx">sf</span><span class="p">(</span><span class="s2">&quot;{}&quot;</span><span class="p">)</span>
-</span><span class='line'><span class="p">[</span> <span class="kc">null</span><span class="p">,</span> <span class="p">{}</span> <span class="p">]</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/safe-json-parse/safe-json-parse.gif" alt="safe-json-parse" /></p>
-
-<p>Thanks to <a href="https://twitter.com/raynos">Raynos</a> for helping us with safely parsing JSONs ;)</p>
 ]]></content>
   </entry>
   
