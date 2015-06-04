@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: ES6 | NMOTW]]></title>
-  <link href="http://nmotw.in/github/public/categories/es6/atom.xml" rel="self"/>
+  <title><![CDATA[Category: streams | NMOTW]]></title>
+  <link href="http://nmotw.in/github/public/categories/streams/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
   <updated>2015-06-04T20:38:00+00:00</updated>
   <id>http://nmotw.in/github/</id>

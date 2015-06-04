@@ -4,7 +4,7 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-05-28T16:36:11+00:00</updated>
+  <updated>2015-06-04T20:38:00+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -13,11 +13,59 @@
 
   
   <entry>
+    <title type="html"><![CDATA[stream-generators]]></title>
+    <link href="http://nmotw.in/stream-generators/"/>
+    <updated>2015-06-04T20:27:12+00:00</updated>
+    <id>http://nmotw.in/stream-generators</id>
+    <content type="html"><![CDATA[<p><a href="https://www.npmjs.com/package/stream-generators">stream-generators</a></p>
+
+<blockquote><p>Pipe ES6 Generators through Node.js streams.</p></blockquote>
+
+<p>This is a cheeky module authored by <a href="https://twitter.com/mimetnet">@mimetent</a> which takes in a ES6 generator function and returns a readable stream!</p>
+
+<p><strong>Install it:</strong> <code>npm install --save stream-geerators</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">streamify</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;stream-generators&#39;</span><span class="p">),</span>
+</span><span class='line'>    <span class="nx">os</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;os&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="nx">gen</span> <span class="o">=</span> <span class="kd">function</span><span class="o">*</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">yield</span> <span class="s1">&#39;Hello &#39;</span><span class="p">;</span>
+</span><span class='line'>        <span class="nx">yield</span> <span class="s1">&#39;ES6 &#39;</span><span class="p">;</span>
+</span><span class='line'>        <span class="nx">yield</span> <span class="s1">&#39;Stream gen&#39;</span><span class="p">;</span>
+</span><span class='line'>        <span class="nx">yield</span> <span class="nx">os</span><span class="p">.</span><span class="nx">EOL</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">};</span>
+</span><span class='line'><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">streamify</span><span class="p">(</span><span class="nx">gen</span><span class="p">).</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">stdout</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This would output: <code>Hello ES6 Stream gen</code></p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/images/stream-generators/stream-generators.gif" alt="stream-generators" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[enable]]></title>
     <link href="http://nmotw.in/enable/"/>
     <updated>2015-05-28T16:05:04+00:00</updated>
     <id>http://nmotw.in/enable</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/enable">enable</a></h1>
+    <content type="html"><![CDATA[<h1><a href="enable">https://www.npmjs.com/package/enable</a></h1>
 
 <blockquote><p>ES6 and ES7 feature detection.</p></blockquote>
 
@@ -52,9 +100,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/enable/enable.gif" alt="enable" /></p>
+<p>_</p>
 ]]></content>
   </entry>
   
@@ -1362,67 +1408,6 @@ the require calls in your code.</p>
 <p><img src="http://nmotw.in/images/nsp/nsp.gif" alt="nsp" /></p>
 
 <p>Thanks to the <a href="https://twitter.com/nodesecurity">nodesecurity</a> for making security easy!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[isomorphic-fetch]]></title>
-    <link href="http://nmotw.in/isomorphic-fetch/"/>
-    <updated>2015-01-15T20:45:00+00:00</updated>
-    <id>http://nmotw.in/isomorphic-fetch</id>
-    <content type="html"><![CDATA[<p><a href="https://www.npmjs.com/package/isomorphic-fetch">isomorphic-fetch</a></p>
-
-<blockquote><p>Isomorphic WHATWG Fetch API, for Node &amp; Browserify</p></blockquote>
-
-<p><code>fetch</code> from GitHub makes it easier to make web requests and handle responses than using an XMLHttpRequest. This polyfill is written as closely as possible to the standard Fetch <a href="https://fetch.spec.whatwg.org">specification</a>.</p>
-
-<p>Well, <code>fetch</code> was in the nmotw queue for quite some time now, but this week seems to be special as FF nightly and Chrome canary rolled out this API ;)</p>
-
-<p><strong>Install it:</strong>  <code>npm install isomorphic-fetch</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="c1">// Fetch random XKCD comic.</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;isomorphic-fetch&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;http://xkcd-imgs.herokuapp.com/&#39;</span><span class="p">)</span>
-</span><span class='line'>    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>        <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
-</span><span class='line'>    <span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">res</span><span class="p">)</span>
-</span><span class='line'>    <span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">ex</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;failed&#39;</span><span class="p">,</span> <span class="nx">ex</span><span class="p">)</span>
-</span><span class='line'>    <span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Would log something like:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span> <span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;http://imgs.xkcd.com/comics/wikifriends.png&#39;</span><span class="p">,</span>
-</span><span class='line'>  <span class="nx">title</span><span class="o">:</span> <span class="s1">&#39;It\&#39;s crazy how much my gut opinion of a movie/song is swayed by what other people say, regardless of how I felt coming out of the theater.&#39;</span> <span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/isomorphic-fetch/isomorphic-fetch.gif" alt="isomorphic-fetch" /></p>
-
-<p>Thanks to <a href="https://mattandre.ws/">Matt Andrews</a> for <code>isomorphic-fetch</code> (:</p>
 ]]></content>
   </entry>
   
