@@ -4,7 +4,7 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-06-11T15:55:34+00:00</updated>
+  <updated>2015-06-11T15:58:44+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -25,57 +25,23 @@
 
 <p>It supports the below langauges:</p>
 
-<table>
-<thead>
-<tr>
-<th></th>
-<th>  *                    </th>
-<th>   *          </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td> JavaScript            </td>
-<td> Java         |</td>
-</tr>
-<tr>
-<td></td>
-<td> CoffeeScript          </td>
-<td> C++          |</td>
-</tr>
-<tr>
-<td></td>
-<td> PHP                   </td>
-<td> C#           |</td>
-</tr>
-<tr>
-<td></td>
-<td> Go                    </td>
-<td> Python       |</td>
-</tr>
-<tr>
-<td></td>
-<td> Ruby                  </td>
-<td> C            |</td>
-</tr>
-<tr>
-<td></td>
-<td> Less                  </td>
-<td> CSS          |</td>
-</tr>
-<tr>
-<td></td>
-<td> SCSS                  </td>
-<td> Mixed HTML   |</td>
-</tr>
-<tr>
-<td></td>
-<td> TypeScript            </td>
-<td>              |</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li>JavaScript</li>
+<li>Java</li>
+<li>CoffeeScript</li>
+<li>TypeScript</li>
+<li>C++</li>
+<li>PHP</li>
+<li>C#</li>
+<li>Go</li>
+<li>Python</li>
+<li>Ruby</li>
+<li>C</li>
+<li>Less</li>
+<li>CSS</li>
+<li>SCSS</li>
+<li>Mixed HTML</li>
+</ul>
 
 
 <p><strong>Install it:</strong> <code>npm install -g jscpd</code></p>
