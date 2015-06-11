@@ -4,13 +4,153 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-06-04T20:42:53+00:00</updated>
+  <updated>2015-06-11T15:55:34+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[jscpd]]></title>
+    <link href="http://nmotw.in/jscpd/"/>
+    <updated>2015-06-11T15:39:12+00:00</updated>
+    <id>http://nmotw.in/jscpd</id>
+    <content type="html"><![CDATA[<h1><a href="http://npm.im/jscpd">jscpd</a></h1>
+
+<blockquote><p>jscpd is a tool for detect copy/paste &#8220;design pattern&#8221; in programming source code.</p></blockquote>
+
+<p><a href="http://kucherenko.org/">Andrey Kucherenko&#8217;s</a> <code>jscpd</code> is a smart tool that helps use to detect copy paste code!</p>
+
+<p>It supports the below langauges:</p>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>  *                    </th>
+<th>   *          </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td> JavaScript            </td>
+<td> Java         |</td>
+</tr>
+<tr>
+<td></td>
+<td> CoffeeScript          </td>
+<td> C++          |</td>
+</tr>
+<tr>
+<td></td>
+<td> PHP                   </td>
+<td> C#           |</td>
+</tr>
+<tr>
+<td></td>
+<td> Go                    </td>
+<td> Python       |</td>
+</tr>
+<tr>
+<td></td>
+<td> Ruby                  </td>
+<td> C            |</td>
+</tr>
+<tr>
+<td></td>
+<td> Less                  </td>
+<td> CSS          |</td>
+</tr>
+<tr>
+<td></td>
+<td> SCSS                  </td>
+<td> Mixed HTML   |</td>
+</tr>
+<tr>
+<td></td>
+<td> TypeScript            </td>
+<td>              |</td>
+</tr>
+</tbody>
+</table>
+
+
+<p><strong>Install it:</strong> <code>npm install -g jscpd</code></p>
+
+<p><strong>Usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">jscpd</span> <span class="o">--</span><span class="nx">path</span> <span class="nx">my_project</span><span class="o">/</span> <span class="o">--</span><span class="nx">languages</span> <span class="nx">javascript</span><span class="p">,</span><span class="nx">coffee</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">jscpd</span> <span class="o">-</span><span class="nx">f</span> <span class="o">**</span><span class="cm">/*.js -e **/</span><span class="nx">node_modules</span><span class="cm">/**</span>
+</span><span class='line'>
+</span><span class='line'><span class="cm">jscpd --files **/</span><span class="o">*</span><span class="p">.</span><span class="nx">js</span> <span class="o">--</span><span class="nx">exclude</span> <span class="o">**</span><span class="cm">/*.min.js --output report.xml</span>
+</span><span class='line'>
+</span><span class='line'><span class="cm">jscpd --files **/</span><span class="o">*</span><span class="p">.</span><span class="nx">js</span> <span class="o">--</span><span class="nx">exclude</span> <span class="o">**</span><span class="err">/*.min.js --reporter json --output report.json</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If you have a <code>.cpd.yml</code> config file in the <code>pwd</code> jscpd command, you will check code for duplicates according the config.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="c1">#.cpd.yaml</span>
+</span><span class='line'><span class="l-Scalar-Plain">path</span><span class="p-Indicator">:</span>
+</span><span class='line'>  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">fixtures/</span>
+</span><span class='line'><span class="l-Scalar-Plain">languages</span><span class="p-Indicator">:</span>
+</span><span class='line'>  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">javascript</span>
+</span><span class='line'>  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">coffeescript</span>
+</span><span class='line'>  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">typescript</span>
+</span><span class='line'>  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">php</span>
+</span><span class='line'>  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">python</span>
+</span><span class='line'>  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">css</span>
+</span><span class='line'>  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">ruby</span>
+</span><span class='line'>  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">go</span>
+</span><span class='line'>  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">java</span>
+</span><span class='line'>  <span class="p-Indicator">-</span> <span class="s">&quot;c++src&quot;</span>    <span class="c1"># c++ source</span>
+</span><span class='line'>  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">csrc</span>        <span class="c1"># c source</span>
+</span><span class='line'>  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">csharp</span>      <span class="c1"># c# source</span>
+</span><span class='line'>  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">htmlmixed</span>   <span class="c1"># html mixed source like knockout.js templates</span>
+</span><span class='line'><span class="l-Scalar-Plain">exclude</span><span class="p-Indicator">:</span>
+</span><span class='line'>  <span class="p-Indicator">-</span> <span class="s">&quot;**/*.min.js&quot;</span>
+</span><span class='line'>  <span class="p-Indicator">-</span> <span class="s">&quot;**/*.mm.js&quot;</span>
+</span><span class='line'><span class="l-Scalar-Plain">reporter</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">json</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/images/jscpd/jscpd.gif" alt="jscpd-demo" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[stream-generators]]></title>
@@ -1319,95 +1459,6 @@ the require calls in your code.</p>
 <p><img src="http://nmotw.in/images/node-rules/node-rules.gif" alt="" /></p>
 
 <p>Thanks to <a href="https://twitter.com/mithunsatheesh">Mithun Satheesh</a> for this adventurous module.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[nsp]]></title>
-    <link href="http://nmotw.in/nsp/"/>
-    <updated>2015-01-22T13:33:18+00:00</updated>
-    <id>http://nmotw.in/nsp</id>
-    <content type="html"><![CDATA[<h1><a href="http://npm.im/nsp/">nsp</a> aka: <a href="http://nodesecurity.io">Node Security Project</a></h1>
-
-<blockquote><p>Check if your Node.js projects are using packages with known and public vulnerable dependencies, using NSP DB.</p></blockquote>
-
-<p><strong>Install it:</strong> <code>npm install -g nsp</code></p>
-
-<p><strong>Usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>nmotw.in&gt; nsp
-</span><span class='line'>
-</span><span class='line'>Usage: <span class="o">[</span><span class="nb">command</span><span class="o">]</span> --arg<span class="o">=</span>value --arg2
-</span><span class='line'>
-</span><span class='line'>Help:
-</span><span class='line'>  <span class="nb">help              </span>Show <span class="nb">help </span>menu
-</span><span class='line'>  <span class="o">[</span>cmd<span class="o">]</span> <span class="nb">help        </span>Show <span class="nb">command help </span>menu
-</span><span class='line'>
-</span><span class='line'>Options:
-</span><span class='line'>  version           shows the current version of nsp
-</span><span class='line'>  shrinkwrap        <span class="nb">alias </span>to audit-shrinkwrap
-</span><span class='line'>  audit-shrinkwrap  audits your <span class="sb">`</span>npm shrinkwrap<span class="sb">`</span> against NSP db
-</span><span class='line'>  package           <span class="nb">alias </span>to audit-package
-</span><span class='line'>  audit-package     audits your package.json against NSP db
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>nmotw.in&gt; cat package.json
-</span><span class='line'><span class="o">{</span>
-</span><span class='line'>  <span class="s2">&quot;name&quot;</span>: <span class="s2">&quot;test&quot;</span>,
-</span><span class='line'>  <span class="s2">&quot;version&quot;</span>: <span class="s2">&quot;0.0.1&quot;</span>,
-</span><span class='line'>  <span class="s2">&quot;author&quot;</span>: <span class="s2">&quot;Node Security Project&quot;</span>,
-</span><span class='line'>  <span class="s2">&quot;dependencies&quot;</span>: <span class="o">{</span>
-</span><span class='line'>    <span class="s2">&quot;node-print&quot;</span>: <span class="s2">&quot;0.0.4&quot;</span>,
-</span><span class='line'>    <span class="s2">&quot;request&quot;</span>: <span class="s2">&quot;^2.40.0&quot;</span>,
-</span><span class='line'>    <span class="s2">&quot;qs&quot;</span>: <span class="s2">&quot;^0.5&quot;</span>
-</span><span class='line'>  <span class="o">}</span>
-</span><span class='line'><span class="o">}</span>
-</span><span class='line'>
-</span><span class='line'>nmotw.in&gt; nsp package
-</span><span class='line'>Name  Installed  Patched  Vulnerable Dependency
-</span><span class='line'>qs      0.5.6     &gt;<span class="o">=</span> 1.x  <span class="nb">test</span>@0.0.1 &gt; qs@0.5.6
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The same can be used for auditing <a href="https://docs.npmjs.com/cli/shrinkwrap">shrinkwrap</a>.</p>
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/nsp/nsp.gif" alt="nsp" /></p>
-
-<p>Thanks to the <a href="https://twitter.com/nodesecurity">nodesecurity</a> for making security easy!</p>
 ]]></content>
   </entry>
   
