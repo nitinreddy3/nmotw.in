@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cli | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/cli/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2015-06-18T17:21:06+00:00</updated>
+  <updated>2015-06-18T17:23:33+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[browser_repl]]></title>
+    <title type="html"><![CDATA[browser-repl]]></title>
     <link href="http://nmotw.in/github/browser-repl/"/>
     <updated>2015-06-18T16:46:33+00:00</updated>
     <id>http://nmotw.in/github/browser-repl</id>
@@ -111,7 +111,7 @@ $ repl</p>
 
 <p><strong>GIF FTW</strong></p>
 
-<p><a href="/images/browser-repl/browser-repl.gif">browser-repl</a></p>
+<p><a href="/images/browser-repl/brwoser-repl.gif">browser-repl</a></p>
 ]]></content>
   </entry>
   
