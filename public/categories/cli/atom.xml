@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cli | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/cli/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2015-06-11T15:58:44+00:00</updated>
+  <updated>2015-06-18T17:21:06+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,108 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[browser_repl]]></title>
+    <link href="http://nmotw.in/github/browser-repl/"/>
+    <updated>2015-06-18T16:46:33+00:00</updated>
+    <id>http://nmotw.in/github/browser-repl</id>
+    <content type="html"><![CDATA[<p><a href="https://www.npmjs.com/package/browser-repl">browser-repl</a></p>
+
+<blockquote><p>Launch a repl on your command line to any browser in the cloud.</p></blockquote>
+
+<p><code>browser-repl</code> is a uber cool module from <a href="http://automattic.com/">automattic</a> that helps us to get a particular OS/Browser
+combo (JS engine) to our CLI with some webdriver protocol, scoket.io and localtunnel magic ;)</p>
+
+<p>Currently supported browsers:</p>
+
+<ul>
+<li><p>ie</p></li>
+<li><p>ie6</p></li>
+<li><p>ie7</p></li>
+<li><p>ie8</p></li>
+<li><p>ie9</p></li>
+<li><p>ie10</p></li>
+<li><p>ie11</p></li>
+<li><p>opera</p></li>
+<li><p>safari</p></li>
+<li><p>safari5</p></li>
+<li><p>safari6</p></li>
+<li><p>safari7</p></li>
+<li><p>safari8</p></li>
+<li><p>chrome</p></li>
+<li><p>chromedev</p></li>
+<li><p>firefox</p></li>
+<li><p>firefoxdev</p></li>
+<li><p>ipad</p></li>
+<li><p>ipad4</p></li>
+<li><p>ipad5</p></li>
+<li><p>ipad5.1</p></li>
+<li><p>ipad6</p></li>
+<li><p>ipad6.1</p></li>
+<li><p>iphone</p></li>
+<li><p>iphone4</p></li>
+<li><p>iphone5</p></li>
+<li><p>iphone5.1</p></li>
+<li><p>iphone6</p></li>
+<li><p>iphone6.1</p></li>
+<li><p>android</p></li>
+<li><p>android4.4</p></li>
+<li><p>android4.2</p></li>
+<li><p>android4.1</p></li>
+</ul>
+
+
+<p><strong>Currently supported platforms:</strong></p>
+
+<ul>
+<li><p>winxp</p></li>
+<li><p>win7</p></li>
+<li><p>win8</p></li>
+<li><p>win8.1</p></li>
+<li><p>mac10.6</p></li>
+<li><p>mac10.8</p></li>
+<li><p>mac10.9</p></li>
+<li><p>mac10.10</p></li>
+<li><p>linux</p></li>
+<li><p>android</p></li>
+</ul>
+
+
+<p><strong>Get it:</strong></p>
+
+<p><code>sh
+npm install -g browser-repl
+</code>
+<strong>Set up:</strong></p>
+
+<p>```sh</p>
+
+<h1>In your *.rc file.</h1>
+
+<p>export SAUCE_USERNAME="your username"
+export SAUCE_ACCESS_KEY="your key"
+```</p>
+
+<p>To get the <code>SAUCE</code> stuff, sign up for a free OSS account on <a href="http://saucelabs.com">SauceLabs</a>.</p>
+
+<p><strong>Usage:</strong></p>
+
+<p>```sh
+$ repl</p>
+
+<p>usage: repl <browser>[version] [platform]</p>
+
+<p>options:
+ -h: this message
+ -k: no remote <code>console</code> override
+```</p>
+
+<p><strong>GIF FTW</strong></p>
+
+<p><a href="/images/browser-repl/browser-repl.gif">browser-repl</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[nsp]]></title>
@@ -244,83 +346,6 @@ npm-clone --https is-mp3</p>
 <p><img src="/images/npm-clone/npm-clone.gif" alt="npm-clone" /></p>
 
 <p>Thanks to <a href="http://juliangruber.com/">Julian Gruber</a> for this helper! :)</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[progress]]></title>
-    <link href="http://nmotw.in/github/progress/"/>
-    <updated>2014-10-02T14:29:44+00:00</updated>
-    <id>http://nmotw.in/github/progress</id>
-    <content type="html"><![CDATA[<h1>progress</h1>
-
-<blockquote><p>Flexible ascii progress bar.</p></blockquote>
-
-<p><strong>Install it:</strong> <code>npm install progress</code></p>
-
-<p><strong>Example usage:</strong></p>
-
-<ul>
-<li>Create a ProgressBar.</li>
-<li>Give it a format string.</li>
-<li>Give the total, telling the progress bar when to stop!</li>
-<li>Finally do tick() appropriately.</li>
-</ul>
-
-
-<p>```javascript
-var ProgressBar = require('progress');</p>
-
-<p>var bar = new ProgressBar(':bar', { total: 10 });
-var timer = setInterval(function () {
-  bar.tick();
-  if (bar.complete) {</p>
-
-<pre><code>console.log('\ncomplete\n');
-clearInterval(timer);
-</code></pre>
-
-<p>  }
-}, 100);
-```</p>
-
-<h3>Options</h3>
-
-<p>These are keys in the options object you can pass to the progress bar along with
-<code>total</code> as seen in the example above.</p>
-
-<ul>
-<li><code>total</code> total number of ticks to complete</li>
-<li><code>width</code> the displayed width of the progress bar defaulting to total</li>
-<li><code>stream</code> the output stream defaulting to stderr</li>
-<li><code>complete</code> completion character defaulting to "="</li>
-<li><code>incomplete</code> incomplete character defaulting to "-"</li>
-<li><code>clear</code> option to clear the bar on completion defaulting to false</li>
-<li><code>callback</code> optional function to call when the progress bar completes</li>
-</ul>
-
-
-<h3>Tokens</h3>
-
-<p>These are tokens you can use in the format of your progress bar.</p>
-
-<ul>
-<li><code>:bar</code> the progress bar itself</li>
-<li><code>:current</code> current tick number</li>
-<li><code>:total</code> total ticks</li>
-<li><code>:elapsed</code> time elapsed in seconds</li>
-<li><code>:percent</code> completion percentage</li>
-<li><code>:eta</code> estimated completion time in seconds</li>
-</ul>
-
-
-<p>Do checkout their <a href="https://github.com/visionmedia/node-progress/tree/master/examples">examples</a> folder.</p>
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="/images/progress/progress.gif" alt="" /></p>
-
-<p>Thanks to <a href="http://tjholowaychuk.com/">TJ</a> and rest of the maintainers for <a href="https://github.com/visionmedia/node-progress">node-progress</a>!</p>
 ]]></content>
   </entry>
   

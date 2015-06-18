@@ -4,13 +4,125 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-06-11T15:58:44+00:00</updated>
+  <updated>2015-06-18T17:21:06+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[browser_repl]]></title>
+    <link href="http://nmotw.in/browser-repl/"/>
+    <updated>2015-06-18T16:46:33+00:00</updated>
+    <id>http://nmotw.in/browser-repl</id>
+    <content type="html"><![CDATA[<p><a href="https://www.npmjs.com/package/browser-repl">browser-repl</a></p>
+
+<blockquote><p>Launch a repl on your command line to any browser in the cloud.</p></blockquote>
+
+<p><code>browser-repl</code> is a uber cool module from <a href="http://automattic.com/">automattic</a> that helps us to get a particular OS/Browser
+combo (JS engine) to our CLI with some webdriver protocol, scoket.io and localtunnel magic ;)</p>
+
+<p>Currently supported browsers:</p>
+
+<ul>
+<li><p>ie</p></li>
+<li><p>ie6</p></li>
+<li><p>ie7</p></li>
+<li><p>ie8</p></li>
+<li><p>ie9</p></li>
+<li><p>ie10</p></li>
+<li><p>ie11</p></li>
+<li><p>opera</p></li>
+<li><p>safari</p></li>
+<li><p>safari5</p></li>
+<li><p>safari6</p></li>
+<li><p>safari7</p></li>
+<li><p>safari8</p></li>
+<li><p>chrome</p></li>
+<li><p>chromedev</p></li>
+<li><p>firefox</p></li>
+<li><p>firefoxdev</p></li>
+<li><p>ipad</p></li>
+<li><p>ipad4</p></li>
+<li><p>ipad5</p></li>
+<li><p>ipad5.1</p></li>
+<li><p>ipad6</p></li>
+<li><p>ipad6.1</p></li>
+<li><p>iphone</p></li>
+<li><p>iphone4</p></li>
+<li><p>iphone5</p></li>
+<li><p>iphone5.1</p></li>
+<li><p>iphone6</p></li>
+<li><p>iphone6.1</p></li>
+<li><p>android</p></li>
+<li><p>android4.4</p></li>
+<li><p>android4.2</p></li>
+<li><p>android4.1</p></li>
+</ul>
+
+
+<p><strong>Currently supported platforms:</strong></p>
+
+<ul>
+<li><p>winxp</p></li>
+<li><p>win7</p></li>
+<li><p>win8</p></li>
+<li><p>win8.1</p></li>
+<li><p>mac10.6</p></li>
+<li><p>mac10.8</p></li>
+<li><p>mac10.9</p></li>
+<li><p>mac10.10</p></li>
+<li><p>linux</p></li>
+<li><p>android</p></li>
+</ul>
+
+
+<p><strong>Get it:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>npm install -g browser-repl
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>Set up:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="c"># In your *.rc file.</span>
+</span><span class='line'><span class="nb">export </span><span class="nv">SAUCE_USERNAME</span><span class="o">=</span><span class="s2">&quot;your username&quot;</span>
+</span><span class='line'><span class="nb">export </span><span class="nv">SAUCE_ACCESS_KEY</span><span class="o">=</span><span class="s2">&quot;your key&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>To get the <code>SAUCE</code> stuff, sign up for a free OSS account on <a href="http://saucelabs.com">SauceLabs</a>.</p>
+
+<p><strong>Usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>repl
+</span><span class='line'>
+</span><span class='line'>usage: repl &lt;browser&gt;<span class="o">[</span>version<span class="o">]</span> <span class="o">[</span>platform<span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'>options:
+</span><span class='line'> -h: this message
+</span><span class='line'> -k: no remote <span class="sb">`</span>console<span class="sb">`</span> override
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW</strong></p>
+
+<p><a href="http://nmotw.in/images/browser-repl/browser-repl.gif">browser-repl</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[jscpd]]></title>
@@ -1317,114 +1429,6 @@ the require calls in your code.</p>
 <p><img src="http://nmotw.in/images/objectmap/objectmap.gif" alt="" /></p>
 
 <p>Thanks to <a href="http://calvinmetcalf.com">Calvin</a> for this useful util :)</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[node-rules]]></title>
-    <link href="http://nmotw.in/node-rules/"/>
-    <updated>2015-01-29T17:53:00+00:00</updated>
-    <id>http://nmotw.in/node-rules</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/node-rules">node-rules</a></h1>
-
-<blockquote><p>Business Rules Engine for JavaScript.</p></blockquote>
-
-<p><code>node-rules</code> is a module of it&#8217;s own kind, it&#8217;s a light weight forward chaining Rule Engine!</p>
-
-<p><strong>Install it:</strong> <code>npm install --save node-rules</code></p>
-
-<p><strong>Usage:</strong></p>
-
-<p>It&#8217;s a three step process, to get the engine running:</p>
-
-<ul>
-<li><p>Defining a Rule.</p></li>
-<li><p>Defining a Fact.</p></li>
-<li><p>Initialize the rules engine and execute the rule.</p></li>
-</ul>
-
-
-<p><strong>Create a rule:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="cm">/* Sample Rule to block a transaction if its below 500 */</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">rule</span> <span class="o">=</span> <span class="p">{</span>
-</span><span class='line'>    <span class="s2">&quot;condition&quot;</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">R</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>        <span class="nx">R</span><span class="p">.</span><span class="nx">when</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">transactionTotal</span> <span class="o">&lt;</span> <span class="mi">500</span><span class="p">);</span>
-</span><span class='line'>    <span class="p">},</span>
-</span><span class='line'>    <span class="s2">&quot;consequence&quot;</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">R</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>        <span class="k">this</span><span class="p">.</span><span class="nx">result</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
-</span><span class='line'>        <span class="k">this</span><span class="p">.</span><span class="nx">reason</span> <span class="o">=</span> <span class="s2">&quot;The transaction was blocked as it was less than 500&quot;</span><span class="p">;</span>
-</span><span class='line'>        <span class="nx">R</span><span class="p">.</span><span class="nx">stop</span><span class="p">();</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'><span class="p">};</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>Create a fact:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="cm">/* Fact with less than 500 as transaction, and this should be blocked */</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">fact</span> <span class="o">=</span> <span class="p">{</span>
-</span><span class='line'>    <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;user4&quot;</span><span class="p">,</span>
-</span><span class='line'>    <span class="s2">&quot;application&quot;</span><span class="o">:</span> <span class="s2">&quot;MOB2&quot;</span><span class="p">,</span>
-</span><span class='line'>    <span class="s2">&quot;transactionTotal&quot;</span><span class="o">:</span> <span class="mi">400</span><span class="p">,</span>
-</span><span class='line'>    <span class="s2">&quot;cardType&quot;</span><span class="o">:</span> <span class="s2">&quot;Credit Card&quot;</span>
-</span><span class='line'><span class="p">};</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>Initialize the rules engine:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="cm">/* Creating Rule Engine instance and registering rule */</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">R</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RuleEngine</span><span class="p">();</span>
-</span><span class='line'><span class="nx">R</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="nx">rule</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>Execute the rule:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">R</span><span class="p">.</span><span class="nx">execute</span><span class="p">(</span><span class="nx">fact</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Valid transaction&quot;</span><span class="p">);</span>
-</span><span class='line'>    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-</span><span class='line'>        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Blocked Reason:&quot;</span> <span class="o">+</span> <span class="nx">data</span><span class="p">.</span><span class="nx">reason</span><span class="p">);</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/node-rules/node-rules.gif" alt="" /></p>
-
-<p>Thanks to <a href="https://twitter.com/mithunsatheesh">Mithun Satheesh</a> for this adventurous module.</p>
 ]]></content>
   </entry>
   
