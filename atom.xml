@@ -4,7 +4,7 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-06-18T17:23:33+00:00</updated>
+  <updated>2015-06-18T17:24:16+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -120,7 +120,7 @@ combo (JS engine) to our CLI with some webdriver protocol, scoket.io and localtu
 
 <p><strong>GIF FTW</strong></p>
 
-<p><a href="http://nmotw.in/images/browser-repl/brwoser-repl.gif">browser-repl</a></p>
+<p><img src="http://nmotw.in/images/browser-repl/brwoser-repl.gif" alt="browser-repl" /></p>
 ]]></content>
   </entry>
   
