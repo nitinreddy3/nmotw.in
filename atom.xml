@@ -4,13 +4,61 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-06-18T17:24:16+00:00</updated>
+  <updated>2015-06-25T14:47:51+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[html.js]]></title>
+    <link href="http://nmotw.in/html.js/"/>
+    <updated>2015-06-25T12:12:57+00:00</updated>
+    <id>http://nmotw.in/html.js</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/html.js">html.js</a></h1>
+
+<blockquote><p>An intuitive, extensible way to work directly with the DOM.</p></blockquote>
+
+<p><code>html.js</code> is a fork of <a href="http://adriancooney.ie/voyeur.js/">voyeur.js</a> that has made it more simpler to deal with DOM in a
+relatively new way.</p>
+
+<p>It has a pretty extensive <a href="http://nbubna.github.io/HTML/#API">API</a> and you could also create your own plugins
+<code>HTML._.fn.name = function;</code></p>
+
+<p><strong>Get it:</strong> <code>npm install --save html.js</code></p>
+
+<p><strong>Usage Example:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">let</span> <span class="nx">HTML</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;html.js&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">HTML</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">header</span><span class="p">;</span> <span class="c1">// returns header element.</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">HTML</span><span class="p">.</span><span class="nx">query</span><span class="p">(</span><span class="s2">&quot;#example&quot;</span><span class="p">).</span><span class="nx">h1</span><span class="p">.</span><span class="nx">em</span><span class="p">;</span> <span class="c1">// chain on, man.</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="s1">&#39;each&#39;</span> <span class="k">in</span> <span class="nx">node</span><span class="p">))</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">HTML</span><span class="p">.</span><span class="nx">ify</span><span class="p">(</span><span class="nx">node</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nx">node</span><span class="p">.</span><span class="nx">each</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">el</span><span class="p">){</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="s1">&#39; is your friend!&#39;</span><span class="p">);</span> <span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/images/html.js/html.js.gif" alt="html.js" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[browser-repl]]></title>
@@ -1375,60 +1423,6 @@ the require calls in your code.</p>
 <p><img src="http://nmotw.in/images/dehumanize-date/dehumanize-date.gif" alt="dehumanize-date" /></p>
 
 <p>Thanks for <a href="http://www.jepso.com">Forbes Lindesay</a> for dehumanizing dates ;)</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[objectmap]]></title>
-    <link href="http://nmotw.in/objectmap/"/>
-    <updated>2015-02-05T14:03:17+00:00</updated>
-    <id>http://nmotw.in/objectmap</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/mapobject">mapobject</a></h1>
-
-<blockquote><p>Use a ES6 map, like an object.</p></blockquote>
-
-<p>This module is one of those rare hidden gems in npm, it&#8217;s already a year old, it makes uses of ES6 reflect API with proxy to make give us a convience method so that maps can be used like an Object.</p>
-
-<p>What other advantages apart from syntax sugar?</p>
-
-<ul>
-<li><p>Iterate it like a regular object with <code>(for in)</code> without worrying about <code>hasOwnProperty</code> checks.</p></li>
-<li><p>Iterate it <code>(for of)</code> you will get arrays of length 2 of both keys and values.</p></li>
-</ul>
-
-
-<p><strong>Install it:</strong> <code>npm install --save objectmap</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">oMap</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;objectmap&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="kd">var</span> <span class="nx">map</span> <span class="o">=</span> <span class="nx">oMap</span><span class="p">();</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">map</span><span class="p">.</span><span class="nx">answer</span> <span class="o">=</span> <span class="mi">42</span><span class="p">;</span> <span class="c1">// Same as `map.set(&#39;answer&#39;,42);`</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">map</span><span class="p">.</span><span class="nx">answer</span><span class="p">;</span> <span class="c1">// Same as `map.get(&#39;abc&#39;);`</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">delete</span> <span class="nx">map</span><span class="p">.</span><span class="nx">abc</span><span class="p">;</span> <span class="c1">// Same as `map.delete(&#39;abc&#39;);`</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Caveat: <code>map[3]</code> implies <code>map.set('3')</code> not <code>map.set(3)</code></p>
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/objectmap/objectmap.gif" alt="" /></p>
-
-<p>Thanks to <a href="http://calvinmetcalf.com">Calvin</a> for this useful util :)</p>
 ]]></content>
   </entry>
   

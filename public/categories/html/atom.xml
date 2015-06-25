@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: html | NMOTW]]></title>
+  <link href="http://nmotw.in/github/public/categories/html/atom.xml" rel="self"/>
+  <link href="http://nmotw.in/github/"/>
+  <updated>2015-06-25T14:47:51+00:00</updated>
+  <id>http://nmotw.in/github/</id>
+  <author>
+    <name><![CDATA[Hemanth.HM]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[html.js]]></title>
+    <link href="http://nmotw.in/github/html.js/"/>
+    <updated>2015-06-25T12:12:57+00:00</updated>
+    <id>http://nmotw.in/github/html.js</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/html.js">html.js</a></h1>
+
+<blockquote><p>An intuitive, extensible way to work directly with the DOM.</p></blockquote>
+
+<p><code>html.js</code> is a fork of <a href="http://adriancooney.ie/voyeur.js/">voyeur.js</a> that has made it more simpler to deal with DOM in a
+relatively new way.</p>
+
+<p>It has a pretty extensive <a href="http://nbubna.github.io/HTML/#API">API</a> and you could also create your own plugins
+<code>HTML._.fn.name = function;</code></p>
+
+<p><strong>Get it:</strong> <code>npm install --save html.js</code></p>
+
+<p><strong>Usage Example:</strong></p>
+
+<p>```js
+let HTML = require('html.js');</p>
+
+<p>HTML.body.header; // returns header element.</p>
+
+<p>HTML.query("#example").h1.em; // chain on, man.</p>
+
+<p>if (!('each' in node)) {
+  HTML.ify(node);
+}
+node.each(function(el){ console.log(el, ' is your friend!'); });
+```</p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/html.js/html.js.gif" alt="html.js" /></p>
+]]></content>
+  </entry>
+  
+</feed>
