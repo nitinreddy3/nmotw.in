@@ -4,7 +4,7 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-06-25T14:47:51+00:00</updated>
+  <updated>2015-06-25T15:00:38+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -57,6 +57,8 @@ relatively new way.</p>
 <p><strong>GIF FTW!</strong></p>
 
 <p><img src="http://nmotw.in/images/html.js/html.js.gif" alt="html.js" /></p>
+
+<p>Thanks to <a href="https://github.com/nbubna">Nathan Bubna</a> for this module.</p>
 ]]></content>
   </entry>
   
