@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: animation | NMOTW]]></title>
+  <link href="http://nmotw.in/github/public/categories/animation/atom.xml" rel="self"/>
+  <link href="http://nmotw.in/github/"/>
+  <updated>2015-07-02T17:19:24+00:00</updated>
+  <id>http://nmotw.in/github/</id>
+  <author>
+    <name><![CDATA[Hemanth.HM]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[fade]]></title>
+    <link href="http://nmotw.in/github/fade/"/>
+    <updated>2015-07-02T16:54:12+00:00</updated>
+    <id>http://nmotw.in/github/fade</id>
+    <content type="html"><![CDATA[<h1><a href="http://npm.im/fade">fade</a></h1>
+
+<blockquote><p>Fade a HTML element using CSS transitions.</p></blockquote>
+
+<p>Yes, you read it right, this module helps you to fade a HTML element. "Do one thing and do it right!", looks like the moto
+behind this module, that lets us to <code>fade.in</code>, <code>fade.out</code> and fade an element to a specifie opacity, which also takes a
+callback as one of it's params and execute it after animation ends and works across browsers with vendor prefixes.</p>
+
+<p><strong>Install it:</strong> <code>npm install --save fade</code> # browserify it!</p>
+
+<p><strong>Usage:</strong></p>
+
+<p>```js
+var fade = require('fade');</p>
+
+<p>var el = document.querySelector('#el');</p>
+
+<p>fade.out(el); // fade el out in 1s
+fade.in(el, 1500); // fade el in in 1.5s
+fade(el, 0.3, 3000); // fade el to opacity 0.3 in 3s
+fade.out(el, function() {
+  el.style.display = 'none'; // set display to none after fade out
+});
+```</p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/fade/fade.gif" alt="fade.gif" /></p>
+
+<p>Thanks to <a href="http://juliangruber.com/">Julian Gruber</a> for this sweet little module.</p>
+]]></content>
+  </entry>
+  
+</feed>

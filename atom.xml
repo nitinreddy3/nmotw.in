@@ -4,13 +4,61 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-06-25T15:00:38+00:00</updated>
+  <updated>2015-07-02T17:19:24+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[fade]]></title>
+    <link href="http://nmotw.in/fade/"/>
+    <updated>2015-07-02T16:54:12+00:00</updated>
+    <id>http://nmotw.in/fade</id>
+    <content type="html"><![CDATA[<h1><a href="http://npm.im/fade">fade</a></h1>
+
+<blockquote><p>Fade a HTML element using CSS transitions.</p></blockquote>
+
+<p>Yes, you read it right, this module helps you to fade a HTML element. &#8220;Do one thing and do it right!&#8221;, looks like the moto
+behind this module, that lets us to <code>fade.in</code>, <code>fade.out</code> and fade an element to a specifie opacity, which also takes a
+callback as one of it&#8217;s params and execute it after animation ends and works across browsers with vendor prefixes.</p>
+
+<p><strong>Install it:</strong> <code>npm install --save fade</code> # browserify it!</p>
+
+<p><strong>Usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">fade</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;fade&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">var</span> <span class="nx">el</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#el&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">fade</span><span class="p">.</span><span class="nx">out</span><span class="p">(</span><span class="nx">el</span><span class="p">);</span> <span class="c1">// fade el out in 1s</span>
+</span><span class='line'><span class="nx">fade</span><span class="p">.</span><span class="k">in</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="mi">1500</span><span class="p">);</span> <span class="c1">// fade el in in 1.5s</span>
+</span><span class='line'><span class="nx">fade</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mi">3000</span><span class="p">);</span> <span class="c1">// fade el to opacity 0.3 in 3s </span>
+</span><span class='line'><span class="nx">fade</span><span class="p">.</span><span class="nx">out</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">el</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span> <span class="c1">// set display to none after fade out</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/images/fade/fade.gif" alt="fade.gif" /></p>
+
+<p>Thanks to <a href="http://juliangruber.com/">Julian Gruber</a> for this sweet little module.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[html.js]]></title>
@@ -1298,133 +1346,6 @@ the require calls in your code.</p>
 <p><img src="http://nmotw.in/images/sentencer/sentencer.gif" alt="sentencer" /></p>
 
 <p>Thanks to <a href="https://twitter.com/kylestetz">@kylestetz</a> for this fun module! (:</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[dehumanize-date]]></title>
-    <link href="http://nmotw.in/dehumanize-date/"/>
-    <updated>2015-02-12T12:27:21+00:00</updated>
-    <id>http://nmotw.in/dehumanize-date</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/dehumanize-date">dehumanize-date</a></h1>
-
-<blockquote><p>Parse dates in all the formats humans like to use.</p></blockquote>
-
-<p>Yes, it dehumanize dates will almost all the formates humans like to use, those invovle:</p>
-
-<ul>
-<li>today/tomorrow/yesterday</li>
-<li>next/this/last Wednesday</li>
-<li>12th January</li>
-<li>12th January 1950</li>
-<li>09-08-2008</li>
-<li>2008-08-09</li>
-</ul>
-
-
-<p>And returns a computer friendly date of the format: <code>yyyy-dd-mm</code></p>
-
-<p>The heart of the module consists of the below regular expressions:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">NUMBER</span>              <span class="o">=</span> <span class="sr">/^[0-9]+$/</span><span class="p">;</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">NUMBER_WITH_ORDINAL</span> <span class="o">=</span> <span class="sr">/^([0-9]+)(st|nd|rd|th)?$/</span><span class="p">;</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">NUMBER_DATE</span>         <span class="o">=</span> <span class="sr">/^(3[0-1]|[1-2][0-9]|0?[1-9])[,\|\\\/\-\. ]+(1[0-2]|0?[1-9])[,\|\\\/\-\. ]+([0-9]{4})$/</span><span class="p">;</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">NUMBER_DATE_USA</span>     <span class="o">=</span> <span class="sr">/^(1[0-2]|0?[1-9])[,\|\\\/\-\. ]+(3[0-1]|[1-2][0-9]|0?[1-9])[,\|\\\/\-\. ]+([0-9]{4})$/</span><span class="p">;</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">NUMBER_DATE_SHORT_YEAR</span>         <span class="o">=</span> <span class="sr">/^(3[0-1]|[1-2][0-9]|0?[1-9])[,\|\\\/\-\. ]+(1[0-2]|0?[1-9])[,\|\\\/\-\. ]+([0-9]{2})$/</span><span class="p">;</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">NUMBER_DATE_SHORT_YEAR_USA</span>     <span class="o">=</span> <span class="sr">/^(1[0-2]|0?[1-9])[,\|\\\/\-\. ]+(3[0-1]|[1-2][0-9]|0?[1-9])[,\|\\\/\-\. ]+([0-9]{2})$/</span><span class="p">;</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">ISO_8601_DATE</span>       <span class="o">=</span> <span class="sr">/^([0-9]{4})-?(1[0-2]|0?[1-9])-?(3[0-1]|[1-2][0-9]|0?[1-9])$/</span><span class="p">;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>Sample usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="o">&gt;</span> <span class="kd">var</span> <span class="nx">dehumanizeDate</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;dehumanize-date&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&gt;</span> <span class="nx">dehumanizeDate</span>
-</span><span class='line'><span class="p">{</span> <span class="p">[</span><span class="nb">Function</span><span class="o">:</span> <span class="nx">parse</span><span class="p">]</span>
-</span><span class='line'>  <span class="nx">parseNearbyDays</span><span class="o">:</span> <span class="p">[</span><span class="nb">Function</span><span class="o">:</span> <span class="nx">parseNearbyDays</span><span class="p">],</span>
-</span><span class='line'>  <span class="nx">parseLastThisNext</span><span class="o">:</span> <span class="p">[</span><span class="nb">Function</span><span class="o">:</span> <span class="nx">parseLastThisNext</span><span class="p">],</span>
-</span><span class='line'>  <span class="nx">parseNumberDate</span><span class="o">:</span> <span class="p">[</span><span class="nb">Function</span><span class="o">:</span> <span class="nx">parseNumberDate</span><span class="p">],</span>
-</span><span class='line'>  <span class="nx">parseNumberDateShortYear</span><span class="o">:</span> <span class="p">[</span><span class="nb">Function</span><span class="o">:</span> <span class="nx">parseNumberDateShortYear</span><span class="p">],</span>
-</span><span class='line'>  <span class="nx">parseWordyDate</span><span class="o">:</span> <span class="p">[</span><span class="nb">Function</span><span class="o">:</span> <span class="nx">parseWordyDate</span><span class="p">],</span>
-</span><span class='line'>  <span class="nx">monthFromName</span><span class="o">:</span> <span class="p">[</span><span class="nb">Function</span><span class="o">:</span> <span class="nx">monthFromName</span><span class="p">],</span>
-</span><span class='line'>  <span class="nx">date</span><span class="o">:</span> <span class="p">[</span><span class="nb">Function</span><span class="o">:</span> <span class="nx">date</span><span class="p">]</span> <span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'><span class="o">&gt;</span> <span class="nx">dehumanizeDate</span><span class="p">(</span><span class="s2">&quot;today&quot;</span><span class="p">)</span>
-</span><span class='line'><span class="s1">&#39;2015-02-12&#39;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&gt;</span> <span class="nx">dehumanizeDate</span><span class="p">(</span><span class="s2">&quot;tommorrow&quot;</span><span class="p">)</span> <span class="c1">// In case it does not match any.</span>
-</span><span class='line'><span class="kc">null</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&gt;</span> <span class="nx">dehumanizeDate</span><span class="p">(</span><span class="s2">&quot;tomorrow&quot;</span><span class="p">)</span>
-</span><span class='line'><span class="s1">&#39;2015-02-13&#39;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&gt;</span> <span class="nx">dehumanizeDate</span><span class="p">(</span><span class="s2">&quot;yesterday&quot;</span><span class="p">)</span>
-</span><span class='line'><span class="s1">&#39;2015-02-11&#39;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&gt;</span> <span class="nx">dehumanizeDate</span><span class="p">(</span><span class="s2">&quot;1st January&quot;</span><span class="p">)</span>
-</span><span class='line'><span class="s1">&#39;2015-01-01&#39;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&gt;</span> <span class="nx">dehumanizeDate</span><span class="p">(</span><span class="s2">&quot;1st January 1997&quot;</span><span class="p">)</span>
-</span><span class='line'><span class="s1">&#39;1997-01-01&#39;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&gt;</span> <span class="nx">dehumanizeDate</span><span class="p">(</span><span class="s2">&quot;09-09-2009&quot;</span><span class="p">)</span>
-</span><span class='line'><span class="s1">&#39;2009-09-09&#39;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&gt;</span> <span class="nx">dehumanizeDate</span><span class="p">(</span><span class="s2">&quot;2009-09-09&quot;</span><span class="p">)</span>
-</span><span class='line'><span class="s1">&#39;2009-09-09&#39;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/dehumanize-date/dehumanize-date.gif" alt="dehumanize-date" /></p>
-
-<p>Thanks for <a href="http://www.jepso.com">Forbes Lindesay</a> for dehumanizing dates ;)</p>
 ]]></content>
   </entry>
   
