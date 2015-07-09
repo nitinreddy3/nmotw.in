@@ -4,13 +4,58 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-07-02T17:19:24+00:00</updated>
+  <updated>2015-07-09T17:16:51+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[ramjet]]></title>
+    <link href="http://nmotw.in/ramjet/"/>
+    <updated>2015-07-09T17:00:40+00:00</updated>
+    <id>http://nmotw.in/ramjet</id>
+    <content type="html"><![CDATA[<p><a href="http://npm.im/ramjet">ramjet</a></p>
+
+<blockquote><p>Transform DOM elements into each another with smooth transitions</p></blockquote>
+
+<p><code>ramjet</code> helps us to Morph DOM elements from one state to another with smooth transitions!</p>
+
+<p>All it does is:</p>
+
+<ul>
+<li><p>Clone the elements and all their children.</p></li>
+<li><p>Transform the second element so that it completely overlaps with the first.</p></li>
+<li><p>Animating the two elements together until the first element has exactly the same position and dimensions as the second element.</p></li>
+</ul>
+
+
+<p><strong>install it:</strong> <code>npm install --save ramjet</code></p>
+
+<p><strong>sample usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&#39;a&#39;</span> <span class="na">style=</span><span class="s">&#39;background-color: red; font-size: 4em; padding: 1em;&#39;</span><span class="nt">&gt;</span>a<span class="nt">&lt;/div&gt;</span>
+</span><span class='line'><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&#39;b&#39;</span> <span class="na">style=</span><span class="s">&#39;background-color: blue; font-size: 4em; padding: 1em;&#39;</span><span class="nt">&gt;</span>b<span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;script&gt;</span>
+</span><span class='line'>  <span class="nx">ramjet</span><span class="p">.</span><span class="nx">transform</span><span class="p">(</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span> <span class="p">);</span>
+</span><span class='line'><span class="nt">&lt;/script&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW</strong></p>
+
+<p><img src="http://nmotw.in/images/ramjet/ramjet.gif" alt="ramjet.js" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[fade]]></title>
@@ -1271,81 +1316,6 @@ the require calls in your code.</p>
 <p><img src="http://nmotw.in/images/dom-event/dom-event.gif" alt="dom-event" /></p>
 
 <p>P.S: All Web realted modules would need help from <a href="http://browserify.org/">browserify</a> or related tools to run on the web.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[sentencer]]></title>
-    <link href="http://nmotw.in/sentencer/"/>
-    <updated>2015-02-19T13:45:03+00:00</updated>
-    <id>http://nmotw.in/sentencer</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/sentencer">sentencer</a></h1>
-
-<blockquote><p>Templating engine for madlibs-style sentence generating.</p></blockquote>
-
-<p>Create crazy sentences with <code>nouns</code>, <code>adjectives</code> and your own randomness!</p>
-
-<p><code>Sentencer</code> was written for and powers <a href="http://metaphorpsum.com">Metaphorpsum</a>. The noun and adjective lists for form -> <a href="http://www.ashley-bovan.co.uk/words/partsofspeech.html">Word Lists for Writers</a>.</p>
-
-<p><strong>Install it:</strong> <code>npm install sentencer --save</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kr">const</span> <span class="nx">Sentencer</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;sentencer&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="s2">&quot; A  jumped over &quot;</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">Sentencer</span><span class="p">.</span><span class="nx">make</span><span class="p">(</span><span class="nx">str</span><span class="p">);</span> <span class="c1">//&#39; A agreement jumped over a sprightful&#39;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">Sentencer</span><span class="p">.</span><span class="nx">make</span><span class="p">(</span><span class="nx">str</span><span class="p">);</span> <span class="c1">// &#39; A shrine jumped over a wordless&#39;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">str</span> <span class="o">=</span> <span class="s2">&quot;  jumped over &quot;</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">Sentencer</span><span class="p">.</span><span class="nx">make</span><span class="p">(</span><span class="nx">str</span><span class="p">);</span> <span class="c1">// &#39; an instruction jumped over a scabrous&#39;</span>
-</span><span class='line'><span class="nx">Sentencer</span><span class="p">.</span><span class="nx">make</span><span class="p">(</span><span class="nx">str</span><span class="p">);</span> <span class="c1">// &#39; a thistle jumped over a shapely&#39;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>Define custom actions:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">Sentencer</span><span class="p">.</span><span class="nx">configure</span><span class="p">({</span>
-</span><span class='line'>  <span class="nx">actions</span><span class="o">:</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">rand</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>      <span class="k">return</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span>  <span class="o">*</span> <span class="mi">10</span> <span class="p">);</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'><span class="p">});</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">Sentencer</span><span class="p">.</span><span class="nx">make</span><span class="p">(</span><span class="s2">&quot;I like &quot;</span><span class="p">);</span> <span class="c1">// &#39;I like 7&#39;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW:</strong></p>
-
-<p><img src="http://nmotw.in/images/sentencer/sentencer.gif" alt="sentencer" /></p>
-
-<p>Thanks to <a href="https://twitter.com/kylestetz">@kylestetz</a> for this fun module! (:</p>
 ]]></content>
   </entry>
   
