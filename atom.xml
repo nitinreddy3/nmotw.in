@@ -4,7 +4,7 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-07-16T14:55:02+00:00</updated>
+  <updated>2015-07-16T14:56:23+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -87,8 +87,6 @@ and second one being an config object.</p>
 <p><img src="http://nmotw.in/images/easydate/easydate.gif" alt="easydate" /></p>
 
 <p>Thanks to <a href="https://medium.com/@roryrjb">Rory Bradford</a> for this handy util.</p>
-
-<p>&#8220;`</p>
 ]]></content>
   </entry>
   

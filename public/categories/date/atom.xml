@@ -4,7 +4,7 @@
   <title><![CDATA[Category: date | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/date/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2015-07-16T14:55:02+00:00</updated>
+  <updated>2015-07-16T14:56:23+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -75,8 +75,6 @@ var easydate = require('easydate')</p>
 <p><img src="/images/easydate/easydate.gif" alt="easydate" /></p>
 
 <p>Thanks to <a href="https://medium.com/@roryrjb">Rory Bradford</a> for this handy util.</p>
-
-<p>```</p>
 ]]></content>
   </entry>
   
