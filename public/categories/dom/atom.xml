@@ -4,7 +4,7 @@
   <title><![CDATA[Category: dom | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/dom/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2015-07-16T14:56:23+00:00</updated>
+  <updated>2015-07-23T14:47:43+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,44 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[combokeys]]></title>
+    <link href="http://nmotw.in/github/combokeys/"/>
+    <updated>2015-07-23T14:32:46+00:00</updated>
+    <id>http://nmotw.in/github/combokeys</id>
+    <content type="html"><![CDATA[<p><a href="https://www.npmjs.com/package/combokeys">combokeys</a></p>
+
+<blockquote><p>Handles keyboard shortcuts in the browser.</p></blockquote>
+
+<p><code>combokeys</code> is a fork of <a href="https://github.com/ccampbell/mousetrap">ccampbell/mousetrap</a> with two main changes:</p>
+
+<ul>
+<li>Refactored as CommonJS</li>
+<li>Doesn't automatically listen on the document. Instead, it is now a constructor and the element on which to listen must be provided on instantiation.</li>
+</ul>
+
+
+<p><strong>Install it:</strong> <code>npm install --save combokeys</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```js
+var Combokeys = require("combokeys");
+var Mousetrap = new Combokeys(document.documentElement);
+// Or, instantiate it for one or more specific elements:
+var firstCombokeys = new Combokeys(document.getElementById("first"));</p>
+
+<p>firstCombokeys.bind('4', function() { console.log('4'); });
+firstCombokeys.bind("?", function() { console.log('show shortcuts!'); });</p>
+
+<p>```</p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/combokeys/combokeys.gif" alt="combokeys" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[ramjet]]></title>
@@ -194,59 +232,6 @@ return currentNode;
 <p><strong>GIF FTW!</strong></p>
 
 <p><img src="/images/dompurify/dompurify.gif" alt="dompurify" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[dom-event]]></title>
-    <link href="http://nmotw.in/github/dom-event/"/>
-    <updated>2015-02-26T12:48:25+00:00</updated>
-    <id>http://nmotw.in/github/dom-event</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/dom-event">dom-event</a></h1>
-
-<blockquote><p>Add/remove DOM events</p></blockquote>
-
-<p>Sweet and simple module that helps you to attach and remove events to a DOM element with ease and cross browser compliance all in just 15 lines of code ;)</p>
-
-<p><strong>Add event:</strong></p>
-
-<p><code>js
-function on (element, event, callback, capture) {
-  !element.addEventListener &amp;&amp; (event = 'on' + event);
-  (element.addEventListener || element.attachEvent)(event, callback, capture);
-  return callback;
-}
-</code>
-<strong>Remove event:</strong></p>
-
-<p><code>js
-function off (element, event, callback, capture) {
-  !element.removeEventListener &amp;&amp; (event = 'on' + event);
-  (element.removeEventListener || element.detachEvent)(event, callback, capture);
-  return callback;
-}
-</code></p>
-
-<p><strong>Install it:</strong> <code>npm install dom-event</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<p>```js
-var on = require('dom-event');
-var off = on.off; // :)</p>
-
-<p>on(document.body, "click", hello);</p>
-
-<p>function hello() {alert("hello");}</p>
-
-<p>off(document.body, "click", hello); // No alerts :)
-```</p>
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="/images/dom-event/dom-event.gif" alt="dom-event" /></p>
-
-<p>P.S: All Web realted modules would need help from <a href="http://browserify.org/">browserify</a> or related tools to run on the web.</p>
 ]]></content>
   </entry>
   
