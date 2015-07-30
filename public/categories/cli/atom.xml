@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cli | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/cli/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2015-07-23T14:54:21+00:00</updated>
+  <updated>2015-07-30T11:05:25+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,69 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[caniuse-cmd]]></title>
+    <link href="http://nmotw.in/github/caniuse-cmd/"/>
+    <updated>2015-07-30T10:32:22+00:00</updated>
+    <id>http://nmotw.in/github/caniuse-cmd</id>
+    <content type="html"><![CDATA[<h1><a href="https://github.com/sgentle/caniuse-cmd">caniuse-cmd</a></h1>
+
+<blockquote><p><code>caniuse.com</code> on CLI!</p></blockquote>
+
+<p><code>caniuse-cmd</code> brings the power of <a href="http://caniuse.com">caniuse</a> on to the command line, it makes use of <a href="https://www.npmjs.com/package/caniuse-db">caniuse-db</a> module
+which provides raw browser/feature support data for the same.</p>
+
+<p><strong>Install it:</strong></p>
+
+<p><code>sh
+npm install --global caniuse-cmd
+</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```sh
+nmotw> caniuse webrtc --short    <br/>
+WebRTC Peer-to-peer connections ✔ 55.36% ◒ 0%
+  IE ✘  Edge ✘  Firefox ✘ 2+ ✔ 22+ᵖ Chrome ✘ 4+ ✔ 23+ᵖ Safari ✘  Opera ✘ 9+ ✔ 18+ᵖ</p>
+
+<p>nmotw> caniuse webrtc --short -a
+WebRTC Peer-to-peer connections ✔ 55.36% ◒ 0%
+  IE ✘  Edge ✘  Firefox ✘ 2+ ✔ 22+ᵖ Chrome ✘ 4+ ✔ 23+ᵖ Safari ✘  Opera ✘ 9+ ✔ 18+ᵖ</p>
+
+<p>nmotw> caniuse webrtc --short --abbrv
+WebRTC Peer-to-peer connections ✔ 55.36% ◒ 0%
+  IE ✘  Edge ✘  Firefox ✘ 2+ ✔ 22+ᵖ Chrome ✘ 4+ ✔ 23+ᵖ Safari ✘  Opera ✘ 9+ ✔ 18+ᵖ</p>
+
+<p>nmotw> caniuse webrtc --short --abbrev
+WebRTC Peer-to-peer connections ✔ 55.36% ◒ 0%
+  IE ✘  Edge ✘  FF ✘ 2+ ✔ 22+ᵖ Chr. ✘ 4+ ✔ 23+ᵖ Saf. ✘  Op. ✘ 9+ ✔ 18+ᵖ</p>
+
+<p>nmotw> caniuse webrtc --short --abbrev --browser ff
+WebRTC Peer-to-peer connections ✔ 55.36% ◒ 0%</p>
+
+<p>nmotw> caniuse webrtc --long                     <br/>
+WebRTC Peer-to-peer connections ✔ 55.36% ◒ 0% [W3C Working Draft]
+  Method of allowing two users to communicate directly, browser to browser using the RTCPeerConnection API.
+  #JSAPI</p>
+
+<p>  IE ✘<br/>
+  Edge ✘<br/>
+  Firefox ✘ 2+ ✔ 22+ᵖ
+  Chrome ✘ 4+ ✔ 23+ᵖ
+  Safari ✘<br/>
+  Opera ✘ 9+ ✔ 18+ᵖ
+```</p>
+
+<p>P.S: Do cehckout the CLI <a href="https://github.com/sgentle/caniuse-cmd#does-it-have-lots-of-command-line-options">flags</a></p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/caniuse-cmd/caniuse-cmd.gif" alt="caniuse-cmd.gif" /></p>
+
+<p>Thanks to <a href="https://github.com/sgentle">Sam Gentle</a> for bringing this to the CLI.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[browser-repl]]></title>
@@ -289,63 +352,6 @@ $ npm-check-updates -u</p>
 <p><img src="/images/npm-check-updates/npm-check-updates.gif" alt="" /></p>
 
 <p>Thanks to Tomas Junnonen for this cute little util.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[npm-clone]]></title>
-    <link href="http://nmotw.in/github/npm-clone/"/>
-    <updated>2014-10-30T12:59:03+00:00</updated>
-    <id>http://nmotw.in/github/npm-clone</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.org/package/npm-clone">npm-clone</a></h1>
-
-<p>This is a CLI util that will help you to:</p>
-
-<ul>
-<li><p>Clone a node module from it's name.</p></li>
-<li><p>Install all the dependencies.</p></li>
-<li><p>Run its tests!</p></li>
-</ul>
-
-
-<p><strong>Get it:</strong> <code>npm install -g npm-clone</code></p>
-
-<p><strong>Usage example:</strong></p>
-
-<p>```sh</p>
-
-<h1>clone a node module</h1>
-
-<p>npm-clone is-mp3</p>
-
-<h1>clone using its private url</h1>
-
-<p>npm-clone --ssh is-mp3
-npm-clone --https is-mp3</p>
-
-<h1>clone and install dependencies</h1>
-
-<p>npm-clone install is-mp3</p>
-
-<h1>clone, install dependencies and run its tests</h1>
-
-<p>npm-clone install test is-mp3</p>
-
-<h1>with a short form</h1>
-
-<p>npm-clone all is-mp3</p>
-
-<h1>flags still apply</h1>
-
-<p>npm-clone --ssh all is-mp3</p>
-
-<p>```</p>
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="/images/npm-clone/npm-clone.gif" alt="npm-clone" /></p>
-
-<p>Thanks to <a href="http://juliangruber.com/">Julian Gruber</a> for this helper! :)</p>
 ]]></content>
   </entry>
   

@@ -4,13 +4,109 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-07-23T14:54:21+00:00</updated>
+  <updated>2015-07-30T11:05:25+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[caniuse-cmd]]></title>
+    <link href="http://nmotw.in/caniuse-cmd/"/>
+    <updated>2015-07-30T10:32:22+00:00</updated>
+    <id>http://nmotw.in/caniuse-cmd</id>
+    <content type="html"><![CDATA[<h1><a href="https://github.com/sgentle/caniuse-cmd">caniuse-cmd</a></h1>
+
+<blockquote><p><code>caniuse.com</code> on CLI!</p></blockquote>
+
+<p><code>caniuse-cmd</code> brings the power of <a href="http://caniuse.com">caniuse</a> on to the command line, it makes use of <a href="https://www.npmjs.com/package/caniuse-db">caniuse-db</a> module
+which provides raw browser/feature support data for the same.</p>
+
+<p><strong>Install it:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>npm install --global caniuse-cmd
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>Sample usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>nmotw&gt; caniuse webrtc --short
+</span><span class='line'>WebRTC Peer-to-peer connections ✔ 55.36% ◒ 0%
+</span><span class='line'>  IE ✘  Edge ✘  Firefox ✘ 2+ ✔ 22+ᵖ Chrome ✘ 4+ ✔ 23+ᵖ Safari ✘  Opera ✘ 9+ ✔ 18+ᵖ
+</span><span class='line'>
+</span><span class='line'>nmotw&gt; caniuse webrtc --short -a
+</span><span class='line'>WebRTC Peer-to-peer connections ✔ 55.36% ◒ 0%
+</span><span class='line'>  IE ✘  Edge ✘  Firefox ✘ 2+ ✔ 22+ᵖ Chrome ✘ 4+ ✔ 23+ᵖ Safari ✘  Opera ✘ 9+ ✔ 18+ᵖ
+</span><span class='line'>
+</span><span class='line'>nmotw&gt; caniuse webrtc --short --abbrv
+</span><span class='line'>WebRTC Peer-to-peer connections ✔ 55.36% ◒ 0%
+</span><span class='line'>  IE ✘  Edge ✘  Firefox ✘ 2+ ✔ 22+ᵖ Chrome ✘ 4+ ✔ 23+ᵖ Safari ✘  Opera ✘ 9+ ✔ 18+ᵖ
+</span><span class='line'>
+</span><span class='line'>nmotw&gt; caniuse webrtc --short --abbrev
+</span><span class='line'>WebRTC Peer-to-peer connections ✔ 55.36% ◒ 0%
+</span><span class='line'>  IE ✘  Edge ✘  FF ✘ 2+ ✔ 22+ᵖ Chr. ✘ 4+ ✔ 23+ᵖ Saf. ✘  Op. ✘ 9+ ✔ 18+ᵖ
+</span><span class='line'>
+</span><span class='line'>nmotw&gt; caniuse webrtc --short --abbrev --browser ff
+</span><span class='line'>WebRTC Peer-to-peer connections ✔ 55.36% ◒ 0%
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>nmotw&gt; caniuse webrtc --long
+</span><span class='line'>WebRTC Peer-to-peer connections ✔ 55.36% ◒ 0% <span class="o">[</span>W3C Working Draft<span class="o">]</span>
+</span><span class='line'>  Method of allowing two users to communicate directly, browser to browser using the RTCPeerConnection API.
+</span><span class='line'>  <span class="c">#JSAPI</span>
+</span><span class='line'>
+</span><span class='line'>  IE ✘
+</span><span class='line'>  Edge ✘
+</span><span class='line'>  Firefox ✘ 2+ ✔ 22+ᵖ
+</span><span class='line'>  Chrome ✘ 4+ ✔ 23+ᵖ
+</span><span class='line'>  Safari ✘
+</span><span class='line'>  Opera ✘ 9+ ✔ 18+ᵖ
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>P.S: Do cehckout the CLI <a href="https://github.com/sgentle/caniuse-cmd#does-it-have-lots-of-command-line-options">flags</a></p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/images/caniuse-cmd/caniuse-cmd.gif" alt="caniuse-cmd.gif" /></p>
+
+<p>Thanks to <a href="https://github.com/sgentle">Sam Gentle</a> for bringing this to the CLI.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[combokeys]]></title>
@@ -1263,52 +1359,6 @@ the require calls in your code.</p>
 <p><img src="http://nmotw.in/images/did-you-mean/did-you-mean.gif" alt="did-you-mean" /></p>
 
 <p>Thanks to Boris Okunskiy for bringing <code>did-you-mean</code> to web and CLI.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[confirm-simple]]></title>
-    <link href="http://nmotw.in/confirm-simple/"/>
-    <updated>2015-03-12T15:24:10+00:00</updated>
-    <id>http://nmotw.in/confirm-simple</id>
-    <content type="html"><![CDATA[<h1><a href="http://npm.im/confirm-simple">confirm-simple</a></h1>
-
-<blockquote><p>A simple command-line tool to confirm.</p></blockquote>
-
-<p>If you have written CLI apps, you would have for sure come across a senario of taking an action based on the users choice.</p>
-
-<p><code>confirm-simple</code> as the name says it&#8217;s a simple to use util that would help you to confirm users choice with ease.</p>
-
-<p><strong>Install it:</strong> <code>npm install --save confirm-simple</code></p>
-
-<p><strong>API and simple usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">confirm</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;confirm-simple&#39;</span><span class="p">)</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">confirm</span><span class="p">(</span><span class="s1">&#39;Do you accept the EULA?&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;yes&#39;</span><span class="p">,</span> <span class="s1">&#39;no&#39;</span><span class="p">]</span> <span class="p">,</span><span class="kd">function</span> <span class="p">(</span><span class="nx">yes</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="nx">yes</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Good for you!&#39;</span><span class="p">);</span>
-</span><span class='line'>    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-</span><span class='line'>      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Sorry you wont get to use the software&#39;</span><span class="p">);</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/confirm-simple/confirm-simple.gif" alt="" /></p>
-
-<p>Thanks to YouBao Nong for <code>confirm-simple</code>.</p>
 ]]></content>
   </entry>
   
