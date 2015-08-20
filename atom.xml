@@ -4,13 +4,69 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-08-13T14:40:13+00:00</updated>
+  <updated>2015-08-20T13:02:52+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[human-to-cron]]></title>
+    <link href="http://nmotw.in/human-to-cron/"/>
+    <updated>2015-08-20T12:39:33+00:00</updated>
+    <id>http://nmotw.in/human-to-cron</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/human-to-cron">human-to-cron</a></h1>
+
+<blockquote><p>Converts human readable expression to a cron string!</p></blockquote>
+
+<p>If you can interpert <code>0 */1 * * *</code> as <code>each minute</code> then this module is not for you ;)</p>
+
+<p><code>human-to-cron</code> parsers the human readable expressions with the help of ES6 generators converts it into a <a href="https://en.wikipedia.org/wiki/Cron">cron</a> string.</p>
+
+<p><strong>Get it:</strong> <code>npm install --save human-to-cron</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">humanToCron</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;human-to-cron&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">humanToCron</span><span class="p">(</span><span class="s1">&#39;once each minute&#39;</span><span class="p">)</span> <span class="c1">// =&gt; 0 */1 * * * *</span>
+</span><span class='line'><span class="nx">humanToCron</span><span class="p">(</span><span class="s1">&#39;each 2 minutes&#39;</span><span class="p">)</span> <span class="c1">// =&gt; * */2 * * * *</span>
+</span><span class='line'><span class="nx">humanToCron</span><span class="p">(</span><span class="s1">&#39;each second&#39;</span><span class="p">)</span> <span class="c1">// =&gt; */1 * * * * *</span>
+</span><span class='line'><span class="nx">humanToCron</span><span class="p">(</span><span class="s1">&#39;once each hour&#39;</span><span class="p">)</span> <span class="c1">// =&gt; 0 0 */1 * * *</span>
+</span><span class='line'><span class="nx">humanToCron</span><span class="p">(</span><span class="s1">&#39;once each day&#39;</span><span class="p">)</span> <span class="c1">// =&gt; 0 0 0 */1 * *</span>
+</span><span class='line'><span class="nx">humanToCron</span><span class="p">(</span><span class="s1">&#39;once each month&#39;</span><span class="p">)</span> <span class="c1">// =&gt; 0 0 0 0 */1 *</span>
+</span><span class='line'><span class="nx">humanToCron</span><span class="p">(</span><span class="s1">&#39;once each 5 months&#39;</span><span class="p">)</span> <span class="c1">// =&gt; 0 0 0 0 */5 *</span>
+</span><span class='line'><span class="nx">humanToCron</span><span class="p">(</span><span class="s1">&#39;midnight&#39;</span><span class="p">)</span> <span class="c1">// =&gt; 0 0 0 * * *</span>
+</span><span class='line'><span class="nx">humanToCron</span><span class="p">(</span><span class="s1">&#39;midnight each 2 minutes&#39;</span><span class="p">)</span> <span class="c1">// =&gt; 0 */2 0 * * *</span>
+</span><span class='line'><span class="nx">humanToCron</span><span class="p">(</span><span class="s1">&#39;once tuesday each 10 minutes&#39;</span><span class="p">)</span> <span class="c1">// =&gt; 0 */10 * 1 * *</span>
+</span><span class='line'><span class="nx">humanToCron</span><span class="p">(</span><span class="s1">&#39;friday 15:44&#39;</span><span class="p">)</span> <span class="c1">// =&gt; 0 44 15 4 * *</span>
+</span><span class='line'><span class="nx">humanToCron</span><span class="p">(</span><span class="s1">&#39;august friday 15:44&#39;</span><span class="p">)</span> <span class="c1">// =&gt; 0 44 15 4 7 *</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/images/human-to-cron/human-to-cron.gif" alt="human-to-cron" /></p>
+
+<p>Thanks to <a href="https://github.com/rainder">Andrius Skerla</a> for this cheeky module!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[lightcards]]></title>
@@ -1254,68 +1310,6 @@ the require calls in your code.</p>
 <p><strong>GIF FTW!</strong></p>
 
 <p><img src="http://nmotw.in/images/require-times/require-times.gif" alt="require-times" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[line-numbers]]></title>
-    <link href="http://nmotw.in/line-numbers/"/>
-    <updated>2015-04-02T11:40:30+00:00</updated>
-    <id>http://nmotw.in/line-numbers</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/line-numbers">line-numbers</a></h1>
-
-<blockquote><p>Add line numbers to a string.</p></blockquote>
-
-<p>A humble module that will add line number to a given string! Mostly useful for text editor and displaying some code snippet.</p>
-
-<p><strong>Install it:</strong> <code>$ npm install --save line-numbers</code></p>
-
-<p><strong>Simple usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">lns</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;line-numbers&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">code</span> <span class="o">=</span> <span class="err">`</span><span class="kd">function</span> <span class="nx">meow</span><span class="p">(</span><span class="nx">cb</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">cb</span><span class="p">)</span> <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s2">&quot;CB is a must!&quot;</span><span class="p">);</span>
-</span><span class='line'>  <span class="nx">cb</span><span class="p">(</span><span class="s2">&quot;meow&quot;</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span><span class="err">`</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">lns</span><span class="p">(</span><span class="nx">code</span><span class="p">)</span> <span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="cm">/*</span>
-</span><span class='line'><span class="cm">Would log:</span>
-</span><span class='line'>
-</span><span class='line'><span class="cm"> 1 | function meow(cb) { </span>
-</span><span class='line'><span class="cm"> 2 |   if(!cb) throw new Error(&quot;CB is a must!&quot;);</span>
-</span><span class='line'><span class="cm"> 3 |   cb(&quot;meow&quot;);</span>
-</span><span class='line'><span class="cm"> 4 | }</span>
-</span><span class='line'><span class="cm">*/</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>P.S: You can also pass in options like: <code>before</code>, <code>number</code>, <code>width</code>, <code>after</code> and <code>line</code> (They are self explanatory?)</p>
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/line-numbers/line-numbers.gif" alt="line-numbers" /></p>
-
-<p>Thanks to Simon Lydell for <code>line-numbers</code>.</p>
 ]]></content>
   </entry>
   

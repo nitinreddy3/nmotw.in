@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cli | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/cli/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2015-08-13T14:40:13+00:00</updated>
+  <updated>2015-08-20T13:02:52+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,48 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[human-to-cron]]></title>
+    <link href="http://nmotw.in/github/human-to-cron/"/>
+    <updated>2015-08-20T12:39:33+00:00</updated>
+    <id>http://nmotw.in/github/human-to-cron</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/human-to-cron">human-to-cron</a></h1>
+
+<blockquote><p>Converts human readable expression to a cron string!</p></blockquote>
+
+<p>If you can interpert <code>0 */1 * * *</code> as <code>each minute</code> then this module is not for you ;)</p>
+
+<p><code>human-to-cron</code> parsers the human readable expressions with the help of ES6 generators converts it into a <a href="https://en.wikipedia.org/wiki/Cron">cron</a> string.</p>
+
+<p><strong>Get it:</strong> <code>npm install --save human-to-cron</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```js
+var humanToCron = require('human-to-cron');</p>
+
+<p>humanToCron('once each minute') // => 0 <em>/1 * * * *
+humanToCron('each 2 minutes') // => * </em>/2 * * * *
+humanToCron('each second') // => <em>/1 * * * * *
+humanToCron('once each hour') // => 0 0 </em>/1 * * *
+humanToCron('once each day') // => 0 0 0 <em>/1 * *
+humanToCron('once each month') // => 0 0 0 0 </em>/1 *
+humanToCron('once each 5 months') // => 0 0 0 0 <em>/5 *
+humanToCron('midnight') // => 0 0 0 * * *
+humanToCron('midnight each 2 minutes') // => 0 </em>/2 0 * * *
+humanToCron('once tuesday each 10 minutes') // => 0 */10 * 1 * *
+humanToCron('friday 15:44') // => 0 44 15 4 * *
+humanToCron('august friday 15:44') // => 0 44 15 4 7 *
+```</p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/human-to-cron/human-to-cron.gif" alt="human-to-cron" /></p>
+
+<p>Thanks to <a href="https://github.com/rainder">Andrius Skerla</a> for this cheeky module!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[caniuse-cmd]]></title>
@@ -305,53 +347,6 @@ qs      0.5.6     >= 1.x  test@0.0.1 > qs@0.5.6
 <p><img src="/images/tldr/tldr.gif" alt="tldr" /></p>
 
 <p>All TLDR pages are in <code>markdown</code> format, checkout <a href="https://github.com/tldr-pages/tldr/blob/master/pages/common/sudo.md">sudo</a> page for an example, this is a community dirven effort, so please feel free to <a href="https://github.com/tldr-pages/tldr/blob/master/CONTRIBUTING.md">contribute</a> :)</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[npm-check-updates]]></title>
-    <link href="http://nmotw.in/github/npm-check-updates/"/>
-    <updated>2014-11-20T14:52:16+00:00</updated>
-    <id>http://nmotw.in/github/npm-check-updates</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.org/package/npm-check-updates">npm-check-updates</a></h1>
-
-<p>Finding all updates to dependencies and updating them is very easy with <code>npm-check-updates</code>.</p>
-
-<p><strong>Install it globally:</strong> <code>npm install -g npm-check-updates</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<p>```sh
-$ npm-check-updates
-npm http GET http://registry.npmjs.org/read-chunk
-npm http GET http://registry.npmjs.org/mocha
-npm http GET http://registry.npmjs.org/browserify
-npm http 304 http://registry.npmjs.org/browserify
-npm http 304 http://registry.npmjs.org/read-chunk
-npm http 304 http://registry.npmjs.org/mocha</p>
-
-<p>"browserify" can be updated from ^3.0.0 to ^6.3.2 (Installed: 3.44.2, Latest: 6.3.2)
-"read-chunk" can be updated from ^0.1.0 to ^1.0.0 (Installed: 0.1.0, Latest: 1.0.0)
-<code>
-</code>sh
-$ npm-check-updates -u</p>
-
-<p>"browserify" can be updated from ^3.0.0 to ^6.3.2 (Installed: 3.44.2, Latest: 6.3.2)
-"read-chunk" can be updated from ^0.1.0 to ^1.0.0 (Installed: 0.1.0, Latest: 1.0.0)</p>
-
-<p>package.json upgraded</p>
-
-<p>$ npm-check-updates</p>
-
-<p>All dependencies match the latest package versions :)</p>
-
-<p>```</p>
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="/images/npm-check-updates/npm-check-updates.gif" alt="" /></p>
-
-<p>Thanks to Tomas Junnonen for this cute little util.</p>
 ]]></content>
   </entry>
   
