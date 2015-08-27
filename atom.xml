@@ -4,13 +4,95 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-08-20T13:02:52+00:00</updated>
+  <updated>2015-08-27T13:37:51+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[url-pattern]]></title>
+    <link href="http://nmotw.in/url-pattern/"/>
+    <updated>2015-08-27T08:37:23+00:00</updated>
+    <id>http://nmotw.in/url-pattern</id>
+    <content type="html"><![CDATA[<p><a href="https://www.npmjs.com/package/url-pattern">url-pattern</a></p>
+
+<blockquote><p>easier than regex string matching for urls, domains, filepaths and other strings.</p></blockquote>
+
+<p><code>url-pattern</code> can capture named parts of strings and conveniently returns them as objects.</p>
+
+<p>Also does the reverse and generates strings given a pattern and such an object.</p>
+
+<p><strong>install:</strong> <code>npm install url-pattern</code></p>
+
+<p><strong>simple match example:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">UrlPattern</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;url-pattern&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">var</span> <span class="nx">pattern</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">UrlPattern</span><span class="p">(</span><span class="s1">&#39;/api/users/:id&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">pattern</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="s1">&#39;/api/users/10&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="p">{</span><span class="nx">id</span><span class="o">:</span> <span class="s1">&#39;10&#39;</span><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">pattern</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="s1">&#39;/api/products/5&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="kc">null</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>complex match example showing off escaping, wildcards and optional segments:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">pattern</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">UrlPattern</span><span class="p">(</span><span class="s1">&#39;(http(s)\\://)(:subdomain.):domain.:tld(/*)&#39;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">pattern</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="s1">&#39;google.de&#39;</span><span class="p">);</span> <span class="c1">// {domain: &#39;google&#39;, tld: &#39;de&#39;}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">pattern</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="s1">&#39;https://www.google.com&#39;</span><span class="p">);</span> <span class="c1">// {subdomain: &#39;www&#39;, domain: &#39;google&#39;, tld: &#39;com&#39;}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">pattern</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="s1">&#39;http://mail.google.com/mail&#39;</span><span class="p">);</span> <span class="c1">// {subdomain: &#39;mail&#39;, domain: &#39;google&#39;, tld: &#39;com&#39;, _: &#39;mail&#39;}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">pattern</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="s1">&#39;google&#39;</span><span class="p">)</span> <span class="p">;</span> <span class="c1">// null</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>stringify example:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">pattern</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">UrlPattern</span><span class="p">(</span><span class="s1">&#39;/api/users(/:id)&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">pattern</span><span class="p">.</span><span class="nx">stringify</span><span class="p">()</span> <span class="c1">// &#39;/api/users&#39;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">pattern</span><span class="p">.</span><span class="nx">stringify</span><span class="p">({</span><span class="nx">id</span><span class="o">:</span> <span class="mi">10</span><span class="p">})</span>  <span class="c1">//&#39; /api/users/10&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/images/url-pattern/url-pattern.gif" alt="url-pattern" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[human-to-cron]]></title>
@@ -1250,66 +1332,6 @@ in the browser env.</p>
 <p><img src="http://nmotw.in/images/logdown/logdown.gif" alt="logdown" /></p>
 
 <p>Thanks to <a href="http://caiogondim.com">Caio Gondim</a> for logdown! (:</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[require-times]]></title>
-    <link href="http://nmotw.in/require-times/"/>
-    <updated>2015-04-09T14:40:22+00:00</updated>
-    <id>http://nmotw.in/require-times</id>
-    <content type="html"><![CDATA[<h1><a href="http://npm.im/require-times">require-times</a></h1>
-
-<blockquote><p>Find out how long require calls take in your program.</p></blockquote>
-
-<p>This is cheeky module from <a href="http://maxogden.com/">Max Ogden</a> tap into <code>require.extensions['.js']</code> and lets you know the time consumed by
-the require calls in your code.</p>
-
-<p><strong>Install it:</strong> <code>npm install require-times</code></p>
-
-<p><strong>Usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">rt</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;require-times&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="nx">rt</span><span class="p">.</span><span class="nx">start</span><span class="p">();</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">// hundreds on require statments ;)</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">rt</span><span class="p">.</span><span class="nx">end</span><span class="p">();</span> <span class="c1">// Will spit the time consumed to stdout.</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>Example:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">rt</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;require-times&#39;</span><span class="p">)();</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">rt</span><span class="p">.</span><span class="nx">start</span><span class="p">();</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;require-times&#39;</span><span class="p">);</span> <span class="c1">// Dog fooding ;)</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">rt</span><span class="p">.</span><span class="nx">end</span><span class="p">();</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">// Output =&gt; total: 9647ms</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/require-times/require-times.gif" alt="require-times" /></p>
 ]]></content>
   </entry>
   
