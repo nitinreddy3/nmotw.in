@@ -4,7 +4,7 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-09-03T13:24:19+00:00</updated>
+  <updated>2015-09-03T13:27:52+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -17,7 +17,7 @@
     <link href="http://nmotw.in/speed-test/"/>
     <updated>2015-09-03T13:07:24+00:00</updated>
     <id>http://nmotw.in/speed-test</id>
-    <content type="html"><![CDATA[<h1><a href="speed-test">https://www.npmjs.com/package/speed-test</a></h1>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/speed-test">speed-test</a></h1>
 
 <blockquote><p>Test your internet connection speed and ping using speedtest.net from the CLI.</p></blockquote>
 

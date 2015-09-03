@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cli | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/cli/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2015-09-03T13:24:19+00:00</updated>
+  <updated>2015-09-03T13:27:52+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,38 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[speed-test]]></title>
+    <link href="http://nmotw.in/github/speed-test/"/>
+    <updated>2015-09-03T13:07:24+00:00</updated>
+    <id>http://nmotw.in/github/speed-test</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/speed-test">speed-test</a></h1>
+
+<blockquote><p>Test your internet connection speed and ping using speedtest.net from the CLI.</p></blockquote>
+
+<p>This is product of <a href="https://github.com/sindresorhus/module-requests/">sindresorhus/module-requests</a> makes use of <a href="https://github.com/ddsol/speedtest.net">speedtest-net</a>
+helps us to know our intenet connection speed and ping with a beautiful UI.</p>
+
+<p><strong>Get it:</strong> <code>$ npm install --global speed-test</code></p>
+
+<p><strong>Usage:</strong></p>
+
+<p>```sh
+$ speed-test --help</p>
+
+<p>  Usage</p>
+
+<pre><code>$ speed-test
+</code></pre>
+
+<p>```</p>
+
+<p><strong>GIF FTW:</strong></p>
+
+<p><img src="/images/speed-test/speed-test.gif" alt="speed-test" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[human-to-cron]]></title>
@@ -278,75 +310,6 @@ qs      0.5.6     >= 1.x  test@0.0.1 > qs@0.5.6
 <p><img src="/images/nsp/nsp.gif" alt="nsp" /></p>
 
 <p>Thanks to the <a href="https://twitter.com/nodesecurity">nodesecurity</a> for making security easy!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[tldr]]></title>
-    <link href="http://nmotw.in/github/tldr/"/>
-    <updated>2014-12-04T12:29:16+00:00</updated>
-    <id>http://nmotw.in/github/tldr</id>
-    <content type="html"><![CDATA[<h1><a href="https://github.com/tldr-pages/tldr">tldr</a></h1>
-
-<p>If you are new to CLI or not able to recall the flags of your CLI tool, you would consult <code>man pages</code>.</p>
-
-<p><code>tldr</code> is "Too Long Didn't Read" version of man pages ;) i.e it shows us the common usages of a given command.</p>
-
-<p><code>tldr</code> covers:</p>
-
-<ul>
-<li><p>Common commands.</p></li>
-<li><p>GNU/Linux.</p></li>
-<li><p>OSX.</p></li>
-<li><p>SunOS.</p></li>
-</ul>
-
-
-<p><strong>Install it as a CLI app:</strong> <code>$ npm install -g tldr</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<p>```sh</p>
-
-<p>$ tldr sudo</p>
-
-<p>  execute a command as another user</p>
-
-<ul>
-<li>Listing of an unreadable directory:</li>
-</ul>
-
-
-<p>  sudo ls /usr/local/scrt</p>
-
-<ul>
-<li>To edit a file as user www:</li>
-</ul>
-
-
-<p>  sudo -u www vi /var/www/index.html</p>
-
-<ul>
-<li>To shutdown the machine:</li>
-</ul>
-
-
-<p>  sudo shutdown -r +10 "Cya soon!"</p>
-
-<ul>
-<li>To repeat the last command as sudo</li>
-</ul>
-
-
-<p>  sudo !!</p>
-
-<p>```</p>
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="/images/tldr/tldr.gif" alt="tldr" /></p>
-
-<p>All TLDR pages are in <code>markdown</code> format, checkout <a href="https://github.com/tldr-pages/tldr/blob/master/pages/common/sudo.md">sudo</a> page for an example, this is a community dirven effort, so please feel free to <a href="https://github.com/tldr-pages/tldr/blob/master/CONTRIBUTING.md">contribute</a> :)</p>
 ]]></content>
   </entry>
   
