@@ -4,13 +4,46 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-08-27T13:37:51+00:00</updated>
+  <updated>2015-09-03T13:24:19+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[speed-test]]></title>
+    <link href="http://nmotw.in/speed-test/"/>
+    <updated>2015-09-03T13:07:24+00:00</updated>
+    <id>http://nmotw.in/speed-test</id>
+    <content type="html"><![CDATA[<h1><a href="speed-test">https://www.npmjs.com/package/speed-test</a></h1>
+
+<blockquote><p>Test your internet connection speed and ping using speedtest.net from the CLI.</p></blockquote>
+
+<p>This is product of <a href="https://github.com/sindresorhus/module-requests/">sindresorhus/module-requests</a> makes use of <a href="https://github.com/ddsol/speedtest.net">speedtest-net</a>
+helps us to know our intenet connection speed and ping with a beautiful UI.</p>
+
+<p><strong>Get it:</strong> <code>$ npm install --global speed-test</code></p>
+
+<p><strong>Usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>speed-test --help
+</span><span class='line'>
+</span><span class='line'>  Usage
+</span><span class='line'>    <span class="nv">$ </span>speed-test
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW:</strong></p>
+
+<p><img src="http://nmotw.in/images/speed-test/speed-test.gif" alt="speed-test" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[url-pattern]]></title>
@@ -1291,47 +1324,6 @@ P.S: There is <code>console.dir</code> but <code>console.json</code> is kina app
 <p><strong>GIF FTW!</strong></p>
 
 <p><img src="http://nmotw.in/images/exenv/exenv.gif" alt="exenv" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[logdown]]></title>
-    <link href="http://nmotw.in/logdown/"/>
-    <updated>2015-04-16T12:37:03+00:00</updated>
-    <id>http://nmotw.in/logdown</id>
-    <content type="html"><![CDATA[<p><a href="http://npm.im/logdown">logdown</a></p>
-
-<blockquote><p>Debug utility with markdown support that runs on browser and server.</p></blockquote>
-
-<p>This module lets you to have markdown syntax in your debug logs! It had <code>['log', 'info', 'warn', 'error']</code> as it&#8217;s logging levels.</p>
-
-<p>One can also prefix the log message, it has support for various terminals <code>/^screen|^xterm|^vt100|color|ansi|cygwin|linux/</code> and also runs
-in the browser env.</p>
-
-<p><strong>Install it:</strong> <code>npm install --save logdown</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">Logdown</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;logdown&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">debug</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Logdown</span><span class="p">({</span> <span class="nx">prefix</span><span class="o">:</span> <span class="s1">&#39;meow&#39;</span> <span class="p">});</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">debug</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;lorem *ipsum*&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="nx">debug</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s1">&#39;I can haz _info_&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="nx">debug</span><span class="p">.</span><span class="nx">warn</span><span class="p">(</span><span class="s1">&#39;shall I `highlight` your code?&#39;</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW:</strong></p>
-
-<p><img src="http://nmotw.in/images/logdown/logdown.gif" alt="logdown" /></p>
-
-<p>Thanks to <a href="http://caiogondim.com">Caio Gondim</a> for logdown! (:</p>
 ]]></content>
   </entry>
   
