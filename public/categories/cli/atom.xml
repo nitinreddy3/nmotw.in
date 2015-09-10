@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cli | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/cli/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2015-09-03T13:27:52+00:00</updated>
+  <updated>2015-09-10T14:39:36+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,65 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[npm-check]]></title>
+    <link href="http://nmotw.in/github/npm-check/"/>
+    <updated>2015-09-10T14:28:00+00:00</updated>
+    <id>http://nmotw.in/github/npm-check</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/npm-check">npm-check</a></h1>
+
+<blockquote><p>Check for outdated, incorrect, and unused dependencies.</p></blockquote>
+
+<p><strong>Features:</strong></p>
+
+<ul>
+<li><em>Interactive Update</em> means less typing.</li>
+<li>Scoped packages support for the modern npm user.</li>
+<li>Works with public and private registries.</li>
+<li>Won't query npm registry for packages with <code>private: true</code>.</li>
+<li>Kindly informs you if a dependency is not being used.</li>
+<li>Emoji in a command-line app, because command-line apps can be fun too.</li>
+</ul>
+
+
+<p>Very much similar to <a href="http://nmotw.in/npm-check-updates/">npm-check-updates</a> but far more generic and interactive!</p>
+
+<p><strong>Get it:</strong> <code>npm install -g npm-check-updates</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```sh
+$ npm-check --help</p>
+
+<p>  Usage: npm-check [options]</p>
+
+<p>  Options:</p>
+
+<pre><code>-h, --help         output usage information
+-V, --version      output the version number
+-u, --update       Interactive update.
+-g, --global       Look at global modules.
+-s, --skip-unused  Skip check for unused packages.
+-p, --production   Ignore devDependencies.
+</code></pre>
+
+<p>```</p>
+
+<p>```js
+var npmCheck = require('npm-check');</p>
+
+<p>npmCheck(options)
+  .then(result);
+```</p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/npm-check/npm-check.gif" alt="npm-check" /></p>
+
+<p>Thanks to <a href="https://twitter.com/dylang">@dylang</a> for <code>npm-check</code>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[speed-test]]></title>
@@ -249,67 +308,6 @@ $ repl</p>
 <p><strong>GIF FTW</strong></p>
 
 <p><img src="/images/browser-repl/brwoser-repl.gif" alt="browser-repl" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[nsp]]></title>
-    <link href="http://nmotw.in/github/nsp/"/>
-    <updated>2015-01-22T13:33:18+00:00</updated>
-    <id>http://nmotw.in/github/nsp</id>
-    <content type="html"><![CDATA[<h1><a href="http://npm.im/nsp/">nsp</a> aka: <a href="http://nodesecurity.io">Node Security Project</a></h1>
-
-<blockquote><p>Check if your Node.js projects are using packages with known and public vulnerable dependencies, using NSP DB.</p></blockquote>
-
-<p><strong>Install it:</strong> <code>npm install -g nsp</code></p>
-
-<p><strong>Usage:</strong></p>
-
-<p>```sh
-nmotw.in> nsp</p>
-
-<p>Usage: [command] --arg=value --arg2</p>
-
-<p>Help:
-  help              Show help menu
-  [cmd] help        Show command help menu</p>
-
-<p>Options:
-  version           shows the current version of nsp
-  shrinkwrap        alias to audit-shrinkwrap
-  audit-shrinkwrap  audits your <code>npm shrinkwrap</code> against NSP db
-  package           alias to audit-package
-  audit-package     audits your package.json against NSP db
-```</p>
-
-<p>```sh
-nmotw.in> cat package.json
-{
-  "name": "test",
-  "version": "0.0.1",
-  "author": "Node Security Project",
-  "dependencies": {</p>
-
-<pre><code>"node-print": "0.0.4",
-"request": "^2.40.0",
-"qs": "^0.5"
-</code></pre>
-
-<p>  }
-}</p>
-
-<p>nmotw.in> nsp package
-Name  Installed  Patched  Vulnerable Dependency
-qs      0.5.6     >= 1.x  test@0.0.1 > qs@0.5.6
-```</p>
-
-<p>The same can be used for auditing <a href="https://docs.npmjs.com/cli/shrinkwrap">shrinkwrap</a>.</p>
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="/images/nsp/nsp.gif" alt="nsp" /></p>
-
-<p>Thanks to the <a href="https://twitter.com/nodesecurity">nodesecurity</a> for making security easy!</p>
 ]]></content>
   </entry>
   

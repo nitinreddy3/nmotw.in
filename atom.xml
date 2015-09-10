@@ -4,13 +4,88 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-09-03T13:27:52+00:00</updated>
+  <updated>2015-09-10T14:39:36+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[npm-check]]></title>
+    <link href="http://nmotw.in/npm-check/"/>
+    <updated>2015-09-10T14:28:00+00:00</updated>
+    <id>http://nmotw.in/npm-check</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/npm-check">npm-check</a></h1>
+
+<blockquote><p>Check for outdated, incorrect, and unused dependencies.</p></blockquote>
+
+<p><strong>Features:</strong></p>
+
+<ul>
+<li><em>Interactive Update</em> means less typing.</li>
+<li>Scoped packages support for the modern npm user.</li>
+<li>Works with public and private registries.</li>
+<li>Won&#8217;t query npm registry for packages with <code>private: true</code>.</li>
+<li>Kindly informs you if a dependency is not being used.</li>
+<li>Emoji in a command-line app, because command-line apps can be fun too.</li>
+</ul>
+
+
+<p>Very much similar to <a href="http://nmotw.in/npm-check-updates/">npm-check-updates</a> but far more generic and interactive!</p>
+
+<p><strong>Get it:</strong> <code>npm install -g npm-check-updates</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>npm-check --help
+</span><span class='line'>
+</span><span class='line'>  Usage: npm-check <span class="o">[</span>options<span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'>  Options:
+</span><span class='line'>
+</span><span class='line'>    -h, --help         output usage information
+</span><span class='line'>    -V, --version      output the version number
+</span><span class='line'>    -u, --update       Interactive update.
+</span><span class='line'>    -g, --global       Look at global modules.
+</span><span class='line'>    -s, --skip-unused  Skip check <span class="k">for </span>unused packages.
+</span><span class='line'>    -p, --production   Ignore devDependencies.
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">npmCheck</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;npm-check&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">npmCheck</span><span class="p">(</span><span class="nx">options</span><span class="p">)</span>
+</span><span class='line'>  <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/images/npm-check/npm-check.gif" alt="npm-check" /></p>
+
+<p>Thanks to <a href="https://twitter.com/dylang">@dylang</a> for <code>npm-check</code>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[speed-test]]></title>
@@ -1284,46 +1359,6 @@ P.S: There is <code>console.dir</code> but <code>console.json</code> is kina app
 <p><strong>GIF FTW!</strong></p>
 
 <p><img src="http://nmotw.in/images/color-string/color-string.gif" alt="color-string" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[exenv]]></title>
-    <link href="http://nmotw.in/exenv/"/>
-    <updated>2015-04-23T15:44:08+00:00</updated>
-    <id>http://nmotw.in/exenv</id>
-    <content type="html"><![CDATA[<p><a href="http://npm.im/exenv">exenv</a></p>
-
-<blockquote><p>React&#8217;s ExecutionEnvironment module extracted.</p></blockquote>
-
-<p>Many modules and components out there in the wild, uses React&#8217;s private <code>ExecutionEnvironment</code> lib for feature detection, like:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">canUseDOM</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;react/lib/ExecutionEnvironment&#39;</span><span class="p">).</span><span class="nx">canUseDOM</span><span class="p">;</span> <span class="c1">// BAD</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Which is not a good practice as private libs are prone to modification or deletion, so <a href="http://www.thinkmill.com.au">Jed Watson</a> has created
-<code>exenv</code> for us.</p>
-
-<p>P.S: <code>isInWorker</code> has been left out as it&#8217;s very specific to react.</p>
-
-<p><strong>Install it:</strong> <code>npm install --save exenv</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">exenv</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;exenv&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">exenv</span><span class="p">);</span>
-</span><span class='line'><span class="c1">//Object {canUseDOM: true, canUseWorkers: true, canUseEventListeners: true, canUseViewport: true}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/exenv/exenv.gif" alt="exenv" /></p>
 ]]></content>
   </entry>
   
