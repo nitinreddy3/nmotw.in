@@ -4,7 +4,7 @@
   <title><![CDATA[Category: functional | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/functional/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2015-09-17T16:44:17+00:00</updated>
+  <updated>2015-09-17T16:45:45+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -65,7 +65,7 @@ Welcome to Ramda REPL!</p>
 
 <h2>GIF FTW</h2>
 
-<p><img src="./ramda-repl.gif" alt="/images/ramda-repl" /></p>
+<p><img src="/images/ramda-repl.gif" alt="ramda-repl" /></p>
 
 <h2>License</h2>
 
