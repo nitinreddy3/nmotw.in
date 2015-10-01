@@ -4,7 +4,7 @@
   <title><![CDATA[Category: dom | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/dom/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2015-10-01T13:08:17+00:00</updated>
+  <updated>2015-10-01T13:11:51+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -77,7 +77,7 @@ console.error('Trigger:', e.trigger);
 
 <p><strong>GIF FTW!</strong></p>
 
-<p><a href="/images/clipboard.js/clipboard.js.gif">clipboard.js</a></p>
+<p><img src="/images/clipboard.js/clipboard.js.gif" alt="clipboard.js" /></p>
 ]]></content>
   </entry>
   
