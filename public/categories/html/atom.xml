@@ -4,7 +4,7 @@
   <title><![CDATA[Category: html | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/html/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2015-09-24T12:19:30+00:00</updated>
+  <updated>2015-10-01T13:08:17+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,74 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[clipboard.js]]></title>
+    <link href="http://nmotw.in/github/clipboard.js/"/>
+    <updated>2015-10-01T12:50:14+00:00</updated>
+    <id>http://nmotw.in/github/clipboard.js</id>
+    <content type="html"><![CDATA[<h1><a href="http://zenorocha.github.io/clipboard.js/">clipboard.js</a></h1>
+
+<blockquote><p>A modern approach to copy text to clipboard!</p></blockquote>
+
+<p>With 4.7K+ stars to it's repo with a modern approach to copy text coded with <code>ES2015/6</code> classes,  No Flash. Just 2kb!</p>
+
+<p><a href="http://zenorocha.com/">Zeno Rocha</a>'s <code>clipboard.js</code> undoubtedly is the nmotw!</p>
+
+<p>It makes use of  <a href="https://developer.mozilla.org/en-US/docs/Web/API/Selection">Selection</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand">execCommand</a> APIs.</p>
+
+<p><strong>Get it:</strong> <code>npm install --save clipboard.js</code></p>
+
+<p><strong>Sample usage:</strong>_</p>
+
+<p>```js
+var clipboard = new Clipboard('.btn');</p>
+
+<p>clipboard.on('success', function(e) {</p>
+
+<pre><code>console.info('Action:', e.action);
+console.info('Text:', e.text);
+console.info('Trigger:', e.trigger);
+
+e.clearSelection();
+</code></pre>
+
+<p>});</p>
+
+<p>clipboard.on('error', function(e) {</p>
+
+<pre><code>console.error('Action:', e.action);
+console.error('Trigger:', e.trigger);
+</code></pre>
+
+<p>});
+```</p>
+
+<p>In your <code>HTML</code>:</p>
+
+<p>```html</p>
+
+<!-- Target -->
+
+
+<p><input id="foo" value="https://github.com/zenorocha/clipboard.js.git"></p>
+
+<!-- Trigger -->
+
+
+<p><button class="btn" data-clipboard-target="#foo"></p>
+
+<pre><code>&lt;img src="assets/clippy.svg" alt="Copy to clipboard"&gt;
+</code></pre>
+
+<p></button>
+```</p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><a href="/images/clipboard.js/clipboard.js.gif">clipboard.js</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[html.js]]></title>
