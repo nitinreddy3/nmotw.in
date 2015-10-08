@@ -4,13 +4,74 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-10-01T13:11:51+00:00</updated>
+  <updated>2015-10-08T13:06:13+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[instapromise]]></title>
+    <link href="http://nmotw.in/instapromise/"/>
+    <updated>2015-10-08T12:15:41+00:00</updated>
+    <id>http://nmotw.in/instapromise</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/instapromise">instapromise</a></h1>
+
+<blockquote><p>Promisify with <code>.promise</code></p></blockquote>
+
+<p><code>instapromise</code> lets you promisify node-style asynchronous functions by putting a <code>.promise</code> after them or after the object for methods.</p>
+
+<p>It&#8217;s a part of <a href="http://exponentjs.com/">exponent</a> and this module is influenced from <a href="https://www.npmjs.com/package/fibrous">fibrous</a>.</p>
+
+<p>When one of the maintainers of <code>instapromise</code> was questioned about why the code was in coffeescript :</p>
+
+<p>There’s basically two reasons for that:</p>
+
+<ul>
+<li><p>It’s based on some of the work the people who made fibrous did and they wrote their stuff in coffeescript</p></li>
+<li><p>I used to write a bunch of coffeescript before babel made it reasonable to write ES7+ stuff</p></li>
+<li><p>I wrote it back then, its pretty stable now.</p></li>
+<li><p>I haven’t made any changes to it in months so I don’t think it should be necessary to modify the source too much.</p></li>
+<li><p>Also I do like the way that its commented fairly well.</p></li>
+</ul>
+
+
+<p><strong>Get it:</strong> <code>npm install --save instapromise</code></p>
+
+<p><strong>Usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">require</span><span class="p">(</span><span class="err">‘</span><span class="nx">instapromise</span><span class="err">’</span><span class="p">);</span>
+</span><span class='line'><span class="kd">let</span> <span class="nx">val</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">someObject</span><span class="p">.</span><span class="nx">promise</span><span class="p">.</span><span class="nx">someMethodThatTakesANodeStyleCallback</span><span class="p">(</span><span class="err">‘</span><span class="nx">but</span> <span class="nx">not</span> <span class="nx">anymore</span><span class="err">’</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Basically, <code>instapromise</code> is one of it&#8217;s kind a module that is cheeky, tiny and takes a diffrenet apporach on promisifying async functions,
+you need to just <code>require('instapromise')</code> and then you could just use a <code>.promise</code>!</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;instapromise&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;fs&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">p</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">promise</span><span class="p">.</span><span class="nx">readFile</span><span class="p">(</span><span class="s1">&#39;/tmp/hello&#39;</span><span class="p">,</span> <span class="s1">&#39;utf8&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="nx">p</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>P.S: The original function is available as a property on the promise-generating function <code>.___instapromiseOriginalFunction___</code></p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/images/instapromise/instapromise.gif" alt="instapromise" /></p>
+
+<p>Thanks to <a href="https://twitter.com/JI">James Ide</a> and <a href="https://twitter.com/ccheever">Charlie Cheever</a> for instapromise!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[clipboard.js]]></title>
@@ -1245,41 +1306,6 @@ combo (JS engine) to our CLI with some webdriver protocol, scoket.io and localtu
 
 
 <p>_</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[function-plot]]></title>
-    <link href="http://nmotw.in/function-plot/"/>
-    <updated>2015-05-21T13:51:06+00:00</updated>
-    <id>http://nmotw.in/function-plot</id>
-    <content type="html"><![CDATA[<h1><a href="http://npm.im/function-plot/">function-plot</a></h1>
-
-<blockquote><p>A simple 2d function plotter powered by d3</p></blockquote>
-
-<p>function-plot helps to render functions with little configuration think of it like a util that would help you to render something like what Google does. <a href="https://www.google.com/webhp?sourceid=chrome-instant&amp;ion=1&amp;espv=2&amp;es_th=1&amp;ie=UTF-8#q=y+%3D+x+%5E+2">y = x * x</a></p>
-
-<p>The library currently supports interactive line charts and scatterplots, whenever the graph scale is modified the function is evaluated again with
-the new bounds, result: infinite graphs!</p>
-
-<p><strong>Get it</strong> : <code>npm install --save function-plot</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">d3</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">d3</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">functionPlot</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;function-plot&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="nx">functionPlot</span><span class="p">({</span> <span class="cm">/*Pass in the options*/</span> <span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Check out the <a href="https://github.com/maurizzzio/function-plot#instance--functionplotoptions">options</a>!</p>
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/function-plot/function-plot.gif" alt="function-plot" /></p>
 ]]></content>
   </entry>
   
