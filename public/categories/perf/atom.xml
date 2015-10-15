@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: perf | NMOTW]]></title>
+  <link href="http://nmotw.in/github/public/categories/perf/atom.xml" rel="self"/>
+  <link href="http://nmotw.in/github/"/>
+  <updated>2015-10-15T16:37:20+00:00</updated>
+  <id>http://nmotw.in/github/</id>
+  <author>
+    <name><![CDATA[Hemanth.HM]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[svgo]]></title>
+    <link href="http://nmotw.in/github/svgo/"/>
+    <updated>2015-10-15T16:20:41+00:00</updated>
+    <id>http://nmotw.in/github/svgo</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/svgo">svgo</a></h1>
+
+<blockquote><p><strong>SVG O</strong>ptimizer</p></blockquote>
+
+<p>Optimizes SVG by cleaning:</p>
+
+<ul>
+<li><p>Editor metadata.</p></li>
+<li><p>Comments.</p></li>
+<li><p>Hidden elements.</p></li>
+<li><p>Default or non-optimal values.</p></li>
+<li><p>Other stuff that can be safely removed or converted without affecting SVG rendering result.</p></li>
+</ul>
+
+
+<p><strong>Get it:</strong> <code>npm install --global svgo</code></p>
+
+<p><strong>Sample usage on CLI:</strong></p>
+
+<p>```
+Usage:
+  svgo [OPTIONS] [ARGS]</p>
+
+<p>Options:
+  -h, --help : Help
+  -v, --version : Version
+  -i INPUT, --input=INPUT : Input file, "-" for STDIN
+  -s STRING, --string=STRING : Input SVG data string
+  -f FOLDER, --folder=FOLDER : Input folder, optimize and rewrite all *.svg files
+  -o OUTPUT, --output=OUTPUT : Output file or folder (by default the same as the input), "-" for STDOUT
+  -p PRECISION, --precision=PRECISION : Set number of digits in the fractional part, overrides plugins params
+  --config=CONFIG : Config file to extend or replace default
+  --disable=DISABLE : Disable plugin by name
+  --enable=ENABLE : Enable plugin by name
+  --datauri=DATAURI : Output as Data URI string (base64, URI encoded or unencoded)
+  --pretty : Make SVG pretty printed
+  --show-plugins : Show available plugins and exit</p>
+
+<p>Arguments:
+  INPUT : Alias to --input
+  OUTPUT : Alias to --output
+```</p>
+
+<p>```sh
+  $ svgo red.svg red.min.svg</p>
+
+<p>  Done in 68 ms!
+  0.708 KiB - 70.8% = 0.207 KiB
+```</p>
+
+<p>  <strong>Sample API usage:</strong></p>
+
+<p>  ```js
+  'use strict';</p>
+
+<p>var readFile = require('fs').readFile,</p>
+
+<pre><code>path = require('path'),
+SVGO = require('svgo'),
+filepath = PATH.resolve(__dirname, 'test.svg'),
+svgo = new SVGO(/*{ custom config object }*/);
+</code></pre>
+
+<p>readFile(filepath, 'utf8', function(err, data) {</p>
+
+<pre><code>if (err) {
+    throw err;
+}
+
+svgo.optimize(data, function(result) {
+    console.log(result);
+    // {
+    //     // optimized SVG data string
+    //     data: '&lt;svg width="10" height="20"&gt;test&lt;/svg&gt;'
+    //     // additional info such as width/height
+    //     info: {
+    //         width: '10',
+    //         height: '20'
+    //     }
+    // }
+});
+</code></pre>
+
+<p>});</p>
+
+<p>```</p>
+
+<p>P.S: Don't miss to read <a href="https://github.com/svg/svgo/blob/master/docs/how-it-works/en.md#how-it-works">How it works!</a></p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/svgo/svgo.gif" alt="svgo.gif" /></p>
+]]></content>
+  </entry>
+  
+</feed>
