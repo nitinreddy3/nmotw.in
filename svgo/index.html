@@ -171,42 +171,62 @@ Other stuff that can be &hellip;" />
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>  <strong>Sample API usage:</strong></p>
+<p><strong>Sample API usage:</strong></p>
 
-<p>  &#8220;`js
-  &#8216;use strict&#8217;;</p>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">readFile</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;fs&#39;</span><span class="p">).</span><span class="nx">readFile</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;path&#39;</span><span class="p">),</span>
+</span><span class='line'>    <span class="nx">SVGO</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;svgo&#39;</span><span class="p">),</span>
+</span><span class='line'>    <span class="nx">filepath</span> <span class="o">=</span> <span class="nx">PATH</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s1">&#39;test.svg&#39;</span><span class="p">),</span>
+</span><span class='line'>    <span class="nx">svgo</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SVGO</span><span class="p">(</span><span class="cm">/*{ custom config object }*/</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">readFile</span><span class="p">(</span><span class="nx">filepath</span><span class="p">,</span> <span class="s1">&#39;utf8&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="k">throw</span> <span class="nx">err</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nx">svgo</span><span class="p">.</span><span class="nx">optimize</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
+</span><span class='line'>        <span class="c1">// {</span>
+</span><span class='line'>        <span class="c1">//     // optimized SVG data string</span>
+</span><span class='line'>        <span class="c1">//     data: &#39;&lt;svg width=&quot;10&quot; height=&quot;20&quot;&gt;test&lt;/svg&gt;&#39;</span>
+</span><span class='line'>        <span class="c1">//     // additional info such as width/height</span>
+</span><span class='line'>        <span class="c1">//     info: {</span>
+</span><span class='line'>        <span class="c1">//         width: &#39;10&#39;,</span>
+</span><span class='line'>        <span class="c1">//         height: &#39;20&#39;</span>
+</span><span class='line'>        <span class="c1">//     }</span>
+</span><span class='line'>        <span class="c1">// }</span>
+</span><span class='line'>    <span class="p">});</span>
+</span><span class='line'><span class="p">});</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
 
-<p>var readFile = require(&#8216;fs&#8217;).readFile,</p>
-
-<pre><code>path = require('path'),
-SVGO = require('svgo'),
-filepath = PATH.resolve(__dirname, 'test.svg'),
-svgo = new SVGO(/*{ custom config object }*/);
-</code></pre>
-
-<p>readFile(filepath, &#8216;utf8&#8217;, function(err, data) {</p>
-
-<pre><code>if (err) {
-    throw err;
-}
-
-svgo.optimize(data, function(result) {
-    console.log(result);
-    // {
-    //     // optimized SVG data string
-    //     data: '&lt;svg width="10" height="20"&gt;test&lt;/svg&gt;'
-    //     // additional info such as width/height
-    //     info: {
-    //         width: '10',
-    //         height: '20'
-    //     }
-    // }
-});
-</code></pre>
-
-<p>});</p>
-
-<p>&#8220;`</p>
 
 <p>P.S: Don&#8217;t miss to read <a href="https://github.com/svg/svgo/blob/master/docs/how-it-works/en.md#how-it-works">How it works!</a></p>
 
