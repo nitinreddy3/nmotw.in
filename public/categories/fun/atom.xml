@@ -4,7 +4,7 @@
   <title><![CDATA[Category: fun | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/fun/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2015-10-15T16:43:32+00:00</updated>
+  <updated>2015-10-22T14:20:15+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -70,13 +70,13 @@ Starting local web server... OK!</p>
 
 <p>const Sentencer = require('sentencer');</p>
 
-<p>let str = " A  jumped over ";</p>
+<p>let str = " A {{noun}} jumped over {{an_adjective}}";</p>
 
 <p>Sentencer.make(str); //' A agreement jumped over a sprightful'</p>
 
 <p>Sentencer.make(str); // ' A shrine jumped over a wordless'</p>
 
-<p>str = "  jumped over ";</p>
+<p>str = " {{a_noun}} jumped over {{an_adjective}}";</p>
 
 <p>Sentencer.make(str); // ' an instruction jumped over a scabrous'
 Sentencer.make(str); // ' a thistle jumped over a shapely'</p>
@@ -97,7 +97,7 @@ Sentencer.configure({
 <p>  }
 });</p>
 
-<p>Sentencer.make("I like "); // 'I like 7'
+<p>Sentencer.make("I like {{rand}}"); // 'I like 7'
 ```</p>
 
 <p><strong>GIF FTW:</strong></p>
