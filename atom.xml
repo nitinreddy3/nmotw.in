@@ -4,7 +4,7 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-10-22T14:25:47+00:00</updated>
+  <updated>2015-10-22T14:30:07+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -50,6 +50,8 @@ hide(obj)
 <p><strong>GIF FTW!</strong></p>
 
 <p><img src="http://nmotw.in/images/hide-secrets/hide-secrets.gif" alt="hide-secrets" /></p>
+
+<p>Thanks to <a href="https://twitter.com/benjamincoe">Benjamin Coe</a> for helping us hide our secrets ;)</p>
 ]]></content>
   </entry>
   
