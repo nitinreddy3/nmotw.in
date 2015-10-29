@@ -4,13 +4,96 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-10-26T03:20:18+00:00</updated>
+  <updated>2015-10-29T13:24:10+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[sentiment]]></title>
+    <link href="http://nmotw.in/sentiment/"/>
+    <updated>2015-10-29T13:17:29+00:00</updated>
+    <id>http://nmotw.in/sentiment</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/sentiment">sentiment</a></h1>
+
+<blockquote><p>AFINN-based sentiment analysis.</p></blockquote>
+
+<p><code>Sentiment</code> uses <a href="http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=6010">AFINN-111</a> wordlist to perform <a href="http://en.wikipedia.org/wiki/Sentiment_analysis">sentiment analysis</a> on arbitrary blocks of input text.</p>
+
+<p>Sentiment provides serveral things:</p>
+
+<ul>
+<li>Performance.</li>
+<li>The ability to append and overwrite word / value pairs from the AFINN wordlist.</li>
+<li>A build process that makes updating sentiment to future versions of the AFINN word list trivial.</li>
+</ul>
+
+
+<p><strong>Get it:</strong> <code>npm install --save sentiment</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="o">&gt;</span> <span class="kd">var</span> <span class="nx">sentiment</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;sentiment&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&gt;</span> <span class="nx">sentiment</span><span class="p">(</span><span class="s1">&#39;Cats are stupid&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="p">{</span> <span class="nx">score</span><span class="o">:</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span>
+</span><span class='line'>  <span class="nx">comparative</span><span class="o">:</span> <span class="o">-</span><span class="mf">0.6666666666666666</span><span class="p">,</span>
+</span><span class='line'>  <span class="nx">tokens</span><span class="o">:</span> <span class="p">[</span> <span class="s1">&#39;cats&#39;</span><span class="p">,</span> <span class="s1">&#39;are&#39;</span><span class="p">,</span> <span class="s1">&#39;stupid&#39;</span> <span class="p">],</span>
+</span><span class='line'>  <span class="nx">words</span><span class="o">:</span> <span class="p">[</span> <span class="s1">&#39;stupid&#39;</span> <span class="p">],</span>
+</span><span class='line'>  <span class="nx">positive</span><span class="o">:</span> <span class="p">[],</span>
+</span><span class='line'>  <span class="nx">negative</span><span class="o">:</span> <span class="p">[</span> <span class="s1">&#39;stupid&#39;</span> <span class="p">]</span> <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&gt;</span> <span class="nx">sentiment</span><span class="p">(</span><span class="s1">&#39;Cats are cool&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="p">{</span> <span class="nx">score</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+</span><span class='line'>  <span class="nx">comparative</span><span class="o">:</span> <span class="mf">0.3333333333333333</span><span class="p">,</span>
+</span><span class='line'>  <span class="nx">tokens</span><span class="o">:</span> <span class="p">[</span> <span class="s1">&#39;cats&#39;</span><span class="p">,</span> <span class="s1">&#39;are&#39;</span><span class="p">,</span> <span class="s1">&#39;cool&#39;</span> <span class="p">],</span>
+</span><span class='line'>  <span class="nx">words</span><span class="o">:</span> <span class="p">[</span> <span class="s1">&#39;cool&#39;</span> <span class="p">],</span>
+</span><span class='line'>  <span class="nx">positive</span><span class="o">:</span> <span class="p">[</span> <span class="s1">&#39;cool&#39;</span> <span class="p">],</span>
+</span><span class='line'>  <span class="nx">negative</span><span class="o">:</span> <span class="p">[]</span> <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&gt;</span> <span class="nx">sentiment</span><span class="p">(</span><span class="s1">&#39;Cats are cool&#39;</span><span class="p">,{</span><span class="s1">&#39;cats&#39;</span><span class="o">:</span><span class="mi">5</span><span class="p">,</span><span class="s1">&#39;cool&#39;</span><span class="o">:</span><span class="mi">10</span><span class="p">});</span>
+</span><span class='line'><span class="p">{</span> <span class="nx">score</span><span class="o">:</span> <span class="mi">15</span><span class="p">,</span>
+</span><span class='line'>  <span class="nx">comparative</span><span class="o">:</span> <span class="mi">5</span><span class="p">,</span>
+</span><span class='line'>  <span class="nx">tokens</span><span class="o">:</span> <span class="p">[</span> <span class="s1">&#39;cats&#39;</span><span class="p">,</span> <span class="s1">&#39;are&#39;</span><span class="p">,</span> <span class="s1">&#39;cool&#39;</span> <span class="p">],</span>
+</span><span class='line'>  <span class="nx">words</span><span class="o">:</span> <span class="p">[</span> <span class="s1">&#39;cool&#39;</span><span class="p">,</span> <span class="s1">&#39;cats&#39;</span> <span class="p">],</span>
+</span><span class='line'>  <span class="nx">positive</span><span class="o">:</span> <span class="p">[</span> <span class="s1">&#39;cool&#39;</span><span class="p">,</span> <span class="s1">&#39;cats&#39;</span> <span class="p">],</span>
+</span><span class='line'>  <span class="nx">negative</span><span class="o">:</span> <span class="p">[]</span> <span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/images/sentiment/sentiment.gif" alt="sentiment.gif" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[hide-secrets]]></title>
@@ -1295,112 +1378,6 @@ combo (JS engine) to our CLI with some webdriver protocol, scoket.io and localtu
 <p><strong>GIF FTW</strong></p>
 
 <p><img src="http://nmotw.in/images/browser-repl/brwoser-repl.gif" alt="browser-repl" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[jscpd]]></title>
-    <link href="http://nmotw.in/jscpd/"/>
-    <updated>2015-06-11T15:39:12+00:00</updated>
-    <id>http://nmotw.in/jscpd</id>
-    <content type="html"><![CDATA[<h1><a href="http://npm.im/jscpd">jscpd</a></h1>
-
-<blockquote><p>jscpd is a tool for detect copy/paste &#8220;design pattern&#8221; in programming source code.</p></blockquote>
-
-<p><a href="http://kucherenko.org/">Andrey Kucherenko&#8217;s</a> <code>jscpd</code> is a smart tool that helps use to detect copy paste code!</p>
-
-<p>It supports the below langauges:</p>
-
-<ul>
-<li>JavaScript</li>
-<li>Java</li>
-<li>CoffeeScript</li>
-<li>TypeScript</li>
-<li>C++</li>
-<li>PHP</li>
-<li>C#</li>
-<li>Go</li>
-<li>Python</li>
-<li>Ruby</li>
-<li>C</li>
-<li>Less</li>
-<li>CSS</li>
-<li>SCSS</li>
-<li>Mixed HTML</li>
-</ul>
-
-
-<p><strong>Install it:</strong> <code>npm install -g jscpd</code></p>
-
-<p><strong>Usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">jscpd</span> <span class="o">--</span><span class="nx">path</span> <span class="nx">my_project</span><span class="o">/</span> <span class="o">--</span><span class="nx">languages</span> <span class="nx">javascript</span><span class="p">,</span><span class="nx">coffee</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">jscpd</span> <span class="o">-</span><span class="nx">f</span> <span class="o">**</span><span class="cm">/*.js -e **/</span><span class="nx">node_modules</span><span class="cm">/**</span>
-</span><span class='line'>
-</span><span class='line'><span class="cm">jscpd --files **/</span><span class="o">*</span><span class="p">.</span><span class="nx">js</span> <span class="o">--</span><span class="nx">exclude</span> <span class="o">**</span><span class="cm">/*.min.js --output report.xml</span>
-</span><span class='line'>
-</span><span class='line'><span class="cm">jscpd --files **/</span><span class="o">*</span><span class="p">.</span><span class="nx">js</span> <span class="o">--</span><span class="nx">exclude</span> <span class="o">**</span><span class="err">/*.min.js --reporter json --output report.json</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>If you have a <code>.cpd.yml</code> config file in the <code>pwd</code> jscpd command, you will check code for duplicates according the config.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="c1">#.cpd.yaml</span>
-</span><span class='line'><span class="l-Scalar-Plain">path</span><span class="p-Indicator">:</span>
-</span><span class='line'>  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">fixtures/</span>
-</span><span class='line'><span class="l-Scalar-Plain">languages</span><span class="p-Indicator">:</span>
-</span><span class='line'>  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">javascript</span>
-</span><span class='line'>  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">coffeescript</span>
-</span><span class='line'>  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">typescript</span>
-</span><span class='line'>  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">php</span>
-</span><span class='line'>  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">python</span>
-</span><span class='line'>  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">css</span>
-</span><span class='line'>  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">ruby</span>
-</span><span class='line'>  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">go</span>
-</span><span class='line'>  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">java</span>
-</span><span class='line'>  <span class="p-Indicator">-</span> <span class="s">&quot;c++src&quot;</span>    <span class="c1"># c++ source</span>
-</span><span class='line'>  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">csrc</span>        <span class="c1"># c source</span>
-</span><span class='line'>  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">csharp</span>      <span class="c1"># c# source</span>
-</span><span class='line'>  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">htmlmixed</span>   <span class="c1"># html mixed source like knockout.js templates</span>
-</span><span class='line'><span class="l-Scalar-Plain">exclude</span><span class="p-Indicator">:</span>
-</span><span class='line'>  <span class="p-Indicator">-</span> <span class="s">&quot;**/*.min.js&quot;</span>
-</span><span class='line'>  <span class="p-Indicator">-</span> <span class="s">&quot;**/*.mm.js&quot;</span>
-</span><span class='line'><span class="l-Scalar-Plain">reporter</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">json</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/jscpd/jscpd.gif" alt="jscpd-demo" /></p>
 ]]></content>
   </entry>
   
