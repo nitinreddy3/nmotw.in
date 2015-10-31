@@ -4,7 +4,7 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-10-29T13:26:20+00:00</updated>
+  <updated>2015-10-31T17:31:51+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -109,7 +109,7 @@
 
 <blockquote><p>hide certain restricted fields whiling logging objects.</p></blockquote>
 
-<p>This module obfuscated any of <code>password</code>, <code>pass</code>, <code>token</code>, <code>auth</code>, <code>secret</code> or <code>passphrase</code> attribute&#8217;s value to <code>'[SECRET]'</code>.
+<p>This module obfuscated any of <code>password</code>, <code>pass</code>, <code>token</code>, <code>auth</code>, <code>secret</code> or <code>passphrase</code> attribute's value to <code>'[SECRET]'</code>.
 Very useful when logging an object that has sensitive data!</p>
 
 <p><strong>Install it:</strong> <code>npm install --save hide-secrets</code></p>
@@ -117,15 +117,15 @@ Very useful when logging an object that has sensitive data!</p>
 <p><strong>Sample usage:</strong></p>
 
 <div id="hide-secrets">
-var hide = require(&#8216;hide-secrets&#8217;)
+var hide = require('hide-secrets')
  
 var obj = {
   innerObject: {
-    password: &#8216;abc123&#8217;,
-    email: &#8216;xyz@nmotw.in&#8217;,
-    token: &#8216;my-secret-token&#8217;
+    password: 'abc123',
+    email: 'xyz@nmotw.in',
+    token: 'my-secret-token'
   },
-  auth: &#8221; // empty strings are left empty. 
+  auth: '' // empty strings are left empty. 
 }
  
 hide(obj)
@@ -276,7 +276,7 @@ hide(obj)
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>P.S: Don&#8217;t miss to read <a href="https://github.com/svg/svgo/blob/master/docs/how-it-works/en.md#how-it-works">How it works!</a></p>
+<p>P.S: Don't miss to read <a href="https://github.com/svg/svgo/blob/master/docs/how-it-works/en.md#how-it-works">How it works!</a></p>
 
 <p><strong>GIF FTW!</strong></p>
 
@@ -295,7 +295,7 @@ hide(obj)
 
 <p><code>instapromise</code> lets you promisify node-style asynchronous functions by putting a <code>.promise</code> after them or after the object for methods.</p>
 
-<p>It&#8217;s a part of <a href="http://exponentjs.com/">exponent</a> and this module is influenced from <a href="https://www.npmjs.com/package/fibrous">fibrous</a>.</p>
+<p>It's a part of <a href="http://exponentjs.com/">exponent</a> and this module is influenced from <a href="https://www.npmjs.com/package/fibrous">fibrous</a>.</p>
 
 <p>When one of the maintainers of <code>instapromise</code> was questioned about why the code was in coffeescript :</p>
 
@@ -321,7 +321,7 @@ hide(obj)
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>Basically, <code>instapromise</code> is one of it&#8217;s kind a module that is cheeky, tiny and takes a diffrenet apporach on promisifying async functions,
+<p>Basically, <code>instapromise</code> is one of it's kind a module that is cheeky, tiny and takes a diffrenet apporach on promisifying async functions,
 you need to just <code>require('instapromise')</code> and then you could just use a <code>.promise</code>!</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -354,9 +354,9 @@ you need to just <code>require('instapromise')</code> and then you could just us
 
 <blockquote><p>A modern approach to copy text to clipboard!</p></blockquote>
 
-<p>With 4.7K+ stars to it&#8217;s repo with a modern approach to copy text coded with <code>ES2015/6</code> classes,  No Flash. Just 2kb!</p>
+<p>With 4.7K+ stars to it's repo with a modern approach to copy text coded with <code>ES2015/6</code> classes,  No Flash. Just 2kb!</p>
 
-<p><a href="http://zenorocha.com/">Zeno Rocha</a>&#8217;s <code>clipboard.js</code> undoubtedly is the nmotw!</p>
+<p><a href="http://zenorocha.com/">Zeno Rocha</a>'s <code>clipboard.js</code> undoubtedly is the nmotw!</p>
 
 <p>It makes use of  <a href="https://developer.mozilla.org/en-US/docs/Web/API/Selection">Selection</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand">execCommand</a> APIs.</p>
 
@@ -556,7 +556,7 @@ you need to just <code>require('instapromise')</code> and then you could just us
 <li><em>Interactive Update</em> means less typing.</li>
 <li>Scoped packages support for the modern npm user.</li>
 <li>Works with public and private registries.</li>
-<li>Won&#8217;t query npm registry for packages with <code>private: true</code>.</li>
+<li>Won't query npm registry for packages with <code>private: true</code>.</li>
 <li>Kindly informs you if a dependency is not being used.</li>
 <li>Emoji in a command-line app, because command-line apps can be fun too.</li>
 </ul>
@@ -1015,7 +1015,7 @@ which provides raw browser/feature support data for the same.</p>
 
 <ul>
 <li>Refactored as CommonJS</li>
-<li>Doesn&#8217;t automatically listen on the document. Instead, it is now a constructor and the element on which to listen must be provided on instantiation.</li>
+<li>Doesn't automatically listen on the document. Instead, it is now a constructor and the element on which to listen must be provided on instantiation.</li>
 </ul>
 
 
@@ -1182,9 +1182,9 @@ and second one being an config object.</p>
 
 <blockquote><p>Fade a HTML element using CSS transitions.</p></blockquote>
 
-<p>Yes, you read it right, this module helps you to fade a HTML element. &#8220;Do one thing and do it right!&#8221;, looks like the moto
+<p>Yes, you read it right, this module helps you to fade a HTML element. "Do one thing and do it right!", looks like the moto
 behind this module, that lets us to <code>fade.in</code>, <code>fade.out</code> and fade an element to a specifie opacity, which also takes a
-callback as one of it&#8217;s params and execute it after animation ends and works across browsers with vendor prefixes.</p>
+callback as one of it's params and execute it after animation ends and works across browsers with vendor prefixes.</p>
 
 <p><strong>Install it:</strong> <code>npm install --save fade</code> # browserify it!</p>
 
