@@ -4,7 +4,7 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-11-05T13:19:43+00:00</updated>
+  <updated>2015-11-05T13:29:38+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -17,10 +17,7 @@
     <link href="http://nmotw.in/prettysize/"/>
     <updated>2015-11-05T13:01:20+00:00</updated>
     <id>http://nmotw.in/prettysize</id>
-    <content type="html"><![CDATA[<script src="https://embed.tonicdev.com" data-element-id="prettysize"></script>
-
-
-<p><a href="https://www.npmjs.com/package/prettysize">prettysize</a></p>
+    <content type="html"><![CDATA[<p><a href="https://www.npmjs.com/package/prettysize">prettysize</a></p>
 
 <blockquote><p>Convert bytes to other sizes for prettier logging.</p></blockquote>
 
@@ -39,6 +36,11 @@ var str = pretty(123456789);
 <p><strong>GIF FTW!</strong></p>
 
 <p><img src="http://nmotw.in/images/prettysize/prettysize.gif" alt="prettysize" /></p>
+
+<script src="https://embed.tonicdev.com" data-element-id="prettysize"></script>
+
+
+
 ]]></content>
   </entry>
   
