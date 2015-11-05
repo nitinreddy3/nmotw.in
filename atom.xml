@@ -4,7 +4,7 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-11-05T13:18:22+00:00</updated>
+  <updated>2015-11-05T13:19:43+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -38,7 +38,7 @@ var str = pretty(123456789);
 
 <p><strong>GIF FTW!</strong></p>
 
-<p><img src="http://nmotw.in/image/prettysize/prettysize.gif" alt="prettysize" /></p>
+<p><img src="http://nmotw.in/images/prettysize/prettysize.gif" alt="prettysize" /></p>
 ]]></content>
   </entry>
   

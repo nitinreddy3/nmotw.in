@@ -4,7 +4,7 @@
   <title><![CDATA[Category: humanize | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/humanize/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2015-11-05T13:18:22+00:00</updated>
+  <updated>2015-11-05T13:19:43+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -39,7 +39,7 @@ var str = pretty(123456789);
 
 <p><strong>GIF FTW!</strong></p>
 
-<p><img src="/image/prettysize/prettysize.gif" alt="prettysize" /></p>
+<p><img src="/images/prettysize/prettysize.gif" alt="prettysize" /></p>
 ]]></content>
   </entry>
   
