@@ -4,13 +4,52 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-10-31T17:31:51+00:00</updated>
+  <updated>2015-11-05T13:15:48+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[prettysize]]></title>
+    <link href="http://nmotw.in/prettysize/"/>
+    <updated>2015-11-05T13:01:20+00:00</updated>
+    <id>http://nmotw.in/prettysize</id>
+    <content type="html"><![CDATA[<script src="https://embed.tonicdev.com" data-element-id="prettysize"></script>
+
+
+<p><a href="https://www.npmjs.com/package/prettysize">prettysize</a></p>
+
+<blockquote><p>Convert bytes to other sizes for prettier logging.</p></blockquote>
+
+<p>In just 45 lines of code, this cheeky module by <a href="https://twitter.com/davglass">@davlgass</a> makes it easy to humanize file sizes.</p>
+
+<p><strong>Get it:</strong> <code>npm install --save prettysize</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<div id="prettysize">
+var pretty = require('prettysize');
+var str = pretty(123456789);
+</div>
+
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/image/prettysize/prettysize.gif" alt="prettysize" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[<script src=https://embed.tonicdev.com data-element-id=hide-secrets></script>]]></title>
+    <link href="http://nmotw.in/%3Cscript-src-equals-https-slash-slash-embed-dot-tonicdev-dot-com-data-element-id-equals-hide-secrets%3E/"/>
+    <updated>2015-11-05T13:00:34+00:00</updated>
+    <id>http://nmotw.in/<script-src-equals-https-slash-slash-embed-dot-tonicdev-dot-com-data-element-id-equals-hide-secrets></id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[sentiment]]></title>
@@ -1218,168 +1257,6 @@ callback as one of it's params and execute it after animation ends and works acr
 <p><img src="http://nmotw.in/images/fade/fade.gif" alt="fade.gif" /></p>
 
 <p>Thanks to <a href="http://juliangruber.com/">Julian Gruber</a> for this sweet little module.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[html.js]]></title>
-    <link href="http://nmotw.in/html.js/"/>
-    <updated>2015-06-25T12:12:57+00:00</updated>
-    <id>http://nmotw.in/html.js</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/html.js">html.js</a></h1>
-
-<blockquote><p>An intuitive, extensible way to work directly with the DOM.</p></blockquote>
-
-<p><code>html.js</code> is a fork of <a href="http://adriancooney.ie/voyeur.js/">voyeur.js</a> that has made it more simpler to deal with DOM in a
-relatively new way.</p>
-
-<p>It has a pretty extensive <a href="http://nbubna.github.io/HTML/#API">API</a> and you could also create your own plugins
-<code>HTML._.fn.name = function;</code></p>
-
-<p><strong>Get it:</strong> <code>npm install --save html.js</code></p>
-
-<p><strong>Usage Example:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">let</span> <span class="nx">HTML</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;html.js&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">HTML</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">header</span><span class="p">;</span> <span class="c1">// returns header element.</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">HTML</span><span class="p">.</span><span class="nx">query</span><span class="p">(</span><span class="s2">&quot;#example&quot;</span><span class="p">).</span><span class="nx">h1</span><span class="p">.</span><span class="nx">em</span><span class="p">;</span> <span class="c1">// chain on, man.</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="s1">&#39;each&#39;</span> <span class="k">in</span> <span class="nx">node</span><span class="p">))</span> <span class="p">{</span>
-</span><span class='line'>  <span class="nx">HTML</span><span class="p">.</span><span class="nx">ify</span><span class="p">(</span><span class="nx">node</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="nx">node</span><span class="p">.</span><span class="nx">each</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">el</span><span class="p">){</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="s1">&#39; is your friend!&#39;</span><span class="p">);</span> <span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/html.js/html.js.gif" alt="html.js" /></p>
-
-<p>Thanks to <a href="https://github.com/nbubna">Nathan Bubna</a> for this module.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[browser-repl]]></title>
-    <link href="http://nmotw.in/browser-repl/"/>
-    <updated>2015-06-18T16:46:33+00:00</updated>
-    <id>http://nmotw.in/browser-repl</id>
-    <content type="html"><![CDATA[<p><a href="https://www.npmjs.com/package/browser-repl">browser-repl</a></p>
-
-<blockquote><p>Launch a repl on your command line to any browser in the cloud.</p></blockquote>
-
-<p><code>browser-repl</code> is a uber cool module from <a href="http://automattic.com/">automattic</a> that helps us to get a particular OS/Browser
-combo (JS engine) to our CLI with some webdriver protocol, scoket.io and localtunnel magic ;)</p>
-
-<p>Currently supported browsers:</p>
-
-<ul>
-<li><p>ie</p></li>
-<li><p>ie6</p></li>
-<li><p>ie7</p></li>
-<li><p>ie8</p></li>
-<li><p>ie9</p></li>
-<li><p>ie10</p></li>
-<li><p>ie11</p></li>
-<li><p>opera</p></li>
-<li><p>safari</p></li>
-<li><p>safari5</p></li>
-<li><p>safari6</p></li>
-<li><p>safari7</p></li>
-<li><p>safari8</p></li>
-<li><p>chrome</p></li>
-<li><p>chromedev</p></li>
-<li><p>firefox</p></li>
-<li><p>firefoxdev</p></li>
-<li><p>ipad</p></li>
-<li><p>ipad4</p></li>
-<li><p>ipad5</p></li>
-<li><p>ipad5.1</p></li>
-<li><p>ipad6</p></li>
-<li><p>ipad6.1</p></li>
-<li><p>iphone</p></li>
-<li><p>iphone4</p></li>
-<li><p>iphone5</p></li>
-<li><p>iphone5.1</p></li>
-<li><p>iphone6</p></li>
-<li><p>iphone6.1</p></li>
-<li><p>android</p></li>
-<li><p>android4.4</p></li>
-<li><p>android4.2</p></li>
-<li><p>android4.1</p></li>
-</ul>
-
-
-<p><strong>Currently supported platforms:</strong></p>
-
-<ul>
-<li><p>winxp</p></li>
-<li><p>win7</p></li>
-<li><p>win8</p></li>
-<li><p>win8.1</p></li>
-<li><p>mac10.6</p></li>
-<li><p>mac10.8</p></li>
-<li><p>mac10.9</p></li>
-<li><p>mac10.10</p></li>
-<li><p>linux</p></li>
-<li><p>android</p></li>
-</ul>
-
-
-<p><strong>Get it:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>npm install -g browser-repl
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>Set up:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="c"># In your *.rc file.</span>
-</span><span class='line'><span class="nb">export </span><span class="nv">SAUCE_USERNAME</span><span class="o">=</span><span class="s2">&quot;your username&quot;</span>
-</span><span class='line'><span class="nb">export </span><span class="nv">SAUCE_ACCESS_KEY</span><span class="o">=</span><span class="s2">&quot;your key&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>To get the <code>SAUCE</code> stuff, sign up for a free OSS account on <a href="http://saucelabs.com">SauceLabs</a>.</p>
-
-<p><strong>Usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>repl
-</span><span class='line'>
-</span><span class='line'>usage: repl &lt;browser&gt;<span class="o">[</span>version<span class="o">]</span> <span class="o">[</span>platform<span class="o">]</span>
-</span><span class='line'>
-</span><span class='line'>options:
-</span><span class='line'> -h: this message
-</span><span class='line'> -k: no remote <span class="sb">`</span>console<span class="sb">`</span> override
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW</strong></p>
-
-<p><img src="http://nmotw.in/images/browser-repl/brwoser-repl.gif" alt="browser-repl" /></p>
 ]]></content>
   </entry>
   
