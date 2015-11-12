@@ -4,13 +4,62 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-11-05T13:47:51+00:00</updated>
+  <updated>2015-11-12T17:19:24+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[debounce]]></title>
+    <link href="http://nmotw.in/debounce/"/>
+    <updated>2015-11-12T16:54:27+00:00</updated>
+    <id>http://nmotw.in/debounce</id>
+    <content type="html"><![CDATA[<hr />
+
+<p>layout: post
+title: "debounce"
+date: 2015-11-12 21:57:00 +0530
+comments: true</p>
+
+<h2>categories: util</h2>
+
+<h1><a href="https://www.npmjs.com/package/debounce">debounce</a></h1>
+
+<blockquote><p>debounce a function.</p></blockquote>
+
+<p>Creates and returns a new debounced version of the passed function that will postpone its execution until after wait milliseconds have elapsed since the last time it was invoked.</p>
+
+<p><strong>Get it:</strong> <code>npm install --save debounce</code></p>
+
+<p><strong>API:</strong> <code>debounce(fn, wait, [ immediate || false ])</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">debounce</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;debounce&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="nb">window</span><span class="p">.</span><span class="nx">onresize</span> <span class="o">=</span> <span class="nx">debounce</span><span class="p">(</span><span class="nx">resize</span><span class="p">,</span> <span class="mi">200</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">function</span> <span class="nx">resize</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;height&#39;</span><span class="p">,</span> <span class="nb">window</span><span class="p">.</span><span class="nx">innerHeight</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;width&#39;</span><span class="p">,</span> <span class="nb">window</span><span class="p">.</span><span class="nx">innerWidth</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/images/debounce/debounce.gif" alt="debounce.gif" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[prettysize]]></title>
@@ -41,15 +90,6 @@ var str = pretty(123456789);
 
 
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[<script src=https://embed.tonicdev.com data-element-id=hide-secrets></script>]]></title>
-    <link href="http://nmotw.in/%3Cscript-src-equals-https-slash-slash-embed-dot-tonicdev-dot-com-data-element-id-equals-hide-secrets%3E/"/>
-    <updated>2015-11-05T13:00:34+00:00</updated>
-    <id>http://nmotw.in/<script-src-equals-https-slash-slash-embed-dot-tonicdev-dot-com-data-element-id-equals-hide-secrets></id>
-    <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
