@@ -4,7 +4,7 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-11-12T17:19:24+00:00</updated>
+  <updated>2015-11-12T17:20:58+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -17,16 +17,7 @@
     <link href="http://nmotw.in/debounce/"/>
     <updated>2015-11-12T16:54:27+00:00</updated>
     <id>http://nmotw.in/debounce</id>
-    <content type="html"><![CDATA[<hr />
-
-<p>layout: post
-title: "debounce"
-date: 2015-11-12 21:57:00 +0530
-comments: true</p>
-
-<h2>categories: util</h2>
-
-<h1><a href="https://www.npmjs.com/package/debounce">debounce</a></h1>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/debounce">debounce</a></h1>
 
 <blockquote><p>debounce a function.</p></blockquote>
 
