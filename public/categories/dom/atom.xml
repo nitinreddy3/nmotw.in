@@ -4,7 +4,7 @@
   <title><![CDATA[Category: dom | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/dom/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2015-11-12T17:20:58+00:00</updated>
+  <updated>2015-11-19T13:13:36+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[notie]]></title>
+    <link href="http://nmotw.in/github/notie/"/>
+    <updated>2015-11-19T09:56:38+00:00</updated>
+    <id>http://nmotw.in/github/notie</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/notie">notie</a></h1>
+
+<blockquote><p>A simple notification plugin.</p></blockquote>
+
+<p><code>notie</code> - A clean and simple notification plugin with alert/growl style, has no dependencies, help us to take an input,
+confirmation or alter the users in a more appealing manner.</p>
+
+<p>It's uses material design, you can override or add styling in a separate <code>.css</code> file.</p>
+
+<p><strong>Get it:</strong> <code>npm install --save notie</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```js
+var notie = require('notie);</p>
+
+<p>notie.alert(style_number, 'message', time_in_seconds);</p>
+
+<p>notie.confirm('Title text', 'Yes button text', 'No button text', yes_callback);</p>
+
+<p>notie.input('Title text', 'Submit button text', 'Cancel button text', 'type', 'placeholder', submit_callback, 'Optional pre-filled value');
+```</p>
+
+<p>```js
+notie.input('What city do you live in?', 'Submit', 'Cancel', 'text', 'Enter your city:', function(value_entered) {</p>
+
+<pre><code>notie.alert(1, 'You entered: ' + value_entered, 2);
+</code></pre>
+
+<p>}, 'New York');
+```</p>
+
+<p>P.S: <code>style_number</code> -> <code>{1,2,3,4}</code> &lt;=> <code>{Success, Warning, Error, Information}</code></p>
+
+<p><strong>GIF FTW:</strong></p>
+
+<p><img src="/images/notie/notie.gif" alt="notie" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[clipboard.js]]></title>
@@ -205,46 +250,6 @@ fade.out(el, function() {
 <p><img src="/images/fade/fade.gif" alt="fade.gif" /></p>
 
 <p>Thanks to <a href="http://juliangruber.com/">Julian Gruber</a> for this sweet little module.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[html.js]]></title>
-    <link href="http://nmotw.in/github/html.js/"/>
-    <updated>2015-06-25T12:12:57+00:00</updated>
-    <id>http://nmotw.in/github/html.js</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/html.js">html.js</a></h1>
-
-<blockquote><p>An intuitive, extensible way to work directly with the DOM.</p></blockquote>
-
-<p><code>html.js</code> is a fork of <a href="http://adriancooney.ie/voyeur.js/">voyeur.js</a> that has made it more simpler to deal with DOM in a
-relatively new way.</p>
-
-<p>It has a pretty extensive <a href="http://nbubna.github.io/HTML/#API">API</a> and you could also create your own plugins
-<code>HTML._.fn.name = function;</code></p>
-
-<p><strong>Get it:</strong> <code>npm install --save html.js</code></p>
-
-<p><strong>Usage Example:</strong></p>
-
-<p>```js
-let HTML = require('html.js');</p>
-
-<p>HTML.body.header; // returns header element.</p>
-
-<p>HTML.query("#example").h1.em; // chain on, man.</p>
-
-<p>if (!('each' in node)) {
-  HTML.ify(node);
-}
-node.each(function(el){ console.log(el, ' is your friend!'); });
-```</p>
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="/images/html.js/html.js.gif" alt="html.js" /></p>
-
-<p>Thanks to <a href="https://github.com/nbubna">Nathan Bubna</a> for this module.</p>
 ]]></content>
   </entry>
   

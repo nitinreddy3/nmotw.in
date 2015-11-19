@@ -4,13 +4,67 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2015-11-12T17:20:58+00:00</updated>
+  <updated>2015-11-19T13:13:36+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[notie]]></title>
+    <link href="http://nmotw.in/notie/"/>
+    <updated>2015-11-19T09:56:38+00:00</updated>
+    <id>http://nmotw.in/notie</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/notie">notie</a></h1>
+
+<blockquote><p>A simple notification plugin.</p></blockquote>
+
+<p><code>notie</code> - A clean and simple notification plugin with alert/growl style, has no dependencies, help us to take an input,
+confirmation or alter the users in a more appealing manner.</p>
+
+<p>It's uses material design, you can override or add styling in a separate <code>.css</code> file.</p>
+
+<p><strong>Get it:</strong> <code>npm install --save notie</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">notie</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;notie);</span>
+</span><span class='line'>
+</span><span class='line'><span class="s1">notie.alert(style_number, &#39;</span><span class="nx">message</span><span class="s1">&#39;, time_in_seconds);</span>
+</span><span class='line'>
+</span><span class='line'><span class="s1">notie.confirm(&#39;</span><span class="nx">Title</span> <span class="nx">text</span><span class="s1">&#39;, &#39;</span><span class="nx">Yes</span> <span class="nx">button</span> <span class="nx">text</span><span class="s1">&#39;, &#39;</span><span class="nx">No</span> <span class="nx">button</span> <span class="nx">text</span><span class="s1">&#39;, yes_callback);</span>
+</span><span class='line'>
+</span><span class='line'><span class="s1">notie.input(&#39;</span><span class="nx">Title</span> <span class="nx">text</span><span class="s1">&#39;, &#39;</span><span class="nx">Submit</span> <span class="nx">button</span> <span class="nx">text</span><span class="s1">&#39;, &#39;</span><span class="nx">Cancel</span> <span class="nx">button</span> <span class="nx">text</span><span class="s1">&#39;, &#39;</span><span class="nx">type</span><span class="s1">&#39;, &#39;</span><span class="nx">placeholder</span><span class="s1">&#39;, submit_callback, &#39;</span><span class="nx">Optional</span> <span class="nx">pre</span><span class="o">-</span><span class="nx">filled</span> <span class="nx">value</span><span class="err">&#39;</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">notie</span><span class="p">.</span><span class="nx">input</span><span class="p">(</span><span class="s1">&#39;What city do you live in?&#39;</span><span class="p">,</span> <span class="s1">&#39;Submit&#39;</span><span class="p">,</span> <span class="s1">&#39;Cancel&#39;</span><span class="p">,</span> <span class="s1">&#39;text&#39;</span><span class="p">,</span> <span class="s1">&#39;Enter your city:&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">value_entered</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">notie</span><span class="p">.</span><span class="nx">alert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;You entered: &#39;</span> <span class="o">+</span> <span class="nx">value_entered</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+</span><span class='line'><span class="p">},</span> <span class="s1">&#39;New York&#39;</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>P.S: <code>style_number</code> -> <code>{1,2,3,4}</code> &lt;=> <code>{Success, Warning, Error, Information}</code></p>
+
+<p><strong>GIF FTW:</strong></p>
+
+<p><img src="http://nmotw.in/images/notie/notie.gif" alt="notie" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[debounce]]></title>
@@ -1242,54 +1296,6 @@ and second one being an config object.</p>
 <p><img src="http://nmotw.in/images/ramjet/ramjet.gif" alt="ramjet.js" /></p>
 
 <p>Thanks to <a href="http://www.rich-harris.co.uk/">Rich Harris</a> for <code>ramjet</code> (:</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[fade]]></title>
-    <link href="http://nmotw.in/fade/"/>
-    <updated>2015-07-02T16:54:12+00:00</updated>
-    <id>http://nmotw.in/fade</id>
-    <content type="html"><![CDATA[<h1><a href="http://npm.im/fade">fade</a></h1>
-
-<blockquote><p>Fade a HTML element using CSS transitions.</p></blockquote>
-
-<p>Yes, you read it right, this module helps you to fade a HTML element. "Do one thing and do it right!", looks like the moto
-behind this module, that lets us to <code>fade.in</code>, <code>fade.out</code> and fade an element to a specifie opacity, which also takes a
-callback as one of it's params and execute it after animation ends and works across browsers with vendor prefixes.</p>
-
-<p><strong>Install it:</strong> <code>npm install --save fade</code> # browserify it!</p>
-
-<p><strong>Usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">fade</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;fade&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="kd">var</span> <span class="nx">el</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#el&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">fade</span><span class="p">.</span><span class="nx">out</span><span class="p">(</span><span class="nx">el</span><span class="p">);</span> <span class="c1">// fade el out in 1s</span>
-</span><span class='line'><span class="nx">fade</span><span class="p">.</span><span class="k">in</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="mi">1500</span><span class="p">);</span> <span class="c1">// fade el in in 1.5s</span>
-</span><span class='line'><span class="nx">fade</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mi">3000</span><span class="p">);</span> <span class="c1">// fade el to opacity 0.3 in 3s </span>
-</span><span class='line'><span class="nx">fade</span><span class="p">.</span><span class="nx">out</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>  <span class="nx">el</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span> <span class="c1">// set display to none after fade out</span>
-</span><span class='line'><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/fade/fade.gif" alt="fade.gif" /></p>
-
-<p>Thanks to <a href="http://juliangruber.com/">Julian Gruber</a> for this sweet little module.</p>
 ]]></content>
   </entry>
   
