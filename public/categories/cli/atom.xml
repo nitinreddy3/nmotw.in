@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cli | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/cli/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2015-11-19T13:13:36+00:00</updated>
+  <updated>2015-11-26T14:22:54+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,66 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[npmlog]]></title>
+    <link href="http://nmotw.in/github/npmlog/"/>
+    <updated>2015-11-26T14:07:54+00:00</updated>
+    <id>http://nmotw.in/github/npmlog</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/npmlog">npmlog</a></h1>
+
+<blockquote><p>logger for npm</p></blockquote>
+
+<p><code>npmlog</code> is a simple logger that <code>npm</code> uses to log it's messages, this module provides custom levels and colored output.</p>
+
+<p>By default, logs are written to <code>stderr</code>, to send log messages to outputs other than streams you can use <code>log.stream</code> member, or you can just listen to the events that it emits.</p>
+
+<p><strong>Get it:</strong> : <code>npm install --save nplog</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```js
+var log = require('npmlog')</p>
+
+<p>// additional stuff ---------------------------+
+// message ----------+                         |
+// prefix ----+      |                         |
+// level -+   |      |                         |
+//        v   v      v                         v</p>
+
+<pre><code>log.info('fyi', 'I &lt;3 nmotw: %j', node_modules);
+</code></pre>
+
+<p>```</p>
+
+<p><strong>levels:</strong></p>
+
+<p>```js</p>
+
+<blockquote><p>log.levels
+{ silly: -Infinity,
+  verbose: 1000,
+  info: 2000,
+  http: 3000,
+  warn: 4000,
+  error: 5000,
+  silent: Infinity }</p>
+
+<p>log.disp
+{ silly: 'sill',
+  verbose: 'verb',
+  info: 'info',
+  http: 'http',
+  warn: 'WARN',
+  error: 'ERR!',
+  silent: 'silent' }
+```</p></blockquote>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/npmlog/npmlog.gif" alt="npmlog" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[npm-check]]></title>
@@ -206,108 +266,6 @@ WebRTC Peer-to-peer connections ✔ 55.36% ◒ 0% [W3C Working Draft]
 <p><img src="/images/caniuse-cmd/caniuse-cmd.gif" alt="caniuse-cmd.gif" /></p>
 
 <p>Thanks to <a href="https://github.com/sgentle">Sam Gentle</a> for bringing this to the CLI.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[browser-repl]]></title>
-    <link href="http://nmotw.in/github/browser-repl/"/>
-    <updated>2015-06-18T16:46:33+00:00</updated>
-    <id>http://nmotw.in/github/browser-repl</id>
-    <content type="html"><![CDATA[<p><a href="https://www.npmjs.com/package/browser-repl">browser-repl</a></p>
-
-<blockquote><p>Launch a repl on your command line to any browser in the cloud.</p></blockquote>
-
-<p><code>browser-repl</code> is a uber cool module from <a href="http://automattic.com/">automattic</a> that helps us to get a particular OS/Browser
-combo (JS engine) to our CLI with some webdriver protocol, scoket.io and localtunnel magic ;)</p>
-
-<p>Currently supported browsers:</p>
-
-<ul>
-<li><p>ie</p></li>
-<li><p>ie6</p></li>
-<li><p>ie7</p></li>
-<li><p>ie8</p></li>
-<li><p>ie9</p></li>
-<li><p>ie10</p></li>
-<li><p>ie11</p></li>
-<li><p>opera</p></li>
-<li><p>safari</p></li>
-<li><p>safari5</p></li>
-<li><p>safari6</p></li>
-<li><p>safari7</p></li>
-<li><p>safari8</p></li>
-<li><p>chrome</p></li>
-<li><p>chromedev</p></li>
-<li><p>firefox</p></li>
-<li><p>firefoxdev</p></li>
-<li><p>ipad</p></li>
-<li><p>ipad4</p></li>
-<li><p>ipad5</p></li>
-<li><p>ipad5.1</p></li>
-<li><p>ipad6</p></li>
-<li><p>ipad6.1</p></li>
-<li><p>iphone</p></li>
-<li><p>iphone4</p></li>
-<li><p>iphone5</p></li>
-<li><p>iphone5.1</p></li>
-<li><p>iphone6</p></li>
-<li><p>iphone6.1</p></li>
-<li><p>android</p></li>
-<li><p>android4.4</p></li>
-<li><p>android4.2</p></li>
-<li><p>android4.1</p></li>
-</ul>
-
-
-<p><strong>Currently supported platforms:</strong></p>
-
-<ul>
-<li><p>winxp</p></li>
-<li><p>win7</p></li>
-<li><p>win8</p></li>
-<li><p>win8.1</p></li>
-<li><p>mac10.6</p></li>
-<li><p>mac10.8</p></li>
-<li><p>mac10.9</p></li>
-<li><p>mac10.10</p></li>
-<li><p>linux</p></li>
-<li><p>android</p></li>
-</ul>
-
-
-<p><strong>Get it:</strong></p>
-
-<p><code>sh
-npm install -g browser-repl
-</code>
-<strong>Set up:</strong></p>
-
-<p>```sh</p>
-
-<h1>In your *.rc file.</h1>
-
-<p>export SAUCE_USERNAME="your username"
-export SAUCE_ACCESS_KEY="your key"
-```</p>
-
-<p>To get the <code>SAUCE</code> stuff, sign up for a free OSS account on <a href="http://saucelabs.com">SauceLabs</a>.</p>
-
-<p><strong>Usage:</strong></p>
-
-<p>```sh
-$ repl</p>
-
-<p>usage: repl <browser>[version] [platform]</p>
-
-<p>options:
- -h: this message
- -k: no remote <code>console</code> override
-```</p>
-
-<p><strong>GIF FTW</strong></p>
-
-<p><img src="/images/browser-repl/brwoser-repl.gif" alt="browser-repl" /></p>
 ]]></content>
   </entry>
   
