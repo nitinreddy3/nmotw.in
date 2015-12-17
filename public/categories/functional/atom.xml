@@ -4,7 +4,7 @@
   <title><![CDATA[Category: functional | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/functional/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2015-12-10T15:50:59+00:00</updated>
+  <updated>2015-12-17T16:53:32+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,56 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[as]]></title>
+    <link href="http://nmotw.in/github/as/"/>
+    <updated>2015-12-17T16:34:55+00:00</updated>
+    <id>http://nmotw.in/github/as</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/as">as</a></h1>
+
+<blockquote><p>Convert easily, back and forth between array and object.</p></blockquote>
+
+<p>A sweet and simple util that help you to convert array to object and vise versa, it also:</p>
+
+<ul>
+<li><p>Brings all functional goodness of arrays to objects.</p></li>
+<li><p>Brings the flexibility of objects to arrays.</p></li>
+<li><p>Works well with a functional programming library.</p></li>
+</ul>
+
+
+<p><strong>Get it</strong>: <code>npm install --save as</code></p>
+
+<p><strong>Usage:</strong></p>
+
+<p>```js
+var asArray = require("as/array");</p>
+
+<p>asArray(
+  {a: 1, b: 2}
+  );
+// [ {key: "a", value: 1}
+// , {key: "b", value: 2}
+// ]
+```</p>
+
+<p><code>js
+var asObject = require("as/object");
+asObject(
+  [ {key: "a", value: 1}
+  , {key: "b", value: 2}
+  ]);
+// {a: 1, b: 2}
+</code></p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/as/as.gif" alt="" /></p>
+
+<p>Thanks for</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[ramda-repl]]></title>
