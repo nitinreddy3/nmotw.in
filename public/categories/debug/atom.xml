@@ -4,7 +4,7 @@
   <title><![CDATA[Category: debug | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/debug/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2015-12-31T17:52:57+00:00</updated>
+  <updated>2015-12-31T17:56:28+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -20,7 +20,7 @@
     <id>http://nmotw.in/github/stack-trace</id>
     <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/stack-trace">stack-trace</a></h1>
 
-<p>Get v8 stack traces as an array of CallSite objects.</p>
+<blockquote><p>Get v8 stack traces as an array of CallSite objects.</p></blockquote>
 
 <p><strong>Get it:</strong> <code>npm install --save stack-trace</code></p>
 
