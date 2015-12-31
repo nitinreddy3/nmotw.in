@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: debug | NMOTW]]></title>
-  <link href="http://nmotw.in/github/public/categories/debug/atom.xml" rel="self"/>
+  <title><![CDATA[Category: trace | NMOTW]]></title>
+  <link href="http://nmotw.in/github/public/categories/trace/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
   <updated>2015-12-31T17:52:57+00:00</updated>
   <id>http://nmotw.in/github/</id>
@@ -59,51 +59,6 @@ var trace = stackTrace.parse(err);
 <p><strong>GIF FTW</strong></p>
 
 <p><img src="/images/stack-trace/stack-trace.gif" alt="stack-trace" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[require-times]]></title>
-    <link href="http://nmotw.in/github/require-times/"/>
-    <updated>2015-04-09T14:40:22+00:00</updated>
-    <id>http://nmotw.in/github/require-times</id>
-    <content type="html"><![CDATA[<h1><a href="http://npm.im/require-times">require-times</a></h1>
-
-<blockquote><p>Find out how long require calls take in your program.</p></blockquote>
-
-<p>This is cheeky module from <a href="http://maxogden.com/">Max Ogden</a> tap into <code>require.extensions['.js']</code> and lets you know the time consumed by
-the require calls in your code.</p>
-
-<p><strong>Install it:</strong> <code>npm install require-times</code></p>
-
-<p><strong>Usage:</strong></p>
-
-<p>```js
-var rt = require('require-times');
-rt.start();</p>
-
-<p>// hundreds on require statments ;)</p>
-
-<p>rt.end(); // Will spit the time consumed to stdout.
-```</p>
-
-<p><strong>Example:</strong></p>
-
-<p>```js
-var rt = require('require-times')();</p>
-
-<p>rt.start();</p>
-
-<p>require('require-times'); // Dog fooding ;)</p>
-
-<p>rt.end();</p>
-
-<p>// Output => total: 9647ms
-```</p>
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="/images/require-times/require-times.gif" alt="require-times" /></p>
 ]]></content>
   </entry>
   
