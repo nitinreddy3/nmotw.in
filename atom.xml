@@ -4,13 +4,70 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2016-01-07T16:20:29+00:00</updated>
+  <updated>2016-01-07T16:56:34+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[ineed]]></title>
+    <link href="http://nmotw.in/ineed/"/>
+    <updated>2016-01-07T16:32:52+00:00</updated>
+    <id>http://nmotw.in/ineed</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/ineed">ineed</a></h1>
+
+<blockquote><p>Web scraping and HTML-reprocessing. The easy way.</p></blockquote>
+
+<p><img src="http://nmotw.in/images/ineed/ineed-logo.gif" alt="ineed-logo" /></p>
+
+<p><code>ineed</code> allows you collect useful data from web pages using simple and nice API.</p>
+
+<p>It doesn't build and traverse DOM-tree, it operates on sequence of HTML tokens instead. Whole processing is done in one-pass, therefore, it's blazing fast!</p>
+
+<p><strong>Get it:</strong> <code>npm install --save ineed</code></p>
+
+<p><strong>Usage:</strong> <code>ineed.&lt;action&gt;[.&lt;plugin&gt;...].&lt;from*&gt;</code></p>
+
+<p>Where <code>action</code> could be: <code>collect</code> or <code>reprocess</code></p>
+
+<p><code>plugin</code> could be one of: <code>.comments</code> <code>.cssCode</code> <code>.hyperlinks</code> <code>.images</code> <code>.jsCode</code> <code>.scripts</code> <code>.stylesheets</code> <code>.texts</code> <code>.title</code></p>
+
+<p><code>from</code> could be: <code>from</code> or <code>fromHtml</code></p>
+
+<p>P.S: One could write a custom plugin using the <code>.using()</code> method.</p>
+
+<p><strong>Code sample:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">ineed</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;ineed&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">ineed</span><span class="p">.</span><span class="nx">collect</span><span class="p">.</span><span class="nx">images</span><span class="p">.</span><span class="nx">hyperlinks</span><span class="p">.</span><span class="nx">scripts</span><span class="p">.</span><span class="nx">stylesheets</span><span class="p">.</span><span class="nx">from</span><span class="p">(</span><span class="s1">&#39;http://nmotw.in&#39;</span><span class="p">,</span>
+</span><span class='line'>    <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">response</span><span class="p">,</span> <span class="nx">result</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">));</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">ineed</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;ineed&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">ineed</span><span class="p">.</span><span class="nx">collect</span><span class="p">.</span><span class="nx">texts</span><span class="p">.</span><span class="nx">images</span><span class="p">.</span><span class="nx">scripts</span><span class="p">.</span><span class="nx">fromHtml</span><span class="p">(</span><span class="nx">html</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/images/ineed/ineed.gif" alt="ineed" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[stack-trace]]></title>
@@ -1251,62 +1308,6 @@ helps us to know our intenet connection speed and ping with a beautiful UI.</p>
 <p><strong>GIF FTW!</strong></p>
 
 <p><img src="http://nmotw.in/images/url-pattern/url-pattern.gif" alt="url-pattern" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[human-to-cron]]></title>
-    <link href="http://nmotw.in/human-to-cron/"/>
-    <updated>2015-08-20T12:39:33+00:00</updated>
-    <id>http://nmotw.in/human-to-cron</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/human-to-cron">human-to-cron</a></h1>
-
-<blockquote><p>Converts human readable expression to a cron string!</p></blockquote>
-
-<p>If you can interpert <code>0 */1 * * *</code> as <code>each minute</code> then this module is not for you ;)</p>
-
-<p><code>human-to-cron</code> parsers the human readable expressions with the help of ES6 generators converts it into a <a href="https://en.wikipedia.org/wiki/Cron">cron</a> string.</p>
-
-<p><strong>Get it:</strong> <code>npm install --save human-to-cron</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">humanToCron</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;human-to-cron&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">humanToCron</span><span class="p">(</span><span class="s1">&#39;once each minute&#39;</span><span class="p">)</span> <span class="c1">// =&gt; 0 */1 * * * *</span>
-</span><span class='line'><span class="nx">humanToCron</span><span class="p">(</span><span class="s1">&#39;each 2 minutes&#39;</span><span class="p">)</span> <span class="c1">// =&gt; * */2 * * * *</span>
-</span><span class='line'><span class="nx">humanToCron</span><span class="p">(</span><span class="s1">&#39;each second&#39;</span><span class="p">)</span> <span class="c1">// =&gt; */1 * * * * *</span>
-</span><span class='line'><span class="nx">humanToCron</span><span class="p">(</span><span class="s1">&#39;once each hour&#39;</span><span class="p">)</span> <span class="c1">// =&gt; 0 0 */1 * * *</span>
-</span><span class='line'><span class="nx">humanToCron</span><span class="p">(</span><span class="s1">&#39;once each day&#39;</span><span class="p">)</span> <span class="c1">// =&gt; 0 0 0 */1 * *</span>
-</span><span class='line'><span class="nx">humanToCron</span><span class="p">(</span><span class="s1">&#39;once each month&#39;</span><span class="p">)</span> <span class="c1">// =&gt; 0 0 0 0 */1 *</span>
-</span><span class='line'><span class="nx">humanToCron</span><span class="p">(</span><span class="s1">&#39;once each 5 months&#39;</span><span class="p">)</span> <span class="c1">// =&gt; 0 0 0 0 */5 *</span>
-</span><span class='line'><span class="nx">humanToCron</span><span class="p">(</span><span class="s1">&#39;midnight&#39;</span><span class="p">)</span> <span class="c1">// =&gt; 0 0 0 * * *</span>
-</span><span class='line'><span class="nx">humanToCron</span><span class="p">(</span><span class="s1">&#39;midnight each 2 minutes&#39;</span><span class="p">)</span> <span class="c1">// =&gt; 0 */2 0 * * *</span>
-</span><span class='line'><span class="nx">humanToCron</span><span class="p">(</span><span class="s1">&#39;once tuesday each 10 minutes&#39;</span><span class="p">)</span> <span class="c1">// =&gt; 0 */10 * 1 * *</span>
-</span><span class='line'><span class="nx">humanToCron</span><span class="p">(</span><span class="s1">&#39;friday 15:44&#39;</span><span class="p">)</span> <span class="c1">// =&gt; 0 44 15 4 * *</span>
-</span><span class='line'><span class="nx">humanToCron</span><span class="p">(</span><span class="s1">&#39;august friday 15:44&#39;</span><span class="p">)</span> <span class="c1">// =&gt; 0 44 15 4 7 *</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/human-to-cron/human-to-cron.gif" alt="human-to-cron" /></p>
-
-<p>Thanks to <a href="https://github.com/rainder">Andrius Skerla</a> for this cheeky module!</p>
 ]]></content>
   </entry>
   
