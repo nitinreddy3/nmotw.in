@@ -4,13 +4,72 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2016-01-07T17:05:03+00:00</updated>
+  <updated>2016-01-14T17:04:08+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[fp-dom]]></title>
+    <link href="http://nmotw.in/fp-dom/"/>
+    <updated>2016-01-14T16:52:27+00:00</updated>
+    <id>http://nmotw.in/fp-dom</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/fp-dom">fp-dom</a></h1>
+
+<blockquote><p>A collection of function to favor functional programming in a DOM context.</p></blockquote>
+
+<p>DOM operations in a functional way with <code>fp-dom</code>, it provides support for the below methods:</p>
+
+<ul>
+<li>animate</li>
+<li>append</li>
+<li>addClass</li>
+<li>removeClass</li>
+<li>toggleClass</li>
+<li>hasClass</li>
+<li>contains</li>
+<li>elem</li>
+<li>insertAfter</li>
+<li>insertBefore</li>
+<li>interval</li>
+<li>isdom</li>
+<li>isvdom</li>
+<li>listen</li>
+<li>prepend</li>
+<li>replace</li>
+<li>select</li>
+<li>selectOne</li>
+<li>setattr</li>
+<li>timeout</li>
+<li>velem</li>
+</ul>
+
+
+<p><strong>Get it</strong>: <code>npm install --save fp-dom</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">fpdom</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;fp-dom&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="kd">let</span> <span class="nx">appendtoBody</span> <span class="o">=</span> <span class="nx">fpdom</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">),</span>
+</span><span class='line'>  <span class="nx">h1</span> <span class="o">=</span> <span class="nx">fpdom</span><span class="p">.</span><span class="nx">elem</span><span class="p">(</span><span class="s1">&#39;h1&#39;</span><span class="p">,</span><span class="s1">&#39;meow&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">appendtoBody</span><span class="p">(</span><span class="nx">h1</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/images/fp-dom/fp-dom.gif" alt="fp-dom" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[ineed]]></title>
@@ -1228,88 +1287,6 @@ helps us to know our intenet connection speed and ping with a beautiful UI.</p>
 <p><strong>GIF FTW:</strong></p>
 
 <p><img src="http://nmotw.in/images/speed-test/speed-test.gif" alt="speed-test" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[url-pattern]]></title>
-    <link href="http://nmotw.in/url-pattern/"/>
-    <updated>2015-08-27T08:37:23+00:00</updated>
-    <id>http://nmotw.in/url-pattern</id>
-    <content type="html"><![CDATA[<p><a href="https://www.npmjs.com/package/url-pattern">url-pattern</a></p>
-
-<blockquote><p>easier than regex string matching for urls, domains, filepaths and other strings.</p></blockquote>
-
-<p><code>url-pattern</code> can capture named parts of strings and conveniently returns them as objects.</p>
-
-<p>Also does the reverse and generates strings given a pattern and such an object.</p>
-
-<p><strong>install:</strong> <code>npm install url-pattern</code></p>
-
-<p><strong>simple match example:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">UrlPattern</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;url-pattern&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="kd">var</span> <span class="nx">pattern</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">UrlPattern</span><span class="p">(</span><span class="s1">&#39;/api/users/:id&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">pattern</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="s1">&#39;/api/users/10&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="p">{</span><span class="nx">id</span><span class="o">:</span> <span class="s1">&#39;10&#39;</span><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">pattern</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="s1">&#39;/api/products/5&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="kc">null</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>complex match example showing off escaping, wildcards and optional segments:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">pattern</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">UrlPattern</span><span class="p">(</span><span class="s1">&#39;(http(s)\\://)(:subdomain.):domain.:tld(/*)&#39;</span><span class="p">)</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">pattern</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="s1">&#39;google.de&#39;</span><span class="p">);</span> <span class="c1">// {domain: &#39;google&#39;, tld: &#39;de&#39;}</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">pattern</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="s1">&#39;https://www.google.com&#39;</span><span class="p">);</span> <span class="c1">// {subdomain: &#39;www&#39;, domain: &#39;google&#39;, tld: &#39;com&#39;}</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">pattern</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="s1">&#39;http://mail.google.com/mail&#39;</span><span class="p">);</span> <span class="c1">// {subdomain: &#39;mail&#39;, domain: &#39;google&#39;, tld: &#39;com&#39;, _: &#39;mail&#39;}</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">pattern</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="s1">&#39;google&#39;</span><span class="p">)</span> <span class="p">;</span> <span class="c1">// null</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>stringify example:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">pattern</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">UrlPattern</span><span class="p">(</span><span class="s1">&#39;/api/users(/:id)&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">pattern</span><span class="p">.</span><span class="nx">stringify</span><span class="p">()</span> <span class="c1">// &#39;/api/users&#39;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">pattern</span><span class="p">.</span><span class="nx">stringify</span><span class="p">({</span><span class="nx">id</span><span class="o">:</span> <span class="mi">10</span><span class="p">})</span>  <span class="c1">//&#39; /api/users/10&#39;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/url-pattern/url-pattern.gif" alt="url-pattern" /></p>
 ]]></content>
   </entry>
   
