@@ -4,7 +4,7 @@
   <title><![CDATA[Category: fp | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/fp/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-01-14T17:04:08+00:00</updated>
+  <updated>2016-01-14T17:08:18+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -20,7 +20,7 @@
     <id>http://nmotw.in/github/fp-dom</id>
     <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/fp-dom">fp-dom</a></h1>
 
-<blockquote><p>A collection of function to favor functional programming in a DOM context.</p></blockquote>
+<blockquote><p>A collection of functions to favor functional programming in a DOM context.</p></blockquote>
 
 <p>DOM operations in a functional way with <code>fp-dom</code>, it provides support for the below methods:</p>
 
