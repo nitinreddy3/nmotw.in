@@ -4,7 +4,7 @@
   <title><![CDATA[Category: debug | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/debug/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-01-14T17:08:18+00:00</updated>
+  <updated>2016-01-21T16:46:06+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,55 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[iron-node]]></title>
+    <link href="http://nmotw.in/github/iron-node/"/>
+    <updated>2016-01-21T16:20:46+00:00</updated>
+    <id>http://nmotw.in/github/iron-node</id>
+    <content type="html"><![CDATA[<h1><a href="http://s-a.github.io/iron-node/">iron-node</a></h1>
+
+<blockquote><p>Debug Node.js code with Chrome Developer Tools.</p></blockquote>
+
+<p>Yes you read it right <code>iron-node</code> helps you to debug your node code using chrome devtools, it makes use of <a href="http://electron.atom.io/">electron</a> creates a <code>browser-window</code>
+opens the dev-tool re-compile native modules against electron!</p>
+
+<p>It not only helps you to debug your code, but also helps to debug your node build scripts!</p>
+
+<p>Keep in mind to place the keyword <code>debugger;</code> to a place where you want to stop.</p>
+
+<p><strong>Get it:</strong> <code>npm install -g iron-node</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p><strong>CLI:</strong></p>
+
+<p><code>
+iron-node PATH_TO_NODE_JS_FILE [--customparm1=foo --customparm2=bar];
+</code></p>
+
+<p><strong>npm scripts:</strong></p>
+
+<p>```
+  ...
+  "scripts": {</p>
+
+<pre><code>...
+"debug-mocha": "iron-node node_modules/mocha/bin/_mocha",
+"debug-grunt": "iron-node node_modules/grunt-cli/bin/grunt build",
+"debug-gulp": "iron-node node_modules/gulp/bin/gulp.js",
+...
+</code></pre>
+
+<p>  },
+  ...
+```</p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/iron-node/iron-node.gif" alt="" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[stack-trace]]></title>
