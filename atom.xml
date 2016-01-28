@@ -4,13 +4,91 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2016-01-21T16:46:06+00:00</updated>
+  <updated>2016-01-28T15:34:33+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[platform]]></title>
+    <link href="http://nmotw.in/platform/"/>
+    <updated>2016-01-28T13:12:21+00:00</updated>
+    <id>http://nmotw.in/platform</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/platform">platform</a></h1>
+
+<blockquote><p>A platform detection library that works on nearly all JavaScript platforms.</p></blockquote>
+
+<p>This module provides the below platfrom based information:</p>
+
+<ul>
+<li>description</li>
+<li>layout</li>
+<li>manufacturer</li>
+<li>name</li>
+<li>prerelease</li>
+<li>product</li>
+<li>ua</li>
+<li>version</li>
+<li>os</li>
+</ul>
+
+
+<p>It can also <code>parse</code> an <code>User-Agent</code> and give the same information.</p>
+
+<p>P.S:<code>platform</code> is for informational purposes only &amp; not intended as a substitution for feature detection/inference checks.</p>
+
+<p><strong>GET IT</strong> : <code>npm install --save platform</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">platform</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;platform&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">// on an iPad</span>
+</span><span class='line'><span class="nx">platform</span><span class="p">.</span><span class="nx">name</span><span class="p">;</span> <span class="c1">// &#39;Safari&#39;</span>
+</span><span class='line'><span class="nx">platform</span><span class="p">.</span><span class="nx">version</span><span class="p">;</span> <span class="c1">// &#39;5.1&#39;</span>
+</span><span class='line'><span class="nx">platform</span><span class="p">.</span><span class="nx">product</span><span class="p">;</span> <span class="c1">// &#39;iPad&#39;</span>
+</span><span class='line'><span class="nx">platform</span><span class="p">.</span><span class="nx">manufacturer</span><span class="p">;</span> <span class="c1">// &#39;Apple&#39;</span>
+</span><span class='line'><span class="nx">platform</span><span class="p">.</span><span class="nx">layout</span><span class="p">;</span> <span class="c1">// &#39;WebKit&#39;</span>
+</span><span class='line'><span class="nx">platform</span><span class="p">.</span><span class="nx">os</span><span class="p">;</span> <span class="c1">// &#39;iOS 5.0&#39;</span>
+</span><span class='line'><span class="nx">platform</span><span class="p">.</span><span class="nx">description</span><span class="p">;</span> <span class="c1">// &#39;Safari 5.1 on Apple iPad (iOS 5.0)&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">info</span> <span class="o">=</span> <span class="nx">platform</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="s1">&#39;Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7.2; en; rv:2.0) Gecko/20100101 Firefox/4.0 Opera 11.52&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="nx">info</span><span class="p">.</span><span class="nx">name</span><span class="p">;</span> <span class="c1">// &#39;Opera&#39;</span>
+</span><span class='line'><span class="nx">info</span><span class="p">.</span><span class="nx">version</span><span class="p">;</span> <span class="c1">// &#39;11.52&#39;</span>
+</span><span class='line'><span class="nx">info</span><span class="p">.</span><span class="nx">layout</span><span class="p">;</span> <span class="c1">// &#39;Presto&#39;</span>
+</span><span class='line'><span class="nx">info</span><span class="p">.</span><span class="nx">os</span><span class="p">;</span> <span class="c1">// &#39;Mac OS X 10.7.2&#39;</span>
+</span><span class='line'><span class="nx">info</span><span class="p">.</span><span class="nx">description</span><span class="p">;</span> <span class="c1">// &#39;Opera 11.52 (identifying as Firefox 4.0) on Mac OS X 10.7.2&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/images/platform/platform.gif" alt="" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[iron-node]]></title>
@@ -513,7 +591,7 @@ opens the dev-tool re-compile native modules against electron!</p>
 
 <p>By default, logs are written to <code>stderr</code>, to send log messages to outputs other than streams you can use <code>log.stream</code> member, or you can just listen to the events that it emits.</p>
 
-<p><strong>Get it:</strong> : <code>npm install --save nplog</code></p>
+<p><strong>Get it:</strong> : <code>npm install --save npmlog</code></p>
 
 <p><strong>Sample usage:</strong></p>
 
@@ -1233,81 +1311,6 @@ you need to just <code>require('instapromise')</code> and then you could just us
 <h2>License</h2>
 
 <p>MIT © <a href="http://h3manth.com">Hemanth.HM</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[npm-check]]></title>
-    <link href="http://nmotw.in/npm-check/"/>
-    <updated>2015-09-10T14:28:00+00:00</updated>
-    <id>http://nmotw.in/npm-check</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/npm-check">npm-check</a></h1>
-
-<blockquote><p>Check for outdated, incorrect, and unused dependencies.</p></blockquote>
-
-<p><strong>Features:</strong></p>
-
-<ul>
-<li><em>Interactive Update</em> means less typing.</li>
-<li>Scoped packages support for the modern npm user.</li>
-<li>Works with public and private registries.</li>
-<li>Won't query npm registry for packages with <code>private: true</code>.</li>
-<li>Kindly informs you if a dependency is not being used.</li>
-<li>Emoji in a command-line app, because command-line apps can be fun too.</li>
-</ul>
-
-
-<p>Very much similar to <a href="http://nmotw.in/npm-check-updates/">npm-check-updates</a> but far more generic and interactive!</p>
-
-<p><strong>Get it:</strong> <code>npm install -g npm-check</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>npm-check --help
-</span><span class='line'>
-</span><span class='line'>  Usage: npm-check <span class="o">[</span>options<span class="o">]</span>
-</span><span class='line'>
-</span><span class='line'>  Options:
-</span><span class='line'>
-</span><span class='line'>    -h, --help         output usage information
-</span><span class='line'>    -V, --version      output the version number
-</span><span class='line'>    -u, --update       Interactive update.
-</span><span class='line'>    -g, --global       Look at global modules.
-</span><span class='line'>    -s, --skip-unused  Skip check <span class="k">for </span>unused packages.
-</span><span class='line'>    -p, --production   Ignore devDependencies.
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">npmCheck</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;npm-check&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">npmCheck</span><span class="p">(</span><span class="nx">options</span><span class="p">)</span>
-</span><span class='line'>  <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/npm-check/npm-check.gif" alt="npm-check" /></p>
-
-<p>Thanks to <a href="https://twitter.com/dylang">@dylang</a> for <code>npm-check</code>.</p>
 ]]></content>
   </entry>
   
