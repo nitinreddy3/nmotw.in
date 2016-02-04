@@ -4,7 +4,7 @@
   <title><![CDATA[Category: functional | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/functional/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-01-28T15:34:33+00:00</updated>
+  <updated>2016-02-04T14:46:19+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,54 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[data.task]]></title>
+    <link href="http://nmotw.in/github/data.task/"/>
+    <updated>2016-02-04T14:26:02+00:00</updated>
+    <id>http://nmotw.in/github/data.task</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/data.task">data.task</a></h1>
+
+<blockquote><p>A structure for representing asynchronous actions with automatic resource handling.</p></blockquote>
+
+<p><code>data.task</code> monad which can be used to replace Continuation-Passing Style form of programming,
+in order to be able to compose and sequence time-dependent effects using the generic and powerful monadic operations.</p>
+
+<p><strong>GET IT:</strong> <code>npm install --save data.task</code></p>
+
+<p><strong>Sample Usage:</strong></p>
+
+<p>```js
+var Task = require('data.task');</p>
+
+<blockquote><p>new Task((reject, resolve) => {})
+Task { fork: [Function], cleanup: [Function] }
+```</p></blockquote>
+
+<p>```js
+var Task = require('data.task');
+var read = path => {
+return new Task((reject, resolve) => {
+  fs.readFile(path, (err, data) => {</p>
+
+<pre><code>    if (err)  {
+      reject(err)
+    } else {
+      resolve(data) 
+    }
+});
+</code></pre>
+
+<p>  });
+};
+read('/tmp/data.md').fork(console.error, console.log);
+```</p>
+
+<p><strong>GIF FTW:</strong></p>
+
+<p><img src="/images/data.task/data.task.gif" alt="data.task" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[as]]></title>
