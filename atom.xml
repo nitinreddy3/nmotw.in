@@ -4,13 +4,106 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2016-02-04T15:15:08+00:00</updated>
+  <updated>2016-02-11T15:31:23+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[why-is-node-running]]></title>
+    <link href="http://nmotw.in/why-is-node-running/"/>
+    <updated>2016-02-11T15:04:17+00:00</updated>
+    <id>http://nmotw.in/why-is-node-running</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/why-is-node-running">why-is-node-running</a></h1>
+
+<blockquote><p>Node is running but you don't know why? why-is-node-running is here to help you.</p></blockquote>
+
+<p>This is a cheeky module that plays with <code>process.binding</code> of node, specifically with <code>process.binding('contextify').ContextifyScript;</code> the core of this library is from node's <a href="https://github.com/nodejs/node/blob/88307974e60346bc98c4e9f70a2b6918ccb6844f/src/node.js">source</a>.</p>
+
+<p><strong>GET IT:</strong> <code>npm install --save why-is-node-running</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">log</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;why-is-node-running&#39;</span><span class="p">);</span> <span class="c1">// should be your first require </span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">net</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;net&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">function</span> <span class="nx">createServer</span> <span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">server</span> <span class="o">=</span> <span class="nx">net</span><span class="p">.</span><span class="nx">createServer</span><span class="p">();</span>
+</span><span class='line'>  <span class="nx">setInterval</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{},</span> <span class="mi">1000</span><span class="p">);</span>
+</span><span class='line'>  <span class="nx">server</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">createServer</span><span class="p">();</span>
+</span><span class='line'><span class="nx">createServer</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">log</span><span class="p">()</span> <span class="c1">// logs out active handles that are keeping node running </span>
+</span><span class='line'><span class="p">},</span> <span class="mi">100</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>When executed in <code>/tmp</code> you see an output like:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>There are 4 known handle<span class="o">(</span>s<span class="o">)</span> keeping the process running and 0 unknown
+</span><span class='line'>Known handles:
+</span><span class='line'>
+</span><span class='line'><span class="c"># Timer</span>
+</span><span class='line'>/private/tmp/l:6  - setInterval<span class="o">(</span><span class="k">function</span> <span class="o">()</span> <span class="o">{}</span>, 1000<span class="o">)</span>;
+</span><span class='line'>/private/tmp/l:10 - createServer<span class="o">()</span>;
+</span><span class='line'>
+</span><span class='line'><span class="c"># TCP</span>
+</span><span class='line'>/private/tmp/l:7  - server.listen<span class="o">(</span>0<span class="o">)</span>;
+</span><span class='line'>/private/tmp/l:10 - createServer<span class="o">()</span>;
+</span><span class='line'>
+</span><span class='line'><span class="c"># TCP</span>
+</span><span class='line'>/private/tmp/l:7  - server.listen<span class="o">(</span>0<span class="o">)</span>;
+</span><span class='line'>/private/tmp/l:11 - createServer<span class="o">()</span>;
+</span><span class='line'>
+</span><span class='line'><span class="c"># Timer</span>
+</span><span class='line'>/private/tmp/l:13 - setTimeout<span class="o">(</span><span class="k">function</span> <span class="o">()</span> <span class="o">{</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/images/why-is-node-running/why-is-node-running.gif" alt="" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[data.task]]></title>
@@ -1252,53 +1345,6 @@ you need to just <code>require('instapromise')</code> and then you could just us
 <p><strong>GIF FTW!</strong></p>
 
 <p><img src="http://nmotw.in/images/clipboard.js/clipboard.js.gif" alt="clipboard.js" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[trianglify]]></title>
-    <link href="http://nmotw.in/trianglify/"/>
-    <updated>2015-09-24T11:53:44+00:00</updated>
-    <id>http://nmotw.in/trianglify</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/trianglify">Trianglify</a></h1>
-
-<blockquote><p>Trianglify generates colorful triangle meshes that can be used as SVG images and CSS backgrounds.</p></blockquote>
-
-<p>This is inspired by <a href="https://github.com/btmills/geopattern">btmills/geopattern</a> thanks to <a href="http://qrohlf.com/">Quinn Rohlf</a> for this.</p>
-
-<p><strong>Get it:</strong> <code>npm install --save trianglify</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">Trianglify</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;trianglify&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">pattern</span> <span class="o">=</span> <span class="nx">Trianglify</span><span class="p">({</span><span class="nx">width</span><span class="o">:</span> <span class="mi">200</span><span class="p">,</span> <span class="nx">height</span><span class="o">:</span> <span class="mi">200</span><span class="p">});</span>
-</span><span class='line'><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">pattern</span><span class="p">.</span><span class="nx">canvas</span><span class="p">());</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>There are few wonderful <a href="https://github.com/qrohlf/trianglify/blob/master/Readme.md#options">options</a> <code>color_function</code> being one of them.</p>
-
-<p>Color function that uses the HSL color format to generate a rainbow pattern:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">colorFunc</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="k">return</span> <span class="s1">&#39;hsl(&#39;</span><span class="o">+</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">abs</span><span class="p">(</span><span class="nx">x</span><span class="o">*</span><span class="nx">y</span><span class="p">)</span><span class="o">*</span><span class="mi">360</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;,80%,60%)&#39;</span><span class="p">;</span>
-</span><span class='line'><span class="p">};</span>
-</span><span class='line'>
-</span><span class='line'><span class="kd">var</span> <span class="nx">pattern</span> <span class="o">=</span> <span class="nx">Trianglify</span><span class="p">({</span><span class="nx">color_function</span><span class="o">:</span> <span class="nx">colorFunc</span><span class="p">})</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/trianglify/trianglify.gif" alt="Trianglify" /></p>
 ]]></content>
   </entry>
   

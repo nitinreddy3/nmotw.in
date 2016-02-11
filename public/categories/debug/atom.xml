@@ -4,7 +4,7 @@
   <title><![CDATA[Category: debug | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/debug/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-02-04T15:15:08+00:00</updated>
+  <updated>2016-02-11T15:31:23+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,71 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[why-is-node-running]]></title>
+    <link href="http://nmotw.in/github/why-is-node-running/"/>
+    <updated>2016-02-11T15:04:17+00:00</updated>
+    <id>http://nmotw.in/github/why-is-node-running</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/why-is-node-running">why-is-node-running</a></h1>
+
+<blockquote><p>Node is running but you don't know why? why-is-node-running is here to help you.</p></blockquote>
+
+<p>This is a cheeky module that plays with <code>process.binding</code> of node, specifically with <code>process.binding('contextify').ContextifyScript;</code> the core of this library is from node's <a href="https://github.com/nodejs/node/blob/88307974e60346bc98c4e9f70a2b6918ccb6844f/src/node.js">source</a>.</p>
+
+<p><strong>GET IT:</strong> <code>npm install --save why-is-node-running</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```js
+var log = require('why-is-node-running'); // should be your first require
+var net = require('net');</p>
+
+<p>function createServer () {
+  var server = net.createServer();
+  setInterval(function () {}, 1000);
+  server.listen(0);
+}</p>
+
+<p>createServer();
+createServer();</p>
+
+<p>setTimeout(function () {
+  log() // logs out active handles that are keeping node running
+}, 100);
+```</p>
+
+<p>When executed in <code>/tmp</code> you see an output like:</p>
+
+<p>```sh
+There are 4 known handle(s) keeping the process running and 0 unknown
+Known handles:</p>
+
+<h1>Timer</h1>
+
+<p>/private/tmp/l:6  - setInterval(function () {}, 1000);
+/private/tmp/l:10 - createServer();</p>
+
+<h1>TCP</h1>
+
+<p>/private/tmp/l:7  - server.listen(0);
+/private/tmp/l:10 - createServer();</p>
+
+<h1>TCP</h1>
+
+<p>/private/tmp/l:7  - server.listen(0);
+/private/tmp/l:11 - createServer();</p>
+
+<h1>Timer</h1>
+
+<p>/private/tmp/l:13 - setTimeout(function () {
+```</p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/why-is-node-running/why-is-node-running.gif" alt="" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[iron-node]]></title>
