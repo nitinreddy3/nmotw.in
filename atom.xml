@@ -4,7 +4,7 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2016-02-25T14:13:39+00:00</updated>
+  <updated>2016-02-25T14:17:51+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -21,7 +21,7 @@
 
 <blockquote><p>Testing and assertion library with friendly BDD syntax!</p></blockquote>
 
-<p><code>must</code> provides a BDD syntax for all your assertions and it follows [RFC 2119][https://www.ietf.org/rfc/rfc2119.txt] with its use of <strong>MUST</strong>. Good and well testsed stuff.</p>
+<p><code>must</code> provides a BDD syntax for all your assertions and it follows <a href="https://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a> with its use of <strong>MUST</strong>. Good and well testsed stuff.</p>
 
 <p><strong>Get it:</strong> <code>npm install --save must</code></p>
 
