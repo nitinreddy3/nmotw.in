@@ -4,7 +4,7 @@
   <title><![CDATA[Category: dom | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/dom/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-02-25T14:17:51+00:00</updated>
+  <updated>2016-03-03T15:08:28+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,47 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[color-thief]]></title>
+    <link href="http://nmotw.in/github/color-thief/"/>
+    <updated>2016-03-03T14:50:23+00:00</updated>
+    <id>http://nmotw.in/github/color-thief</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/color-thief">color-thief</a></h1>
+
+<blockquote><p>Grab the color palette or dominant color from an image!</p></blockquote>
+
+<p><code>color-thief</code> helps to grab get the dominant color or the color palette from an image, this module makes use of JS, some cool math and the canvas tag to make it happen.</p>
+
+<p><strong>Get it:</strong> <code>npm install --save color-thief</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```js
+var colorThief = new ColorThief();
+colorThief.getColor(sourceImage);</p>
+
+<p>/<em>
+getColor(sourceImage[, quality])
+returns {r: num, g: num, b: num}
+</em>/
+```</p>
+
+<p>```js
+var colorThief = new ColorThief();
+colorThief.getPalette(sourceImage, 8);</p>
+
+<p>/<em>
+getPalette(sourceImage[, colorCount, quality])
+returns [ [num, num, num], [num, num, num], ... ]
+</em>/
+```</p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/color-thief/color-thief.gif" alt="color-thief" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[fp-dom]]></title>
@@ -217,55 +258,6 @@ firstCombokeys.bind("?", function() { console.log('show shortcuts!'); });</p>
 <p><img src="/images/combokeys/combokeys.gif" alt="combokeys" /></p>
 
 <p>Thanks to <a href="https://github.com/mightyiam">Shahar Or</a> for porting <code>mousetrap</code> to <code>combokeys</code>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[ramjet]]></title>
-    <link href="http://nmotw.in/github/ramjet/"/>
-    <updated>2015-07-09T17:00:40+00:00</updated>
-    <id>http://nmotw.in/github/ramjet</id>
-    <content type="html"><![CDATA[<p><a href="http://npm.im/ramjet">ramjet</a></p>
-
-<blockquote><p>Transform DOM elements into each another with smooth transitions</p></blockquote>
-
-<p><code>ramjet</code> helps us to Morph DOM elements from one state to another with smooth transitions!</p>
-
-<p>All it does is:</p>
-
-<ul>
-<li><p>Clone the elements and all their children.</p></li>
-<li><p>Transform the second element so that it completely overlaps with the first.</p></li>
-<li><p>Animating the two elements together until the first element has exactly the same position and dimensions as the second element.</p></li>
-</ul>
-
-
-<p><strong>install it:</strong> <code>npm install --save ramjet</code></p>
-
-<p><strong>sample usage:</strong></p>
-
-<p>```html</p>
-
-<div id='a' style='background-color: red; font-size: 4em; padding: 1em;'>a</div>
-
-
-<div id='b' style='background-color: blue; font-size: 4em; padding: 1em;'>b</div>
-
-
-
-
-<script>
-  ramjet.transform( a, b );
-</script>
-
-
-<p>```</p>
-
-<p><strong>GIF FTW</strong></p>
-
-<p><img src="/images/ramjet/ramjet.gif" alt="ramjet.js" /></p>
-
-<p>Thanks to <a href="http://www.rich-harris.co.uk/">Rich Harris</a> for <code>ramjet</code> (:</p>
 ]]></content>
   </entry>
   
