@@ -4,7 +4,7 @@
   <title><![CDATA[Category: npm | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/npm/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-03-17T11:12:17+00:00</updated>
+  <updated>2016-03-17T13:09:48+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,101 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[fixpack]]></title>
+    <link href="http://nmotw.in/github/fixpack/"/>
+    <updated>2016-03-17T11:08:38+00:00</updated>
+    <id>http://nmotw.in/github/fixpack</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/fixpack">fixpack</a></h1>
+
+<blockquote><p>A <code>package.json</code> file scrubber for the truly insane.</p></blockquote>
+
+<p>It will re-write your package.json file as follows:</p>
+
+<ul>
+<li>name first</li>
+<li>description second</li>
+<li>version third</li>
+<li>author fourth</li>
+<li>all other keys in alphabetical order</li>
+<li>dependencies and devDependencies sorted alphabetically</li>
+<li>newline at the end of the file</li>
+</ul>
+
+
+<p>It will warn you if any of these are missing:</p>
+
+<ul>
+<li>description</li>
+<li>author</li>
+<li>repository</li>
+<li>keywords</li>
+<li>main</li>
+<li>bugs</li>
+<li>homepage</li>
+<li>license</li>
+</ul>
+
+
+<p>It can also read a config from <code>.fixpackrc</code>:</p>
+
+<p>```
+{</p>
+
+<pre><code>// will put these first in this order if present
+sortToTop: [
+    'name',
+    'description',
+    'version',
+    'author'
+],
+// will error if these not present
+required: [
+    'name',
+    'version'
+],
+// will warn if these not present
+warn: [
+    'description',
+    'author',
+    'repository',
+    'keywords',
+    'main',
+    'bugs',
+    'homepage',
+    'license'
+],
+// if `private: true` in package.json will use the next two lists instead
+requiredOnPrivate: [],
+warnOnPrivate: ['name', 'version', 'description', 'main'],
+// sub items to sort by default
+sortedSubItems: [
+    'dependencies',
+    'devDependencies',
+    'jshintConfig',
+    'scripts',
+    'keywords'
+],
+// if you set quiet to true it won't do output anything to the console
+quiet: false,
+// files to scrub
+files: ['package.json'],
+// Will set all deps to '*'
+// this may be useful because then you can
+// run npm update --save &amp;&amp; npm update --save-dev
+// to install latest stable releases of everything.
+wipe: false
+</code></pre>
+
+<p>}
+```</p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/fixpack/fixpack.gif" alt="fixpack" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[npm-check]]></title>

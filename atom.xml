@@ -4,7 +4,7 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2016-03-17T11:12:17+00:00</updated>
+  <updated>2016-03-17T13:09:48+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -17,7 +17,7 @@
     <link href="http://nmotw.in/fixpack/"/>
     <updated>2016-03-17T11:08:38+00:00</updated>
     <id>http://nmotw.in/fixpack</id>
-    <content type="html"><![CDATA[<h1>fixpack</h1>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/fixpack">fixpack</a></h1>
 
 <blockquote><p>A <code>package.json</code> file scrubber for the truly insane.</p></blockquote>
 
