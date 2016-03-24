@@ -4,13 +4,65 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2016-03-17T13:09:48+00:00</updated>
+  <updated>2016-03-24T16:04:43+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[phuzzy]]></title>
+    <link href="http://nmotw.in/phuzzy/"/>
+    <updated>2016-03-24T15:56:50+00:00</updated>
+    <id>http://nmotw.in/phuzzy</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/phuzzy">phuzzy</a></h1>
+
+<blockquote><p>Perform a fuzzy filter on a collection of items.</p></blockquote>
+
+<p>8 lines of code with some help from <code>lodash.escaperegexp</code> this is a cheeky module that helps you with your fuzzy filtering!</p>
+
+<p><strong>Get it:</strong> <code>npm install --save phuzzy</code></p>
+
+<p><strong>Function Signature:</strong> <code>phuzzy(collection, search[, pick])</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">phuzzy</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;phuzzy&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">phuzzy</span><span class="p">([</span><span class="s1">&#39;addy&#39;</span><span class="p">,</span><span class="s1">&#39;passy&#39;</span><span class="p">,</span> <span class="s1">&#39;hemanth&#39;</span><span class="p">],</span> <span class="s1">&#39;y&#39;</span><span class="p">);</span> <span class="c1">// [&#39;addy&#39;, &#39;passy&#39;];</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">var</span> <span class="nx">documents</span> <span class="o">=</span> <span class="p">[</span>
+</span><span class='line'>    <span class="p">{</span> <span class="nx">text</span><span class="o">:</span> <span class="s1">&#39;Hello World&#39;</span> <span class="p">},</span>
+</span><span class='line'>    <span class="p">{</span> <span class="nx">text</span><span class="o">:</span> <span class="s1">&#39;Hello Lucy&#39;</span> <span class="p">},</span>
+</span><span class='line'>    <span class="p">{</span> <span class="nx">text</span><span class="o">:</span> <span class="s1">&#39;Hello Maria&#39;</span> <span class="p">}</span>
+</span><span class='line'><span class="p">];</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">phuzzy</span><span class="p">(</span><span class="nx">documents</span><span class="p">,</span> <span class="s1">&#39;Lu&#39;</span><span class="p">,</span> <span class="s1">&#39;text&#39;</span><span class="p">);</span> <span class="p">[</span> <span class="p">{</span> <span class="nx">text</span><span class="o">:</span> <span class="s1">&#39;Hello Lucy&#39;</span> <span class="p">}</span> <span class="p">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">phuzzy</span><span class="p">(</span><span class="nx">documents</span><span class="p">,</span> <span class="s1">&#39;maria&#39;</span><span class="p">,</span> <span class="nx">item</span> <span class="o">=&gt;</span> <span class="nx">item</span><span class="p">.</span><span class="nx">text</span><span class="p">)</span> <span class="c1">// [ { text: &#39;Hello Maria&#39; } ]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/images/phuzzy/phuzzy.gif" alt="phuzzy" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[fixpack]]></title>
@@ -20,6 +72,8 @@
     <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/fixpack">fixpack</a></h1>
 
 <blockquote><p>A <code>package.json</code> file scrubber for the truly insane.</p></blockquote>
+
+<p><strong>GET IT:</strong> <code>npm install -g fixpack</code></p>
 
 <p>It will re-write your package.json file as follows:</p>
 
@@ -1261,38 +1315,6 @@ confirmation or alter the users in a more appealing manner.</p>
 <p><strong>GIF FTW!</strong></p>
 
 <p><img src="http://nmotw.in/images/debounce/debounce.gif" alt="debounce.gif" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[prettysize]]></title>
-    <link href="http://nmotw.in/prettysize/"/>
-    <updated>2015-11-05T13:01:20+00:00</updated>
-    <id>http://nmotw.in/prettysize</id>
-    <content type="html"><![CDATA[<p><a href="https://www.npmjs.com/package/prettysize">prettysize</a></p>
-
-<blockquote><p>Convert bytes to other sizes for prettier logging.</p></blockquote>
-
-<p>In just 45 lines of code, this cheeky module by <a href="https://twitter.com/davglass">@davlgass</a> makes it easy to humanize file sizes.</p>
-
-<p><strong>Get it:</strong> <code>npm install --save prettysize</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<div id="prettysize">
-var pretty = require('prettysize');
-var str = pretty(123456789);
-</div>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/prettysize/prettysize.gif" alt="prettysize" /></p>
-
-<script src="https://embed.tonicdev.com" data-element-id="prettysize"></script>
-
-
-
 ]]></content>
   </entry>
   

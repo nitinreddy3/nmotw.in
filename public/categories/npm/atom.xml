@@ -4,7 +4,7 @@
   <title><![CDATA[Category: npm | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/npm/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-03-17T13:09:48+00:00</updated>
+  <updated>2016-03-24T16:04:43+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -21,6 +21,8 @@
     <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/fixpack">fixpack</a></h1>
 
 <blockquote><p>A <code>package.json</code> file scrubber for the truly insane.</p></blockquote>
+
+<p><strong>GET IT:</strong> <code>npm install -g fixpack</code></p>
 
 <p>It will re-write your package.json file as follows:</p>
 
