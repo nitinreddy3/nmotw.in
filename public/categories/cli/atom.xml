@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cli | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/cli/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-03-24T16:04:43+00:00</updated>
+  <updated>2016-03-31T13:18:46+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[trymodule]]></title>
+    <link href="http://nmotw.in/github/trymodule/"/>
+    <updated>2016-03-31T13:11:49+00:00</updated>
+    <id>http://nmotw.in/github/trymodule</id>
+    <content type="html"><![CDATA[<h1><a href="">trymodule</a></h1>
+
+<blockquote><p>It's never been easier to try nodejs modules!</p></blockquote>
+
+<p>Quickly install any node module you want and start a <code>REPL</code> with the installed module in the scope with <code>trymodule</code>!</p>
+
+<p>Basically, it check if the module you are trying exists in the <code>~/.trymodule/node_module</code> if require it and start a <code>REPL</code> or
+else installs it using <code>npmi</code> module and starts the <code>REPL</code>.</p>
+
+<p><strong>Get it:</strong> <code>npm install -g trymodule</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```sh
+nmotw.in> trymodule xkcd-imgs
+Gonna start a REPL with packages installed and loaded for you
+Couldn't find 'xkcd-imgs' locally, gonna download it now
+xkcd-imgs@1.0.1 ../../Users/hhegadehallimadh/.trymodule/node_modules/xkcd-imgs
+└── request@2.69.0 (aws-sign2@0.6.0, forever-agent@0.6.1, tunnel-agent@0.4.2, oauth-sign@0.8.1, caseless@0.11.0, is-typedarray@1.0.0, stringstream@0.0.5, isstream@0.1.2, json-stringify-safe@5.0.1, extend@3.0.0, tough-cookie@2.2.2, node-uuid@1.4.7, qs@6.0.2, mime-types@2.1.10, form-data@1.0.0-rc4, combined-stream@1.0.5, hawk@3.1.3, aws4@1.3.2, http-signature@1.1.1, bl@1.0.3, har-validator@2.0.6)
+Package 'xkcd-imgs' was loaded and assigned to 'xkcd_imgs' in the current scope
+REPL started...</p>
+
+<blockquote><p>```</p></blockquote>
+
+<p>```js</p>
+
+<blockquote><p>xkcd_imgs
+{ img: [Function] }
+xkcd_imgs.img( (err, res) => console.log(res) );
+undefined
+{ url: 'http://imgs.xkcd.com/comics/instagram.png',
+  title: 'I\'m gonna call the cops and get Chad arrested for theft, then move all my stuff to the house across the street. Hopefully the owners there are more responsible.' }
+```</p></blockquote>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/trymodule/trymodule.gif" alt="trymodule" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[npmlog]]></title>
@@ -203,69 +248,6 @@ humanToCron('august friday 15:44') // => 0 44 15 4 7 *
 <p><img src="/images/human-to-cron/human-to-cron.gif" alt="human-to-cron" /></p>
 
 <p>Thanks to <a href="https://github.com/rainder">Andrius Skerla</a> for this cheeky module!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[caniuse-cmd]]></title>
-    <link href="http://nmotw.in/github/caniuse-cmd/"/>
-    <updated>2015-07-30T10:32:22+00:00</updated>
-    <id>http://nmotw.in/github/caniuse-cmd</id>
-    <content type="html"><![CDATA[<h1><a href="https://github.com/sgentle/caniuse-cmd">caniuse-cmd</a></h1>
-
-<blockquote><p><code>caniuse.com</code> on CLI!</p></blockquote>
-
-<p><code>caniuse-cmd</code> brings the power of <a href="http://caniuse.com">caniuse</a> on to the command line, it makes use of <a href="https://www.npmjs.com/package/caniuse-db">caniuse-db</a> module
-which provides raw browser/feature support data for the same.</p>
-
-<p><strong>Install it:</strong></p>
-
-<p><code>sh
-npm install --global caniuse-cmd
-</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<p>```sh
-nmotw> caniuse webrtc --short    <br/>
-WebRTC Peer-to-peer connections ✔ 55.36% ◒ 0%
-  IE ✘  Edge ✘  Firefox ✘ 2+ ✔ 22+ᵖ Chrome ✘ 4+ ✔ 23+ᵖ Safari ✘  Opera ✘ 9+ ✔ 18+ᵖ</p>
-
-<p>nmotw> caniuse webrtc --short -a
-WebRTC Peer-to-peer connections ✔ 55.36% ◒ 0%
-  IE ✘  Edge ✘  Firefox ✘ 2+ ✔ 22+ᵖ Chrome ✘ 4+ ✔ 23+ᵖ Safari ✘  Opera ✘ 9+ ✔ 18+ᵖ</p>
-
-<p>nmotw> caniuse webrtc --short --abbrv
-WebRTC Peer-to-peer connections ✔ 55.36% ◒ 0%
-  IE ✘  Edge ✘  Firefox ✘ 2+ ✔ 22+ᵖ Chrome ✘ 4+ ✔ 23+ᵖ Safari ✘  Opera ✘ 9+ ✔ 18+ᵖ</p>
-
-<p>nmotw> caniuse webrtc --short --abbrev
-WebRTC Peer-to-peer connections ✔ 55.36% ◒ 0%
-  IE ✘  Edge ✘  FF ✘ 2+ ✔ 22+ᵖ Chr. ✘ 4+ ✔ 23+ᵖ Saf. ✘  Op. ✘ 9+ ✔ 18+ᵖ</p>
-
-<p>nmotw> caniuse webrtc --short --abbrev --browser ff
-WebRTC Peer-to-peer connections ✔ 55.36% ◒ 0%</p>
-
-<p>nmotw> caniuse webrtc --long                     <br/>
-WebRTC Peer-to-peer connections ✔ 55.36% ◒ 0% [W3C Working Draft]
-  Method of allowing two users to communicate directly, browser to browser using the RTCPeerConnection API.
-  #JSAPI</p>
-
-<p>  IE ✘<br/>
-  Edge ✘<br/>
-  Firefox ✘ 2+ ✔ 22+ᵖ
-  Chrome ✘ 4+ ✔ 23+ᵖ
-  Safari ✘<br/>
-  Opera ✘ 9+ ✔ 18+ᵖ
-```</p>
-
-<p>P.S: Do cehckout the CLI <a href="https://github.com/sgentle/caniuse-cmd#does-it-have-lots-of-command-line-options">flags</a></p>
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="/images/caniuse-cmd/caniuse-cmd.gif" alt="caniuse-cmd.gif" /></p>
-
-<p>Thanks to <a href="https://github.com/sgentle">Sam Gentle</a> for bringing this to the CLI.</p>
 ]]></content>
   </entry>
   
