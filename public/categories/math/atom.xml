@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: math | NMOTW]]></title>
+  <link href="http://nmotw.in/github/public/categories/math/atom.xml" rel="self"/>
+  <link href="http://nmotw.in/github/"/>
+  <updated>2016-04-07T13:58:39+00:00</updated>
+  <id>http://nmotw.in/github/</id>
+  <author>
+    <name><![CDATA[Hemanth.HM]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[mathjs]]></title>
+    <link href="http://nmotw.in/github/mathjs/"/>
+    <updated>2016-04-07T13:52:08+00:00</updated>
+    <id>http://nmotw.in/github/mathjs</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/mathjs">mathjs</a></h1>
+
+<blockquote><p>Extensive math library with expression parser, big numbers, complex numbers, units, and matrices.</p></blockquote>
+
+<p><code>mathjs</code> provides you with 200+ util function to do you math!</p>
+
+<p><strong>Get it:</strong> <code>npm install --save mathjs</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```js
+// functions and constants
+math.round(math.e, 3);            // 2.718
+math.atan2(3, -3) / math.pi;      // 0.75
+math.log(10000, 10);              // 4
+math.sqrt(-4);                    // 2i
+math.pow([[-1, 2], [3, 1]], 2);</p>
+
+<pre><code> // [[7, 0], [0, 7]]
+</code></pre>
+
+<p>// expressions
+math.eval('1.2 * (2 + 4.5)');     // 7.8
+math.eval('5.08 cm to inch');     // 2 inch
+math.eval('sin(45 deg) ^ 2');     // 0.5
+math.eval('9 / 3 + 2i');          // 3 + 2i
+math.eval('det([-1, 2; 3, 1])');  // -7</p>
+
+<p>// chaining
+math.chain(3)</p>
+
+<pre><code>.add(4)
+.multiply(2)
+.done(); // 14
+</code></pre>
+
+<p>```</p>
+
+<p><strong>GIF FTW</strong></p>
+
+<p><img src="/image/mathjs/mathjs.gif" alt="mathjs" /></p>
+]]></content>
+  </entry>
+  
+</feed>
