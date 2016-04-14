@@ -105,9 +105,9 @@
 <p>Basically fires the below commands based on the OS for the given or connected <code>SSID</code>:</p>
 
 <ul>
-<li><p><code>GNU/Linux</code> -> <code>sudo ['cat',</code>/etc/NetworkManager/system-connections/${ssid}<code>];</code></p></li>
-<li><p><code>OSX</code> ->  <code>security ['find-generic-password', '-D', 'AirPort network password', '-wa', ssid];</code></p></li>
-<li><p><code>Windows</code> -> <code>netsh ['wlan', 'show', 'profile',</code>name=${ssid}<code>, 'key=clear'];</code></p></li>
+<li><p><code>GNU/Linux</code> -> <code>sudo cat /etc/NetworkManager/system-connections/${ssid}</code>;</p></li>
+<li><p><code>OSX</code> ->  <code>security find-generic-password -D AirPort network password -wa ssid</code></p></li>
+<li><p><code>Windows</code> -> <code>netsh wlan show profile $(name=${ssid}) $(key=clear)</code></p></li>
 </ul>
 
 
