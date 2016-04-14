@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cli | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/cli/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-04-07T14:02:04+00:00</updated>
+  <updated>2016-04-14T16:46:20+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,68 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[wifi-password]]></title>
+    <link href="http://nmotw.in/github/wifi-password/"/>
+    <updated>2016-04-14T16:15:12+00:00</updated>
+    <id>http://nmotw.in/github/wifi-password</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/wifi-password">wifi-password</a></h1>
+
+<blockquote><p>Get current wifi password.</p></blockquote>
+
+<p>Do you remember your wifi password?</p>
+
+<p>Do you want share it with your guests?</p>
+
+<p><code>wifi-password</code> is the util to use works across OSs.</p>
+
+<p>Basically fires the below commands based on the OS for the given or connected <code>SSID</code>:</p>
+
+<ul>
+<li><p><code>GNU/Linux</code> -> <code>sudo ['cat',</code>/etc/NetworkManager/system-connections/${ssid}<code>];</code></p></li>
+<li><p><code>OSX</code> ->  <code>security ['find-generic-password', '-D', 'AirPort network password', '-wa', ssid];</code></p></li>
+<li><p><code>Windows</code> -> <code>netsh ['wlan', 'show', 'profile',</code>name=${ssid}<code>, 'key=clear'];</code></p></li>
+</ul>
+
+
+<p><strong>GET IT</strong>:</p>
+
+<p><code>npm install --save wifi-password</code> for API</p>
+
+<p>```js
+const wifiPassword = require('wifi-password');</p>
+
+<p>wifiPassword().then(password => {</p>
+
+<pre><code>console.log(password);
+//=&gt; 'johndoesecretpassword'
+</code></pre>
+
+<p>});
+```</p>
+
+<p><code>npm install --global wifi-password</code> for CLI.</p>
+
+<p>```js
+$ wifi-password --help</p>
+
+<p>  Usage</p>
+
+<pre><code>$ wifi-password
+johndoesecretpassword
+
+$ wifi-password foo-network
+foosecretpassword
+</code></pre>
+
+<p>```</p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="./images/wifi-password.gif" alt="wifi-password" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[trymodule]]></title>
@@ -206,48 +268,6 @@ $ speed-test --help</p>
 <p><strong>GIF FTW:</strong></p>
 
 <p><img src="/images/speed-test/speed-test.gif" alt="speed-test" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[human-to-cron]]></title>
-    <link href="http://nmotw.in/github/human-to-cron/"/>
-    <updated>2015-08-20T12:39:33+00:00</updated>
-    <id>http://nmotw.in/github/human-to-cron</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/human-to-cron">human-to-cron</a></h1>
-
-<blockquote><p>Converts human readable expression to a cron string!</p></blockquote>
-
-<p>If you can interpert <code>0 */1 * * *</code> as <code>each minute</code> then this module is not for you ;)</p>
-
-<p><code>human-to-cron</code> parsers the human readable expressions with the help of ES6 generators converts it into a <a href="https://en.wikipedia.org/wiki/Cron">cron</a> string.</p>
-
-<p><strong>Get it:</strong> <code>npm install --save human-to-cron</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<p>```js
-var humanToCron = require('human-to-cron');</p>
-
-<p>humanToCron('once each minute') // => 0 <em>/1 * * * *
-humanToCron('each 2 minutes') // => * </em>/2 * * * *
-humanToCron('each second') // => <em>/1 * * * * *
-humanToCron('once each hour') // => 0 0 </em>/1 * * *
-humanToCron('once each day') // => 0 0 0 <em>/1 * *
-humanToCron('once each month') // => 0 0 0 0 </em>/1 *
-humanToCron('once each 5 months') // => 0 0 0 0 <em>/5 *
-humanToCron('midnight') // => 0 0 0 * * *
-humanToCron('midnight each 2 minutes') // => 0 </em>/2 0 * * *
-humanToCron('once tuesday each 10 minutes') // => 0 */10 * 1 * *
-humanToCron('friday 15:44') // => 0 44 15 4 * *
-humanToCron('august friday 15:44') // => 0 44 15 4 7 *
-```</p>
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="/images/human-to-cron/human-to-cron.gif" alt="human-to-cron" /></p>
-
-<p>Thanks to <a href="https://github.com/rainder">Andrius Skerla</a> for this cheeky module!</p>
 ]]></content>
   </entry>
   
