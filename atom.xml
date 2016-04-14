@@ -4,7 +4,7 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2016-04-14T16:56:47+00:00</updated>
+  <updated>2016-04-14T16:58:24+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -78,7 +78,7 @@
 
 <p><strong>GIF FTW!</strong></p>
 
-<p><img src="http://nmotw.in/images/wifi-password.gif" alt="wifi-password" /></p>
+<p><img src="http://nmotw.in/images/wifi-password/wifi-password.gif" alt="wifi-password" /></p>
 ]]></content>
   </entry>
   
