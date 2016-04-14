@@ -4,13 +4,83 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2016-04-07T14:02:04+00:00</updated>
+  <updated>2016-04-14T16:49:56+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[wifi-password]]></title>
+    <link href="http://nmotw.in/wifi-password/"/>
+    <updated>2016-04-14T16:15:12+00:00</updated>
+    <id>http://nmotw.in/wifi-password</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/wifi-password">wifi-password</a></h1>
+
+<blockquote><p>Get current wifi password.</p></blockquote>
+
+<p>Do you remember your wifi password?</p>
+
+<p>Do you want share it with your guests?</p>
+
+<p><code>wifi-password</code> is the util to use works across OSs.</p>
+
+<p>Basically fires the below commands based on the OS for the given or connected <code>SSID</code>:</p>
+
+<ul>
+<li><p><code>GNU/Linux</code> -> <code>sudo ['cat',</code>/etc/NetworkManager/system-connections/${ssid}<code>];</code></p></li>
+<li><p><code>OSX</code> ->  <code>security ['find-generic-password', '-D', 'AirPort network password', '-wa', ssid];</code></p></li>
+<li><p><code>Windows</code> -> <code>netsh ['wlan', 'show', 'profile',</code>name=${ssid}<code>, 'key=clear'];</code></p></li>
+</ul>
+
+
+<p><strong>GET IT</strong>:</p>
+
+<p><code>npm install --save wifi-password</code> for API</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kr">const</span> <span class="nx">wifiPassword</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;wifi-password&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">wifiPassword</span><span class="p">().</span><span class="nx">then</span><span class="p">(</span><span class="nx">password</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">password</span><span class="p">);</span>
+</span><span class='line'>    <span class="c1">//=&gt; &#39;johndoesecretpassword&#39;</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>npm install --global wifi-password</code> for CLI.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">$</span> <span class="nx">wifi</span><span class="o">-</span><span class="nx">password</span> <span class="o">--</span><span class="nx">help</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nx">Usage</span>
+</span><span class='line'>    <span class="nx">$</span> <span class="nx">wifi</span><span class="o">-</span><span class="nx">password</span>
+</span><span class='line'>    <span class="nx">johndoesecretpassword</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nx">$</span> <span class="nx">wifi</span><span class="o">-</span><span class="nx">password</span> <span class="nx">foo</span><span class="o">-</span><span class="nx">network</span>
+</span><span class='line'>    <span class="nx">foosecretpassword</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="./images/wifi-password.gif" alt="wifi-password" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[mathjs]]></title>
@@ -1264,87 +1334,6 @@ opens the dev-tool re-compile native modules against electron!</p>
 <p><img src="http://nmotw.in/images/ambi/ambi.gif" alt="ambi" /></p>
 
 <p>Thanks to <a href="http://balupton.com/">Benjamin Lupton</a> for this module.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[npmlog]]></title>
-    <link href="http://nmotw.in/npmlog/"/>
-    <updated>2015-11-26T14:07:54+00:00</updated>
-    <id>http://nmotw.in/npmlog</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/npmlog">npmlog</a></h1>
-
-<blockquote><p>logger for npm</p></blockquote>
-
-<p><code>npmlog</code> is a simple logger that <code>npm</code> uses to log it's messages, this module provides custom levels and colored output.</p>
-
-<p>By default, logs are written to <code>stderr</code>, to send log messages to outputs other than streams you can use <code>log.stream</code> member, or you can just listen to the events that it emits.</p>
-
-<p><strong>Get it:</strong> : <code>npm install --save npmlog</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">log</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;npmlog&#39;</span><span class="p">)</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">// additional stuff ---------------------------+</span>
-</span><span class='line'><span class="c1">// message ----------+                         |</span>
-</span><span class='line'><span class="c1">// prefix ----+      |                         |</span>
-</span><span class='line'><span class="c1">// level -+   |      |                         |</span>
-</span><span class='line'><span class="c1">//        v   v      v                         v</span>
-</span><span class='line'>    <span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s1">&#39;fyi&#39;</span><span class="p">,</span> <span class="s1">&#39;I &lt;3 nmotw: %j&#39;</span><span class="p">,</span> <span class="nx">node_modules</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>levels:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="o">&gt;</span> <span class="nx">log</span><span class="p">.</span><span class="nx">levels</span>
-</span><span class='line'><span class="p">{</span> <span class="nx">silly</span><span class="o">:</span> <span class="o">-</span><span class="kc">Infinity</span><span class="p">,</span>
-</span><span class='line'>  <span class="nx">verbose</span><span class="o">:</span> <span class="mi">1000</span><span class="p">,</span>
-</span><span class='line'>  <span class="nx">info</span><span class="o">:</span> <span class="mi">2000</span><span class="p">,</span>
-</span><span class='line'>  <span class="nx">http</span><span class="o">:</span> <span class="mi">3000</span><span class="p">,</span>
-</span><span class='line'>  <span class="nx">warn</span><span class="o">:</span> <span class="mi">4000</span><span class="p">,</span>
-</span><span class='line'>  <span class="nx">error</span><span class="o">:</span> <span class="mi">5000</span><span class="p">,</span>
-</span><span class='line'>  <span class="nx">silent</span><span class="o">:</span> <span class="kc">Infinity</span> <span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&gt;</span> <span class="nx">log</span><span class="p">.</span><span class="nx">disp</span>
-</span><span class='line'><span class="p">{</span> <span class="nx">silly</span><span class="o">:</span> <span class="s1">&#39;sill&#39;</span><span class="p">,</span>
-</span><span class='line'>  <span class="nx">verbose</span><span class="o">:</span> <span class="s1">&#39;verb&#39;</span><span class="p">,</span>
-</span><span class='line'>  <span class="nx">info</span><span class="o">:</span> <span class="s1">&#39;info&#39;</span><span class="p">,</span>
-</span><span class='line'>  <span class="nx">http</span><span class="o">:</span> <span class="s1">&#39;http&#39;</span><span class="p">,</span>
-</span><span class='line'>  <span class="nx">warn</span><span class="o">:</span> <span class="s1">&#39;WARN&#39;</span><span class="p">,</span>
-</span><span class='line'>  <span class="nx">error</span><span class="o">:</span> <span class="s1">&#39;ERR!&#39;</span><span class="p">,</span>
-</span><span class='line'>  <span class="nx">silent</span><span class="o">:</span> <span class="s1">&#39;silent&#39;</span> <span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/npmlog/npmlog.gif" alt="npmlog" /></p>
 ]]></content>
   </entry>
   
