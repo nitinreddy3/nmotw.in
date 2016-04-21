@@ -120,7 +120,7 @@
 
 <p><strong>CLI:</strong></p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -143,47 +143,45 @@
 <span class='line-number'>21</span>
 <span class='line-number'>22</span>
 <span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>cowsay
-</span><span class='line'>Usage: cowsay <span class="o">[</span>-e eye_string<span class="o">]</span> <span class="o">[</span>-f cowfile<span class="o">]</span> <span class="o">[</span>-h<span class="o">]</span> <span class="o">[</span>-l<span class="o">]</span> <span class="o">[</span>-n<span class="o">]</span> <span class="o">[</span>-T tongue_string<span class="o">]</span> <span class="o">[</span>-W column<span class="o">]</span> <span class="o">[</span>-bdgpstwy<span class="o">]</span> text
+</pre></td><td class='code'><pre><code class=''><span class='line'>cowsay 
+</span><span class='line'>Usage: cowsay [-e eye_string] [-f cowfile] [-h] [-l] [-n] [-T tongue_string] [-W column] [-bdgpstwy] text
 </span><span class='line'>
-</span><span class='line'>If any <span class="nb">command</span>-line arguments are left over after all switches have been processed, they become the cow<span class="s1">&#39;s message.</span>
+</span><span class='line'>If any command-line arguments are left over after all switches have been processed, they become the cow's message.
 </span><span class='line'>
-</span><span class='line'><span class="s1">If the program is invoked as cowthink then the cow will think its message instead of saying it.</span>
+</span><span class='line'>If the program is invoked as cowthink then the cow will think its message instead of saying it.
 </span><span class='line'>
-</span><span class='line'><span class="s1">Options:</span>
-</span><span class='line'><span class="s1">  -b  Mode: Borg                                                                                                                                  </span>
-</span><span class='line'><span class="s1">  -d  Mode: Dead                                                                                                                                  </span>
-</span><span class='line'><span class="s1">  -g  Mode: Greedy                                                                                                                                </span>
-</span><span class='line'><span class="s1">  -p  Mode: Paranoia                                                                                                                              </span>
-</span><span class='line'><span class="s1">  -s  Mode: Stoned                                                                                                                                </span>
-</span><span class='line'><span class="s1">  -t  Mode: Tired                                                                                                                                 </span>
-</span><span class='line'><span class="s1">  -w  Mode: Wired                                                                                                                                 </span>
-</span><span class='line'><span class="s1">  -y  Mode: Youthful                                                                                                                              </span>
-</span><span class='line'><span class="s1">  -e  Select the appearance of the cow&#39;</span>s eyes.                                                                                                      <span class="o">[</span>default: <span class="s2">&quot;oo&quot;</span><span class="o">]</span>
-</span><span class='line'>  -T  The tongue is configurable similarly to the eyes through -T and tongue_string.                                                                <span class="o">[</span>default: <span class="s2">&quot;  &quot;</span><span class="o">]</span>
-</span><span class='line'>  -h  Display this <span class="nb">help </span>message
-</span><span class='line'>  -n  If it is specified, the given message will not be word-wrapped.
-</span><span class='line'>  -W  Specifies roughly where the message should be wrapped. The default is equivalent to -W 40 i.e. wrap words at or before the 40th column.       <span class="o">[</span>default: 40<span class="o">]</span>
-</span><span class='line'>  -f  Specifies a cow picture file <span class="o">(</span><span class="s1">&#39;&#39;</span>cowfile<span class="s1">&#39;&#39;</span><span class="o">)</span> to use. It can be either a path to a cow file or the name of one of cows included in the package.  <span class="o">[</span>default: <span class="s2">&quot;default&quot;</span><span class="o">]</span>
-</span><span class='line'>  -l  List all cowfiles included in this package.
-</span><span class='line'>  <span class="sb">```</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="sb">```</span>sh
-</span><span class='line'>
+</span><span class='line'>Options:
+</span><span class='line'>  -b  Mode: Borg                                                                                                                                  
+</span><span class='line'>  -d  Mode: Dead                                                                                                                                  
+</span><span class='line'>  -g  Mode: Greedy                                                                                                                                
+</span><span class='line'>  -p  Mode: Paranoia                                                                                                                              
+</span><span class='line'>  -s  Mode: Stoned                                                                                                                                
+</span><span class='line'>  -t  Mode: Tired                                                                                                                                 
+</span><span class='line'>  -w  Mode: Wired                                                                                                                                 
+</span><span class='line'>  -y  Mode: Youthful                                                                                                                              
+</span><span class='line'>  -e  Select the appearance of the cow's eyes.                                                                                                      [default: "oo"]
+</span><span class='line'>  -T  The tongue is configurable similarly to the eyes through -T and tongue_string.                                                                [default: "  "]
+</span><span class='line'>  -h  Display this help message                                                                                                                   
+</span><span class='line'>  -n  If it is specified, the given message will not be word-wrapped.                                                                             
+</span><span class='line'>  -W  Specifies roughly where the message should be wrapped. The default is equivalent to -W 40 i.e. wrap words at or before the 40th column.       [default: 40]
+</span><span class='line'>  -f  Specifies a cow picture file (''cowfile'') to use. It can be either a path to a cow file or the name of one of cows included in the package.  [default: "default"]
+</span><span class='line'>  -l  List all cowfiles included in this package.                 </span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>
 </span><span class='line'> nmotw.in&gt; cowsay JavaScript FTW!
 </span><span class='line'> _________________
 </span><span class='line'>&lt; JavaScript FTW! &gt;

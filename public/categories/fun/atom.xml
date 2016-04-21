@@ -4,7 +4,7 @@
   <title><![CDATA[Category: fun | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/fun/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-04-21T15:17:45+00:00</updated>
+  <updated>2016-04-21T15:20:03+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -28,7 +28,7 @@
 
 <p><strong>CLI:</strong></p>
 
-<p>```sh
+<p>```
 cowsay
 Usage: cowsay [-e eye_string] [-f cowfile] [-h] [-l] [-n] [-T tongue_string] [-W column] [-bdgpstwy] text</p>
 
@@ -52,9 +52,9 @@ Usage: cowsay [-e eye_string] [-f cowfile] [-h] [-l] [-n] [-T tongue_string] [-W
   -W  Specifies roughly where the message should be wrapped. The default is equivalent to -W 40 i.e. wrap words at or before the 40th column.       [default: 40]
   -f  Specifies a cow picture file (''cowfile'') to use. It can be either a path to a cow file or the name of one of cows included in the package.  [default: "default"]
   -l  List all cowfiles included in this package.               <br/>
-  ```</p>
+```</p>
 
-<p>  ```sh</p>
+<p>```sh</p>
 
 <p> nmotw.in> cowsay JavaScript FTW!</p>
 
