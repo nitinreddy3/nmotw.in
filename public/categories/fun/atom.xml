@@ -4,7 +4,7 @@
   <title><![CDATA[Category: fun | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/fun/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-04-14T17:07:46+00:00</updated>
+  <updated>2016-04-21T15:17:45+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,106 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[cowsay]]></title>
+    <link href="http://nmotw.in/github/cowsay/"/>
+    <updated>2016-04-21T15:10:16+00:00</updated>
+    <id>http://nmotw.in/github/cowsay</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/cowsay">cowsay</a></h1>
+
+<blockquote><p>A configurable talking cow!</p></blockquote>
+
+<p>This is a port of  Tony Monroe's <code>cowsay</code> Perl module.</p>
+
+<p><strong>GET IT:</strong> <code>npm install --global cowsay</code></p>
+
+<p><strong>CLI:</strong></p>
+
+<p>```sh
+cowsay
+Usage: cowsay [-e eye_string] [-f cowfile] [-h] [-l] [-n] [-T tongue_string] [-W column] [-bdgpstwy] text</p>
+
+<p>If any command-line arguments are left over after all switches have been processed, they become the cow's message.</p>
+
+<p>If the program is invoked as cowthink then the cow will think its message instead of saying it.</p>
+
+<p>Options:
+  -b  Mode: Borg                                                                                                                                <br/>
+  -d  Mode: Dead                                                                                                                                <br/>
+  -g  Mode: Greedy                                                                                                                              <br/>
+  -p  Mode: Paranoia                                                                                                                            <br/>
+  -s  Mode: Stoned                                                                                                                              <br/>
+  -t  Mode: Tired                                                                                                                               <br/>
+  -w  Mode: Wired                                                                                                                               <br/>
+  -y  Mode: Youthful                                                                                                                            <br/>
+  -e  Select the appearance of the cow's eyes.                                                                                                      [default: "oo"]
+  -T  The tongue is configurable similarly to the eyes through -T and tongue_string.                                                                [default: "  "]
+  -h  Display this help message                                                                                                                 <br/>
+  -n  If it is specified, the given message will not be word-wrapped.                                                                           <br/>
+  -W  Specifies roughly where the message should be wrapped. The default is equivalent to -W 40 i.e. wrap words at or before the 40th column.       [default: 40]
+  -f  Specifies a cow picture file (''cowfile'') to use. It can be either a path to a cow file or the name of one of cows included in the package.  [default: "default"]
+  -l  List all cowfiles included in this package.               <br/>
+  ```</p>
+
+<p>  ```sh</p>
+
+<p> nmotw.in> cowsay JavaScript FTW!</p>
+
+<hr />
+
+<p>&lt; JavaScript FTW! ></p>
+
+<hr />
+
+<pre><code>    \   ^__^
+     \  (oo)\_______
+        (__)\       )\/\
+            ||----w |
+            ||     ||
+</code></pre>
+
+<p>```</p>
+
+<p><strong>API:</strong></p>
+
+<p>```js
+var cowsay = require("cowsay");</p>
+
+<p>console.log(cowsay.say({</p>
+
+<pre><code>text : "I'm a moooodule",
+e : "oO",
+T : "U "
+</code></pre>
+
+<p>}));</p>
+
+<p>// or cowsay.think()
+```</p>
+
+<p>```sh</p>
+
+<hr />
+
+<p>( I'm a moooodule )</p>
+
+<hr />
+
+<pre><code>    o   ^__^
+     o  (oO)\_______
+        (__)\       )\/\
+         U  ||----w |
+            ||     ||
+</code></pre>
+
+<p>```</p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/cowsay/cowsay.gif" alt="cowsay.gif" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[is-christmas]]></title>
@@ -204,40 +304,6 @@ var app = express();</p>
 <p><img src="/images/http-teapot/http-teapot.gif" alt="http-teapot" /></p>
 
 <p>Thanks to <a href="https://github.com/watson">Thomas Watson Steen</a> for implementing this RFC and giving us a teapot image ;)</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[rhyme]]></title>
-    <link href="http://nmotw.in/github/rhyme/"/>
-    <updated>2014-05-01T08:04:59+00:00</updated>
-    <id>http://nmotw.in/github/rhyme</id>
-    <content type="html"><![CDATA[<p>Out of all the awesome module that <a href="https://www.npmjs.org/~substack">James Halliday</a> A.K.A <a href="http://substack.net/">substack</a> has authored a module named <a href="https://github.com/substack/node-rhyme">rhyme</a> a rhyming dictionary! This made it to the nmotw list ;)</p>
-
-<p>The module makes use of CMU dictionary's <a href="https://cmusphinx.svn.sourceforge.net/svnroot/cmusphinx/trunk/cmudict/cmudict.0.7a">data</a> and picks up pronounce, syllables and plays around lazily to generate rhyming words for a given word.</p>
-
-<p><strong>Example Usage:</strong></p>
-
-<p>```javascript
-var rhyme = require('rhyme');</p>
-
-<p>rhyme(function(r) {
-  console.log(r.rhyme('rhyme').join(' '));
-});
-```</p>
-
-<p><code>sh
-$ node why.js
-BEIM CHIME CLIMB CRIME DIME GRIME HAIM HEIM HIME I'M KIME LIME LYME MIME PRIME SEIM SIME SLIME SYME THYME TIME
-</code></p>
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="/images/rhyme/rhyme.gif" alt="rhyme" /></p>
-
-<p><strong>Real coders use <code>cat</code> ;)?</strong></p>
-
-<p>Keep rhyming till next week!</p>
 ]]></content>
   </entry>
   

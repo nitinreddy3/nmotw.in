@@ -4,13 +4,155 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2016-04-14T17:07:46+00:00</updated>
+  <updated>2016-04-21T15:17:45+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[cowsay]]></title>
+    <link href="http://nmotw.in/cowsay/"/>
+    <updated>2016-04-21T15:10:16+00:00</updated>
+    <id>http://nmotw.in/cowsay</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/cowsay">cowsay</a></h1>
+
+<blockquote><p>A configurable talking cow!</p></blockquote>
+
+<p>This is a port of  Tony Monroe's <code>cowsay</code> Perl module.</p>
+
+<p><strong>GET IT:</strong> <code>npm install --global cowsay</code></p>
+
+<p><strong>CLI:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>cowsay
+</span><span class='line'>Usage: cowsay <span class="o">[</span>-e eye_string<span class="o">]</span> <span class="o">[</span>-f cowfile<span class="o">]</span> <span class="o">[</span>-h<span class="o">]</span> <span class="o">[</span>-l<span class="o">]</span> <span class="o">[</span>-n<span class="o">]</span> <span class="o">[</span>-T tongue_string<span class="o">]</span> <span class="o">[</span>-W column<span class="o">]</span> <span class="o">[</span>-bdgpstwy<span class="o">]</span> text
+</span><span class='line'>
+</span><span class='line'>If any <span class="nb">command</span>-line arguments are left over after all switches have been processed, they become the cow<span class="s1">&#39;s message.</span>
+</span><span class='line'>
+</span><span class='line'><span class="s1">If the program is invoked as cowthink then the cow will think its message instead of saying it.</span>
+</span><span class='line'>
+</span><span class='line'><span class="s1">Options:</span>
+</span><span class='line'><span class="s1">  -b  Mode: Borg                                                                                                                                  </span>
+</span><span class='line'><span class="s1">  -d  Mode: Dead                                                                                                                                  </span>
+</span><span class='line'><span class="s1">  -g  Mode: Greedy                                                                                                                                </span>
+</span><span class='line'><span class="s1">  -p  Mode: Paranoia                                                                                                                              </span>
+</span><span class='line'><span class="s1">  -s  Mode: Stoned                                                                                                                                </span>
+</span><span class='line'><span class="s1">  -t  Mode: Tired                                                                                                                                 </span>
+</span><span class='line'><span class="s1">  -w  Mode: Wired                                                                                                                                 </span>
+</span><span class='line'><span class="s1">  -y  Mode: Youthful                                                                                                                              </span>
+</span><span class='line'><span class="s1">  -e  Select the appearance of the cow&#39;</span>s eyes.                                                                                                      <span class="o">[</span>default: <span class="s2">&quot;oo&quot;</span><span class="o">]</span>
+</span><span class='line'>  -T  The tongue is configurable similarly to the eyes through -T and tongue_string.                                                                <span class="o">[</span>default: <span class="s2">&quot;  &quot;</span><span class="o">]</span>
+</span><span class='line'>  -h  Display this <span class="nb">help </span>message
+</span><span class='line'>  -n  If it is specified, the given message will not be word-wrapped.
+</span><span class='line'>  -W  Specifies roughly where the message should be wrapped. The default is equivalent to -W 40 i.e. wrap words at or before the 40th column.       <span class="o">[</span>default: 40<span class="o">]</span>
+</span><span class='line'>  -f  Specifies a cow picture file <span class="o">(</span><span class="s1">&#39;&#39;</span>cowfile<span class="s1">&#39;&#39;</span><span class="o">)</span> to use. It can be either a path to a cow file or the name of one of cows included in the package.  <span class="o">[</span>default: <span class="s2">&quot;default&quot;</span><span class="o">]</span>
+</span><span class='line'>  -l  List all cowfiles included in this package.
+</span><span class='line'>  <span class="sb">```</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="sb">```</span>sh
+</span><span class='line'>
+</span><span class='line'> nmotw.in&gt; cowsay JavaScript FTW!
+</span><span class='line'> _________________
+</span><span class='line'>&lt; JavaScript FTW! &gt;
+</span><span class='line'> -----------------
+</span><span class='line'>        <span class="se">\ </span>  ^__^
+</span><span class='line'>         <span class="se">\ </span> <span class="o">(</span>oo<span class="o">)</span><span class="se">\_</span>______
+</span><span class='line'>            <span class="o">(</span>__<span class="o">)</span><span class="se">\ </span>      <span class="o">)</span><span class="se">\/\</span>
+</span><span class='line'>                <span class="o">||</span>----w |
+</span><span class='line'>                <span class="o">||</span>     <span class="o">||</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>API:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">cowsay</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;cowsay&quot;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">cowsay</span><span class="p">.</span><span class="nx">say</span><span class="p">({</span>
+</span><span class='line'>    <span class="nx">text</span> <span class="o">:</span> <span class="s2">&quot;I&#39;m a moooodule&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">e</span> <span class="o">:</span> <span class="s2">&quot;oO&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">T</span> <span class="o">:</span> <span class="s2">&quot;U &quot;</span>
+</span><span class='line'><span class="p">}));</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">// or cowsay.think()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'> _________________
+</span><span class='line'><span class="o">(</span> I<span class="err">&#39;</span>m a moooodule <span class="o">)</span>
+</span><span class='line'> -----------------
+</span><span class='line'>        o   ^__^
+</span><span class='line'>         o  <span class="o">(</span>oO<span class="o">)</span><span class="se">\_</span>______
+</span><span class='line'>            <span class="o">(</span>__<span class="o">)</span><span class="se">\ </span>      <span class="o">)</span><span class="se">\/\</span>
+</span><span class='line'>             U  <span class="o">||</span>----w |
+</span><span class='line'>                <span class="o">||</span>     <span class="o">||</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/images/cowsay/cowsay.gif" alt="cowsay.gif" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[wifi-password]]></title>
@@ -1296,44 +1438,6 @@ opens the dev-tool re-compile native modules against electron!</p>
 <p><strong>GIF FTW!</strong></p>
 
 <p><img src="http://nmotw.in/images/dev-time/dev-time.gif" alt="dev-time" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[ambi]]></title>
-    <link href="http://nmotw.in/ambi/"/>
-    <updated>2015-12-03T15:21:30+00:00</updated>
-    <id>http://nmotw.in/ambi</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/ambi">ambi</a></h1>
-
-<blockquote><p>Execute a function ambidextrously.</p></blockquote>
-
-<p><code>ambi</code> normalizes the differences between synchronous and asynchronous functions! That is treating synchronous functions as asynchronous functions.</p>
-
-<p><strong>Get it:</strong> <code>$ npm install --save ambi</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">ambi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;ambi&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">child_process</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;child_process&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">ambi</span><span class="p">(</span><span class="nx">child_process</span><span class="p">.</span><span class="nx">execSync</span><span class="p">,</span> <span class="s1">&#39;pwd&#39;</span><span class="p">,</span> <span class="p">{</span><span class="nx">encoding</span><span class="o">:</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">},</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">res</span><span class="p">));</span> <span class="c1">// Async </span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">ambi</span><span class="p">(</span><span class="nx">child_process</span><span class="p">.</span><span class="nx">exec</span><span class="p">,</span> <span class="s1">&#39;pwd&#39;</span><span class="p">,</span> <span class="p">{</span><span class="nx">encoding</span><span class="o">:</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">},</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">res</span><span class="p">));</span> <span class="c1">// Sync</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/ambi/ambi.gif" alt="ambi" /></p>
-
-<p>Thanks to <a href="http://balupton.com/">Benjamin Lupton</a> for this module.</p>
 ]]></content>
   </entry>
   
