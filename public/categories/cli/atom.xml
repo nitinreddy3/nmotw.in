@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cli | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/cli/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-04-21T15:20:03+00:00</updated>
+  <updated>2016-04-28T10:46:09+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,60 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[trevor]]></title>
+    <link href="http://nmotw.in/github/trevor/"/>
+    <updated>2016-04-28T10:26:32+00:00</updated>
+    <id>http://nmotw.in/github/trevor</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/trevor">trevor</a></h1>
+
+<blockquote><p>Your own Travis CI to run tests locally.</p></blockquote>
+
+<p><img src="/images/trevor/logo.png" alt="" /></p>
+
+<p><strong>From the author:</strong></p>
+
+<p>I often need to run tests for multiple versions of Node.js.</p>
+
+<p>But I don't want to switch versions manually using n/nvm or push the code to Travis CI just to run the tests.</p>
+
+<p>That's why I created Trevor.</p>
+
+<p>It reads <code>.travis.yml</code> and runs tests in all versions you requested, just like Travis CI.</p>
+
+<p>Now, you can test before push and keep your git history clean.</p>
+
+<p><strong>Get it:</strong> <code>npm install --save trevor</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```sh
+$ trevor --help</p>
+
+<p>  Your own Travis CI to run tests locally</p>
+
+<p>  Usage: trevor [options]</p>
+
+<p>  Options:</p>
+
+<pre><code>-h, --help    Show this help
+--no-clean    Don' remove the Docker image after tests
+</code></pre>
+
+<p>  Required files (in the current directory):</p>
+
+<pre><code>- package.json
+- .travis.yml
+</code></pre>
+
+<p>```</p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/trevor/trevor.gif" alt="" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[wifi-password]]></title>
@@ -236,38 +290,6 @@ var npmCheck = require('npm-check');</p>
 <p><img src="/images/npm-check/npm-check.gif" alt="npm-check" /></p>
 
 <p>Thanks to <a href="https://twitter.com/dylang">@dylang</a> for <code>npm-check</code>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[speed-test]]></title>
-    <link href="http://nmotw.in/github/speed-test/"/>
-    <updated>2015-09-03T13:07:24+00:00</updated>
-    <id>http://nmotw.in/github/speed-test</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/speed-test">speed-test</a></h1>
-
-<blockquote><p>Test your internet connection speed and ping using speedtest.net from the CLI.</p></blockquote>
-
-<p>This is product of <a href="https://github.com/sindresorhus/module-requests/">sindresorhus/module-requests</a> makes use of <a href="https://github.com/ddsol/speedtest.net">speedtest-net</a>
-helps us to know our intenet connection speed and ping with a beautiful UI.</p>
-
-<p><strong>Get it:</strong> <code>$ npm install --global speed-test</code></p>
-
-<p><strong>Usage:</strong></p>
-
-<p>```sh
-$ speed-test --help</p>
-
-<p>  Usage</p>
-
-<pre><code>$ speed-test
-</code></pre>
-
-<p>```</p>
-
-<p><strong>GIF FTW:</strong></p>
-
-<p><img src="/images/speed-test/speed-test.gif" alt="speed-test" /></p>
 ]]></content>
   </entry>
   
