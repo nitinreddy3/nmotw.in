@@ -4,7 +4,7 @@
   <title><![CDATA[Category: bot | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/bot/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-05-05T13:42:44+00:00</updated>
+  <updated>2016-05-05T13:44:25+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -33,12 +33,8 @@
 <p>```js
 const captionbot = require('captionbot');</p>
 
-<p>captionbot('http://i.imgur.com/o33PTUp.jpg');</p>
-
-<pre><code>.then(caption =&gt; {
-    console.log(caption);
-})
-</code></pre>
+<p>captionbot('http://i.imgur.com/o33PTUp.jpg')
+.then(caption => {console.log(caption);})</p>
 
 <p>//=> 'I think it's a group of people posing for a picture\nand he seems 😐.'
 ```</p>
