@@ -4,13 +4,55 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2016-04-28T10:51:38+00:00</updated>
+  <updated>2016-05-05T13:42:44+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[captionbot]]></title>
+    <link href="http://nmotw.in/captionbot/"/>
+    <updated>2016-05-05T12:57:22+00:00</updated>
+    <id>http://nmotw.in/captionbot</id>
+    <content type="html"><![CDATA[<p><a href="https://www.npmjs.com/package/captionbot">captionbot</a></p>
+
+<blockquote><p>Get captions for image using Microsoft's CaptionBot 🤖</p></blockquote>
+
+<p>A cheeky bot that tries recognize an image and explain it like a human would do, it requires node version <code>&gt;=4</code> this is powered by <a href="https://www.captionbot.ai/">CaptionBot</a>, a free service provided by Microsoft.</p>
+
+<p>The author says he would consider this module "for testing only" and does not recommend using in a production system.</p>
+
+<p><strong>Get it:</strong> <code>npm install --save captionbot</code></p>
+
+<p><strong>Usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kr">const</span> <span class="nx">captionbot</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;captionbot&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">captionbot</span><span class="p">(</span><span class="s1">&#39;http://i.imgur.com/o33PTUp.jpg&#39;</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">caption</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">caption</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">})</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">//=&gt; &#39;I think it&#39;s a group of people posing for a picture\nand he seems 😐.&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/images/captionbot/captionbot.gif" alt="" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[trevor]]></title>
@@ -1341,72 +1383,6 @@ opens the dev-tool re-compile native modules against electron!</p>
 <p><img src="http://nmotw.in/images/is-christmas/is-christmas.gif" alt="is-christmas" /></p>
 
 <p>Thanks to <a href="https://twitter.com/thejameskyle">James Kyle</a> for this fun module for this Christmas 😉</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[as]]></title>
-    <link href="http://nmotw.in/as/"/>
-    <updated>2015-12-17T16:34:55+00:00</updated>
-    <id>http://nmotw.in/as</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/as">as</a></h1>
-
-<blockquote><p>Convert easily, back and forth between array and object.</p></blockquote>
-
-<p>A sweet and simple util that help you to convert array to object and vise versa, it also:</p>
-
-<ul>
-<li><p>Brings all functional goodness of arrays to objects.</p></li>
-<li><p>Brings the flexibility of objects to arrays.</p></li>
-<li><p>Works well with a functional programming library.</p></li>
-</ul>
-
-
-<p><strong>Get it</strong>: <code>npm install --save as</code></p>
-
-<p><strong>Usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">asArray</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;as/array&quot;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">asArray</span><span class="p">(</span>
-</span><span class='line'>  <span class="p">{</span><span class="nx">a</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">b</span><span class="o">:</span> <span class="mi">2</span><span class="p">}</span>
-</span><span class='line'>  <span class="p">);</span>
-</span><span class='line'><span class="c1">// [ {key: &quot;a&quot;, value: 1} </span>
-</span><span class='line'><span class="c1">// , {key: &quot;b&quot;, value: 2} </span>
-</span><span class='line'><span class="c1">// ] </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">asObject</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;as/object&quot;</span><span class="p">);</span>
-</span><span class='line'><span class="nx">asObject</span><span class="p">(</span>
-</span><span class='line'>  <span class="p">[</span> <span class="p">{</span><span class="nx">key</span><span class="o">:</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="nx">value</span><span class="o">:</span> <span class="mi">1</span><span class="p">}</span>
-</span><span class='line'>  <span class="p">,</span> <span class="p">{</span><span class="nx">key</span><span class="o">:</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="nx">value</span><span class="o">:</span> <span class="mi">2</span><span class="p">}</span>
-</span><span class='line'>  <span class="p">]);</span>
-</span><span class='line'><span class="c1">// {a: 1, b: 2} </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/as/as.gif" alt="" /></p>
-
-<p>Thanks for</p>
 ]]></content>
   </entry>
   
