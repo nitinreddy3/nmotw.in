@@ -4,13 +4,72 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2016-05-05T13:48:01+00:00</updated>
+  <updated>2016-05-12T17:38:29+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[obsify]]></title>
+    <link href="http://nmotw.in/obsify/"/>
+    <updated>2016-05-12T13:19:01+00:00</updated>
+    <id>http://nmotw.in/obsify</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/obsify">obsify</a></h1>
+
+<blockquote><p>Observableify a callback-style function</p></blockquote>
+
+<p>Observerifies (is that even a word ;)?) a callback-style function into an observable.</p>
+
+<p><strong>Get it:</strong> <code>npm install --save obsify</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kr">const</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;fs&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="kr">const</span> <span class="nx">obsify</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;obsify&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">obsify</span><span class="p">(</span><span class="nx">fs</span><span class="p">.</span><span class="nx">readFile</span><span class="p">)(</span><span class="s1">&#39;package.json&#39;</span><span class="p">,</span> <span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">data</span> <span class="o">=&gt;</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">data</span><span class="p">))</span>
+</span><span class='line'>    <span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="nx">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+</span><span class='line'>        <span class="c1">//=&gt; &#39;obsify&#39;</span>
+</span><span class='line'>    <span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>or <code>observableify</code> all methods in a module</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">obsify</span><span class="p">(</span><span class="nx">fs</span><span class="p">).</span><span class="nx">readFile</span><span class="p">(</span><span class="s1">&#39;package.json&#39;</span><span class="p">,</span> <span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">data</span> <span class="o">=&gt;</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">data</span><span class="p">))</span>
+</span><span class='line'>    <span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="nx">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+</span><span class='line'>        <span class="c1">//=&gt; &#39;obsify&#39;</span>
+</span><span class='line'>    <span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/images/obsify/obsify.gif" alt="obsify" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[captionbot]]></title>
@@ -1345,65 +1404,6 @@ opens the dev-tool re-compile native modules against electron!</p>
 <p><strong>GIF FTW</strong></p>
 
 <p><img src="http://nmotw.in/images/stack-trace/stack-trace.gif" alt="stack-trace" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[is-christmas]]></title>
-    <link href="http://nmotw.in/is-christmas/"/>
-    <updated>2015-12-24T14:32:35+00:00</updated>
-    <id>http://nmotw.in/is-christmas</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/is-christmas">is-christmas</a></h1>
-
-<blockquote><p>🎅 Is today Christmas? 🎄</p></blockquote>
-
-<p>Simple fun module that returns <code>true</code> or <code>false</code> if it's Christmas or not.</p>
-
-<p><strong>Get it:</strong></p>
-
-<p><code>$ npm install --save is-christmas</code></p>
-
-<p><code>$ npm install --global is-christmas</code> // for CLI</p>
-
-<p><strong>Usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kr">const</span> <span class="nx">isChristmas</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;is-christmas&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">isChristmas</span><span class="p">();</span>
-</span><span class='line'><span class="c1">//=&gt; true</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>is-christmas --help
-</span><span class='line'>
-</span><span class='line'>  Usage
-</span><span class='line'>    is-christmas
-</span><span class='line'>
-</span><span class='line'>  Examples
-</span><span class='line'>    <span class="nv">$ </span>is-christmas
-</span><span class='line'>    <span class="nb">true</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/is-christmas/is-christmas.gif" alt="is-christmas" /></p>
-
-<p>Thanks to <a href="https://twitter.com/thejameskyle">James Kyle</a> for this fun module for this Christmas 😉</p>
 ]]></content>
   </entry>
   
