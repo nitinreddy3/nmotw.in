@@ -4,13 +4,69 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2016-05-12T17:38:29+00:00</updated>
+  <updated>2016-05-20T05:46:42+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[speedline]]></title>
+    <link href="http://nmotw.in/speedline/"/>
+    <updated>2016-05-20T05:01:00+00:00</updated>
+    <id>http://nmotw.in/speedline</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/speedline">speedline</a></h1>
+
+<blockquote><p>Calculate the speed index and visual performance metrics from chrome dev tool timeline.</p></blockquote>
+
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigation_timing_API">Navigation Timing API</a> provides useful data that can be used to measure the performance of a website.</p>
+
+<p>Unfortunately this API has never been good at capturing the actual <em>user experience</em> that's where <code>speedline</code> comes to rescue.</p>
+
+<p>It measures <strong>how fast the page content is visually displayed</strong>.</p>
+
+<p>The current implementation is based on the <strong>Visual Progress from Video Capture</strong> calculation method described on the <a href="https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index">Speed Index</a> page.</p>
+
+<p>The visual progress is calculated by comparing the distance between the histogram of the current frame and the final frame.</p>
+
+<p><strong>GET IT:</strong></p>
+
+<p><code>$ npm install --global speedline</code> // For CLI</p>
+
+<p><code>$ npm install --save speedline</code> // As a devdep.</p>
+
+<p><strong>Sample usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>speedline --help
+</span><span class='line'>
+</span><span class='line'>  Usage
+</span><span class='line'>    <span class="nv">$ </span>speedline &lt;timeline&gt; <span class="o">[</span>options<span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'>  Options
+</span><span class='line'>    -p, --pretty  Pretty print the output
+</span><span class='line'>
+</span><span class='line'>  Examples
+</span><span class='line'>    <span class="nv">$ </span>speedline ./timeline.json
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/images/speedline/speedline.gif" alt="" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[obsify]]></title>
@@ -1348,62 +1404,6 @@ opens the dev-tool re-compile native modules against electron!</p>
 <p><img src="http://nmotw.in/images/ineed/ineed.gif" alt="ineed" /></p>
 
 <p>Thanks to <a href="https://twitter.com/nilukini">Ivan Nikulin</a> for this cheeky module.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[stack-trace]]></title>
-    <link href="http://nmotw.in/stack-trace/"/>
-    <updated>2015-12-31T17:47:09+00:00</updated>
-    <id>http://nmotw.in/stack-trace</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/stack-trace">stack-trace</a></h1>
-
-<blockquote><p>Get v8 stack traces as an array of CallSite objects.</p></blockquote>
-
-<p><strong>Get it:</strong> <code>npm install --save stack-trace</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">stackTrace</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;stack-trace&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">trace</span> <span class="o">=</span> <span class="nx">stackTrace</span><span class="p">.</span><span class="nx">get</span><span class="p">();</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">stackTrace</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;stack-trace&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">err</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s1">&#39;something went wrong&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">trace</span> <span class="o">=</span> <span class="nx">stackTrace</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>And <code>trace</code> would have CallSite objects and each object will have the below methods:</p>
-
-<ul>
-<li><strong>getThis</strong>: returns the value of this</li>
-<li><strong>getTypeName</strong>: returns the type of this as a string. This is the name of the function stored in the constructor field of this, if available, otherwise the object's [[Class]] internal property.</li>
-<li><strong>getFunction</strong>: returns the current function</li>
-<li><strong>getFunctionName</strong>: returns the name of the current function, typically its name property. If a name property is not available an attempt will be made to try to infer a name from the function's context.</li>
-<li><strong>getMethodName</strong>: returns the name of the property of this or one of its prototypes that holds the current function</li>
-<li><strong>getFileName</strong>: if this function was defined in a script returns the name of the script</li>
-<li><strong>getLineNumber</strong>: if this function was defined in a script returns the current line number</li>
-<li><strong>getColumnNumber</strong>: if this function was defined in a script returns the current column number</li>
-<li><strong>getEvalOrigin</strong>: if this function was created using a call to eval returns a CallSite object representing the location where eval was called</li>
-<li><strong>isToplevel</strong>: is this a toplevel invocation, that is, is this the global object?</li>
-<li><strong>isEval</strong>: does this call take place in code defined by a call to eval?</li>
-<li><strong>isNative</strong>: is this call in native V8 code?</li>
-<li><strong>isConstructor</strong>: is this a constructor call?</li>
-</ul>
-
-
-<p><strong>GIF FTW</strong></p>
-
-<p><img src="http://nmotw.in/images/stack-trace/stack-trace.gif" alt="stack-trace" /></p>
 ]]></content>
   </entry>
   

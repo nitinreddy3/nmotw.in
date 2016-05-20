@@ -4,7 +4,7 @@
   <title><![CDATA[Category: performance | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/performance/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-05-12T17:38:29+00:00</updated>
+  <updated>2016-05-20T05:46:42+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,59 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[speedline]]></title>
+    <link href="http://nmotw.in/github/speedline/"/>
+    <updated>2016-05-20T05:01:00+00:00</updated>
+    <id>http://nmotw.in/github/speedline</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/speedline">speedline</a></h1>
+
+<blockquote><p>Calculate the speed index and visual performance metrics from chrome dev tool timeline.</p></blockquote>
+
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigation_timing_API">Navigation Timing API</a> provides useful data that can be used to measure the performance of a website.</p>
+
+<p>Unfortunately this API has never been good at capturing the actual <em>user experience</em> that's where <code>speedline</code> comes to rescue.</p>
+
+<p>It measures <strong>how fast the page content is visually displayed</strong>.</p>
+
+<p>The current implementation is based on the <strong>Visual Progress from Video Capture</strong> calculation method described on the <a href="https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index">Speed Index</a> page.</p>
+
+<p>The visual progress is calculated by comparing the distance between the histogram of the current frame and the final frame.</p>
+
+<p><strong>GET IT:</strong></p>
+
+<p><code>$ npm install --global speedline</code> // For CLI</p>
+
+<p><code>$ npm install --save speedline</code> // As a devdep.</p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```sh
+$ speedline --help</p>
+
+<p>  Usage</p>
+
+<pre><code>$ speedline &lt;timeline&gt; [options]
+</code></pre>
+
+<p>  Options</p>
+
+<pre><code>-p, --pretty  Pretty print the output
+</code></pre>
+
+<p>  Examples</p>
+
+<pre><code>$ speedline ./timeline.json
+</code></pre>
+
+<p>```</p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/speedline/speedline.gif" alt="" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[PSI]]></title>
