@@ -4,7 +4,7 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2016-05-26T14:23:54+00:00</updated>
+  <updated>2016-05-26T14:24:31+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -17,7 +17,7 @@
     <link href="http://nmotw.in/mediumcli/"/>
     <updated>2016-05-26T14:13:06+00:00</updated>
     <id>http://nmotw.in/mediumcli</id>
-    <content type="html"><![CDATA[<h1><a href="">mediumcli</a></h1>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/mediumcli">mediumcli</a></h1>
 
 <blockquote><p>A CLI to Medium Stories.</p></blockquote>
 
