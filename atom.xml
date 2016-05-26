@@ -4,13 +4,69 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2016-05-20T05:46:42+00:00</updated>
+  <updated>2016-05-26T14:23:54+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[mediumcli]]></title>
+    <link href="http://nmotw.in/mediumcli/"/>
+    <updated>2016-05-26T14:13:06+00:00</updated>
+    <id>http://nmotw.in/mediumcli</id>
+    <content type="html"><![CDATA[<h1><a href="">mediumcli</a></h1>
+
+<blockquote><p>A CLI to Medium Stories.</p></blockquote>
+
+<p>A simple tool that helps you to read medium posts on your CLI.</p>
+
+<p><strong>Get it:</strong> <code>npm install -g mediumcli</code></p>
+
+<p><strong>Sample usage:</strong> <code>medium [options] [command]</code></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>Commands:
+</span><span class='line'>
+</span><span class='line'>top <span class="o">[</span>options<span class="o">]</span>         List Medium Top Stories
+</span><span class='line'><span class="nb">read</span> &lt;url&gt;            Read the story right in your terminal
+</span><span class='line'>open <span class="o">[</span>options<span class="o">]</span> &lt;url&gt;  Opens it in your browser
+</span><span class='line'>
+</span><span class='line'>Options:
+</span><span class='line'>
+</span><span class='line'>-h, --help     output usage information
+</span><span class='line'>-V, --version  output the version number
+</span><span class='line'>
+</span><span class='line'>top <span class="o">[</span>options<span class="o">]</span>
+</span><span class='line'>n, --number &lt;int&gt;<span class="s2">&quot;, &quot;</span>specify number of stories
+</span><span class='line'>
+</span><span class='line'>open <span class="o">[</span>options<span class="o">]</span> &lt;url&gt;
+</span><span class='line'>-a, --app &lt;application&gt;  specify app to open the url. Eg: firefox
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/images/mediumcli/mediumcli.gif" alt="mediumcli" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[speedline]]></title>
@@ -1345,65 +1401,6 @@ opens the dev-tool re-compile native modules against electron!</p>
 <p><strong>GIF FTW!</strong></p>
 
 <p><img src="http://nmotw.in/images/fp-dom/fp-dom.gif" alt="fp-dom" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[ineed]]></title>
-    <link href="http://nmotw.in/ineed/"/>
-    <updated>2016-01-07T16:32:52+00:00</updated>
-    <id>http://nmotw.in/ineed</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/ineed">ineed</a></h1>
-
-<blockquote><p>Web scraping and HTML-reprocessing. The easy way.</p></blockquote>
-
-<p><img src="http://nmotw.in/images/ineed/ineed-logo.png" alt="ineed-logo" /></p>
-
-<p><code>ineed</code> allows you collect useful data from web pages using simple and nice API.</p>
-
-<p>It doesn't build and traverse DOM-tree, it operates on sequence of HTML tokens instead. Whole processing is done in one-pass, therefore, it's blazing fast!</p>
-
-<p><strong>Get it:</strong> <code>npm install --save ineed</code></p>
-
-<p><strong>Usage:</strong> <code>ineed.&lt;action&gt;[.&lt;plugin&gt;...].&lt;from*&gt;</code></p>
-
-<p>Where <code>action</code> could be: <code>collect</code> or <code>reprocess</code></p>
-
-<p><code>plugin</code> could be one of: <code>.comments</code> <code>.cssCode</code> <code>.hyperlinks</code> <code>.images</code> <code>.jsCode</code> <code>.scripts</code> <code>.stylesheets</code> <code>.texts</code> <code>.title</code></p>
-
-<p><code>from</code> could be: <code>from</code> or <code>fromHtml</code></p>
-
-<p>P.S: One could write a custom plugin using the <code>.using()</code> method.</p>
-
-<p><strong>Code sample:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">ineed</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;ineed&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">ineed</span><span class="p">.</span><span class="nx">collect</span><span class="p">.</span><span class="nx">images</span><span class="p">.</span><span class="nx">hyperlinks</span><span class="p">.</span><span class="nx">scripts</span><span class="p">.</span><span class="nx">stylesheets</span><span class="p">.</span><span class="nx">from</span><span class="p">(</span><span class="s1">&#39;http://nmotw.in&#39;</span><span class="p">,</span>
-</span><span class='line'>    <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">response</span><span class="p">,</span> <span class="nx">result</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">));</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">ineed</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;ineed&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">ineed</span><span class="p">.</span><span class="nx">collect</span><span class="p">.</span><span class="nx">texts</span><span class="p">.</span><span class="nx">images</span><span class="p">.</span><span class="nx">scripts</span><span class="p">.</span><span class="nx">fromHtml</span><span class="p">(</span><span class="nx">html</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/ineed/ineed.gif" alt="ineed" /></p>
-
-<p>Thanks to <a href="https://twitter.com/nilukini">Ivan Nikulin</a> for this cheeky module.</p>
 ]]></content>
   </entry>
   

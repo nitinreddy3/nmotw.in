@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cli | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/cli/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-05-20T05:46:42+00:00</updated>
+  <updated>2016-05-26T14:23:54+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,47 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[mediumcli]]></title>
+    <link href="http://nmotw.in/github/mediumcli/"/>
+    <updated>2016-05-26T14:13:06+00:00</updated>
+    <id>http://nmotw.in/github/mediumcli</id>
+    <content type="html"><![CDATA[<h1><a href="">mediumcli</a></h1>
+
+<blockquote><p>A CLI to Medium Stories.</p></blockquote>
+
+<p>A simple tool that helps you to read medium posts on your CLI.</p>
+
+<p><strong>Get it:</strong> <code>npm install -g mediumcli</code></p>
+
+<p><strong>Sample usage:</strong> <code>medium [options] [command]</code></p>
+
+<p>```sh
+Commands:</p>
+
+<p>top [options]         List Medium Top Stories
+read <url>            Read the story right in your terminal
+open [options] <url>  Opens it in your browser</p>
+
+<p>Options:</p>
+
+<p>-h, --help     output usage information
+-V, --version  output the version number</p>
+
+<p>top [options]
+n, --number <int>", "specify number of stories</p>
+
+<p>open [options] <url>
+-a, --app <application>  specify app to open the url. Eg: firefox</p>
+
+<p>```</p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/mediumcli/mediumcli.gif" alt="mediumcli" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[trevor]]></title>
@@ -233,65 +274,6 @@ var log = require('npmlog')</p>
 <p><strong>GIF FTW!</strong></p>
 
 <p><img src="/images/npmlog/npmlog.gif" alt="npmlog" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[npm-check]]></title>
-    <link href="http://nmotw.in/github/npm-check/"/>
-    <updated>2015-09-10T14:28:00+00:00</updated>
-    <id>http://nmotw.in/github/npm-check</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/npm-check">npm-check</a></h1>
-
-<blockquote><p>Check for outdated, incorrect, and unused dependencies.</p></blockquote>
-
-<p><strong>Features:</strong></p>
-
-<ul>
-<li><em>Interactive Update</em> means less typing.</li>
-<li>Scoped packages support for the modern npm user.</li>
-<li>Works with public and private registries.</li>
-<li>Won't query npm registry for packages with <code>private: true</code>.</li>
-<li>Kindly informs you if a dependency is not being used.</li>
-<li>Emoji in a command-line app, because command-line apps can be fun too.</li>
-</ul>
-
-
-<p>Very much similar to <a href="http://nmotw.in/npm-check-updates/">npm-check-updates</a> but far more generic and interactive!</p>
-
-<p><strong>Get it:</strong> <code>npm install -g npm-check</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<p>```sh
-$ npm-check --help</p>
-
-<p>  Usage: npm-check [options]</p>
-
-<p>  Options:</p>
-
-<pre><code>-h, --help         output usage information
--V, --version      output the version number
--u, --update       Interactive update.
--g, --global       Look at global modules.
--s, --skip-unused  Skip check for unused packages.
--p, --production   Ignore devDependencies.
-</code></pre>
-
-<p>```</p>
-
-<p>```js
-var npmCheck = require('npm-check');</p>
-
-<p>npmCheck(options)
-  .then(result);
-```</p>
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="/images/npm-check/npm-check.gif" alt="npm-check" /></p>
-
-<p>Thanks to <a href="https://twitter.com/dylang">@dylang</a> for <code>npm-check</code>.</p>
 ]]></content>
   </entry>
   
