@@ -4,7 +4,7 @@
   <title><![CDATA[Category: pwa | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/pwa/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-06-09T12:44:31+00:00</updated>
+  <updated>2016-06-09T12:47:06+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -20,7 +20,7 @@
     <id>http://nmotw.in/github/pwaify</id>
     <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/pwaify">pwaify</a></h1>
 
-<blockquote><p>Electron PWA (Progressive Web App) Generator.</p></blockquote>
+<blockquote><p>PWA to desktop app!</p></blockquote>
 
 <p><code>pwaify</code> bring <a href="https://developers.google.com/web/progressive-web-apps/">progressive</a> <a href="https://github.com/hemanth/generator-pwa">Webapp</a> to your desktops across platforms!</p>
 
