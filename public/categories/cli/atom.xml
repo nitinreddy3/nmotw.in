@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cli | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/cli/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-06-02T17:06:41+00:00</updated>
+  <updated>2016-06-09T12:43:12+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,52 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[pwaify]]></title>
+    <link href="http://nmotw.in/github/pwaify/"/>
+    <updated>2016-06-09T12:33:41+00:00</updated>
+    <id>http://nmotw.in/github/pwaify</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/pwaify">pwaify</a></h1>
+
+<blockquote><p>Electron PWA (Progressive Web App) Generator.</p></blockquote>
+
+<p><code>pwaify</code> bring <a href="https://developers.google.com/web/progressive-web-apps/">progressive</a> <a href="https://github.com/hemanth/generator-pwa">Webapp</a> to your desktops across platforms!</p>
+
+<p>Makes use of <a href="http://electron.atom.io/">Electron</a> extracts the <code>manifest-json</code> from the given URL and smartly creates an electron window and loads the required.</p>
+
+<p><strong>Get it:</strong> <code>npm install --global pwaify</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```sh
+nmotw.in> pwaify --help</p>
+
+<p>  Electron PWA (Progressive Web App) Generator</p>
+
+<p>  Usage</p>
+
+<pre><code>$ pwaify &lt;input&gt;
+</code></pre>
+
+<p>  Options</p>
+
+<pre><code>--platforms Platforms to build the app.
+--icon App Icon.
+</code></pre>
+
+<p>  Examples</p>
+
+<pre><code>$ pwaify https://jsfeatures.in --platforms=darwin
+</code></pre>
+
+<p>```</p>
+
+<p><strong>GIF FTW:</strong></p>
+
+<p><img src="/images/pwaify/pwaify.gif" alt="PWAify" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[mediumcli]]></title>
@@ -214,66 +260,6 @@ undefined
 <p><strong>GIF FTW!</strong></p>
 
 <p><img src="/images/trymodule/trymodule.gif" alt="trymodule" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[npmlog]]></title>
-    <link href="http://nmotw.in/github/npmlog/"/>
-    <updated>2015-11-26T14:07:54+00:00</updated>
-    <id>http://nmotw.in/github/npmlog</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/npmlog">npmlog</a></h1>
-
-<blockquote><p>logger for npm</p></blockquote>
-
-<p><code>npmlog</code> is a simple logger that <code>npm</code> uses to log it's messages, this module provides custom levels and colored output.</p>
-
-<p>By default, logs are written to <code>stderr</code>, to send log messages to outputs other than streams you can use <code>log.stream</code> member, or you can just listen to the events that it emits.</p>
-
-<p><strong>Get it:</strong> : <code>npm install --save npmlog</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<p>```js
-var log = require('npmlog')</p>
-
-<p>// additional stuff ---------------------------+
-// message ----------+                         |
-// prefix ----+      |                         |
-// level -+   |      |                         |
-//        v   v      v                         v</p>
-
-<pre><code>log.info('fyi', 'I &lt;3 nmotw: %j', node_modules);
-</code></pre>
-
-<p>```</p>
-
-<p><strong>levels:</strong></p>
-
-<p>```js</p>
-
-<blockquote><p>log.levels
-{ silly: -Infinity,
-  verbose: 1000,
-  info: 2000,
-  http: 3000,
-  warn: 4000,
-  error: 5000,
-  silent: Infinity }</p>
-
-<p>log.disp
-{ silly: 'sill',
-  verbose: 'verb',
-  info: 'info',
-  http: 'http',
-  warn: 'WARN',
-  error: 'ERR!',
-  silent: 'silent' }
-```</p></blockquote>
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="/images/npmlog/npmlog.gif" alt="npmlog" /></p>
 ]]></content>
   </entry>
   
