@@ -4,7 +4,7 @@
   <title><![CDATA[Category: fun | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/fun/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-06-09T12:47:06+00:00</updated>
+  <updated>2016-06-16T15:01:42+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,32 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[rainbowify]]></title>
+    <link href="http://nmotw.in/github/rainbowify/"/>
+    <updated>2016-06-16T14:03:58+00:00</updated>
+    <id>http://nmotw.in/github/rainbowify</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/rainbowify">rainbowify</a></h1>
+
+<blockquote><p>rainbow print stuff in terminal</p></blockquote>
+
+<p><code>rainbowify</code> is an module extracted from mocha's <a href="https://github.com/mochajs/mocha/blob/master/lib/reporters/nyan.js">nyan.js</a> which is a fun little module
+that helps to print rainbow text on the terminal.</p>
+
+<p><strong>Get it:</strong> <code>npm install --global rainbowify</code></p>
+
+<p><strong>Usage:</strong></p>
+
+<p><code>sh
+$ echo &lt;some_text&gt; | rainbowify
+</code></p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/rainbowify/rainbowify.gif" alt="rainbowify" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[cowsay]]></title>
@@ -255,55 +281,6 @@ Sentencer.configure({
 <p><img src="/images/sentencer/sentencer.gif" alt="sentencer" /></p>
 
 <p>Thanks to <a href="https://twitter.com/kylestetz">@kylestetz</a> for this fun module! (:</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[http-teapot]]></title>
-    <link href="http://nmotw.in/github/http-teapot/"/>
-    <updated>2014-10-16T13:23:28+00:00</updated>
-    <id>http://nmotw.in/github/http-teapot</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.org/package/http-teapot">http-teapot</a></h1>
-
-<p>Add support for <a href="https://www.ietf.org/rfc/rfc2324.txt">RFC 2324</a> to any HTTP server.</p>
-
-<p>P.S:  Hyper Text Coffee Pot Control Protocol (HTCPCP/1.0) was a April fools RFC ;) HTTP status code <code>418</code>.</p>
-
-<p>BTW if you are wondering why this made in to this list, <code>http-teapot</code> module is the 100,000th module to npm today!</p>
-
-<blockquote class="twitter-tweet" lang="en"><p>congrats to <a href="https://twitter.com/wa7son">@wa7son</a> who published the 100,000th module to npm today, a http 418 teapot protocol implementation <a href="http://t.co/ckKrSizu9Q">pic.twitter.com/ckKrSizu9Q</a></p>&mdash; maxwell ogden (@maxogden) <a href="https://twitter.com/maxogden/status/522413667782914048">October 15, 2014</a></blockquote>
-
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<h2>Installation</h2>
-
-<p><code>sh
-npm install http-teapot
-</code></p>
-
-<h2>Usage</h2>
-
-<p>Just add http-teapot as a routing function.</p>
-
-<p>Express example:</p>
-
-<p>```javascript
-var teapot = require('http-teapot');
-var express = require('express');
-var app = express();</p>
-
-<p>app.get('/teapot', teapot);</p>
-
-<p>app.listen(3000);
-```</p>
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="/images/http-teapot/http-teapot.gif" alt="http-teapot" /></p>
-
-<p>Thanks to <a href="https://github.com/watson">Thomas Watson Steen</a> for implementing this RFC and giving us a teapot image ;)</p>
 ]]></content>
   </entry>
   
