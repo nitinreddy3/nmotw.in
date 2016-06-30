@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cli | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/cli/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-06-30T12:37:25+00:00</updated>
+  <updated>2016-06-30T12:39:27+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -48,7 +48,7 @@ Waiting for the debugger to disconnect...
 
 <p><strong>GIF FTW!</strong></p>
 
-<p><img src="./node-nightly/node-nightly.gif" alt="node-nightly" /></p>
+<p><img src="/images/node-nightly/node-nightly.gif" alt="node-nightly" /></p>
 ]]></content>
   </entry>
   

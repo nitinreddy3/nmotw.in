@@ -4,7 +4,7 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2016-06-30T12:37:25+00:00</updated>
+  <updated>2016-06-30T12:39:27+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -50,7 +50,7 @@
 
 <p><strong>GIF FTW!</strong></p>
 
-<p><img src="./node-nightly/node-nightly.gif" alt="node-nightly" /></p>
+<p><img src="http://nmotw.in/images/node-nightly/node-nightly.gif" alt="node-nightly" /></p>
 ]]></content>
   </entry>
   
