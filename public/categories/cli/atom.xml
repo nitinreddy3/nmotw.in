@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cli | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/cli/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-06-30T12:39:27+00:00</updated>
+  <updated>2016-07-07T14:31:50+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,67 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[listr]]></title>
+    <link href="http://nmotw.in/github/listr/"/>
+    <updated>2016-07-07T10:03:39+00:00</updated>
+    <id>http://nmotw.in/github/listr</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/listr">listr</a></h1>
+
+<blockquote><p>Terminal task list.</p></blockquote>
+
+<p><code>listr</code> is one of those cheeky 💄 modules for your CLI apps.</p>
+
+<p>Below is the gist of this module:</p>
+
+<ul>
+<li><p><code>listr</code> accepts an array of tasks, where each task in a object consisting of <code>title</code> (string) and <code>task</code> (method).</p></li>
+<li><p>If a task returns, it means the task was completed succesfully.</p></li>
+<li><p>If a task throws an error, the task failed.</p></li>
+<li><p>Task can be async by returning a Promise.</p></li>
+<li><p>Task can be an Observable.</p></li>
+<li><p>Task can also be a stream, which is in-turn converted to an Observable.</p></li>
+<li><p>An instance of <code>listr</code> has <code>add(task)</code>, <code>task</code> and <code>run</code> methods. (Names are self explanatory?)</p></li>
+</ul>
+
+
+<p><strong>Get it:</strong> <code>npm install --save listr</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```js
+const tasks = new Listr([</p>
+
+<pre><code>{
+    title: 'Success',
+    task: () =&gt; 'Foo'
+},
+{
+    title: 'Failure',
+    task: () =&gt; {
+        throw new Error('Bar')
+    }
+}
+</code></pre>
+
+<p>]);
+```</p>
+
+<p>```js
+tasks.run().catch(err => {</p>
+
+<pre><code>console.error(err);
+</code></pre>
+
+<p>});
+```</p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/listr/listr.gif" alt="listr" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[node-nightly]]></title>
@@ -162,62 +223,6 @@ n, --number <int>", "specify number of stories</p>
 <p><strong>GIF FTW!</strong></p>
 
 <p><img src="/images/mediumcli/mediumcli.gif" alt="mediumcli" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[trevor]]></title>
-    <link href="http://nmotw.in/github/trevor/"/>
-    <updated>2016-04-28T10:26:32+00:00</updated>
-    <id>http://nmotw.in/github/trevor</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/trevor">trevor</a></h1>
-
-<blockquote><p>Your own Travis CI to run tests locally.</p></blockquote>
-
-<p><img src="/images/trevor/logo.png" alt="" /></p>
-
-<p><strong>From the author:</strong></p>
-
-<p>I often need to run tests for multiple versions of Node.js.</p>
-
-<p>But I don't want to switch versions manually using n/nvm or push the code to Travis CI just to run the tests.</p>
-
-<p>That's why I created Trevor.</p>
-
-<p>It reads <code>.travis.yml</code> and runs tests in all versions you requested, just like Travis CI.</p>
-
-<p>Now, you can test before push and keep your git history clean.</p>
-
-<p><strong>Get it:</strong> <code>npm install --save trevor</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<p>```sh
-$ trevor --help</p>
-
-<p>  Your own Travis CI to run tests locally</p>
-
-<p>  Usage: trevor [options]</p>
-
-<p>  Options:</p>
-
-<pre><code>-h, --help    Show this help
---no-clean    Don' remove the Docker image after tests
-</code></pre>
-
-<p>  Required files (in the current directory):</p>
-
-<pre><code>- package.json
-- .travis.yml
-</code></pre>
-
-<p>```</p>
-
-<p>P.S: <code>trevor</code> has a dependency on <a href="https://www.docker.com/">docker</a> and if <code>--no-clean</code> is not used it will remove all the docker images after the test runs.</p>
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="/images/trevor/trevor.gif" alt="" /></p>
 ]]></content>
   </entry>
   
