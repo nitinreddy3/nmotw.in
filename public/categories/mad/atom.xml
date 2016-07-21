@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: mad | NMOTW]]></title>
+  <link href="http://nmotw.in/github/public/categories/mad/atom.xml" rel="self"/>
+  <link href="http://nmotw.in/github/"/>
+  <updated>2016-07-21T17:25:03+00:00</updated>
+  <id>http://nmotw.in/github/</id>
+  <author>
+    <name><![CDATA[Hemanth.HM]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[wifi-triangulate]]></title>
+    <link href="http://nmotw.in/github/wifi-triangulate/"/>
+    <updated>2016-07-21T17:16:26+00:00</updated>
+    <id>http://nmotw.in/github/wifi-triangulate</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/wifi-triangulate">wifi-triangulate</a></h1>
+
+<blockquote><p>Finds your current position on planet earth using the wifi access points in your vicinity.</p></blockquote>
+
+<p>This module requires that the wifi card on your computer is active and that you have access to the internet in order to communicate with Google so that it can triangulate your position.</p>
+
+<p><strong>Get it:</strong> <code>npm install --global wifi-triangulate</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```js
+var triangulate = require('wifi-triangulate')</p>
+
+<p>triangulate(function (err, location) {
+  if (err) throw err
+  console.log(location) // => { lat: 38.0690894, lng: -122.8069356, accuracy: 42 }
+})
+```</p>
+
+<p><strong>GIF FTW!:</strong></p>
+
+<p><img src="/images/wifi-triangulate/wifi-triangulate.gif" alt="wifi-triangulate" /></p>
+]]></content>
+  </entry>
+  
+</feed>

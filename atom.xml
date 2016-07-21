@@ -4,13 +4,49 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2016-07-14T12:32:17+00:00</updated>
+  <updated>2016-07-21T17:25:03+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[wifi-triangulate]]></title>
+    <link href="http://nmotw.in/wifi-triangulate/"/>
+    <updated>2016-07-21T17:16:26+00:00</updated>
+    <id>http://nmotw.in/wifi-triangulate</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/wifi-triangulate">wifi-triangulate</a></h1>
+
+<blockquote><p>Finds your current position on planet earth using the wifi access points in your vicinity.</p></blockquote>
+
+<p>This module requires that the wifi card on your computer is active and that you have access to the internet in order to communicate with Google so that it can triangulate your position.</p>
+
+<p><strong>Get it:</strong> <code>npm install --global wifi-triangulate</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">triangulate</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;wifi-triangulate&#39;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">triangulate</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">location</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="k">throw</span> <span class="nx">err</span>
+</span><span class='line'>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">location</span><span class="p">)</span> <span class="c1">// =&gt; { lat: 38.0690894, lng: -122.8069356, accuracy: 42 } </span>
+</span><span class='line'><span class="p">})</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW!:</strong></p>
+
+<p><img src="http://nmotw.in/images/wifi-triangulate/wifi-triangulate.gif" alt="wifi-triangulate" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[cleave.js]]></title>
@@ -1497,63 +1533,6 @@ else installs it using <code>npmi</code> module and starts the <code>REPL</code>
 
 <p><a href="https://www.npmjs.org/package/selectn"><img src="http://nmotw.in/images/selectn/selectn.gif" alt="selectn" /></a>
 Checkout the project's <code>readme.md</code> for <a href="https://github.com/wilmoore/selectn.js#usage-examples">more examples</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[color-thief]]></title>
-    <link href="http://nmotw.in/color-thief/"/>
-    <updated>2016-03-03T14:50:23+00:00</updated>
-    <id>http://nmotw.in/color-thief</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/color-thief">color-thief</a></h1>
-
-<blockquote><p>Grab the color palette or dominant color from an image!</p></blockquote>
-
-<p><code>color-thief</code> helps to grab get the dominant color or the color palette from an image, this module makes use of JS, some cool math and the canvas tag to make it happen.</p>
-
-<p><strong>Get it:</strong> <code>npm install --save color-thief</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">colorThief</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ColorThief</span><span class="p">();</span>
-</span><span class='line'><span class="nx">colorThief</span><span class="p">.</span><span class="nx">getColor</span><span class="p">(</span><span class="nx">sourceImage</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="cm">/*</span>
-</span><span class='line'><span class="cm">getColor(sourceImage[, quality])</span>
-</span><span class='line'><span class="cm">returns {r: num, g: num, b: num}</span>
-</span><span class='line'><span class="cm">*/</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">colorThief</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ColorThief</span><span class="p">();</span>
-</span><span class='line'><span class="nx">colorThief</span><span class="p">.</span><span class="nx">getPalette</span><span class="p">(</span><span class="nx">sourceImage</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="cm">/*</span>
-</span><span class='line'><span class="cm">getPalette(sourceImage[, colorCount, quality])</span>
-</span><span class='line'><span class="cm">returns [ [num, num, num], [num, num, num], ... ]</span>
-</span><span class='line'><span class="cm">*/</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/color-thief/color-thief.gif" alt="color-thief" /></p>
 ]]></content>
   </entry>
   
