@@ -4,13 +4,54 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2016-07-28T15:31:11+00:00</updated>
+  <updated>2016-08-04T12:05:56+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[currency-symbol-map]]></title>
+    <link href="http://nmotw.in/currency-symbol-map/"/>
+    <updated>2016-08-04T11:52:51+00:00</updated>
+    <id>http://nmotw.in/currency-symbol-map</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/currency-symbol-map">currency-symbol-map</a></h1>
+
+<blockquote><p>Lookup the currency symbol for a given currency code.</p></blockquote>
+
+<p>Name says it all, this is tiny module that's helps one to get the symbol for a given currency or get the currency got given a symbol.</p>
+
+<p><strong>Get it:</strong> <code>npm install --save currency-symbol-map</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">getSymbolFromCurrency</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;currency-symbol-map&#39;</span><span class="p">).</span><span class="nx">getSymbolFromCurrency</span><span class="p">;</span>
+</span><span class='line'><span class="nx">getSymbolFromCurrency</span><span class="p">(</span><span class="s1">&#39;USD&#39;</span><span class="p">);</span> <span class="c1">//=&gt; &#39;$&#39; </span>
+</span><span class='line'><span class="nx">getSymbolFromCurrency</span><span class="p">(</span><span class="s1">&#39;NOT A VALID CODE&#39;</span><span class="p">);</span> <span class="c1">//=&gt; undefined </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">getCurrencyFromSymbol</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;currency-symbol-map&#39;</span><span class="p">).</span><span class="nx">getCurrencyFromSymbol</span><span class="p">;</span>
+</span><span class='line'><span class="nx">getCurrencyFromSymbol</span><span class="p">(</span><span class="s1">&#39;$&#39;</span><span class="p">);</span> <span class="c1">//=&gt; &#39;USD&#39; </span>
+</span><span class='line'><span class="nx">getCurrencyFromSymbol</span><span class="p">(</span><span class="s1">&#39;NOT A VALID CODE&#39;</span><span class="p">);</span> <span class="c1">//=&gt; undefined </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW:</strong></p>
+
+<p><img src="http://nmotw.in/images/currency-symbol-map/currency-symbol-map.gif" alt="currency-symbol-map" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[reify]]></title>
@@ -1394,144 +1435,6 @@ else installs it using <code>npmi</code> module and starts the <code>REPL</code>
 <p><strong>GIF FTW!</strong></p>
 
 <p><img src="http://nmotw.in/images/phuzzy/phuzzy.gif" alt="phuzzy" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[fixpack]]></title>
-    <link href="http://nmotw.in/fixpack/"/>
-    <updated>2016-03-17T11:08:38+00:00</updated>
-    <id>http://nmotw.in/fixpack</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/fixpack">fixpack</a></h1>
-
-<blockquote><p>A <code>package.json</code> file scrubber for the truly insane.</p></blockquote>
-
-<p><strong>GET IT:</strong> <code>npm install -g fixpack</code></p>
-
-<p>It will re-write your package.json file as follows:</p>
-
-<ul>
-<li>name first</li>
-<li>description second</li>
-<li>version third</li>
-<li>author fourth</li>
-<li>all other keys in alphabetical order</li>
-<li>dependencies and devDependencies sorted alphabetically</li>
-<li>newline at the end of the file</li>
-</ul>
-
-
-<p>It will warn you if any of these are missing:</p>
-
-<ul>
-<li>description</li>
-<li>author</li>
-<li>repository</li>
-<li>keywords</li>
-<li>main</li>
-<li>bugs</li>
-<li>homepage</li>
-<li>license</li>
-</ul>
-
-
-<p>It can also read a config from <code>.fixpackrc</code>:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>{
-</span><span class='line'>    // will put these first in this order if present
-</span><span class='line'>    sortToTop: [
-</span><span class='line'>        'name',
-</span><span class='line'>        'description',
-</span><span class='line'>        'version',
-</span><span class='line'>        'author'
-</span><span class='line'>    ],
-</span><span class='line'>    // will error if these not present
-</span><span class='line'>    required: [
-</span><span class='line'>        'name',
-</span><span class='line'>        'version'
-</span><span class='line'>    ],
-</span><span class='line'>    // will warn if these not present
-</span><span class='line'>    warn: [
-</span><span class='line'>        'description',
-</span><span class='line'>        'author',
-</span><span class='line'>        'repository',
-</span><span class='line'>        'keywords',
-</span><span class='line'>        'main',
-</span><span class='line'>        'bugs',
-</span><span class='line'>        'homepage',
-</span><span class='line'>        'license'
-</span><span class='line'>    ],
-</span><span class='line'>    // if `private: true` in package.json will use the next two lists instead
-</span><span class='line'>    requiredOnPrivate: [],
-</span><span class='line'>    warnOnPrivate: ['name', 'version', 'description', 'main'],
-</span><span class='line'>    // sub items to sort by default
-</span><span class='line'>    sortedSubItems: [
-</span><span class='line'>        'dependencies',
-</span><span class='line'>        'devDependencies',
-</span><span class='line'>        'jshintConfig',
-</span><span class='line'>        'scripts',
-</span><span class='line'>        'keywords'
-</span><span class='line'>    ],
-</span><span class='line'>    // if you set quiet to true it won't do output anything to the console
-</span><span class='line'>    quiet: false,
-</span><span class='line'>    // files to scrub
-</span><span class='line'>    files: ['package.json'],
-</span><span class='line'>    // Will set all deps to '*'
-</span><span class='line'>    // this may be useful because then you can
-</span><span class='line'>    // run npm update --save && npm update --save-dev
-</span><span class='line'>    // to install latest stable releases of everything.
-</span><span class='line'>    wipe: false
-</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/fixpack/fixpack.gif" alt="fixpack" /></p>
 ]]></content>
   </entry>
   
