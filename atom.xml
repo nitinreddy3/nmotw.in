@@ -4,13 +4,115 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2016-08-04T12:10:09+00:00</updated>
+  <updated>2016-08-11T14:16:35+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[next-update]]></title>
+    <link href="http://nmotw.in/next-update/"/>
+    <updated>2016-08-11T13:40:05+00:00</updated>
+    <id>http://nmotw.in/next-update</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/next-update">next-update</a></h1>
+
+<blockquote><p>Can I update the dependencies without breaking the tests?</p></blockquote>
+
+<p>Summarizing <code>next-update</code> from the authors own words:</p>
+
+<ul>
+<li>A good workflow using <em>next-update</em>
+
+<ul>
+<li>see available new versions <code>next-update --available</code></li>
+<li>check latest version of each module using <code>next-update --latest</code></li>
+<li>install new versions of the desired modules using standard <code>npm i dependency@version --save</code></li>
+</ul>
+</li>
+<li>You can use custom test command, for example <code>next-update -t "grunt test"</code>
+
+<ul>
+<li><code>npm test</code> is used by default.</li>
+</ul>
+</li>
+<li>You can keep each working version in package.json by using <code>--keep</code> flag.</li>
+</ul>
+
+
+<p><strong>Get it:</strong></p>
+
+<p><code>npm install -g next-update  // installs module globally</code></p>
+
+<p><code>npm install --save-dev next-update</code></p>
+
+<p>In your <code>package.json</code> :</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="s2">&quot;scripts&quot;</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>        <span class="s2">&quot;next-update&quot;</span><span class="o">:</span> <span class="s2">&quot;next-update -k true --tldr&quot;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>Sample usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">$</span> <span class="nx">next</span><span class="o">-</span><span class="nx">update</span> <span class="o">--</span><span class="nx">help</span> <span class="o">|</span> <span class="nx">pbcopy</span>
+</span><span class='line'><span class="nx">next</span><span class="o">-</span><span class="nx">update</span> <span class="o">-</span> <span class="nx">Tests</span> <span class="k">if</span> <span class="nx">module</span><span class="err">&#39;</span><span class="nx">s</span> <span class="nx">dependencies</span> <span class="nx">can</span> <span class="nx">be</span> <span class="nx">updated</span> <span class="nx">to</span> <span class="nx">the</span> <span class="nx">newer</span> <span class="nx">version</span> <span class="nx">without</span> <span class="nx">breaking</span> <span class="nx">the</span> <span class="nx">tests</span>
+</span><span class='line'>  <span class="nx">version</span><span class="o">:</span> <span class="mf">1.2</span><span class="p">.</span><span class="mi">2</span>
+</span><span class='line'>  <span class="nx">author</span><span class="o">:</span> <span class="p">{</span><span class="s2">&quot;email&quot;</span><span class="o">:</span><span class="s2">&quot;gleb.bahmutov@gmail.com&quot;</span><span class="p">,</span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="s2">&quot;Gleb Bahmutov&quot;</span><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">Options</span><span class="o">:</span>
+</span><span class='line'>  <span class="o">--</span><span class="nx">revert</span>           <span class="nx">install</span> <span class="nx">original</span> <span class="nx">module</span> <span class="nx">versions</span> <span class="nx">listed</span> <span class="k">in</span> <span class="kr">package</span><span class="p">.</span><span class="nx">json</span>   <span class="p">[</span><span class="k">default</span><span class="o">:</span> <span class="kc">false</span><span class="p">]</span>
+</span><span class='line'>  <span class="o">--</span><span class="nx">available</span><span class="p">,</span> <span class="o">-</span><span class="nx">a</span>    <span class="nx">only</span> <span class="nx">query</span> <span class="nx">available</span> <span class="nx">later</span> <span class="nx">versions</span><span class="p">,</span> <span class="k">do</span> <span class="nx">not</span> <span class="nx">test</span> <span class="nx">them</span>     <span class="p">[</span><span class="k">default</span><span class="o">:</span> <span class="kc">false</span><span class="p">]</span>
+</span><span class='line'>  <span class="o">--</span><span class="nx">module</span><span class="p">,</span> <span class="o">-</span><span class="nx">m</span>       <span class="nx">checks</span> <span class="nx">specific</span> <span class="nx">module</span><span class="p">,</span> <span class="nx">can</span> <span class="nx">include</span> <span class="nx">version</span> <span class="nx">name</span><span class="err">@</span><span class="nx">version</span>  <span class="p">[</span><span class="k">default</span><span class="o">:</span> <span class="kc">null</span><span class="p">]</span>
+</span><span class='line'>  <span class="o">--</span><span class="nx">latest</span><span class="p">,</span> <span class="o">-</span><span class="nx">l</span>       <span class="nx">only</span> <span class="nx">check</span> <span class="nx">latest</span> <span class="nx">available</span> <span class="nx">update</span>                        <span class="p">[</span><span class="k">default</span><span class="o">:</span> <span class="kc">true</span><span class="p">]</span>
+</span><span class='line'>  <span class="o">--</span><span class="nx">color</span><span class="p">,</span> <span class="o">-</span><span class="nx">c</span>        <span class="nx">color</span> <span class="nx">terminal</span> <span class="nx">output</span> <span class="p">(</span><span class="k">if</span> <span class="nx">available</span><span class="p">)</span>                      <span class="p">[</span><span class="k">default</span><span class="o">:</span> <span class="kc">true</span><span class="p">]</span>
+</span><span class='line'>  <span class="o">--</span><span class="nx">version</span><span class="p">,</span> <span class="o">-</span><span class="nx">v</span>      <span class="nx">show</span> <span class="nx">version</span> <span class="nx">and</span> <span class="nx">exit</span>                                     <span class="p">[</span><span class="k">default</span><span class="o">:</span> <span class="kc">false</span><span class="p">]</span>
+</span><span class='line'>  <span class="o">--</span><span class="nx">test</span><span class="p">,</span> <span class="o">-</span><span class="nx">t</span>         <span class="nx">custom</span> <span class="nx">test</span> <span class="nx">command</span> <span class="nx">to</span> <span class="nx">run</span> <span class="nx">instead</span> <span class="nx">of</span> <span class="nx">npm</span> <span class="nx">test</span>
+</span><span class='line'>  <span class="o">--</span><span class="nx">skip</span>             <span class="nx">skip</span> <span class="nx">running</span> <span class="nx">tests</span> <span class="nx">first</span>                                  <span class="p">[</span><span class="k">default</span><span class="o">:</span> <span class="kc">false</span><span class="p">]</span>
+</span><span class='line'>  <span class="o">--</span><span class="nx">all</span>              <span class="nx">install</span> <span class="nx">all</span> <span class="nx">modules</span> <span class="nx">at</span> <span class="nx">once</span> <span class="nx">before</span> <span class="nx">testing</span>                <span class="p">[</span><span class="k">default</span><span class="o">:</span> <span class="kc">false</span><span class="p">]</span>
+</span><span class='line'>  <span class="o">--</span><span class="nx">keep</span><span class="p">,</span> <span class="o">-</span><span class="nx">k</span>         <span class="nx">keep</span> <span class="nx">tested</span> <span class="nx">version</span> <span class="k">if</span> <span class="nx">it</span> <span class="nx">is</span> <span class="nx">working</span>                      <span class="p">[</span><span class="k">default</span><span class="o">:</span> <span class="kc">false</span><span class="p">]</span>
+</span><span class='line'>  <span class="o">--</span><span class="nx">allow</span>            <span class="nx">allow</span> <span class="nx">major</span> <span class="o">/</span> <span class="nx">minor</span> <span class="o">/</span> <span class="nx">patch</span> <span class="nx">updates</span>                       <span class="p">[</span><span class="k">default</span><span class="o">:</span> <span class="s2">&quot;major&quot;</span><span class="p">]</span>
+</span><span class='line'>  <span class="o">--</span><span class="nx">type</span>             <span class="nx">check</span> <span class="nx">dependencies</span> <span class="nx">of</span> <span class="nx">type</span> <span class="p">(</span><span class="nx">all</span><span class="p">,</span> <span class="nx">prod</span><span class="p">,</span> <span class="nx">dev</span><span class="p">,</span> <span class="nx">peer</span><span class="p">)</span>         <span class="p">[</span><span class="k">default</span><span class="o">:</span> <span class="s2">&quot;all&quot;</span><span class="p">]</span>
+</span><span class='line'>  <span class="o">--</span><span class="nx">tldr</span>             <span class="nx">only</span> <span class="nx">print</span> <span class="nx">VERY</span> <span class="nx">important</span> <span class="nx">log</span> <span class="nx">messages</span>                    <span class="p">[</span><span class="k">default</span><span class="o">:</span> <span class="kc">false</span><span class="p">]</span>
+</span><span class='line'>  <span class="o">--</span><span class="nx">changed</span><span class="o">-</span><span class="nx">log</span><span class="p">,</span> <span class="o">-</span><span class="nx">L</span>  <span class="nx">print</span> <span class="nx">commit</span> <span class="nx">changes</span> <span class="nx">between</span> <span class="nx">working</span> <span class="nx">versions</span>             <span class="p">[</span><span class="k">default</span><span class="o">:</span> <span class="kc">true</span><span class="p">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW:</strong></p>
+
+<p><img src="http://nmotw.in/images/next-update/next-update.gif" alt="" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[currency-symbol-map]]></title>
@@ -1383,58 +1485,6 @@ else installs it using <code>npmi</code> module and starts the <code>REPL</code>
 <p><strong>GIF FTW!</strong></p>
 
 <p><img src="http://nmotw.in/images/trymodule/trymodule.gif" alt="trymodule" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[phuzzy]]></title>
-    <link href="http://nmotw.in/phuzzy/"/>
-    <updated>2016-03-24T15:56:50+00:00</updated>
-    <id>http://nmotw.in/phuzzy</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/phuzzy">phuzzy</a></h1>
-
-<blockquote><p>Perform a fuzzy filter on a collection of items.</p></blockquote>
-
-<p>8 lines of code with some help from <code>lodash.escaperegexp</code> this is a cheeky module that helps you with your fuzzy filtering!</p>
-
-<p><strong>Get it:</strong> <code>npm install --save phuzzy</code></p>
-
-<p><strong>Function Signature:</strong> <code>phuzzy(collection, search[, pick])</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">phuzzy</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;phuzzy&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">phuzzy</span><span class="p">([</span><span class="s1">&#39;addy&#39;</span><span class="p">,</span><span class="s1">&#39;passy&#39;</span><span class="p">,</span> <span class="s1">&#39;hemanth&#39;</span><span class="p">],</span> <span class="s1">&#39;y&#39;</span><span class="p">);</span> <span class="c1">// [&#39;addy&#39;, &#39;passy&#39;];</span>
-</span><span class='line'>
-</span><span class='line'><span class="kd">var</span> <span class="nx">documents</span> <span class="o">=</span> <span class="p">[</span>
-</span><span class='line'>    <span class="p">{</span> <span class="nx">text</span><span class="o">:</span> <span class="s1">&#39;Hello World&#39;</span> <span class="p">},</span>
-</span><span class='line'>    <span class="p">{</span> <span class="nx">text</span><span class="o">:</span> <span class="s1">&#39;Hello Lucy&#39;</span> <span class="p">},</span>
-</span><span class='line'>    <span class="p">{</span> <span class="nx">text</span><span class="o">:</span> <span class="s1">&#39;Hello Maria&#39;</span> <span class="p">}</span>
-</span><span class='line'><span class="p">];</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">phuzzy</span><span class="p">(</span><span class="nx">documents</span><span class="p">,</span> <span class="s1">&#39;Lu&#39;</span><span class="p">,</span> <span class="s1">&#39;text&#39;</span><span class="p">);</span> <span class="p">[</span> <span class="p">{</span> <span class="nx">text</span><span class="o">:</span> <span class="s1">&#39;Hello Lucy&#39;</span> <span class="p">}</span> <span class="p">]</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">phuzzy</span><span class="p">(</span><span class="nx">documents</span><span class="p">,</span> <span class="s1">&#39;maria&#39;</span><span class="p">,</span> <span class="nx">item</span> <span class="o">=&gt;</span> <span class="nx">item</span><span class="p">.</span><span class="nx">text</span><span class="p">)</span> <span class="c1">// [ { text: &#39;Hello Maria&#39; } ]</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/phuzzy/phuzzy.gif" alt="phuzzy" /></p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: npm | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/npm/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-08-04T12:10:09+00:00</updated>
+  <updated>2016-08-11T14:16:35+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,86 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[next-update]]></title>
+    <link href="http://nmotw.in/github/next-update/"/>
+    <updated>2016-08-11T13:40:05+00:00</updated>
+    <id>http://nmotw.in/github/next-update</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/next-update">next-update</a></h1>
+
+<blockquote><p>Can I update the dependencies without breaking the tests?</p></blockquote>
+
+<p>Summarizing <code>next-update</code> from the authors own words:</p>
+
+<ul>
+<li>A good workflow using <em>next-update</em>
+
+<ul>
+<li>see available new versions <code>next-update --available</code></li>
+<li>check latest version of each module using <code>next-update --latest</code></li>
+<li>install new versions of the desired modules using standard <code>npm i dependency@version --save</code></li>
+</ul>
+</li>
+<li>You can use custom test command, for example <code>next-update -t "grunt test"</code>
+
+<ul>
+<li><code>npm test</code> is used by default.</li>
+</ul>
+</li>
+<li>You can keep each working version in package.json by using <code>--keep</code> flag.</li>
+</ul>
+
+
+<p><strong>Get it:</strong></p>
+
+<p><code>npm install -g next-update  // installs module globally</code></p>
+
+<p><code>npm install --save-dev next-update</code></p>
+
+<p>In your <code>package.json</code> :</p>
+
+<p>```js
+{</p>
+
+<pre><code>"scripts": {
+    "next-update": "next-update -k true --tldr"
+}
+</code></pre>
+
+<p>}
+```</p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```js
+$ next-update --help | pbcopy
+next-update - Tests if module's dependencies can be updated to the newer version without breaking the tests
+  version: 1.2.2
+  author: {"email":"gleb.bahmutov@gmail.com","name":"Gleb Bahmutov"}</p>
+
+<p>Options:
+  --revert           install original module versions listed in package.json   [default: false]
+  --available, -a    only query available later versions, do not test them     [default: false]
+  --module, -m       checks specific module, can include version name@version  [default: null]
+  --latest, -l       only check latest available update                        [default: true]
+  --color, -c        color terminal output (if available)                      [default: true]
+  --version, -v      show version and exit                                     [default: false]
+  --test, -t         custom test command to run instead of npm test        <br/>
+  --skip             skip running tests first                                  [default: false]
+  --all              install all modules at once before testing                [default: false]
+  --keep, -k         keep tested version if it is working                      [default: false]
+  --allow            allow major / minor / patch updates                       [default: "major"]
+  --type             check dependencies of type (all, prod, dev, peer)         [default: "all"]
+  --tldr             only print VERY important log messages                    [default: false]
+  --changed-log, -L  print commit changes between working versions             [default: true]
+```</p>
+
+<p><strong>GIF FTW:</strong></p>
+
+<p><img src="/images/next-update/next-update.gif" alt="" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[trymodule]]></title>
@@ -272,53 +352,6 @@ qs      0.5.6     >= 1.x  test@0.0.1 > qs@0.5.6
 <p><img src="/images/nsp/nsp.gif" alt="nsp" /></p>
 
 <p>Thanks to the <a href="https://twitter.com/nodesecurity">nodesecurity</a> for making security easy!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[npm-check-updates]]></title>
-    <link href="http://nmotw.in/github/npm-check-updates/"/>
-    <updated>2014-11-20T14:52:16+00:00</updated>
-    <id>http://nmotw.in/github/npm-check-updates</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.org/package/npm-check-updates">npm-check-updates</a></h1>
-
-<p>Finding all updates to dependencies and updating them is very easy with <code>npm-check-updates</code>.</p>
-
-<p><strong>Install it globally:</strong> <code>npm install -g npm-check-updates</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<p>```sh
-$ npm-check-updates
-npm http GET http://registry.npmjs.org/read-chunk
-npm http GET http://registry.npmjs.org/mocha
-npm http GET http://registry.npmjs.org/browserify
-npm http 304 http://registry.npmjs.org/browserify
-npm http 304 http://registry.npmjs.org/read-chunk
-npm http 304 http://registry.npmjs.org/mocha</p>
-
-<p>"browserify" can be updated from ^3.0.0 to ^6.3.2 (Installed: 3.44.2, Latest: 6.3.2)
-"read-chunk" can be updated from ^0.1.0 to ^1.0.0 (Installed: 0.1.0, Latest: 1.0.0)
-<code>
-</code>sh
-$ npm-check-updates -u</p>
-
-<p>"browserify" can be updated from ^3.0.0 to ^6.3.2 (Installed: 3.44.2, Latest: 6.3.2)
-"read-chunk" can be updated from ^0.1.0 to ^1.0.0 (Installed: 0.1.0, Latest: 1.0.0)</p>
-
-<p>package.json upgraded</p>
-
-<p>$ npm-check-updates</p>
-
-<p>All dependencies match the latest package versions :)</p>
-
-<p>```</p>
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="/images/npm-check-updates/npm-check-updates.gif" alt="" /></p>
-
-<p>Thanks to Tomas Junnonen for this cute little util.</p>
 ]]></content>
   </entry>
   

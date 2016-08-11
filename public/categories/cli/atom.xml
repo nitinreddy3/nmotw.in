@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cli | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/cli/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-08-04T12:10:09+00:00</updated>
+  <updated>2016-08-11T14:16:35+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,86 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[next-update]]></title>
+    <link href="http://nmotw.in/github/next-update/"/>
+    <updated>2016-08-11T13:40:05+00:00</updated>
+    <id>http://nmotw.in/github/next-update</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/next-update">next-update</a></h1>
+
+<blockquote><p>Can I update the dependencies without breaking the tests?</p></blockquote>
+
+<p>Summarizing <code>next-update</code> from the authors own words:</p>
+
+<ul>
+<li>A good workflow using <em>next-update</em>
+
+<ul>
+<li>see available new versions <code>next-update --available</code></li>
+<li>check latest version of each module using <code>next-update --latest</code></li>
+<li>install new versions of the desired modules using standard <code>npm i dependency@version --save</code></li>
+</ul>
+</li>
+<li>You can use custom test command, for example <code>next-update -t "grunt test"</code>
+
+<ul>
+<li><code>npm test</code> is used by default.</li>
+</ul>
+</li>
+<li>You can keep each working version in package.json by using <code>--keep</code> flag.</li>
+</ul>
+
+
+<p><strong>Get it:</strong></p>
+
+<p><code>npm install -g next-update  // installs module globally</code></p>
+
+<p><code>npm install --save-dev next-update</code></p>
+
+<p>In your <code>package.json</code> :</p>
+
+<p>```js
+{</p>
+
+<pre><code>"scripts": {
+    "next-update": "next-update -k true --tldr"
+}
+</code></pre>
+
+<p>}
+```</p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```js
+$ next-update --help | pbcopy
+next-update - Tests if module's dependencies can be updated to the newer version without breaking the tests
+  version: 1.2.2
+  author: {"email":"gleb.bahmutov@gmail.com","name":"Gleb Bahmutov"}</p>
+
+<p>Options:
+  --revert           install original module versions listed in package.json   [default: false]
+  --available, -a    only query available later versions, do not test them     [default: false]
+  --module, -m       checks specific module, can include version name@version  [default: null]
+  --latest, -l       only check latest available update                        [default: true]
+  --color, -c        color terminal output (if available)                      [default: true]
+  --version, -v      show version and exit                                     [default: false]
+  --test, -t         custom test command to run instead of npm test        <br/>
+  --skip             skip running tests first                                  [default: false]
+  --all              install all modules at once before testing                [default: false]
+  --keep, -k         keep tested version if it is working                      [default: false]
+  --allow            allow major / minor / patch updates                       [default: "major"]
+  --type             check dependencies of type (all, prod, dev, peer)         [default: "all"]
+  --tldr             only print VERY important log messages                    [default: false]
+  --changed-log, -L  print commit changes between working versions             [default: true]
+```</p>
+
+<p><strong>GIF FTW:</strong></p>
+
+<p><img src="/images/next-update/next-update.gif" alt="" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[listr]]></title>
@@ -182,47 +262,6 @@ nmotw.in> pwaify --help</p>
 <p><strong>GIF FTW:</strong></p>
 
 <p><img src="/images/pwaify/PWAify.gif" alt="PWAify" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[mediumcli]]></title>
-    <link href="http://nmotw.in/github/mediumcli/"/>
-    <updated>2016-05-26T14:13:06+00:00</updated>
-    <id>http://nmotw.in/github/mediumcli</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/mediumcli">mediumcli</a></h1>
-
-<blockquote><p>A CLI to Medium Stories.</p></blockquote>
-
-<p>A simple tool that helps you to read medium posts on your CLI.</p>
-
-<p><strong>Get it:</strong> <code>npm install -g mediumcli</code></p>
-
-<p><strong>Sample usage:</strong> <code>medium [options] [command]</code></p>
-
-<p>```sh
-Commands:</p>
-
-<p>top [options]         List Medium Top Stories
-read <url>            Read the story right in your terminal
-open [options] <url>  Opens it in your browser</p>
-
-<p>Options:</p>
-
-<p>-h, --help     output usage information
--V, --version  output the version number</p>
-
-<p>top [options]
-n, --number <int>", "specify number of stories</p>
-
-<p>open [options] <url>
--a, --app <application>  specify app to open the url. Eg: firefox</p>
-
-<p>```</p>
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="/images/mediumcli/mediumcli.gif" alt="mediumcli" /></p>
 ]]></content>
   </entry>
   
