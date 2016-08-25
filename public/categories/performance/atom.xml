@@ -4,7 +4,7 @@
   <title><![CDATA[Category: performance | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/performance/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-08-25T13:54:03+00:00</updated>
+  <updated>2016-08-25T13:55:46+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -18,7 +18,7 @@
     <link href="http://nmotw.in/github/pwmetrics/"/>
     <updated>2016-08-25T13:33:31+00:00</updated>
     <id>http://nmotw.in/github/pwmetrics</id>
-    <content type="html"><![CDATA[<h1>pwmetrics</h1>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/pwmetrics">pwmetrics</a></h1>
 
 <blockquote><p>Progressive web metrics at your fingertipz. 💅</p></blockquote>
 
