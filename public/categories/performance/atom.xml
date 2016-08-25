@@ -4,7 +4,7 @@
   <title><![CDATA[Category: performance | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/performance/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-08-25T13:51:21+00:00</updated>
+  <updated>2016-08-25T13:54:03+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,99 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[pwmetrics]]></title>
+    <link href="http://nmotw.in/github/pwmetrics/"/>
+    <updated>2016-08-25T13:33:31+00:00</updated>
+    <id>http://nmotw.in/github/pwmetrics</id>
+    <content type="html"><![CDATA[<h1>pwmetrics</h1>
+
+<blockquote><p>Progressive web metrics at your fingertipz. 💅</p></blockquote>
+
+<p><code>pwmetrics</code> CLI tool and lib to gather performance metrics via <a href="https://github.com/GoogleChrome/lighthouse/">Lighthouse</a>.</p>
+
+<p>P.S: This module is <em>IN BETA</em>, so you must be ready for anything 😉</p>
+
+<p><strong>GET IT:</strong> <code>npm install --global pwmetrics</code> or <code>npm install --save pwmetrics</code></p>
+
+<p><strong>Sample CLI usage:</strong></p>
+
+<p>```sh</p>
+
+<h1>run Chrome with port 9222 open</h1>
+
+<p>chrome  --remote-debugging-port=9222 --no-first-run --user-data-dir=$(mktemp -d -t pwm.XXXXX)
+```</p>
+
+<p>```sh</p>
+
+<h1>run pwmetrics with your url</h1>
+
+<p>pwmetrics https://jsfeatures.in
+```</p>
+
+<p>```sh
+$ pwmetrics --json https://jsfeatures.in
+{
+  "timings": [</p>
+
+<pre><code>{
+  "name": "First Contentful Paint",
+  "value": 1875.337
+},
+{
+  "name": "First Meaningful Paint",
+  "value": 1970.7
+},
+{
+  "name": "Median Visual Completion",
+  "value": 1997
+},
+{
+  "name": "First Visual Change",
+  "value": 1917
+},
+{
+  "name": "Visually Complete 100%",
+  "value": 2004
+},
+{
+  "name": "Time to Interactive",
+  "value": -1
+},
+{
+  "name": "Visually Complete 85%"
+},
+{
+  "name": "Navigation Start",
+  "value": 0
+}
+</code></pre>
+
+<p>  ],
+  "timestamps": [</p>
+
+<pre><code>303915241.28
+</code></pre>
+
+<p>  ]
+}
+```</p>
+
+<p><strong>API:</strong></p>
+
+<p>```js
+const PWMetrics = require('pwmetrics');</p>
+
+<p>new PWMetrics('https://jsfeatures.in', opts); // opts => {data:fileName} for now.
+```</p>
+
+<p><strong>GIF FTW!:</strong></p>
+
+<p><img src="/images/pwmetrics/pwmetrics.gif" alt="pwmetrics" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[speedline]]></title>
