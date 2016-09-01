@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cli | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/cli/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-08-25T13:55:46+00:00</updated>
+  <updated>2016-09-01T14:21:25+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,54 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[auto-install]]></title>
+    <link href="http://nmotw.in/github/auto-install/"/>
+    <updated>2016-09-01T14:05:36+00:00</updated>
+    <id>http://nmotw.in/github/auto-install</id>
+    <content type="html"><![CDATA[<h1><a href="https://nmp.im/auto-install">auto-install</a></h1>
+
+<blockquote><p>Auto installs dependencies as you code on save.</p></blockquote>
+
+<p>Have you ever wished that need to having a tool that would just do an <code>npm install</code> of modules that you <code>import</code>?</p>
+
+<p>Well, here is <code>auto-install</code> that does exactly what you wished for!</p>
+
+<p><strong>Get it:</strong> <code>npm install -g auto-install</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```sh</p>
+
+<h1>In case you run it in a folder that doesn't have a <code>package.json</code></h1>
+
+<p>$ auto-install --help
+package.json does not exist
+You can create one by using <code>npm init</code></p>
+
+<h1>With a package.json</h1>
+
+<p>$ auto-install
+Watchers initialized</p>
+
+<p>```</p>
+
+<p><strong>CLI Flags:</strong></p>
+
+<p><code>--secure</code>  Install popular modules only (> 10k downloads in the last month)</p>
+
+<p><code>--exact</code>   Install exact version similar to <code>npm install express --save-exact</code></p>
+
+<p><code>--dont-uninstall</code>   Do not uninstall unused modules</p>
+
+<p>P.S: <a href="https://github.com/siddharthkp/auto-install/issues/6">Does it protect against typosquatting?</a></p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/auto-install/auto-install.gif" alt="auto-install" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[next-update]]></title>
@@ -216,52 +264,6 @@ $ echo &lt;some_text&gt; | rainbowify
 <p><strong>GIF FTW!</strong></p>
 
 <p><img src="/images/rainbowify/rainbowify.gif" alt="rainbowify" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[pwaify]]></title>
-    <link href="http://nmotw.in/github/pwaify/"/>
-    <updated>2016-06-09T12:33:41+00:00</updated>
-    <id>http://nmotw.in/github/pwaify</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/pwaify">pwaify</a></h1>
-
-<blockquote><p>PWA to desktop app!</p></blockquote>
-
-<p><code>pwaify</code> bring <a href="https://developers.google.com/web/progressive-web-apps/">progressive</a> <a href="https://github.com/hemanth/generator-pwa">Webapp</a> to your desktops across platforms!</p>
-
-<p>Makes use of <a href="http://electron.atom.io/">Electron</a> extracts the <code>manifest-json</code> from the given URL and smartly creates an electron window and loads the required.</p>
-
-<p><strong>Get it:</strong> <code>npm install --global pwaify</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<p>```sh
-nmotw.in> pwaify --help</p>
-
-<p>  Electron PWA (Progressive Web App) Generator</p>
-
-<p>  Usage</p>
-
-<pre><code>$ pwaify &lt;input&gt;
-</code></pre>
-
-<p>  Options</p>
-
-<pre><code>--platforms Platforms to build the app.
---icon App Icon.
-</code></pre>
-
-<p>  Examples</p>
-
-<pre><code>$ pwaify https://jsfeatures.in --platforms=darwin
-</code></pre>
-
-<p>```</p>
-
-<p><strong>GIF FTW:</strong></p>
-
-<p><img src="/images/pwaify/PWAify.gif" alt="PWAify" /></p>
 ]]></content>
   </entry>
   

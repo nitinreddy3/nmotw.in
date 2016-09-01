@@ -4,7 +4,7 @@
   <title><![CDATA[Category: mad | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/mad/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-08-25T13:55:46+00:00</updated>
+  <updated>2016-09-01T14:21:25+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,54 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[auto-install]]></title>
+    <link href="http://nmotw.in/github/auto-install/"/>
+    <updated>2016-09-01T14:05:36+00:00</updated>
+    <id>http://nmotw.in/github/auto-install</id>
+    <content type="html"><![CDATA[<h1><a href="https://nmp.im/auto-install">auto-install</a></h1>
+
+<blockquote><p>Auto installs dependencies as you code on save.</p></blockquote>
+
+<p>Have you ever wished that need to having a tool that would just do an <code>npm install</code> of modules that you <code>import</code>?</p>
+
+<p>Well, here is <code>auto-install</code> that does exactly what you wished for!</p>
+
+<p><strong>Get it:</strong> <code>npm install -g auto-install</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```sh</p>
+
+<h1>In case you run it in a folder that doesn't have a <code>package.json</code></h1>
+
+<p>$ auto-install --help
+package.json does not exist
+You can create one by using <code>npm init</code></p>
+
+<h1>With a package.json</h1>
+
+<p>$ auto-install
+Watchers initialized</p>
+
+<p>```</p>
+
+<p><strong>CLI Flags:</strong></p>
+
+<p><code>--secure</code>  Install popular modules only (> 10k downloads in the last month)</p>
+
+<p><code>--exact</code>   Install exact version similar to <code>npm install express --save-exact</code></p>
+
+<p><code>--dont-uninstall</code>   Do not uninstall unused modules</p>
+
+<p>P.S: <a href="https://github.com/siddharthkp/auto-install/issues/6">Does it protect against typosquatting?</a></p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/auto-install/auto-install.gif" alt="auto-install" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[wifi-triangulate]]></title>
