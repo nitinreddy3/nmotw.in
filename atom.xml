@@ -4,13 +4,94 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2016-09-01T14:31:17+00:00</updated>
+  <updated>2016-09-08T13:21:42+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[quill]]></title>
+    <link href="http://nmotw.in/quill/"/>
+    <updated>2016-09-08T13:08:58+00:00</updated>
+    <id>http://nmotw.in/quill</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/quill">quill</a></h1>
+
+<blockquote><p>An API Driven Rich Text Editor.</p></blockquote>
+
+<p>For the initial commit looks like <code>quill</code> has taken two long years to reach <code>v1.x</code> and indeed it's proven itself to be a very tidy API driven rich text editor.</p>
+
+<p><strong>quill has <a href="http://quilljs.com/docs/api/">APIs</a> for:</strong></p>
+
+<ul>
+<li><p>Content handling.</p></li>
+<li><p>Formatting.</p></li>
+<li><p>Selection.</p></li>
+<li><p>Events</p></li>
+<li><p>Extensions.</p></li>
+</ul>
+
+
+<p><strong>quill also <a href="http://quilljs.com/docs/modules/">modules</a> for:</strong></p>
+
+<ul>
+<li><p>TOOLBAR</p></li>
+<li><p>KEYBOARD</p></li>
+<li><p>HISTORY</p></li>
+<li><p>CLIPBOARD</p></li>
+<li><p>FORMULA</p></li>
+<li><p>SYNTAX</p></li>
+</ul>
+
+
+<p><strong>Finally, it has theme(s)!:</strong></p>
+
+<ul>
+<li><p>Bubble</p></li>
+<li><p>Snow</p></li>
+</ul>
+
+
+<p><strong>Get it:</strong> <code>npm install --save quill</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kr">const</span> <span class="nx">Quill</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;quill&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">var</span> <span class="nx">quill</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Quill</span><span class="p">(</span><span class="s1">&#39;#editor-container&#39;</span><span class="p">,</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">modules</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">toolbar</span><span class="o">:</span> <span class="p">[</span>
+</span><span class='line'>      <span class="p">[{</span> <span class="nx">header</span><span class="o">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="kc">false</span><span class="p">]</span> <span class="p">}],</span>
+</span><span class='line'>      <span class="p">[</span><span class="s1">&#39;bold&#39;</span><span class="p">,</span> <span class="s1">&#39;italic&#39;</span><span class="p">,</span> <span class="s1">&#39;underline&#39;</span><span class="p">],</span>
+</span><span class='line'>      <span class="p">[</span><span class="s1">&#39;image&#39;</span><span class="p">,</span> <span class="s1">&#39;code-block&#39;</span><span class="p">]</span>
+</span><span class='line'>    <span class="p">]</span>
+</span><span class='line'>  <span class="p">},</span>
+</span><span class='line'>  <span class="nx">placeholder</span><span class="o">:</span> <span class="s1">&#39;Compose an epic...&#39;</span><span class="p">,</span>
+</span><span class='line'>  <span class="nx">theme</span><span class="o">:</span> <span class="s1">&#39;snow&#39;</span> <span class="c1">// or &#39;bubble&#39;</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/images/quill/quill.gif" alt="quill" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[auto-install]]></title>
@@ -1421,146 +1502,6 @@ that helps to print rainbow text on the terminal.</p>
 <p><strong>GIF FTW!</strong></p>
 
 <p><img src="http://nmotw.in/images/trevor/trevor.gif" alt="" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[cowsay]]></title>
-    <link href="http://nmotw.in/cowsay/"/>
-    <updated>2016-04-21T15:10:16+00:00</updated>
-    <id>http://nmotw.in/cowsay</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/cowsay">cowsay</a></h1>
-
-<blockquote><p>A configurable talking cow!</p></blockquote>
-
-<p>This is a port of  Tony Monroe's <code>cowsay</code> Perl module.</p>
-
-<p><strong>GET IT:</strong> <code>npm install --global cowsay</code></p>
-
-<p><strong>CLI:</strong></p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>cowsay 
-</span><span class='line'>Usage: cowsay [-e eye_string] [-f cowfile] [-h] [-l] [-n] [-T tongue_string] [-W column] [-bdgpstwy] text
-</span><span class='line'>
-</span><span class='line'>If any command-line arguments are left over after all switches have been processed, they become the cow's message.
-</span><span class='line'>
-</span><span class='line'>If the program is invoked as cowthink then the cow will think its message instead of saying it.
-</span><span class='line'>
-</span><span class='line'>Options:
-</span><span class='line'>  -b  Mode: Borg                                                                                                                                  
-</span><span class='line'>  -d  Mode: Dead                                                                                                                                  
-</span><span class='line'>  -g  Mode: Greedy                                                                                                                                
-</span><span class='line'>  -p  Mode: Paranoia                                                                                                                              
-</span><span class='line'>  -s  Mode: Stoned                                                                                                                                
-</span><span class='line'>  -t  Mode: Tired                                                                                                                                 
-</span><span class='line'>  -w  Mode: Wired                                                                                                                                 
-</span><span class='line'>  -y  Mode: Youthful                                                                                                                              
-</span><span class='line'>  -e  Select the appearance of the cow's eyes.                                                                                                      [default: "oo"]
-</span><span class='line'>  -T  The tongue is configurable similarly to the eyes through -T and tongue_string.                                                                [default: "  "]
-</span><span class='line'>  -h  Display this help message                                                                                                                   
-</span><span class='line'>  -n  If it is specified, the given message will not be word-wrapped.                                                                             
-</span><span class='line'>  -W  Specifies roughly where the message should be wrapped. The default is equivalent to -W 40 i.e. wrap words at or before the 40th column.       [default: 40]
-</span><span class='line'>  -f  Specifies a cow picture file (''cowfile'') to use. It can be either a path to a cow file or the name of one of cows included in the package.  [default: "default"]
-</span><span class='line'>  -l  List all cowfiles included in this package.                 </span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>
-</span><span class='line'> nmotw.in&gt; cowsay JavaScript FTW!
-</span><span class='line'> _________________
-</span><span class='line'>&lt; JavaScript FTW! &gt;
-</span><span class='line'> -----------------
-</span><span class='line'>        <span class="se">\ </span>  ^__^
-</span><span class='line'>         <span class="se">\ </span> <span class="o">(</span>oo<span class="o">)</span><span class="se">\_</span>______
-</span><span class='line'>            <span class="o">(</span>__<span class="o">)</span><span class="se">\ </span>      <span class="o">)</span><span class="se">\/\</span>
-</span><span class='line'>                <span class="o">||</span>----w |
-</span><span class='line'>                <span class="o">||</span>     <span class="o">||</span>
-</span><span class='line'>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>API:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">cowsay</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;cowsay&quot;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">cowsay</span><span class="p">.</span><span class="nx">say</span><span class="p">({</span>
-</span><span class='line'>    <span class="nx">text</span> <span class="o">:</span> <span class="s2">&quot;I&#39;m a moooodule&quot;</span><span class="p">,</span>
-</span><span class='line'>    <span class="nx">e</span> <span class="o">:</span> <span class="s2">&quot;oO&quot;</span><span class="p">,</span>
-</span><span class='line'>    <span class="nx">T</span> <span class="o">:</span> <span class="s2">&quot;U &quot;</span>
-</span><span class='line'><span class="p">}));</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">// or cowsay.think()</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'> _________________
-</span><span class='line'><span class="o">(</span> I<span class="err">&#39;</span>m a moooodule <span class="o">)</span>
-</span><span class='line'> -----------------
-</span><span class='line'>        o   ^__^
-</span><span class='line'>         o  <span class="o">(</span>oO<span class="o">)</span><span class="se">\_</span>______
-</span><span class='line'>            <span class="o">(</span>__<span class="o">)</span><span class="se">\ </span>      <span class="o">)</span><span class="se">\/\</span>
-</span><span class='line'>             U  <span class="o">||</span>----w |
-</span><span class='line'>                <span class="o">||</span>     <span class="o">||</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/cowsay/cowsay.gif" alt="cowsay.gif" /></p>
 ]]></content>
   </entry>
   
