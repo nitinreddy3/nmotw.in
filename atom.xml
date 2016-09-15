@@ -4,13 +4,76 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2016-09-13T09:07:31+00:00</updated>
+  <updated>2016-09-15T17:44:30+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[granim]]></title>
+    <link href="http://nmotw.in/granim/"/>
+    <updated>2016-09-14T23:55:40+00:00</updated>
+    <id>http://nmotw.in/granim</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/granim">granim</a></h1>
+
+<blockquote><p>Create fluid and interactive gradients animations.</p></blockquote>
+
+<p>Zero dependencies,<code>&lt; 10 kB</code> fun module that helps us to do some cool gradient animations!</p>
+
+<p><strong>Get it:</strong> <code>npm install granim --save</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="c">&lt;!-- Create a &lt;canvas&gt; element --&gt;</span>
+</span><span class='line'><span class="nt">&lt;canvas</span> <span class="na">id=</span><span class="s">&quot;granim-canvas&quot;</span><span class="nt">&gt;&lt;/canvas&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">granimInstance</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Granim</span><span class="p">({</span>
+</span><span class='line'>   <span class="nx">element</span><span class="o">:</span> <span class="s1">&#39;#granim-canvas&#39;</span><span class="p">,</span>
+</span><span class='line'>   <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;granim&#39;</span><span class="p">,</span>
+</span><span class='line'>   <span class="nx">opacity</span><span class="o">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+</span><span class='line'>   <span class="nx">states</span> <span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>       <span class="s2">&quot;default-state&quot;</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>           <span class="nx">gradients</span><span class="o">:</span> <span class="p">[</span>
+</span><span class='line'>               <span class="p">[</span><span class="s1">&#39;#834D9B&#39;</span><span class="p">,</span> <span class="s1">&#39;#D04ED6&#39;</span><span class="p">],</span>
+</span><span class='line'>               <span class="p">[</span><span class="s1">&#39;#1CD8D2&#39;</span><span class="p">,</span> <span class="s1">&#39;#93EDC7&#39;</span><span class="p">]</span>
+</span><span class='line'>           <span class="p">]</span>
+</span><span class='line'>       <span class="p">}</span>
+</span><span class='line'>   <span class="p">}</span>
+</span><span class='line'><span class="p">});</span>
+</span><span class='line'><span class="o">&lt;</span><span class="err">/script&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>P.S: Don't miss to read their extensive <a href="https://sarcadass.github.io/granim.js/api.html">API</a></p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/images/granim/granim.gif" alt="granim" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[quill]]></title>
@@ -1434,74 +1497,6 @@ that helps to print rainbow text on the terminal.</p>
 <p><strong>GIF FTW!</strong></p>
 
 <p><img src="http://nmotw.in/images/captionbot/captionbot.gif" alt="" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[trevor]]></title>
-    <link href="http://nmotw.in/trevor/"/>
-    <updated>2016-04-28T10:26:32+00:00</updated>
-    <id>http://nmotw.in/trevor</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/trevor">trevor</a></h1>
-
-<blockquote><p>Your own Travis CI to run tests locally.</p></blockquote>
-
-<p><img src="http://nmotw.in/images/trevor/logo.png" alt="" /></p>
-
-<p><strong>From the author:</strong></p>
-
-<p>I often need to run tests for multiple versions of Node.js.</p>
-
-<p>But I don't want to switch versions manually using n/nvm or push the code to Travis CI just to run the tests.</p>
-
-<p>That's why I created Trevor.</p>
-
-<p>It reads <code>.travis.yml</code> and runs tests in all versions you requested, just like Travis CI.</p>
-
-<p>Now, you can test before push and keep your git history clean.</p>
-
-<p><strong>Get it:</strong> <code>npm install --save trevor</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>trevor --help
-</span><span class='line'>
-</span><span class='line'>  Your own Travis CI to run tests locally
-</span><span class='line'>
-</span><span class='line'>  Usage: trevor <span class="o">[</span>options<span class="o">]</span>
-</span><span class='line'>
-</span><span class='line'>  Options:
-</span><span class='line'>
-</span><span class='line'>    -h, --help    Show this <span class="nb">help</span>
-</span><span class='line'>    --no-clean    Don<span class="err">&#39;</span> remove the Docker image after tests
-</span><span class='line'>
-</span><span class='line'>  Required files <span class="o">(</span>in the current directory<span class="o">)</span>:
-</span><span class='line'>
-</span><span class='line'>    - package.json
-</span><span class='line'>    - .travis.yml
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>P.S: <code>trevor</code> has a dependency on <a href="https://www.docker.com/">docker</a> and if <code>--no-clean</code> is not used it will remove all the docker images after the test runs.</p>
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/trevor/trevor.gif" alt="" /></p>
 ]]></content>
   </entry>
   

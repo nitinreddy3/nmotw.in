@@ -4,7 +4,7 @@
   <title><![CDATA[Category: animation | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/animation/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-09-13T09:07:31+00:00</updated>
+  <updated>2016-09-15T17:44:30+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,57 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[granim]]></title>
+    <link href="http://nmotw.in/github/granim/"/>
+    <updated>2016-09-14T23:55:40+00:00</updated>
+    <id>http://nmotw.in/github/granim</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/granim">granim</a></h1>
+
+<blockquote><p>Create fluid and interactive gradients animations.</p></blockquote>
+
+<p>Zero dependencies,<code>&lt; 10 kB</code> fun module that helps us to do some cool gradient animations!</p>
+
+<p><strong>Get it:</strong> <code>npm install granim --save</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```html</p>
+
+<!-- Create a <canvas> element -->
+
+
+<p><canvas id="granim-canvas"></canvas>
+```</p>
+
+<p>```js
+var granimInstance = new Granim({
+   element: '#granim-canvas',
+   name: 'granim',
+   opacity: [1, 1],
+   states : {</p>
+
+<pre><code>   "default-state": {
+       gradients: [
+           ['#834D9B', '#D04ED6'],
+           ['#1CD8D2', '#93EDC7']
+       ]
+   }
+</code></pre>
+
+<p>   }
+});
+</script>
+```</p>
+
+<p>P.S: Don't miss to read their extensive <a href="https://sarcadass.github.io/granim.js/api.html">API</a></p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/granim/granim.gif" alt="granim" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[ramjet]]></title>
