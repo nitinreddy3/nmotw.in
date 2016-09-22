@@ -4,13 +4,69 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2016-09-15T17:44:30+00:00</updated>
+  <updated>2016-09-22T17:26:49+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[asyncbox]]></title>
+    <link href="http://nmotw.in/asyncbox/"/>
+    <updated>2016-09-22T17:07:26+00:00</updated>
+    <id>http://nmotw.in/asyncbox</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/asyncbox">asyncbox</a></h1>
+
+<blockquote><p>A collection of small <code>async/await</code> utilities.</p></blockquote>
+
+<p>A simple collection of tiny useful <code>async/await</code> utilities, the below are the list of function that <code>asyncbox</code> gives:</p>
+
+<ul>
+<li>sleep</li>
+<li>retry</li>
+<li>nodeify</li>
+<li>nodeifyAll</li>
+<li>retryInterval</li>
+<li>asyncify</li>
+<li>parallel</li>
+<li>asyncmap</li>
+<li>asyncfilter</li>
+<li>waitForCondition</li>
+</ul>
+
+
+<p><strong>Get it:</strong> <code>npm install --save asyncbox</code></p>
+
+<p><strong>Usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kr">import</span> <span class="p">{</span> <span class="nx">sleep</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;asyncbox&#39;</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">async</span> <span class="kd">function</span> <span class="nx">myFn</span> <span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="c1">// do some stuff </span>
+</span><span class='line'>    <span class="nx">await</span> <span class="nx">sleep</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span> <span class="c1">// wait one second </span>
+</span><span class='line'>    <span class="c1">// do some other stuff </span>
+</span><span class='line'><span class="p">};</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">myFn</span><span class="p">();</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="http://nmotw.in/images/asyncbox/asyncbox.gif" alt="asyncbox" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[granim]]></title>
@@ -1434,69 +1490,6 @@ that helps to print rainbow text on the terminal.</p>
 <p><strong>GIF FTW!</strong></p>
 
 <p><img src="http://nmotw.in/images/obsify/obsify.gif" alt="obsify" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[captionbot]]></title>
-    <link href="http://nmotw.in/captionbot/"/>
-    <updated>2016-05-05T12:57:22+00:00</updated>
-    <id>http://nmotw.in/captionbot</id>
-    <content type="html"><![CDATA[<p><a href="https://www.npmjs.com/package/captionbot">captionbot</a></p>
-
-<blockquote><p>Get captions for image using Microsoft's CaptionBot 🤖</p></blockquote>
-
-<p>A cheeky bot that tries recognize an image and explain it like a human would do, it requires node version <code>&gt;=4</code> this is powered by <a href="https://www.captionbot.ai/">CaptionBot</a>, a free service provided by Microsoft.</p>
-
-<p>The author says he would consider this module "for testing only" and does not recommend using in a production system.</p>
-
-<p><strong>Get it:</strong> <code>npm install --save captionbot</code></p>
-
-<p><strong>Usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kr">const</span> <span class="nx">captionbot</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;captionbot&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">captionbot</span><span class="p">(</span><span class="s1">&#39;http://i.imgur.com/o33PTUp.jpg&#39;</span><span class="p">)</span>
-</span><span class='line'><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">caption</span> <span class="o">=&gt;</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">caption</span><span class="p">);</span>
-</span><span class='line'><span class="p">});</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">//=&gt; &#39;I think it&#39;s a group of people posing for a picture\nand he seems 😐.&#39;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>or</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kr">const</span> <span class="nx">captionbot</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;captionbot&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">try</span> <span class="p">{</span>
-</span><span class='line'>    <span class="kr">const</span> <span class="nx">caption</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">captionbot</span><span class="p">(</span><span class="s1">&#39;http://i.imgur.com/o33PTUp.jpg&#39;</span><span class="p">);</span>
-</span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">caption</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span> <span class="k">catch</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">e</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/captionbot/captionbot.gif" alt="" /></p>
 ]]></content>
   </entry>
   
