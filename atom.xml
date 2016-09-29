@@ -4,13 +4,63 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2016-09-22T17:26:49+00:00</updated>
+  <updated>2016-09-29T14:09:22+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[autosize-input]]></title>
+    <link href="http://nmotw.in/autosize-input/"/>
+    <updated>2016-09-29T14:00:53+00:00</updated>
+    <id>http://nmotw.in/autosize-input</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.org/package/autosize-input">autosize-input</a></h1>
+
+<blockquote><p>Effortless, dynamic-width text boxes.</p></blockquote>
+
+<p><strong>Features:</strong></p>
+
+<ul>
+<li>Dynamically adjusts the width of the text box to fit its current contents</li>
+<li>Can be initialised to fit its <code>placeholder</code> attribute</li>
+<li>Optionally set a <code>min-width</code> based on the element&rsquo;s initial content</li>
+</ul>
+
+
+<p><strong>Get it:</strong> <code>npm install -g autosize-input</code></p>
+
+<p><strong>Usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">autosizeInput</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#foo&#39;</span><span class="p">));</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">autosizeInput</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#bar&#39;</span><span class="p">));</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">autosizeInput</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#baz&#39;</span><span class="p">),</span> <span class="p">{</span> <span class="nx">minWidth</span><span class="o">:</span> <span class="kc">true</span> <span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>Implementation details:</strong></p>
+
+<ul>
+<li><p>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing"><code>box-sizing</code></a> property of the given text box is set, inline, to <code>content-box</code>. Therefore, the width we assign to our text box <em>excludes</em> its <code>padding</code> and <code>border</code> properties.</p></li>
+<li><p>A hidden &ldquo;ghost&rdquo; <code>div</code> &mdash; given the same <code>font-size</code> and <code>font-family</code> as the text box &mdash; is used to compute the correct width to assign to the text box. This width is recomputed and assigned to the text box on every <a href="https://developer.mozilla.org/en-US/docs/Web/Events/input"><code>input</code></a> event.</p></li>
+<li><p>The single &ldquo;ghost&rdquo; element is shared amongst all the &ldquo;autosized&rdquo; text boxes on the page.</p></li>
+</ul>
+
+
+<p><strong>GIF FTW:</strong></p>
+
+<p><img src="http://nmotw.in/images/autoinput-size/autoinput-size.gif" alt="autoinput-size" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[asyncbox]]></title>
@@ -1431,65 +1481,6 @@ that helps to print rainbow text on the terminal.</p>
 <p><strong>GIF FTW!</strong></p>
 
 <p><img src="http://nmotw.in/images/speedline/speedline.gif" alt="" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[obsify]]></title>
-    <link href="http://nmotw.in/obsify/"/>
-    <updated>2016-05-12T13:19:01+00:00</updated>
-    <id>http://nmotw.in/obsify</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/obsify">obsify</a></h1>
-
-<blockquote><p>Observableify a callback-style function</p></blockquote>
-
-<p>Observerifies (is that even a word ;)?) a callback-style function into an observable.</p>
-
-<p><strong>Get it:</strong> <code>npm install --save obsify</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kr">const</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;fs&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="kr">const</span> <span class="nx">obsify</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;obsify&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">obsify</span><span class="p">(</span><span class="nx">fs</span><span class="p">.</span><span class="nx">readFile</span><span class="p">)(</span><span class="s1">&#39;package.json&#39;</span><span class="p">,</span> <span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
-</span><span class='line'>    <span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">data</span> <span class="o">=&gt;</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">data</span><span class="p">))</span>
-</span><span class='line'>    <span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="nx">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
-</span><span class='line'>        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
-</span><span class='line'>        <span class="c1">//=&gt; &#39;obsify&#39;</span>
-</span><span class='line'>    <span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>or <code>observableify</code> all methods in a module</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">obsify</span><span class="p">(</span><span class="nx">fs</span><span class="p">).</span><span class="nx">readFile</span><span class="p">(</span><span class="s1">&#39;package.json&#39;</span><span class="p">,</span> <span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
-</span><span class='line'>    <span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">data</span> <span class="o">=&gt;</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">data</span><span class="p">))</span>
-</span><span class='line'>    <span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="nx">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
-</span><span class='line'>        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
-</span><span class='line'>        <span class="c1">//=&gt; &#39;obsify&#39;</span>
-</span><span class='line'>    <span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="http://nmotw.in/images/obsify/obsify.gif" alt="obsify" /></p>
 ]]></content>
   </entry>
   

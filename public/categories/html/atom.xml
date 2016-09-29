@@ -4,7 +4,7 @@
   <title><![CDATA[Category: html | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/html/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-09-22T17:26:49+00:00</updated>
+  <updated>2016-09-29T14:09:22+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[autosize-input]]></title>
+    <link href="http://nmotw.in/github/autosize-input/"/>
+    <updated>2016-09-29T14:00:53+00:00</updated>
+    <id>http://nmotw.in/github/autosize-input</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.org/package/autosize-input">autosize-input</a></h1>
+
+<blockquote><p>Effortless, dynamic-width text boxes.</p></blockquote>
+
+<p><strong>Features:</strong></p>
+
+<ul>
+<li>Dynamically adjusts the width of the text box to fit its current contents</li>
+<li>Can be initialised to fit its <code>placeholder</code> attribute</li>
+<li>Optionally set a <code>min-width</code> based on the element&rsquo;s initial content</li>
+</ul>
+
+
+<p><strong>Get it:</strong> <code>npm install -g autosize-input</code></p>
+
+<p><strong>Usage:</strong></p>
+
+<p>```js
+autosizeInput(document.querySelector('#foo'));</p>
+
+<p>autosizeInput(document.querySelector('#bar'));</p>
+
+<p>autosizeInput(document.querySelector('#baz'), { minWidth: true });
+```</p>
+
+<p><strong>Implementation details:</strong></p>
+
+<ul>
+<li><p>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing"><code>box-sizing</code></a> property of the given text box is set, inline, to <code>content-box</code>. Therefore, the width we assign to our text box <em>excludes</em> its <code>padding</code> and <code>border</code> properties.</p></li>
+<li><p>A hidden &ldquo;ghost&rdquo; <code>div</code> &mdash; given the same <code>font-size</code> and <code>font-family</code> as the text box &mdash; is used to compute the correct width to assign to the text box. This width is recomputed and assigned to the text box on every <a href="https://developer.mozilla.org/en-US/docs/Web/Events/input"><code>input</code></a> event.</p></li>
+<li><p>The single &ldquo;ghost&rdquo; element is shared amongst all the &ldquo;autosized&rdquo; text boxes on the page.</p></li>
+</ul>
+
+
+<p><strong>GIF FTW:</strong></p>
+
+<p><img src="/images/autoinput-size/autoinput-size.gif" alt="autoinput-size" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[cleave.js]]></title>
