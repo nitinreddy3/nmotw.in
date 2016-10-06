@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: polyfill | NMOTW]]></title>
+  <link href="http://nmotw.in/github/public/categories/polyfill/atom.xml" rel="self"/>
+  <link href="http://nmotw.in/github/"/>
+  <updated>2016-10-06T17:36:05+00:00</updated>
+  <id>http://nmotw.in/github/</id>
+  <author>
+    <name><![CDATA[Hemanth.HM]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[resize-observer-polyfill]]></title>
+    <link href="http://nmotw.in/github/resize-observer-polyfill/"/>
+    <updated>2016-10-06T17:06:53+00:00</updated>
+    <id>http://nmotw.in/github/resize-observer-polyfill</id>
+    <content type="html"><![CDATA[<h1><a href="">resize-observer-polyfill</a></h1>
+
+<blockquote><p>A polyfill for Resize Observer API.</p></blockquote>
+
+<p>Implements event based tracking of changes in the dimensions of elements.</p>
+
+<p>Uses MutationsObserver and falls back to an infinite dirty checking cycle if the first one is not supported.</p>
+
+<p>Handles long running CSS transitions/animations, attributes and nodes mutations along with changes made by :hover pseudo-class (optional).</p>
+
+<p>Compliant with the <a href="http://rawgit.com/WICG/ResizeObserver/master/index.html">spec</a>.</p>
+
+<p>Doesn't contain any publicly available methods except for those described in the spec.</p>
+
+<p><strong>Get it:</strong></p>
+
+<p><code>js
+npm install --save resize-observer-polyfill
+</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```js
+import ResizeObserver from 'resize-observer-polyfill';</p>
+
+<p>const observer = new ResizeObserver((entries, observer) => {});</p>
+
+<p>observer.observe(document.body);
+```</p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/resize-observer-polyfill/resize-observer-polyfill.gif" alt="resize-observer-polyfill" /></p>
+
+<p>P.S: Checkout the <a href="http://que-etc.github.io/resize-observer-polyfill">Live demo</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>
