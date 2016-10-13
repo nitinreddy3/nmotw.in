@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cli | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/cli/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-10-06T17:36:05+00:00</updated>
+  <updated>2016-10-13T14:17:21+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,71 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[yarn]]></title>
+    <link href="http://nmotw.in/github/yarn/"/>
+    <updated>2016-10-13T14:07:03+00:00</updated>
+    <id>http://nmotw.in/github/yarn</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/yarn">yarn</a></h1>
+
+<blockquote><p>FAST, RELIABLE, AND SECURE DEPENDENCY MANAGEMENT.</p></blockquote>
+
+<p><code>yarn</code> let use call it a faster <code>npm</code>? Open sourced by facebook, has the below features:</p>
+
+<ul>
+<li>Offline Mode: If you've installed a package before, you can install it again without any internet connection.</li>
+<li>Deterministic: The same dependencies will be installed the same exact way across every machine regardless of install order.</li>
+<li>Network Performance: Yarn efficiently queues up requests and avoids request waterfalls in order to maximize network utilization.</li>
+<li>Multiple Registries: Install any package from either npm or Bower and keep your package workflow the same.</li>
+<li>Network Resilience: A single request failing won't cause an install to fail. Requests are retried upon failure.</li>
+<li>Flat Mode: Resolve mismatching versions of dependencies to a single version to avoid creating duplicates.</li>
+<li>More emojis. 🐈</li>
+</ul>
+
+
+<p><strong>Get it:</strong> <code>npm install --global yarn</code></p>
+
+<p><strong>CLI usage:</strong></p>
+
+<p><code>sh
+yarn add
+yarn bin
+yarn cache
+yarn check
+yarn clean
+yarn config
+yarn generate-lock-entry
+yarn global
+yarn info
+yarn init
+yarn install
+yarn licenses
+yarn link
+yarn login
+yarn logout
+yarn ls
+yarn outdated
+yarn owner
+yarn pack
+yarn publish
+yarn remove
+yarn run
+yarn self-update
+yarn tag
+yarn team
+yarn test
+yarn unlink
+yarn upgrade
+yarn version
+yarn why
+</code></p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/yarn/yarn.gif" alt="yarn" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[auto-install]]></title>
@@ -238,32 +303,6 @@ Waiting for the debugger to disconnect...
 <p><strong>GIF FTW!</strong></p>
 
 <p><img src="/images/node-nightly/node-nightly.gif" alt="node-nightly" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[rainbowify]]></title>
-    <link href="http://nmotw.in/github/rainbowify/"/>
-    <updated>2016-06-16T14:03:58+00:00</updated>
-    <id>http://nmotw.in/github/rainbowify</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/rainbowify">rainbowify</a></h1>
-
-<blockquote><p>rainbow print stuff in terminal</p></blockquote>
-
-<p><code>rainbowify</code> is an module extracted from mocha's <a href="https://github.com/mochajs/mocha/blob/master/lib/reporters/nyan.js">nyan.js</a> which is a fun little module
-that helps to print rainbow text on the terminal.</p>
-
-<p><strong>Get it:</strong> <code>npm install --global rainbowify</code></p>
-
-<p><strong>Usage:</strong></p>
-
-<p><code>sh
-$ echo &lt;some_text&gt; | rainbowify
-</code></p>
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="/images/rainbowify/rainbowify.gif" alt="rainbowify" /></p>
 ]]></content>
   </entry>
   

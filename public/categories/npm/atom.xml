@@ -4,7 +4,7 @@
   <title><![CDATA[Category: npm | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/npm/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-10-06T17:36:05+00:00</updated>
+  <updated>2016-10-13T14:17:21+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,71 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[yarn]]></title>
+    <link href="http://nmotw.in/github/yarn/"/>
+    <updated>2016-10-13T14:07:03+00:00</updated>
+    <id>http://nmotw.in/github/yarn</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/yarn">yarn</a></h1>
+
+<blockquote><p>FAST, RELIABLE, AND SECURE DEPENDENCY MANAGEMENT.</p></blockquote>
+
+<p><code>yarn</code> let use call it a faster <code>npm</code>? Open sourced by facebook, has the below features:</p>
+
+<ul>
+<li>Offline Mode: If you've installed a package before, you can install it again without any internet connection.</li>
+<li>Deterministic: The same dependencies will be installed the same exact way across every machine regardless of install order.</li>
+<li>Network Performance: Yarn efficiently queues up requests and avoids request waterfalls in order to maximize network utilization.</li>
+<li>Multiple Registries: Install any package from either npm or Bower and keep your package workflow the same.</li>
+<li>Network Resilience: A single request failing won't cause an install to fail. Requests are retried upon failure.</li>
+<li>Flat Mode: Resolve mismatching versions of dependencies to a single version to avoid creating duplicates.</li>
+<li>More emojis. 🐈</li>
+</ul>
+
+
+<p><strong>Get it:</strong> <code>npm install --global yarn</code></p>
+
+<p><strong>CLI usage:</strong></p>
+
+<p><code>sh
+yarn add
+yarn bin
+yarn cache
+yarn check
+yarn clean
+yarn config
+yarn generate-lock-entry
+yarn global
+yarn info
+yarn init
+yarn install
+yarn licenses
+yarn link
+yarn login
+yarn logout
+yarn ls
+yarn outdated
+yarn owner
+yarn pack
+yarn publish
+yarn remove
+yarn run
+yarn self-update
+yarn tag
+yarn team
+yarn test
+yarn unlink
+yarn upgrade
+yarn version
+yarn why
+</code></p>
+
+<p><strong>GIF FTW!</strong></p>
+
+<p><img src="/images/yarn/yarn.gif" alt="yarn" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[next-update]]></title>
@@ -291,67 +356,6 @@ var npmCheck = require('npm-check');</p>
 <p><img src="/images/npm-check/npm-check.gif" alt="npm-check" /></p>
 
 <p>Thanks to <a href="https://twitter.com/dylang">@dylang</a> for <code>npm-check</code>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[nsp]]></title>
-    <link href="http://nmotw.in/github/nsp/"/>
-    <updated>2015-01-22T13:33:18+00:00</updated>
-    <id>http://nmotw.in/github/nsp</id>
-    <content type="html"><![CDATA[<h1><a href="http://npm.im/nsp/">nsp</a> aka: <a href="http://nodesecurity.io">Node Security Project</a></h1>
-
-<blockquote><p>Check if your Node.js projects are using packages with known and public vulnerable dependencies, using NSP DB.</p></blockquote>
-
-<p><strong>Install it:</strong> <code>npm install -g nsp</code></p>
-
-<p><strong>Usage:</strong></p>
-
-<p>```sh
-nmotw.in> nsp</p>
-
-<p>Usage: [command] --arg=value --arg2</p>
-
-<p>Help:
-  help              Show help menu
-  [cmd] help        Show command help menu</p>
-
-<p>Options:
-  version           shows the current version of nsp
-  shrinkwrap        alias to audit-shrinkwrap
-  audit-shrinkwrap  audits your <code>npm shrinkwrap</code> against NSP db
-  package           alias to audit-package
-  audit-package     audits your package.json against NSP db
-```</p>
-
-<p>```sh
-nmotw.in> cat package.json
-{
-  "name": "test",
-  "version": "0.0.1",
-  "author": "Node Security Project",
-  "dependencies": {</p>
-
-<pre><code>"node-print": "0.0.4",
-"request": "^2.40.0",
-"qs": "^0.5"
-</code></pre>
-
-<p>  }
-}</p>
-
-<p>nmotw.in> nsp package
-Name  Installed  Patched  Vulnerable Dependency
-qs      0.5.6     >= 1.x  test@0.0.1 > qs@0.5.6
-```</p>
-
-<p>The same can be used for auditing <a href="https://docs.npmjs.com/cli/shrinkwrap">shrinkwrap</a>.</p>
-
-<p><strong>GIF FTW!</strong></p>
-
-<p><img src="/images/nsp/nsp.gif" alt="nsp" /></p>
-
-<p>Thanks to the <a href="https://twitter.com/nodesecurity">nodesecurity</a> for making security easy!</p>
 ]]></content>
   </entry>
   
