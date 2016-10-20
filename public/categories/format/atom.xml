@@ -4,7 +4,7 @@
   <title><![CDATA[Category: format | NMOTW]]></title>
   <link href="http://nmotw.in/github/public/categories/format/atom.xml" rel="self"/>
   <link href="http://nmotw.in/github/"/>
-  <updated>2016-10-13T14:17:50+00:00</updated>
+  <updated>2016-10-20T14:18:31+00:00</updated>
   <id>http://nmotw.in/github/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[s-ago]]></title>
+    <link href="http://nmotw.in/github/s-ago/"/>
+    <updated>2016-10-20T14:13:46+00:00</updated>
+    <id>http://nmotw.in/github/s-ago</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/s-ago">s-ago</a></h1>
+
+<blockquote><p>Human readable relative times.</p></blockquote>
+
+<p><code>26 SLOC</code> to convert <code>Date</code> objects into human readable relative timestamps, such as <code>7 minutes ago</code> or <code>yesterday</code> or <code>2 days ago</code></p>
+
+<p><strong>Get it:</strong> <code>npm install --save s-ago</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<p>```js
+const ago = require('s-ago');</p>
+
+<p>const now = new Date();
+const yesterday = new Date(now - (24 * 60 * 60 * 1000));
+const hoursAgo = new Date(now - (6 * 60 * 60 * 1000));</p>
+
+<p>ago(now); // 'just now'
+ago(yesterday); // 'yesterday'
+ago(hoursAgo); // '6 hours ago'
+```</p>
+
+<p><strong>GIT FTW!</strong></p>
+
+<p><img src="/images/s-ago/s-ago.gif" alt="s-ago" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[cleave.js]]></title>
