@@ -4,13 +4,80 @@
   <title><![CDATA[NMOTW]]></title>
   <link href="http://nmotw.in/atom.xml" rel="self"/>
   <link href="http://nmotw.in/"/>
-  <updated>2016-10-20T14:18:31+00:00</updated>
+  <updated>2016-10-27T14:51:18+00:00</updated>
   <id>http://nmotw.in/</id>
   <author>
     <name><![CDATA[Hemanth.HM]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[next]]></title>
+    <link href="http://nmotw.in/next/"/>
+    <updated>2016-10-27T14:41:15+00:00</updated>
+    <id>http://nmotw.in/next</id>
+    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/next">next.js</a></h1>
+
+<blockquote><p>Minimalistic framework for server-rendered React applications.</p></blockquote>
+
+<p><code>next.js</code> framework helps with SSR of React applications and so far has:</p>
+
+<ul>
+<li>Automatic transpilation and bundling (with webpack and babel)</li>
+<li>Hot code reloading</li>
+<li>Server rendering and indexing of <code>./pages</code></li>
+<li>Static file serving. <code>./static/</code> is mapped to <code>/static/</code></li>
+</ul>
+
+
+<p><strong>GET IT:</strong> <code>npm instll --save next</code></p>
+
+<p><strong>Sample usage:</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>mkdir pages
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="c1">//pages/index.js:</span>
+</span><span class='line'><span class="kr">import</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span>
+</span><span class='line'><span class="kr">export</span> <span class="k">default</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="nx">Hello</span> <span class="nx">Next</span><span class="o">!&lt;</span><span class="err">/div&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Add a script to the <code>package.json</code> like:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='json'><span class='line'><span class="p">{</span>
+</span><span class='line'>  <span class="nt">&quot;scripts&quot;</span><span class="p">:</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;next&quot;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and run:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='json'><span class='line'><span class="err">$</span> <span class="err">npm</span> <span class="err">start</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>GIF FTW</strong></p>
+
+<p><img src="http://nmotw.in/images/next/next.gif" alt="" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[s-ago]]></title>
@@ -1222,58 +1289,6 @@ that helps to print rainbow text on the terminal.</p>
 <p><strong>GIF FTW!</strong></p>
 
 <p><img src="http://nmotw.in/images/rainbowify/rainbowify.gif" alt="rainbowify" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[pwaify]]></title>
-    <link href="http://nmotw.in/pwaify/"/>
-    <updated>2016-06-09T12:33:41+00:00</updated>
-    <id>http://nmotw.in/pwaify</id>
-    <content type="html"><![CDATA[<h1><a href="https://www.npmjs.com/package/pwaify">pwaify</a></h1>
-
-<blockquote><p>PWA to desktop app!</p></blockquote>
-
-<p><code>pwaify</code> bring <a href="https://developers.google.com/web/progressive-web-apps/">progressive</a> <a href="https://github.com/hemanth/generator-pwa">Webapp</a> to your desktops across platforms!</p>
-
-<p>Makes use of <a href="http://electron.atom.io/">Electron</a> extracts the <code>manifest-json</code> from the given URL and smartly creates an electron window and loads the required.</p>
-
-<p><strong>Get it:</strong> <code>npm install --global pwaify</code></p>
-
-<p><strong>Sample usage:</strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>nmotw.in&gt; pwaify --help
-</span><span class='line'>
-</span><span class='line'>  Electron PWA <span class="o">(</span>Progressive Web App<span class="o">)</span> Generator
-</span><span class='line'>
-</span><span class='line'>  Usage
-</span><span class='line'>    <span class="nv">$ </span>pwaify &lt;input&gt;
-</span><span class='line'>
-</span><span class='line'>  Options
-</span><span class='line'>    --platforms Platforms to build the app.
-</span><span class='line'>    --icon App Icon.
-</span><span class='line'>
-</span><span class='line'>  Examples
-</span><span class='line'>    <span class="nv">$ </span>pwaify https://jsfeatures.in --platforms<span class="o">=</span>darwin
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>GIF FTW:</strong></p>
-
-<p><img src="http://nmotw.in/images/pwaify/PWAify.gif" alt="PWAify" /></p>
 ]]></content>
   </entry>
   
